@@ -9,20 +9,26 @@ author = u'Tom Oinn'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The short X.Y version.
-version = '0.0.1'
+
+import os
+import re
+
 # The full version, including alpha/beta/rc tags.
-release = '0.0.1'
+release = re.sub('^v', '', os.popen('git describe').read().strip())
+version = release
+
+smv_latest_version = 'v0.2'
 
 # Configuration for multi-version build, shouldn't need to change this.
+
 # Whitelist pattern for tags (set to None to ignore all tags)
 smv_tag_whitelist = r'^.*$'
 # Whitelist pattern for branches (set to None to ignore all branches)
-smv_branch_whitelist = r'^.*$'
+smv_branch_whitelist = None
 # Whitelist pattern for remotes (set to None to use local branches only)
 smv_remote_whitelist = r'^.*$'
 # Pattern for released versions
-smv_released_pattern = r'^tags/.*$'
+smv_released_pattern = r'^.*$'
 # Format for versioned output directories inside the build directory
 smv_outputdir_format = '{ref.name}'
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
