@@ -3,7 +3,7 @@ Open Energy technical docs
 
 ## Sphinx installation
 
-Using whichever version of Python makes you happiest:
+Using whichever version of Python 3 makes you happiest:
 
 ```
 > pip install sphinx sphinx-rtd-theme
