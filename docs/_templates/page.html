@@ -5,8 +5,8 @@
 <div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>
-        You're reading an old ({{current_version.name}}) release of this documentation.
-        If you want up-to-date information, please have a look at <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
+        You're reading an older ({{current_version.name}}) release of this documentation.
+        For the latest released version, please see <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
     </p>
 </div>
 {% else %}
@@ -14,11 +14,10 @@
     <p class="admonition-title">Warning</p>
     <p>
         You're reading the documentation for a development version <em>({{current_version.name}})</em>.
-        For the latest <em>released</em> version, please have a look at <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
+        For the latest <em>released</em> version, please see <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
     </p>
 </div>
 {% endif %}
 {% endif %}
-<p>Version is : {{current_version}}</p>
 {{ super() }}
 {% endblock %}%

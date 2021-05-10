@@ -12,12 +12,16 @@ author = u'Tom Oinn'
 
 
 # The full version, including alpha/beta/rc tags. Use git tags when actually releasing a version.
-release = 'v0.3'
-version = 'v0.3'
+# This section isn't needed, as the multisphinx build now pulls out information from tags and displays
+# *that* instead of these in the sidebar.
+#release = 'v0.3'
+#version = 'v0.3'
 
 # Use this to point to the current version, this is used to check whether a user
-# is looking at the current version and show a banner if not.
-smv_latest_version = 'v0.2'
+# is looking at the current version and show a banner if not. If this doesn't
+# correspond to a released tag it'll fail silently. Well, maybe not silently. It'll
+# fail though, and no banners will be shown.
+smv_latest_version = 'v0.1'
 
 # Configures links into the main Python language docs, if you're using any libraries in your
 # project and need them to link automatically add them here. Doesn't really apply to non-code
@@ -37,8 +41,10 @@ smv_tag_whitelist = r'^v.*$'
 smv_branch_whitelist = 'main'
 # Whitelist pattern for remotes (set to None to use local branches only)
 smv_remote_whitelist = r'^.*$'
-# Pattern for released versions
-smv_released_pattern = r'^v.*$'
+# Pattern for released versions - this is the refs, not the ref names! In this case
+# we only allow 'released' status for tags of the form vNN.NN.NN... (any number of periods)
+# This means that by default there is exactly one build, 'main', that is not released.
+smv_released_pattern = r'^refs/tags/v[0-9.]*$'
 # Format for versioned output directories inside the build directory
 smv_outputdir_format = '{ref.name}'
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
