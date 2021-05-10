@@ -82,7 +82,7 @@ nitpicky = True
 
 # Pull in substitutions to each file as epilog
 rst_epilog = """
-.. include:: substitutions.txt
+.. include:: glossaries/substitutions.txt
 """
 
 # Configure auto section labelling
