@@ -14,7 +14,7 @@ import os
 import re
 
 # The full version, including alpha/beta/rc tags.
-release = re.sub('^v', '', os.popen('git describe').read().strip())
+release = re.sub('^v', '', os.popen('git describe --tags').read().strip())
 version = release
 
 smv_latest_version = 'v0.2'
