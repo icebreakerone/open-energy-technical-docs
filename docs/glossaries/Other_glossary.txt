@@ -1,0 +1,9 @@
+.. glossary::
+
+    Third Party Intermediary
+        *TPI* - A defined form of TPP recognised and operating in the energy sector.
+        `www.ofgem.gov.uk: third-party-intermediaries-tpi-programme <https://www.ofgem.gov.uk/gas/retail-market/market-review-and-reform/third-party-intermediaries-tpi-programme>`_
+
+    Third party provider
+        *TPP* - A third party providing services - generic term used across sectors.
+

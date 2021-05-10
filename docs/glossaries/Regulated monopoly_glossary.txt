@@ -1,0 +1,31 @@
+.. glossary::
+
+    Data and Communications Company
+        *DCC* - The 'central communications body appointed to manage communications and data transfer for smart metering. It is responsible for linking smart meters in homes and small businesses with the systems of energy suppliers, network operators and other companies.'
+        `www.ofgem.gov.uk: 126045 <https://www.ofgem.gov.uk/ofgem-publications/126045>`_
+
+    Distribution Network Operator
+        *DNO* - Responsible for regional electricity distribution (lower voltage).
+
+    Distribution System Operator
+        *DSO* - In the UK, electricity DNOs are transitioning to become DSOs in response to electricity system changes (e.g. decentralisation, decarbonisation). The transition will change DNO responsibilities, broadening these from asset/network management. The term DSO is also commonly used outside of the UK.
+
+    Electricity System Operator
+        *ESO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid ESO (a separate company within the National Grid Group - not connected to the electricity TSO).
+
+    Gas Distribution Network
+        *GDN* - Responsible for regional gas distribution (lower pressure).
+
+    Gas System Operator
+        *GSO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid Gas Plc (a separate company within the National Grid Group who also own the gas transmission network).
+
+    Independent Distribution Network Operator
+        *iDNO* - IDNOs own and operate smaller networks located within the areas covered by the DNOs. IDNO networks are mainly extensions to the DNO networks serving new housing and commercial developments.
+        `www.ofgem.gov.uk: independent-distribution-network-operators <https://www.ofgem.gov.uk/electricity/distribution-networks/connections-and-competition/independent-distribution-network-operators>`_
+
+    Independent System Operator
+        *ISO* - There is currently a proposal, backed by Ofgem, to convert the ESO to an ISO. The proposal advocates this change in order to meet new requirements of system operation oriented towards achieving Net Zero. The change would involve some change in the ESO's structure, responsibilities and relationship to other bodies in the sector.
+
+    Transmission System Owner
+        *TSO* - Owner of the national electricity and gas transmission networks (higher voltage/pressure).
+

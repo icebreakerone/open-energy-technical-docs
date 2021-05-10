@@ -1,0 +1,73 @@
+.. glossary::
+
+    Application programming interface
+        *API* - A computing interface determining how different software intermediaries interact (e.g. how requests can be made, data formats etc.).
+
+    Combined Heat and Power
+        *CHP* - CHP generates electricity whilst also capturing usable heat that is produced in this process. As a result, CHP operates at much higher efficiency than traditional power generation methods.
+
+    Distributed energy resources
+        *DER* - A term used to describe a combination of distributed generation and flexibility resources in the electricity system (e.g. solar PV, EVs, biogas, heat pumpts, batteries).
+
+    Demand-side response
+        *DSR* - The act of shifting energy demand in order to relieve pressure on the grid, or consume excess power. e.g. industrial processes may be slowed down or turned off at times of peak demand to reduce grid constraints.
+
+    Enterprise Asset Management System
+        *EASM* - Technological system used to manage an entity's assets (data, physical, human) and processes.
+
+    Electric charging station
+        *ECS* - Charging station for electric vehicles
+
+    Electric vehicle
+        *EV* - no definition
+
+    Electric vehicle supply equipment
+        *EVSE* - Another term for electric vehicle charging stations and related equipment
+
+    Geographical Information System
+        *GIS* - Framework for capturing, recording and displaying spatial data.
+
+    Home Energy Management System
+        *HEMS* - A combination of sensors, metering, and data analytics designed to optimise energy usage within a building to maximise factors such as bills-reduction or comfort. Often used to optimise microgeneration, home battery, EV, domestic consumption and grid export.
+
+    Half hourly meter
+        *HH* - no definition
+
+    Industrial Computing System
+        *ICS* - no definition
+
+    Internet of Things
+        *IoT* - A catch-all term used to refer to connected devices - e.g. fridges, washing machines, speakers etc.
+
+    Machine to machine
+        *M2M* - no definition
+
+    Open ID Connect
+        *OIDC* - An identity layer on top of OAuth2.0 protocol
+        `openid.net: connect <https://openid.net/connect>`_/
+
+    Ordanance Survey
+        *OS* - Repository of geospatial data
+
+    Peer to peer
+        *P2P* - Communications and energy supply. A mechanism for organising trade/exchange of goods or services directly between peers, without an intermediary body. Can be, but is not always, supported by a technology platform.
+
+    Photovoltaic (cells/panels)
+        *PV* - Mechanism of generating renewable electricity - solar power.
+
+    Supervisory Control and Data Acquisition
+        *SCADA* - A software and hardware system enabling remote monitoring and control, usually of industrial-scale equipment
+
+    Smart Metering Equipment Technical Specifications
+        *SMETS* - SMETS describe the specifications of UK smart meters. Two generations of smart meters have been released to date - SMETS1 and SMETS2.
+        `www.ovoenergy.com: smets-1-and-2-new-smart-meter-generation.html <https://www.ovoenergy.com/guides/energy-guides/smets-1-and-2-new-smart-meter-generation.html>`_
+
+    Vehicle to grid
+        *V2G* - Bidirectional power flow between the grid and an EV battery. Enables EV owners to discharge power stored in batteries to the grid at times of need.
+
+    Virtual power plant
+        *VPP* - A digitally-connected set of distributed energy resources that can be aggregated to provide services (e.g. trading, generation)
+
+    X as as Service
+        *XaaS* - Generic term used to refer to various items (e.g. software, platforms, heat, mobility etc) that are being offered via 'as a service' business models.
+

@@ -1,0 +1,18 @@
+.. glossary::
+
+    Gigawatt
+        *GW* - Unit of power equal to 1 billion watts.
+
+    Kilograms of carbon dioxide equivalent (per unit of fuel)
+        *kgCO2e* - A measure of greenhouse gas conversion from energy sources.
+
+    Kilowatt
+        *kW* - Unit of power equal to 1 thousand watts.
+        `www.ofgem.gov.uk: ofgem_-_review_of_gb_energy_system_operation_0.pdf <https://www.ofgem.gov.uk/system/files/docs/2021/01/ofgem_-_review_of_gb_energy_system_operation_0.pdf>`_
+
+    Kilowatt hour
+        *kWh* - A unit of measurement (3,500 Joules) equivalent to using a 1,000 Watt appliance for 1 hour.
+
+    Megawatt
+        *MW* - Unit of power equal to 1 million watts.
+

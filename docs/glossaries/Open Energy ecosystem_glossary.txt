@@ -1,0 +1,17 @@
+.. glossary::
+
+    Advisory Group
+        *AG* - Open Energy has two advisory groups that support consultation and guidance of activities during phase 3 of the project. The groups cover membership and delivery.
+
+    Minimum Viable Product
+        *MVP* - An early version of a product for initial release, potentially with limited features or space for future development.
+
+    Open Energy Phase 3
+        *OE3* - The current phase of Open Energy's development running from February - July 2021.
+
+    Open Energy Governance Service
+        *OEGS* - The technical and governance architecture backing OE's trust framework in which data is shared.
+
+    Steering Group
+        *SG* - Open Energy has a high-level steering group that supports consultation and guidance of activities during phase 3 of the project.
+

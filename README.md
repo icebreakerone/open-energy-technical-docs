@@ -6,7 +6,7 @@ Open Energy technical docs
 Using whichever version of Python makes you happiest:
 
 ```
-> pip install sphinx sphinx-rtd-theme rinohtype
+> pip install sphinx sphinx-rtd-theme
 ```
 
 TODO - we probably want our own in-house sphinx theme here, but that's not something that currently exists so 

@@ -1,0 +1,60 @@
+Commercial
+----------
+
+.. include:: glossaries/Commercial_glossary.txt
+
+Legal
+-----
+
+.. include:: glossaries/Legal_glossary.txt
+
+Open Energy ecosystem
+---------------------
+
+.. include:: glossaries/Open Energy ecosystem_glossary.txt
+
+Other
+-----
+
+.. include:: glossaries/Other_glossary.txt
+
+Policy and governance
+---------------------
+
+.. include:: glossaries/Policy and governance_glossary.txt
+
+Regulated monopoly
+------------------
+
+.. include:: glossaries/Regulated monopoly_glossary.txt
+
+Regulatory
+----------
+
+.. include:: glossaries/Regulatory_glossary.txt
+
+Research
+--------
+
+.. include:: glossaries/Research_glossary.txt
+
+Security
+--------
+
+.. include:: glossaries/Security_glossary.txt
+
+Standard
+--------
+
+.. include:: glossaries/Standard_glossary.txt
+
+Technology
+----------
+
+.. include:: glossaries/Technology_glossary.txt
+
+Unit of measurement
+-------------------
+
+.. include:: glossaries/Unit of measurement_glossary.txt
+

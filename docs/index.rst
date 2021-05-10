@@ -10,6 +10,6 @@ Contents
     :maxdepth: 4
     :glob:
 
-    acronyms
+    glossary
 
 .. _IcebreakerOne: https://icebreakerone.org

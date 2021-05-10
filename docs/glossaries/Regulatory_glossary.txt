@@ -1,0 +1,21 @@
+.. glossary::
+
+    Competition and Markets Authority
+        *CMA* - Competition policy and regulation, includes digital markets
+
+    Data Governance Act
+        *DGA* - European regulatory proposal. 'The proposal is the first of a set of measures announced in the 2020 European strategy for data. The instrument aims to foster the availability of data for use by increasing trust in data intermediaries and by strengthening data-sharing mechanisms across the EU.' `ec.europa.eu: proposal-regulation-european-data-governance-data-governance-act <https://ec.europa.eu/digital-single-market/en/news/proposal-regulation-european-data-governance-data-governance-act>`_
+
+    Information Commissioner's Office
+        *ICO* - Data protection regulator
+
+    Office for Gas and Electricity Markets
+        *Ofgem* - Energy sector regulator. OE3 co-funder.
+
+    Revenues = Incentives + Innovation + Outputs
+        *RIIO* - Ofgem's regulatory framework for network companies, negotiated every 5 years.
+
+    Smart Export Guarantee
+        *SEG* - "an obligation set by the government for licensed electricity suppliers to offer a tariff and make payment to small-scale low-carbon generators for electricity exported to the National Grid, providing certain criteria are met."
+        `www.ofgem.gov.uk: about-smart-export-guarantee-seg <https://www.ofgem.gov.uk/environmental-programmes/smart-export-guarantee-seg/about-smart-export-guarantee-seg>`_
+

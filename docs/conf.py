@@ -1,16 +1,32 @@
-# General information about the project.
-project = u'Open Energy Technical Docs'
-copyright = u'2021 Icebreaker One'
-author = u'Icebreaker One'
+# General information about the project, including links to IB1s open corporate entry
+project = u'Open Energy Technical Documentation'
+copyright = u'Icebreaker One Limited'
+copyright_link = 'https://opencorporates.com/companies/gb/12156788'
+# Change this if you like, it doesn't appear on the final site
+author = u'Tom Oinn'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.1.0'
+version = '0.0.1'
 # The full version, including alpha/beta/rc tags.
-release = '0.1.0'
+release = '0.0.1'
+
+# Configuration for multi-version build, shouldn't need to change this.
+# Whitelist pattern for tags (set to None to ignore all tags)
+smv_tag_whitelist = r'^.*$'
+# Whitelist pattern for branches (set to None to ignore all branches)
+smv_branch_whitelist = r'^.*$'
+# Whitelist pattern for remotes (set to None to use local branches only)
+smv_remote_whitelist = r'^.*$'
+# Pattern for released versions
+smv_released_pattern = r'^tags/.*$'
+# Format for versioned output directories inside the build directory
+smv_outputdir_format = '{ref.name}'
+# Determines whether remote or local git branches/tags are preferred if their output dirs conflict
+smv_prefer_remote_refs = True
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -22,7 +38,11 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
     'sphinx.ext.mathjax',
-    'sphinx.ext.inheritance_diagram'
+    'sphinx.ext.inheritance_diagram',
+    'sphinx_rtd_theme',
+    'sphinx.ext.autosectionlabel',
+    'sphinx_multiversion',
+    'sphinx.ext.githubpages'
 ]
 
 # Configure graphviz to generate PNG and set up some default colours and graph styling. We were using SVGs here, but
@@ -45,7 +65,9 @@ html_context = {
     'css_files': [
         '_static/theme_overrides.css'
     ],
+    'copyright_link': copyright_link,
 }
+html_favicon = 'images/favicon.png'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -57,6 +79,18 @@ master_doc = 'index'
 
 # Enable warnings for missing references
 nitpicky = True
+
+# Pull in substitutions to each file as epilog
+rst_epilog = """
+.. include:: substitutions.txt
+"""
+
+# Configure auto section labelling
+autosectionlabel_prefix_document = False
+autosectionlabel_maxdepth = 4
+
+# Enable numbering of figures in HTML output
+numfig = True
 
 
 # Define skip rules to exclude some functions and other members from autodoc
@@ -91,7 +125,7 @@ exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
-# default_role = None
+default_role = 'any'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
@@ -118,13 +152,19 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
-import sphinx_rtd_theme
-
 html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# Use IB1 colour for search and banner background
+html_theme_options = {
+    'style_nav_header_background': '#0C3945',
+}
+
+html_logo = 'images/logo.png'
 
 # Configures links into the main Python language docs
-intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None), }
+intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None),
+                       'flask': ('https://flask.palletsprojects.com/en/1.1.x/', None),
+                       'cryptography': ('https://cryptography.io/en/stable/', None),
+                       'requests': ('https://docs.python-requests.org/en/master/', None)}
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -156,7 +196,7 @@ html_use_smartypants = True
 # html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-html_show_sourcelink = True
+html_show_sourcelink = False
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 # html_show_sphinx = True
@@ -167,7 +207,7 @@ html_show_sourcelink = True
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-html_use_opensearch = 'https://approxeng.github.io/approxeng.input'
+html_use_opensearch = 'https://icebreakerone.github.io/open-energy-technical-docs'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 html_file_suffix = '.html'

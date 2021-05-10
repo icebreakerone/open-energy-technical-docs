@@ -1,0 +1,28 @@
+.. glossary::
+
+    Authentication
+        *AuthN* - See terminology page
+        `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
+
+    Authorization
+        *AuthZ* - See terminology page
+        `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
+
+    Identification
+        *ID* - See terminology page
+        `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
+
+    Multi Factor Authorisation
+        *MFA* - Commonly used security feature - e.g. password and one-time passcode via text/email
+
+    Open Authorization 2
+        *OAuth2* - Industry standard protocol for authorization
+        `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
+
+    One time passcode
+        *OTP* - A mechanism for customer login / part of two-step authorisation
+
+    Single sign-on
+        *SSO* - A mechanism allowing federated access and re-use of the same credentials to logon to different services/sites.
+        `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
+

@@ -1,0 +1,17 @@
+.. glossary::
+
+    Industrial and commercial
+        *I&C* - Accronym commonly used in the energy sector to refer to non-domestic actors - particularly heavy industry and other high-consumption actors.
+
+    Know Your Customer
+        *KYC* - Borrowed from banking/fraud - common among businesses to describe all aspects of licensing / permissions management for data consumers. (Definition provided by AG member)
+
+    Pay As You Go
+        *PAYG* - no definition
+
+    Purchase Power Agreement
+        *PPA* - An electricity supply agreement between two parties - e.g. generator and trader.
+
+    Time of use
+        *TOU* - Energy supply tariff offering variable pricing depending on the time of day energy is used and the demand on the grid at that point in time.
+

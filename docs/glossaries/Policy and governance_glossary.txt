@@ -1,0 +1,54 @@
+.. glossary::
+
+    Department for Business, Energy and Industrial Strategy
+        *BEIS* - Government department, also responsible for the Smart Data programme of work. OE3 co-funder.
+
+    Committee on Climate Change
+        *CCC* - no definition
+
+    Centre for Data Ethics and Innovation
+        *CDEI* - no definition
+
+    Distribution Future Energy Scenarios
+        *DFES* - Planning tools used by DNOs and GDNs, containing a range of possible views of the future.
+        Also an ODI Leeds project: `odileeds.org: dfes <https://odileeds.org/projects/northernpowergrid/dfes>`_/
+
+    Energy Data Best Practice
+        *EDBP* - Guidance laid out by the Modernising Energy Data consortium.
+        `modernisingenergydata.atlassian.net: Data+Best+Practice+latest+release+v0.21 <https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/69042178/Data+Best+Practice+latest+release+v0.21>`_
+
+    Energy Data Taskforce
+        *EDTF* - Comissioned by the ESC and chaired by Laura Sandys. Reported in 2019 - source of Presumed Open and data triage. The report's 5 recommendations provided a significant steer to sector data policy.
+
+    Future Energy Scenarios
+        *FES* - Planning tools used by National Grid ESO, containing a range of future scenarios.
+        `www.nationalgrideso.com: future-energy-scenarios <https://www.nationalgrideso.com/future-energy/future-energy-scenarios>`_
+
+    Feed-in tariff
+        *FIT* - Tariff previously offered to small-scale and microgeneration for export of electricity to the grid. No longer taking new customers in the UK (new microgeneration is now offered an export tariff through the building's electricity supplier)
+
+    Modernising Energy Data
+        *MED* - Consists of Ofgem, BEIS and Innovate UK. OE3 funders.
+
+    National Cyber Security Centre
+        *NCSC* - "The National Cyber Security Centre (NCSC) provides cyber security guidance and support helping to make the UK the safest place to live and work online."
+        `www.ncsc.gov.uk:  <https://www.ncsc.gov.uk>`_/
+
+    National Infrastructure Commission
+        *NIC* - no definition
+
+    Open Data Institute
+        *ODI* - Non-profit organisation aiming to build a trustworthy open data ecosystem
+        `theodi.org:  <https://theodi.org>`_/
+
+    Office for Zero Emissions Vehicles
+        *OZEV* - no definition
+
+    Renewable Heat Incentive
+        *RHI* - Government-funded financial incentive to support uptake of renewable heat.
+        `www.ofgem.gov.uk: about-domestic-rhi <https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi/about-domestic-rhi>`_
+
+    Smart Energy Code
+        *SEC* - "​​​The Smart Energy Code (SEC) is a multi-Party agreement which defines the rights and obligations of energy suppliers, network operators and other relevant parties involved in the end to end management of smart metering in Great Britain."
+        `smartenergycodecompany.co.uk:  <https://smartenergycodecompany.co.uk>`_/
+

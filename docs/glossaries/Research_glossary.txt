@@ -1,0 +1,8 @@
+.. glossary::
+
+    Centre for Digital Built Britain
+        *CDBB* - no definition
+
+    Energy Systems Capatult.
+        *ESC* - no definition
+

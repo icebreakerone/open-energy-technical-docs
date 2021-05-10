@@ -1,0 +1,18 @@
+.. glossary::
+
+    Common Information Model
+        *CIM* - An open, standardised method of representing computing devices and energy network asset types, and the relationships between them.
+        `www.theade.co.uk: what-is-combined-heat-and-power <https://www.theade.co.uk/resources/what-is-combined-heat-and-power>`_
+
+    EEBUS
+        *EEBUS* - A standard-development project aiming to define a standardised language for the energy Internet of Things
+        `www.eebus.org: what-is-eebus <https://www.eebus.org/what-is-eebus>`_/
+
+    International Standards Organisation standard regarding date time data
+        *ISO 8601* - no definition
+        `en.wikipedia.org: ISO_8601 <https://en.wikipedia.org/wiki/ISO_8601>`_
+
+    Universal Coordinated Time
+        *UTC* - 24 hour time standard at a high level of precision.
+        `www.timeanddate.com: aboututc.html <https://www.timeanddate.com/time/aboututc.html>`_
+
