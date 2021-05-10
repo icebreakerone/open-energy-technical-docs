@@ -10,29 +10,39 @@ author = u'Tom Oinn'
 # built documents.
 #
 
-import os
-import re
 
-# The full version, including alpha/beta/rc tags.
-release = re.sub('^v', '', os.popen('git describe --tags').read().strip())
-version = release
+# The full version, including alpha/beta/rc tags. Use git tags when actually releasing a version.
+release = 'v0.3'
+version = 'v0.3'
 
+# Use this to point to the current version, this is used to check whether a user
+# is looking at the current version and show a banner if not.
 smv_latest_version = 'v0.2'
+
+# Configures links into the main Python language docs, if you're using any libraries in your
+# project and need them to link automatically add them here. Doesn't really apply to non-code
+# projects, but you might want to be able to link to our published Open Energy repositories here
+intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None),
+                       'flask': ('https://flask.palletsprojects.com/en/1.1.x/', None),
+                       'cryptography': ('https://cryptography.io/en/stable/', None),
+                       'requests': ('https://docs.python-requests.org/en/master/', None)}
+
+
 
 # Configuration for multi-version build, shouldn't need to change this.
 
 # Whitelist pattern for tags (set to None to ignore all tags)
-smv_tag_whitelist = r'^.*$'
+smv_tag_whitelist = r'^v.*$'
 # Whitelist pattern for branches (set to None to ignore all branches)
-smv_branch_whitelist = None
+smv_branch_whitelist = 'main'
 # Whitelist pattern for remotes (set to None to use local branches only)
 smv_remote_whitelist = r'^.*$'
 # Pattern for released versions
-smv_released_pattern = r'^.*$'
+smv_released_pattern = r'^v.*$'
 # Format for versioned output directories inside the build directory
 smv_outputdir_format = '{ref.name}'
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
-smv_prefer_remote_refs = True
+smv_prefer_remote_refs = False
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -166,11 +176,7 @@ html_theme_options = {
 
 html_logo = 'images/logo.png'
 
-# Configures links into the main Python language docs
-intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None),
-                       'flask': ('https://flask.palletsprojects.com/en/1.1.x/', None),
-                       'cryptography': ('https://cryptography.io/en/stable/', None),
-                       'requests': ('https://docs.python-requests.org/en/master/', None)}
+
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
