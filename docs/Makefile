@@ -31,13 +31,21 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
+	git tag -l | xargs git tag -d
+	git fetch --tags
 	$(SPHINXBUILD) . $(BUILDDIR)/html
+	touch $(BUILDDIR)/html/.nojekyll
+	python build_index_redirect.py -b $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 ghpages:
 	# This requires setup! Don't run it unless you know it'll work.
-	$(SPHINXBUILD) -E -b html $(ALLSPHINXOPTS) ../../../open-energy-technical-docs-pages/html
+	git tag -l | xargs git tag -d
+	git fetch --tags
+	$(SPHINXBUILD) . ../../../open-energy-technical-docs-pages/html
+	touch ../../../open-energy-technical-docs-pages/html/.nojekyll
+	python build_index_redirect.py -b ../../../open-energy-technical-docs-pages/html
 	cd ../../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
 	@echo
 	@echo "Pushed docs to https://icebreakerone.github.io/open-energy-technical-docs/index.html"

@@ -5,23 +5,10 @@ copyright_link = 'https://opencorporates.com/companies/gb/12156788'
 # Change this if you like, it doesn't appear on the final site
 author = u'Tom Oinn'
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-
-
-# The full version, including alpha/beta/rc tags. Use git tags when actually releasing a version.
-# This section isn't needed, as the multisphinx build now pulls out information from tags and displays
-# *that* instead of these in the sidebar.
-#release = 'v0.3'
-#version = 'v0.3'
-
-# Use this to point to the current version, this is used to check whether a user
-# is looking at the current version and show a banner if not. If this doesn't
-# correspond to a released tag it'll fail silently. Well, maybe not silently. It'll
-# fail though, and no banners will be shown.
-smv_latest_version = 'v0.1'
+# If provided, an OpenSearch description file will be output, and all pages will
+# contain a <link> tag referring to it.  The value of this option must be the
+# base URL from which the finished HTML is served.
+html_use_opensearch = 'https://icebreakerone.github.io/open-energy-technical-docs'
 
 # Configures links into the main Python language docs, if you're using any libraries in your
 # project and need them to link automatically add them here. Doesn't really apply to non-code
@@ -31,12 +18,10 @@ intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None),
                        'cryptography': ('https://cryptography.io/en/stable/', None),
                        'requests': ('https://docs.python-requests.org/en/master/', None)}
 
-
-
 # Configuration for multi-version build, shouldn't need to change this.
 
 # Whitelist pattern for tags (set to None to ignore all tags)
-smv_tag_whitelist = r'^v.*$'
+smv_tag_whitelist = r'^.*$'
 # Whitelist pattern for branches (set to None to ignore all branches)
 smv_branch_whitelist = 'main'
 # Whitelist pattern for remotes (set to None to use local branches only)
@@ -44,11 +29,11 @@ smv_remote_whitelist = r'^.*$'
 # Pattern for released versions - this is the refs, not the ref names! In this case
 # we only allow 'released' status for tags of the form vNN.NN.NN... (any number of periods)
 # This means that by default there is exactly one build, 'main', that is not released.
-smv_released_pattern = r'^refs/tags/v[0-9.]*$'
+smv_released_pattern = r'^refs/tags/[0-9.]*$'
 # Format for versioned output directories inside the build directory
 smv_outputdir_format = '{ref.name}'
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
-smv_prefer_remote_refs = False
+smv_prefer_remote_refs = True
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -77,6 +62,35 @@ graphviz_dot_args = ['-Gbgcolor=transparent', '-Nshape=rectangle', '-Nfontname=c
                      '-Ncolor={}'.format(graphviz_dark_colour), '-Nstyle=filled',
                      '-Nfontcolor={}'.format(graphviz_dark_colour), '-Efontcolor={}'.format(graphviz_dark_colour),
                      '-Ecolor={}'.format(graphviz_dark_colour)]
+
+
+# Use this to point to the current version, this is used to check whether a user
+# is looking at the current version and show a banner if not. If this doesn't
+# correspond to a released tag it'll fail silently. Well, maybe not silently. It'll
+# fail though, and no banners will be shown.
+
+def get_latest_release():
+    import subprocess
+    import semver
+    result = subprocess.run(['git', 'tag', '-l'], stdout=subprocess.PIPE)
+
+    def parse_tag(s):
+        try:
+            return semver.VersionInfo.parse(s)
+        except ValueError:
+            return ''
+
+    tags = sorted([tag for tag in [parse_tag(s) for s in str(result.stdout, 'utf-8').split('\n')] if tag])
+    if tags:
+        latest = str(tags[-1])
+        print(f'Latest tag is {latest}')
+        return latest
+    else:
+        print('No latest tag found')
+        return ''
+
+
+smv_latest_version = get_latest_release()
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -182,8 +196,6 @@ html_theme_options = {
 
 html_logo = 'images/logo.png'
 
-
-
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
@@ -222,10 +234,6 @@ html_show_sourcelink = False
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 # html_show_copyright = True
 
-# If true, an OpenSearch description file will be output, and all pages will
-# contain a <link> tag referring to it.  The value of this option must be the
-# base URL from which the finished HTML is served.
-html_use_opensearch = 'https://icebreakerone.github.io/open-energy-technical-docs'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 html_file_suffix = '.html'
