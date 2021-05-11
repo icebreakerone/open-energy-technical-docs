@@ -33,7 +33,7 @@ smv_released_pattern = r'^refs/tags/[0-9.]*$'
 # Format for versioned output directories inside the build directory
 smv_outputdir_format = '{ref.name}'
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
-smv_prefer_remote_refs = True
+smv_prefer_remote_refs = False
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -220,7 +220,7 @@ html_use_smartypants = True
 # html_domain_indices = True
 
 # If false, no index is generated.
-# html_use_index = True
+html_use_index = True
 
 # If true, the index is split into individual pages for each letter.
 # html_split_index = False
