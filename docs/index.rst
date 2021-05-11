@@ -11,6 +11,7 @@ Contents
     :maxdepth: 4
     :glob:
 
+    architecture
     glossary
 
 .. _IcebreakerOne: https://icebreakerone.org
