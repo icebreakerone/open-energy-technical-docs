@@ -102,6 +102,7 @@ html_context = {
         '_static/theme_overrides.css'
     ],
     'copyright_link': copyright_link,
+    'current_version': ''
 }
 html_favicon = 'images/favicon.png'
 

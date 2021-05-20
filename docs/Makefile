@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-multiversion
+SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = ../build
 
@@ -33,9 +33,14 @@ clean:
 html:
 	git tag -l | xargs git tag -d
 	git fetch --tags
-	$(SPHINXBUILD) . $(BUILDDIR)/html
+	sphinx-multiversion . $(BUILDDIR)/html
 	touch $(BUILDDIR)/html/.nojekyll
 	python build_index_redirect.py -b $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+local:
+	$(SPHINXBUILD) -E -b html $(ALLSPHINXOPTS) $(BUILDDIR)/localhtml
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
@@ -43,7 +48,7 @@ ghpages:
 	# This requires setup! Don't run it unless you know it'll work.
 	git tag -l | xargs git tag -d
 	git fetch --tags
-	$(SPHINXBUILD) . ../../../open-energy-technical-docs-pages/html
+	sphinx-multiversion . ../../../open-energy-technical-docs-pages/html
 	touch ../../../open-energy-technical-docs-pages/html/.nojekyll
 	python build_index_redirect.py -b ../../../open-energy-technical-docs-pages/html
 	cd ../../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
