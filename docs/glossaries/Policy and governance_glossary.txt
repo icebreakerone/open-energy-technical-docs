@@ -36,10 +36,12 @@
         *BEIS* - Government department, also responsible for the Smart Data programme of work. OE3 co-funder.
 
     Committee on Climate Change
-        *CCC* - no definition
+        *CCC* - The Committee on Climate Change (CCC) advises the government on emissions targets and reports to Parliament on progress made in reducing greenhouse gas emissions.
+        `www.gov.uk: committee-on-climate-change <https://www.gov.uk/government/organisations/committee-on-climate-change>`_
 
     Centre for Data Ethics and Innovation
-        *CDEI* - no definition
+        *CDEI* - We’re tasked by the Government to connect policymakers, industry, civil society, and the public to develop the right governance regime for data-driven technologies.
+        `www.gov.uk: centre-for-data-ethics-and-innovation <https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation>`_
 
     Distribution Future Energy Scenarios
         *DFES* - Planning tools used by DNOs and GDNs, containing a range of possible views of the future.
@@ -67,14 +69,16 @@
         `www.ncsc.gov.uk:  <https://www.ncsc.gov.uk>`_/
 
     National Infrastructure Commission
-        *NIC* - no definition
+        *NIC* - The Commission carries out in-depth studies into the UK’s major infrastructure needs and makes recommendations to the government. Our work covers all sectors of economic infrastructure.
+        `nic.org.uk:  <https://nic.org.uk>`_/
 
     Open Data Institute
         *ODI* - Non-profit organisation aiming to build a trustworthy open data ecosystem
         `theodi.org:  <https://theodi.org>`_/
 
     Office for Zero Emissions Vehicles
-        *OZEV* - no definition
+        *OZEV* - The Office for Zero Emission Vehicles (OZEV) is a team working across government to support the transition to zero emission vehicles (ZEVs). We are providing support for the take-up of plug in vehicles, as well as funding to support chargepoint infrastructure across the UK. This will contribute to economic growth and will help reduce greenhouse gas emissions and air pollution on our roads.
+        `www.gov.uk: office-for-zero-emission-vehicles <https://www.gov.uk/government/organisations/office-for-zero-emission-vehicles>`_
 
     Renewable Heat Incentive
         *RHI* - Government-funded financial incentive to support uptake of renewable heat.

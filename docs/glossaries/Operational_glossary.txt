@@ -1,0 +1,16 @@
+.. glossary::
+
+    Business case
+        The commercial justification for a particular product or service.
+
+    Case study
+        An empirical description of a particular situation in which a product, service, technology, method (etc.) has been used, and the results of its use.
+
+    Use-case
+        An outline of a specific situation in which a product or service could be used (can be theoretical or empirical)
+        Main use-case for OE3: local authority retrofit
+
+    User story/journey
+        A user story is an informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.'
+        User journey for OE3: Leah. Source for definition: `www.atlassian.com: user-stories <https://www.atlassian.com/agile/project-management/user-stories>`_
+

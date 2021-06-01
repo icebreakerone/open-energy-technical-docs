@@ -1,0 +1,20 @@
+.. glossary::
+
+    Aggregator
+        Energy: a digital intermediary connecting smaller distributed energy generation so it can participate in energy markets as a group. Data: an entity that searches, accesses and collates different datasets - may be offered as a commercial service also providing value-add such as data standardisation.
+
+    Code
+        Variable uses including: writing development code, code of practice, energy industry codes, codes that are unique alphanumerics etc. Care should be taken to specify the kind of code implied when this term is used in documentation.
+
+    Ontology
+        In Open Energy, ontology is used to describe the core concepts, categories, subjects, properties and relationships making up the Open Energy data ecosystem.
+
+    Policy
+        Variable uses describing how something is run - e.g. privacy policy - public policy, regulatory policys. Care should be taken to specify the kind of policy implied when this term is used in documentation.
+
+    Stakeholder
+        In Open Energy, stakeholder is a term used broadly to describe any actor who may interested in, or impacted by, the Open Energy ecosystem. The term 'member' is used to describe customers of Open Energy, due to the use of a membership business model.
+
+    Value
+        Variable uses including: unit of measurement, economic, social, environmental. Care should be taken to specify the kind of value implied when this term is used in documentation.
+

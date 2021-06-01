@@ -96,7 +96,7 @@
         *ECS* - Charging station for electric vehicles
 
     Electric vehicle
-        *EV* - no definition
+        *EV* - Vehicle powered primarily or exclusively by electricity
 
     Electric vehicle supply equipment
         *EVSE* - Another term for electric vehicle charging stations and related equipment
@@ -108,10 +108,11 @@
         *HEMS* - A combination of sensors, metering, and data analytics designed to optimise energy usage within a building to maximise factors such as bills-reduction or comfort. Often used to optimise microgeneration, home battery, EV, domestic consumption and grid export.
 
     Half hourly meter
-        *HH* - no definition
+        *HH* - Consumer electricity meter capable of reporting usage at a 30 minute resolution
 
-    Industrial Computing System
-        *ICS* - no definition
+    Industrial Control System
+        *ICS* - Industrial control system (ICS) is a general term that encompasses several types of control systems and associated instrumentation used for industrial process control.
+        `en.wikipedia.org: Industrial_control_system <https://en.wikipedia.org/wiki/Industrial_control_system>`_
 
     Internet of Things
         *IoT* - A catch-all term used to refer to connected devices - e.g. fridges, washing machines, speakers etc.
@@ -120,10 +121,10 @@
         *JSON* - JSON (JavaScript Object Notation, pronounced /ˈdʒeɪsən/; also /ˈdʒeɪˌsɒn/) is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values)
 
     JavaScript Object Notation for Linked Data
-        *JSON-LD* - no definition
+        *JSON-LD* - JSON-LD (JavaScript Object Notation for Linked Data) is a method of encoding linked data using JSON
 
     Machine to machine
-        *M2M* - no definition
+        *M2M* - Machine to machine (M2M) is direct communication between devices using any communications channel, including wired and wireless
 
     Open ID Connect
         *OIDC* - An identity layer on top of OAuth2.0 protocol

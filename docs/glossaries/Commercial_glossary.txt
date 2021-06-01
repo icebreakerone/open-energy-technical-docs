@@ -25,7 +25,7 @@
         *KYC* - Borrowed from banking/fraud - common among businesses to describe all aspects of licensing / permissions management for data consumers. (Definition provided by AG member)
 
     Pay As You Go
-        *PAYG* - no definition
+        *PAYG* - Payment as a resource is used, rather than up-front
 
     Purchase Power Agreement
         *PPA* - An electricity supply agreement between two parties - e.g. generator and trader.

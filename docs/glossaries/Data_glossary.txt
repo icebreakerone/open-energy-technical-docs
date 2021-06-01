@@ -1,0 +1,10 @@
+.. glossary::
+
+    Consent
+        Processes for ensuring that appropriate permissions are given for certain actions to occur (e.g. certain uses of data).
+        Consent to access personal data has a specific meaning under the UK Data Protection Act. However, this is not the only type of consent to share data.
+
+    Controller
+        Data controller (DPA 2018): 'means a person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal data are, or are to be processed'
+        `ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf <https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf>`_
+

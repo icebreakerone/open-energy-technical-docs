@@ -24,7 +24,7 @@
 .. |EDBP| replace:: :term:`EDBP<Energy Data Best Practice>`
 .. |EDTF| replace:: :term:`EDTF<Energy Data Taskforce>`
 .. |EEBUS| replace:: :term:`EEBUS<EEBUS>`
-.. |ESC| replace:: :term:`ESC<Energy Systems Capatult.>`
+.. |ESC| replace:: :term:`ESC<Energy Systems Capatult>`
 .. |ESO| replace:: :term:`ESO<Electricity System Operator>`
 .. |EV| replace:: :term:`EV<Electric vehicle>`
 .. |EVSE| replace:: :term:`EVSE<Electric vehicle supply equipment>`
@@ -39,7 +39,7 @@
 .. |HH| replace:: :term:`HH<Half hourly meter>`
 .. |I&C| replace:: :term:`I&C<Industrial and commercial>`
 .. |ICO| replace:: :term:`ICO<Information Commissioner's Office>`
-.. |ICS| replace:: :term:`ICS<Industrial Computing System>`
+.. |ICS| replace:: :term:`ICS<Industrial Control System>`
 .. |ID| replace:: :term:`ID<Identification>`
 .. |iDNO| replace:: :term:`iDNO<Independent Distribution Network Operator>`
 .. |IoT| replace:: :term:`IoT<Internet of Things>`

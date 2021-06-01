@@ -1,8 +1,10 @@
 .. glossary::
 
     Centre for Digital Built Britain
-        *CDBB* - no definition
+        *CDBB* - The Centre for Digital Built Britain is a partnership between the Department of Business, Energy & Industrial Strategy and the University of Cambridge to understand how the construction and infrastructure sectors could use a digital approach to better design, build, operate, and integrate the built environment.
+        `www.cdbb.cam.ac.uk:  <https://www.cdbb.cam.ac.uk>`_/
 
-    Energy Systems Capatult.
-        *ESC* - no definition
+    Energy Systems Capatult
+        *ESC* - Energy Systems Catapult was set up to accelerate the transformation of the UK’s energy system and ensure UK businesses and consumers capture the opportunities of clean growth. The Catapult is an independent, not-for-profit centre of excellence that bridges the gap between industry, government, academia and research. We take a whole-systems view of the energy sector, helping us to identify and address innovation priorities and market barriers, in order to decarbonise the energy system at the lowest cost.
+        `es.catapult.org.uk:  <https://es.catapult.org.uk>`_/
 
