@@ -101,6 +101,10 @@
     Electric vehicle supply equipment
         *EVSE* - Another term for electric vehicle charging stations and related equipment
 
+    Financial Grade API
+        *FAPI* - The Financial Grade API extends |OIDC| and |Oauth2|, adding extra mitigations against an assortment of potential attacks.
+        `openid.net: fapi <https://openid.net/wg/fapi>`_/
+
     Geographical Information System
         *GIS* - Framework for capturing, recording and displaying spatial data.
 

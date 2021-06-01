@@ -28,6 +28,7 @@
 .. |ESO| replace:: :term:`ESO<Electricity System Operator>`
 .. |EV| replace:: :term:`EV<Electric vehicle>`
 .. |EVSE| replace:: :term:`EVSE<Electric vehicle supply equipment>`
+.. |FAPI| replace:: :term:`FAPI<Financial Grade API>`
 .. |FES| replace:: :term:`FES<Future Energy Scenarios>`
 .. |FIT| replace:: :term:`FIT<Feed-in tariff>`
 .. |GDN| replace:: :term:`GDN<Gas Distribution Network>`
@@ -62,6 +63,9 @@
 .. |NIC| replace:: :term:`NIC<National Infrastructure Commission>`
 .. |OAuth2| replace:: :term:`OAuth2<Open Authorization 2>`
 .. |ODI| replace:: :term:`ODI<Open Data Institute>`
+.. |OE-O| replace:: :term:`OE-O<Data sensitivity class - open>`
+.. |OE-SA| replace:: :term:`OE-SA<Data sensitivity class - shared (A)>`
+.. |OE-SB| replace:: :term:`OE-SB<Data sensitivity class - shared (B)>`
 .. |OE3| replace:: :term:`OE3<Open Energy Phase 3>`
 .. |OEGS| replace:: :term:`OEGS<Open Energy Governance Service>`
 .. |Ofgem| replace:: :term:`Ofgem<Office for Gas and Electricity Markets>`

@@ -11,8 +11,8 @@ Contents
     :maxdepth: 4
     :glob:
 
-    draft_data_provider_oe3_operational_guidelines_shared
     architecture
+    metadata
     glossary
 
 .. _IcebreakerOne: https://icebreakerone.org
