@@ -9,11 +9,13 @@
 .. |CHP| replace:: :term:`CHP<Combined Heat and Power>`
 .. |CIM| replace:: :term:`CIM<Common Information Model>`
 .. |CMA| replace:: :term:`CMA<Competition and Markets Authority>`
+.. |DC| replace:: :term:`DC<Data Consumer>`
 .. |DCC| replace:: :term:`DCC<Data and Communications Company>`
 .. |DER| replace:: :term:`DER<Distributed energy resources>`
 .. |DFES| replace:: :term:`DFES<Distribution Future Energy Scenarios>`
 .. |DGA| replace:: :term:`DGA<Data Governance Act>`
 .. |DNO| replace:: :term:`DNO<Distribution Network Operator>`
+.. |DP| replace:: :term:`DP<Data Provider>`
 .. |DS| replace:: :term:`DS<Data subject>`
 .. |DSO| replace:: :term:`DSO<Distribution System Operator>`
 .. |DSR| replace:: :term:`DSR<Demand-side response>`
@@ -43,6 +45,8 @@
 .. |IoT| replace:: :term:`IoT<Internet of Things>`
 .. |ISO| replace:: :term:`ISO<Independent System Operator>`
 .. |ISO 8601| replace:: :term:`ISO 8601<International Standards Organisation standard regarding date time data>`
+.. |JSON| replace:: :term:`JSON<Javascript Object Notation>`
+.. |JSON-LD| replace:: :term:`JSON-LD<JavaScript Object Notation for Linked Data>`
 .. |kgCO2e| replace:: :term:`kgCO2e<Kilograms of carbon dioxide equivalent (per unit of fuel)>`
 .. |kW| replace:: :term:`kW<Kilowatt>`
 .. |kWh| replace:: :term:`kWh<Kilowatt hour>`
@@ -76,6 +80,7 @@
 .. |SEG| replace:: :term:`SEG<Smart Export Guarantee>`
 .. |SG| replace:: :term:`SG<Steering Group>`
 .. |SMETS| replace:: :term:`SMETS<Smart Metering Equipment Technical Specifications>`
+.. |SP| replace:: :term:`SP<Service Provider>`
 .. |SSO| replace:: :term:`SSO<Single sign-on>`
 .. |TOU| replace:: :term:`TOU<Time of use>`
 .. |TPI| replace:: :term:`TPI<Third Party Intermediary>`
@@ -85,3 +90,4 @@
 .. |V2G| replace:: :term:`V2G<Vehicle to grid>`
 .. |VPP| replace:: :term:`VPP<Virtual power plant>`
 .. |XaaS| replace:: :term:`XaaS<X as as Service>`
+.. |YAML| replace:: :term:`YAML<YAML Ain't Markup Language>`

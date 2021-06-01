@@ -1,5 +1,13 @@
 .. glossary::
 
+    Regulated entity
+        An organisation or company subject to regulation by Ofgem (e.g. a licensed company)
+        Not all organisations/companies operating in the energy sector are regulated. A significant proportion of data/digitally-focussed new entrants operate in an unregulated space vis a vis Ofgem (though they may interact with other regulators).
+
+    RIIO Framework
+        Ofgem's framework for energy network regulation. Also called 'price controls'. Negotiated on a 5 year planning and investment cycle.
+        RIIO-T2 (all transmission) and RIIO-GD2 (gas distribution) period: 2021-2026. RIIO-ED2 (electricity distribution) period: 2023-2028.
+
     Competition and Markets Authority
         *CMA* - Competition policy and regulation, includes digital markets
 

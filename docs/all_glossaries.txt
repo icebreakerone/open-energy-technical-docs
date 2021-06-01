@@ -3,6 +3,11 @@ Commercial
 
 .. include:: glossaries/Commercial_glossary.txt
 
+Data
+----
+
+.. include:: glossaries/Data_glossary.txt
+
 Legal
 -----
 
@@ -12,6 +17,11 @@ Open Energy ecosystem
 ---------------------
 
 .. include:: glossaries/Open Energy ecosystem_glossary.txt
+
+Operational
+-----------
+
+.. include:: glossaries/Operational_glossary.txt
 
 Other
 -----
@@ -52,6 +62,11 @@ Technology
 ----------
 
 .. include:: glossaries/Technology_glossary.txt
+
+Term - multiple uses
+--------------------
+
+.. include:: glossaries/Term - multiple uses_glossary.txt
 
 Unit of measurement
 -------------------

@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 import requests
 
 # Default document ID, points to the v0.2 OE3 Acronyms and terms sheet from our google drive.
-GLOSSARY_ID = '1bFH57PWT6da4cqJyWn9JWIcEjGqrAupjjj3Ib9-66_c'
+GLOSSARY_ID = '1iCZOLBREnliGQfoj2hGbObc7DKiq8le6t7oCNfbc7ko'
 
 
 @dataclass(frozen=True)
@@ -71,7 +71,7 @@ def parse_glossary_sheet(sheet_id=GLOSSARY_ID, gid=0):
             row[1] = row[0].split(',')[0]
         if not row[3]:
             row[3] = 'no definition'
-        row[3] = f'*{row[0]}* - {row[3]}'.strip()
+        row[3] = f'*{row[0]}* - {row[3]}'.strip() if row[0] else f'{row[3]}'.strip()
         if len(row) == 4:
             return row + ['']
         else:
@@ -109,7 +109,8 @@ def substitutions(entries: List[GlossaryEntry]) -> str:
     s = ''
     for entry in entries:
         for acronym in entry.acronym.split(','):
-            s += f'.. |{acronym}| replace:: :term:`{acronym}<{entry.expansion}>`\n'
+            if acronym:
+                s += f'.. |{acronym}| replace:: :term:`{acronym}<{entry.expansion}>`\n'
     return s
 
 

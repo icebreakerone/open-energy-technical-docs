@@ -1,5 +1,23 @@
 .. glossary::
 
+    Heat as a service
+        A business model providing heat and cooling services based on units or measurements of 'comfort' or 'warm/cold hours' rather than traditional measures of energy supply.
+
+    Infrastructure as a service
+        An ICT infrastructure development, licensing and delivery model than is often subscription-based.
+        Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally.
+
+    Mobility as a service
+        A business model providing mobility services based on vehicle access rather than traditional models of vehicle ownership.
+
+    Platform as a service
+        A platform development, licensing and delivery model than is often subscription-based.
+        Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally.
+
+    Software as a service
+        A software development, licensing and delivery model than is often subscription-based.
+        Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally.
+
     Industrial and commercial
         *I&C* - Accronym commonly used in the energy sector to refer to non-domestic actors - particularly heavy industry and other high-consumption actors.
 

@@ -1,5 +1,37 @@
 .. glossary::
 
+    Closed data
+        Data that either cannot be shared or requires a per-use, custom licence negotiated on a case-by-case basis.
+        IB1 definition - `icebreakerone.org: understanding-data-sharing <https://icebreakerone.org/understanding-data-sharing>`_/
+
+    Codes
+        A form of industry self-governance that establishes the terms under which industry participants can access the electricity and gas networks, and related assets or infrastructure.
+        There are 11 main electricity codes and 5 gas codes. Each is managed by a 'code administrator' (e.g. Elexon, Gemserv, DCode etc.)
+
+    Data Custodian
+        MED Data Best Practice definition: An organisation or individual that holds data which it has a legal right to process and publish.
+        Industry feedback has suggested that the following element should be added to the definition: In some cases, a Data Custodian may also refer to an organisation or individual that holds data which it has a legal right to process (ie use) but not to publish. For example, suppliers or networks may hold customer smart meter data which they are not permitted to publish without prior consent.
+
+    Horizontal integration
+        When a company operates across different energy vectors (e.g. supplier electricity and gas)
+
+    Licence
+        A set of requirements which companies must comply with in order to perform certain 'licensable activities' in the energy sector.
+        5 standard licenses: generation, transmission, interconnection, distribution, supply. Non-standard licesnes are also issued for a small range of bodies with specific duties - e.g. smart metering infrastructure (Smart DCC).
+
+    Open data
+        Data that anyone can use, for any purpose, for free and is available under an Open data licence.
+        IB1 definition - `icebreakerone.org: understanding-data-sharing <https://icebreakerone.org/understanding-data-sharing>`_/
+
+    Presumed Open
+        A principle developed by the EDTF (2019). Presumed open applies to data relating to common assets, stating that this should be open unless there are legitimate issues which would prevent this. Legitimate issues include Privacy, Security, Negative Consumer Impact, Commercial and Legislation and Regulation. Presumed Open data should go through a robust Open Data Triage process, conducted by the data custodian.
+
+    Shared data
+        Data that is neither open nor closed, but can be shared under specific terms and conditions.
+
+    Vertical integration
+        When a company operates across several different parts of the energy supply chain (e.g. generation, distribution and supply)
+
     Department for Business, Energy and Industrial Strategy
         *BEIS* - Government department, also responsible for the Smart Data programme of work. OE3 co-funder.
 

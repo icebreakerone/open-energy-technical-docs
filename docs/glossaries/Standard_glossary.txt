@@ -1,5 +1,15 @@
 .. glossary::
 
+    Open ADR
+        Open Automated Demand-Side Response. A research and standards-development programme, led by organisations in North America, aiming to standardise automated signals for power-consuming devices to lower consumption or switch off completely during periods of high demand.
+
+    Open Charge Alliance
+        An international consortium of public and private electric vehicle infrastructure organisations that have come together to promote open standards through the adoption of the Open Charge Point Protocol and the Open Smart Charging Protocol.
+        `www.openchargealliance.org:  <https://www.openchargealliance.org>`_/
+
+    Open Standard
+        Open standards give users permission to copy, distribute and use technology freely or at low cost.
+
     Common Information Model
         *CIM* - An open, standardised method of representing computing devices and energy network asset types, and the relationships between them.
         `www.theade.co.uk: what-is-combined-heat-and-power <https://www.theade.co.uk/resources/what-is-combined-heat-and-power>`_

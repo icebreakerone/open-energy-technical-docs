@@ -1,5 +1,12 @@
 .. glossary::
 
+    Liability chain
+        Definitions of the roles and responsibilities of each player in a data flow, including who is liable for accident or misuse at each stage in the data flow.
+
+    Processor
+        Data processor (DPA 2018): 'in relation to personal data, means any person (other than an employee of the data controller) who processes the data on behalf of the data controller.'
+        `ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf <https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf>`_
+
     Data subject
         *DS* - As defined by GDPR
         `assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf>`_
