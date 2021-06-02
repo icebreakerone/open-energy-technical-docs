@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Open Energy Technical Documentation</ShortName>
+  <Description>Search Open Energy Technical Documentation  documentation</Description>
+  <InputEncoding>utf-8</InputEncoding>
+  <Url type="text/html" method="get"
+       template="https://icebreakerone.github.io/open-energy-technical-docs/search.html?q={searchTerms}"/>
+  <LongName>Open Energy Technical Documentation  documentation</LongName>
+  <Image height="16" width="16" type="image/x-icon">https://icebreakerone.github.io/open-energy-technical-docs/_static/favicon.png</Image>
+  
+</OpenSearchDescription>

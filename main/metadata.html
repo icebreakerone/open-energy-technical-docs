@@ -1,0 +1,639 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. Data Set Metadata &mdash; Open Energy Technical Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Open Energy Technical Documentation  documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Open Energy Glossary" href="glossary.html" />
+    <link rel="prev" title="1. Open Energy Architecture" href="architecture.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0C3945" >
+          
+
+
+    <a href="index.html" class="icon icon-home"> Open Energy Technical Documentation
+        
+
+        
+        
+        <img src="_static/logo.png" class="logo" alt="Logo"/>
+        
+    </a>
+
+    
+
+    
+    <div class="version">
+        main
+    </div>
+    
+
+    
+
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+    
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">1. Open Energy Architecture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Data Set Metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#metadata-file-structure">2.1. Metadata File Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#content-block">2.2. Content Block</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-metadata">2.2.1. Additional metadata</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#access-block">2.3. Access Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transport-block">2.4. Transport Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#representation-block">2.5. Representation Block</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#text-csv">2.5.1. text/csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-types">2.5.2. Other types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#full-example">2.6. Full Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">3. Open Energy Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Open Energy Technical Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>Data Set Metadata</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the a development version of the documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
+
+
+
+  <div class="section" id="data-set-metadata">
+<h1><span class="section-number">2. </span>Data Set Metadata<a class="headerlink" href="#data-set-metadata" title="Permalink to this headline">¶</a></h1>
+<p>Each <a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> (<a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">DP</span></a>) maintains a set of one or more metadata files, each of which can describe one or more
+distinct data sets. These descriptions serve several purposes:</p>
+<ol class="arabic simple">
+<li><p>They drive discovery descriptions are ingested into our search system and made available to a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>
+searching for particular kinds of data.</p></li>
+<li><p>They inform consumption of that data, providing information on:</p>
+<ol class="arabic simple">
+<li><p>The <a class="reference internal" href="glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> required to access the data set</p></li>
+<li><p>Any access constraints which may need to be satisfied</p></li>
+<li><p>Licenses for any accessed data</p></li>
+<li><p>Representation and internal semantics of expressions of the data</p></li>
+</ol>
+</li>
+</ol>
+<div class="section" id="metadata-file-structure">
+<h2><span class="section-number">2.1. </span>Metadata File Structure<a class="headerlink" href="#metadata-file-structure" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples below use <a class="reference internal" href="glossary.html#term-YAML-Ain-t-Markup-Language"><span class="xref std std-term">YAML</span></a> format for compactness and increased readability. Data providers may present this
+information either in <a class="reference internal" href="glossary.html#term-YAML-Ain-t-Markup-Language"><span class="xref std std-term">YAML</span></a> or in <a class="reference internal" href="glossary.html#term-Javascript-Object-Notation"><span class="xref std std-term">JSON</span></a> form.</p>
+</div>
+<p>The overall structure of the metadata file is a list of objects, each of which has the following structure:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">content</span><span class="p">:</span>
+    <span class="c1"># Discovery information</span>
+  <span class="nt">access</span><span class="p">:</span>
+    <span class="c1"># Access control and licensing information</span>
+  <span class="nt">transport</span><span class="p">:</span>
+    <span class="c1"># API information</span>
+  <span class="nt">representation</span><span class="p">:</span>
+    <span class="c1"># Data format information</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="content-block">
+<h2><span class="section-number">2.2. </span>Content Block<a class="headerlink" href="#content-block" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">content</span></code> key contains a block of <a class="reference internal" href="glossary.html#term-JavaScript-Object-Notation-for-Linked-Data"><span class="xref std std-term">JSON-LD</span></a> compatible information describing the conceptual content of the dataset.
+A simple example is shown below:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">content</span><span class="p">:</span>
+    <span class="s">&quot;@type&quot;</span><span class="p p-Indicator">:</span> <span class="s">&quot;dcat:Dataset&quot;</span>
+    <span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span>
+       <span class="nt">dcat</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.w3.org/ns/dcat#</span>
+       <span class="nt">dct</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://purl.org/dc/terms/</span>
+       <span class="nt">oe</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://energydata.org.uk/oe/terms/</span>
+    <span class="l l-Scalar l-Scalar-Plain">dct:title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">My amazing data set</span>
+    <span class="l l-Scalar l-Scalar-Plain">dct:description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is a free text description of the data set</span>
+    <span class="l l-Scalar l-Scalar-Plain">dcat:version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.1.2</span>
+    <span class="l l-Scalar l-Scalar-Plain">dcat:versionNotes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is a note on this particular version of the dataset</span>
+    <span class="l l-Scalar l-Scalar-Plain">oe:sensitivityClass</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">OE-SA</span>
+    <span class="l l-Scalar l-Scalar-Plain">oe:dataSetStableIdentifier</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">myData</span>
+</pre></div>
+</div>
+<p>These are the minimum properties every data set must define, they include terms from the
+<a class="reference external" href="https://dublincore.org/">Dublic Core</a> (<code class="docutils literal notranslate"><span class="pre">dct</span></code>) and <a class="reference external" href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog</a> (<code class="docutils literal notranslate"><span class="pre">dcat</span></code>)
+vocabularies, as well as from the Open Energy core ontology. Prefixes are defined in the <a class="reference internal" href="glossary.html#term-JavaScript-Object-Notation-for-Linked-Data"><span class="xref std std-term">JSON-LD</span></a> <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> object
+as in the example above.</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">Mandatory data content metadata fields</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dct:title</a></p></td>
+<td><p>Short title for this data set</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dct:description</a></p></td>
+<td><p>Longer form description of this data set</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a></p></td>
+<td><p>Version number of the data set, this should preferably follow <a class="reference external" href="https://semver.org/">semantic versioning</a> if
+possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in
+representation, rather than for changes in the underlying data. For example, this should not be used to differentiate
+between data sets from different years, rather it should be used to indicate whether a potential data consumer
+might need to alter how it processes any returned data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a></p></td>
+<td><p>Notes used to explain any changes to this version</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oe:sensitivityClass</span></code></p></td>
+<td><p>The <a class="reference internal" href="glossary.html#term-Data-sensitivity-class"><span class="xref std std-term">data sensitivity class</span></a> of this data set. In the current Open Energy system this should always be one of
+<a class="reference internal" href="glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a>, <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a>, or <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a>, no other classes are permitted. The value of this property also determines the
+level of API security imposed, with <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a> data sets being open data with no additional security, and the two
+shared data classes mandating <a class="reference internal" href="glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> security using the Open Energy trust services.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">oe:dataSetStableIdentifier</span></code></p></td>
+<td><p>An identifier, unique to this <a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, which will not be changed, and which will be used along with
+the data provider’s own ID to create a unique identifier for this data set within the Open Energy search system.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="additional-metadata">
+<h3><span class="section-number">2.2.1. </span>Additional metadata<a class="headerlink" href="#additional-metadata" title="Permalink to this headline">¶</a></h3>
+<p>The information above is the minimum needed to ensure that a data set is visible in the Open Energy search system. There
+are, however, other properties of a data set which may be useful to potential data consumers. Where such information can
+be provided, it should be provided in as standard a form as possible - in practice this translates to making use of
+existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only
+using internal or custom representation when absolutely necessary.</p>
+<p>Of particular note, and something we would like to ultimately expose in our search interface, is information about the
+geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been
+handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out
+<a class="reference external" href="https://www.w3.org/TR/vocab-dcat-2/#time-and-space">here</a>.</p>
+</div>
+</div>
+<div class="section" id="access-block">
+<h2><span class="section-number">2.3. </span>Access Block<a class="headerlink" href="#access-block" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be
+satisfied before a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> can acquire these data.</p>
+<p>Each item within this section contains:</p>
+<ol class="arabic simple">
+<li><p>A statement describing a set of conditions which must be satisfied to grant access. If this block is empty, access
+is granted by default (subject to authentication if the data set is in class <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a> or <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a>)</p></li>
+<li><p>A boolean property indicating whether the access conditions in [1] are sufficient (<code class="docutils literal notranslate"><span class="pre">true</span></code>), or simply indicative
+(<code class="docutils literal notranslate"><span class="pre">false</span></code>). In the former case, a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> which satisfies all the conditions <em>will</em> be granted access,
+in the latter they <em>may</em> be granted access, but there may be additional requirements not fully described here</p></li>
+<li><p>A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to
+commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
+activities</p></li>
+<li><p>A set of capabilities making up a license grant for data retrieved under these access conditions.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is the subject of a current consultation, more information will be added to this document after mid-June. The
+example below is not definitive!</p>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">access</span><span class="p">:</span>
+  <span class="c1"># Access constraint to licensing predicates</span>
+  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified and oe:last_update within 60 days grants oe:use</span>
+    <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
+    <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
+  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate</span>
+    <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
+    <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="transport-block">
+<h2><span class="section-number">2.4. </span>Transport Block<a class="headerlink" href="#transport-block" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band
+transports with an initial HTTP negotiation process. It contains at least a single <code class="docutils literal notranslate"><span class="pre">http</span></code> key, the value of which
+must be valid <a class="reference external" href="https://swagger.io/specification/">OpenAPI</a></p>
+<p>For example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">transport</span><span class="p">:</span>
+  <span class="nt">http</span><span class="p">:</span>
+    <span class="c1"># This block is mandatory, and contains the OpenAPI spec for the secured or open</span>
+    <span class="c1"># HTTP endpoints (depending on data class)</span>
+    <span class="nt">openapi</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3.0.0</span>
+    <span class="nt">info</span><span class="p">:</span>
+      <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Sample API</span>
+      <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CSV format data</span>
+      <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.1.0</span>
+    <span class="nt">servers</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://data-provider-example.com</span>
+        <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Describe this particular server if needed</span>
+    <span class="nt">paths</span><span class="p">:</span>
+      <span class="s">&quot;/data&quot;</span><span class="p p-Indicator">:</span>
+        <span class="nt">get</span><span class="p">:</span>
+          <span class="nt">summary</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Returns a CSV containing all the data</span>
+          <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">If we had any more to describe, we&#39;d do it here</span>
+          <span class="nt">responses</span><span class="p">:</span>
+            <span class="s">&#39;200&#39;</span><span class="p p-Indicator">:</span>
+              <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CSV data stream</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because API security is defined in relation to the data sensitivity class of the data set, it is not necessary to
+define the security of any presented API in this section. Data sets in class <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a> must expose an API with no extra
+security measures, and those in <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a> and <a class="reference internal" href="glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> must be secured by <a class="reference internal" href="glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> using the Open Energy trust services.</p>
+</div>
+</div>
+<div class="section" id="representation-block">
+<h2><span class="section-number">2.5. </span>Representation Block<a class="headerlink" href="#representation-block" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the format of any data received by a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> from this data set. Open Energy does
+not mandate particular formats, so this section is guidance rather than specification.</p>
+<p>The only required element in this section is a key <code class="docutils literal notranslate"><span class="pre">mime</span></code> which should contain the
+<a class="reference external" href="https://en.wikipedia.org/wiki/Media_type">media type</a> of the returned data. At a bare minimum this allows a client to
+load data into some kind of tooling. Depending on this value, other objects may be present.</p>
+<div class="section" id="text-csv">
+<h3><span class="section-number">2.5.1. </span>text/csv<a class="headerlink" href="#text-csv" title="Permalink to this headline">¶</a></h3>
+<p>This type indicates that data is presented in CSV format. In this case, an optional key <code class="docutils literal notranslate"><span class="pre">csvw</span></code> may be defined, and
+should contain valid <a class="reference internal" href="glossary.html#term-JavaScript-Object-Notation-for-Linked-Data"><span class="xref std std-term">JSON-LD</span></a> following the <a class="reference external" href="https://www.w3.org/TR/tabular-data-primer/">CSV for the Web</a> guidelines:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">representation</span><span class="p">:</span>
+  <span class="nt">mime</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">text/csv</span>
+  <span class="nt">csvw</span><span class="p">:</span>
+    <span class="c1"># This is only applicable if the mime type is text/csv</span>
+    <span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.w3.org/ns/csvw</span>
+    <span class="nt">tableSchema</span><span class="p">:</span>
+      <span class="nt">columns</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">country</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">country group</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (en)</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (fr)</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (de)</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latitude</span>
+        <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">longitude</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-types">
+<h3><span class="section-number">2.5.2. </span>Other types<a class="headerlink" href="#other-types" title="Permalink to this headline">¶</a></h3>
+<p>This is currently open for consultation, we would like to be able to guide data providers towards particular
+representation types for particular kinds of information, and make use of any existing ontologies or standards such as
+the <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)">Common Information Model</a> where such
+standards will aid interoperability between Open Energy participants and the wider community.</p>
+</div>
+</div>
+<div class="section" id="full-example">
+<h2><span class="section-number">2.6. </span>Full Example<a class="headerlink" href="#full-example" title="Permalink to this headline">¶</a></h2>
+<p>Putting together all the fragments from previous sections produces the following - this represents a single data set,
+in the full metadata file this would be contained within a list. YAML form:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">content</span><span class="p">:</span>
+    <span class="s">&quot;@type&quot;</span><span class="p p-Indicator">:</span> <span class="s">&quot;dcat:Dataset&quot;</span>
+    <span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span>
+      <span class="nt">dcat</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.w3.org/ns/dcat#</span>
+      <span class="nt">dct</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://purl.org/dc/terms/</span>
+      <span class="nt">oe</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://energydata.org.uk/oe/terms/</span>
+    <span class="l l-Scalar l-Scalar-Plain">dct:title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">My amazing data set</span>
+    <span class="l l-Scalar l-Scalar-Plain">dct:description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is a free text description of the data set</span>
+    <span class="l l-Scalar l-Scalar-Plain">dcat:version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0.1.2</span>
+    <span class="l l-Scalar l-Scalar-Plain">dcat:versionNotes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is a note on this particular version of the dataset</span>
+    <span class="l l-Scalar l-Scalar-Plain">oe:sensitivityClass</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">OE-SA</span>
+    <span class="l l-Scalar l-Scalar-Plain">oe:dataSetStableIdentifier</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">myData</span>
+  <span class="nt">access</span><span class="p">:</span>
+    <span class="c1"># Access constraint to licensing predicates</span>
+    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified and oe:last_update within 60 days grants oe:use</span>
+      <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+      <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
+      <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
+    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate</span>
+      <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+      <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
+      <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
+  <span class="nt">transport</span><span class="p">:</span>
+    <span class="nt">http</span><span class="p">:</span>
+      <span class="c1"># This block is mandatory, and contains the OpenAPI spec for the secured or open</span>
+      <span class="c1"># HTTP endpoints (depending on data class)</span>
+      <span class="nt">openapi</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3.0.0</span>
+      <span class="nt">info</span><span class="p">:</span>
+        <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Sample API</span>
+        <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CSV format data</span>
+        <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.1.0</span>
+      <span class="nt">servers</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://data-provider-example.com</span>
+          <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Describe this particular server if needed</span>
+      <span class="nt">paths</span><span class="p">:</span>
+        <span class="s">&quot;/data&quot;</span><span class="p p-Indicator">:</span>
+          <span class="nt">get</span><span class="p">:</span>
+            <span class="nt">summary</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Returns a CSV containing all the data</span>
+            <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">If we had any more to describe, we&#39;d do it here</span>
+          <span class="nt">responses</span><span class="p">:</span>
+            <span class="s">&#39;200&#39;</span><span class="p p-Indicator">:</span>
+              <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CSV data stream</span>
+  <span class="nt">representation</span><span class="p">:</span>
+    <span class="nt">mime</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">text/csv</span>
+    <span class="nt">csvw</span><span class="p">:</span>
+      <span class="c1"># This is only applicable if the mime type is text/csv</span>
+      <span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.w3.org/ns/csvw</span>
+      <span class="nt">tableSchema</span><span class="p">:</span>
+        <span class="nt">columns</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">country</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">country group</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (en)</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (fr)</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">name (de)</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latitude</span>
+          <span class="p p-Indicator">-</span> <span class="nt">titles</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">longitude</span>
+</pre></div>
+</div>
+<p>Or, in JSON form:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;dcat:Dataset&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;dcat&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/ns/dcat#&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dct&quot;</span><span class="p">:</span> <span class="s2">&quot;http://purl.org/dc/terms/&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;oe&quot;</span><span class="p">:</span> <span class="s2">&quot;http://energydata.org.uk/oe/terms/&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;dct:title&quot;</span><span class="p">:</span> <span class="s2">&quot;My amazing data set&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dct:description&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a free text description of the data set&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dcat:version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.2&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dcat:versionNotes&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a note on this particular version of the dataset&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;oe:sensitivityClass&quot;</span><span class="p">:</span> <span class="s2">&quot;OE-SA&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;oe:dataSetStableIdentifier&quot;</span><span class="p">:</span> <span class="s2">&quot;myData&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;access&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;oe:verified and oe:last_update within 60 days grants oe:use&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;sufficient&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;appliesFrom&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-04-22T00:00:00.000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-04-22T00:00:00.000Z&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;sufficient&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;appliesFrom&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-04-22T00:00:00.000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-04-22T00:00:00.000Z&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;transport&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;http&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;openapi&quot;</span><span class="p">:</span> <span class="s2">&quot;3.0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;info&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample API&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV format data&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.0&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;servers&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://data-provider-example.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Describe this particular server if needed&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;paths&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;/data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;get&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;summary&quot;</span><span class="p">:</span> <span class="s2">&quot;Returns a CSV containing all the data&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;If we had any more to describe, we&#39;d do it here&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;responses&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;200&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV data stream&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;representation&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;mime&quot;</span><span class="p">:</span> <span class="s2">&quot;text/csv&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;csvw&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/ns/csvw&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tableSchema&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;columns&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;country&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;country group&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;name (en)&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;name (fr)&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;name (de)&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;latitude&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;titles&quot;</span><span class="p">:</span> <span class="s2">&quot;longitude&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="glossary.html" class="btn btn-neutral float-right" title="3. Open Energy Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="architecture.html" class="btn btn-neutral float-left" title="1. Open Energy Architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+<p>
+    &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
+    <span class="lastupdated">
+        Last updated on Jun 02, 2021.
+      </span>
+
+</p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    v: main
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Branches</dt>
+      <dd><a href="metadata.html">main</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

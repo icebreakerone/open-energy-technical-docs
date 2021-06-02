@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Data Provider Operational Guidelines &mdash; Open Energy Technical Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Open Energy Technical Documentation  documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0C3945" >
+          
+
+
+    <a href="index.html" class="icon icon-home"> Open Energy Technical Documentation
+        
+
+        
+        
+        <img src="_static/logo.png" class="logo" alt="Logo"/>
+        
+    </a>
+
+    
+
+    
+    <div class="version">
+        main
+    </div>
+    
+
+    
+
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+    
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">1. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">2. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">3. Open Energy Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Open Energy Technical Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Data Provider Operational Guidelines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the a development version of the documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
+
+
+
+  <div class="section" id="data-provider-operational-guidelines">
+<h1>Data Provider Operational Guidelines<a class="headerlink" href="#data-provider-operational-guidelines" title="Permalink to this headline">¶</a></h1>
+<p><em>Primary audience: Data provider technical operations teams</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Derived somewhat from <a class="reference external" href="https://docs.google.com/document/d/1g1-qJN92UwnaxgaS8yu_KBvoFfHDVH5kIYH_lTM9lec/edit?userstoinvite=timjohnson365&#64;googlemail.com&amp;ts=5f95f246&amp;actionButton=1#">OB ops guidelines</a> but very little of the Open Banking guidelines apply to our use cases so it’s only very loosely based on the original document.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”,
+“SHOULD NOT”, “RECOMMENDED”,  “MAY”, and “OPTIONAL” in this document are to be
+interpreted as described in <span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc2119.html"><strong>RFC 2119</strong></a></p>
+</div>
+<div class="section" id="data-provider-role-and-responsibilities">
+<h2>Data Provider Role and Responsibilities<a class="headerlink" href="#data-provider-role-and-responsibilities" title="Permalink to this headline">¶</a></h2>
+<p>Data Providers (DPs) are Open Energy members which make data sets available to:</p>
+<ul class="simple">
+<li><p>Service Providers (SPs) within the Open Energy ecosystem</p>
+<ul>
+<li><p>Applies to shared data sets</p></li>
+<li><p>Data APIs secured using Financial-grade API security (FAPI)</p></li>
+<li><p>DP is responsible for access control determination</p></li>
+<li><p>DP is responsible for licensing of any data returned</p></li>
+</ul>
+</li>
+<li><p>Any third party, in the case of open data</p>
+<ul>
+<li><p>Open data sets are made available through publicly accessible APIs</p></li>
+<li><p>Data are made available under an appropriate open license agreement</p></li>
+</ul>
+</li>
+<li><p>In this context, Data APIs can be anything from a simple link to a CSV or other file (for open data) to a complex query system returning custom output on demand.</p></li>
+</ul>
+<p>To support this role, DPs have certain responsibilities:</p>
+<div class="section" id="responsibility-data-classification">
+<h3>Responsibility - Data classification<a class="headerlink" href="#responsibility-data-classification" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for determining whether any given data set falls into the category of open data, shared data, or one of the data classes which must not be shared through the Open Energy ecosystem [see data sensitivity classification document]</p>
+</div>
+<div class="section" id="responsibility-data-provision">
+<h3>Responsibility - Data provision<a class="headerlink" href="#responsibility-data-provision" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for providing a data API for each data set, and for configuring and securing each API in accordance with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the DP on a per-data-set basis)</p>
+<ul class="simple">
+<li><p>Open data is made available with no authentication or authorization requirements</p></li>
+<li><p>Shared data is made available through a FAPI compliant resource server connected to the OEGPs authorization service</p></li>
+</ul>
+</div>
+<div class="section" id="responsibility-data-integrity-and-correctness">
+<h3>Responsibility - Data integrity and correctness<a class="headerlink" href="#responsibility-data-integrity-and-correctness" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for the correctness of data returned by their published data APIs. The OEGP will provide a mechanism by which SPs can report any data quality issues, and will convey any such reports to a nominated contact within the DP.</p>
+</div>
+<div class="section" id="responsibility-metadata-provision">
+<h3>Responsibility - Metadata provision<a class="headerlink" href="#responsibility-metadata-provision" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each data set within the Open Energy Governance Platform (OEGP) Registry.</p>
+<p>Metadata for a data set include, but are not limited to:</p>
+<ul class="simple">
+<li><p>The kinds of data held within the data set</p>
+<ul>
+<li><p>Varies from a high level description, down to semantics and typing for individual fields within data sets.</p></li>
+</ul>
+</li>
+<li><p>The means to query this data</p></li>
+<li><p>Any access or licensing constraints</p>
+<ul>
+<li><p>See discussion and proposal <a class="reference external" href="https://docs.google.com/document/d/1IE3nxELcVnQMiNmOvCL5geS_kFHAd7QE2jELjeqc5PI/edit?usp=sharing">here</a></p></li>
+</ul>
+</li>
+</ul>
+<p>The DP is responsible for the accuracy and completeness of this metadata.</p>
+<p>Consider whether time-based metadata / temporal “status” of data should be tied to the minimum standards for Data Providers to adhere to.</p>
+</div>
+<div class="section" id="responsibility-api-availability">
+<h3>Responsibility - API availability<a class="headerlink" href="#responsibility-api-availability" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for availability of their published data APIs. Availability will be monitored automatically by the OEGP, availability information will form part of the metadata for each data set record in the OEGP Registry.</p>
+<p>The OEGP will provide a mechanism for DPs to announce scheduled downtime when planned, and to report unscheduled downtime when necessary.</p>
+</div>
+<div class="section" id="responsibility-api-stability-and-change-management">
+<h3>Responsibility - API stability and change management<a class="headerlink" href="#responsibility-api-stability-and-change-management" title="Permalink to this headline">¶</a></h3>
+<p>DPs are responsible for managing any change to the data APIs such that disruption to SPs is minimised. This is handled through:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://semver.org/">Semantic versioning</a> of all API methods</p></li>
+<li><p>Publication of anticipated changes and retirement of API versions through the OEGP</p></li>
+<li><p>Changeover periods where new and prior API versions are run in parallel</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="data-api-requirements">
+<h2>Data API Requirements<a class="headerlink" href="#data-api-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Unlike open banking, open energy does not mandate particular APIs for data provision - it is expected that there will be a variety of mechanisms to expose data, with varying inputs (from a single data set ID to a complex query object) and varying kinds of output dependent on the information exposed.</p>
+<p>With that said, there are certain properties that all data APIs must satisfy to interoperate successfully with other parties within the open energy ecosystem.</p>
+<p>In this context, a data API is a set of HTTP locations and methods below a root URL, we will use <a class="reference external" href="https://example.com/data/">https://example.com/data/</a> as the root.</p>
+<p>We refer to endpoints used to retrieve energy data as <strong>data endpoints</strong>, and others as <strong>infrastructure endpoints</strong>.</p>
+<div class="section" id="date-and-time-formats">
+<h3>Date and time formats<a class="headerlink" href="#date-and-time-formats" title="Permalink to this headline">¶</a></h3>
+<p>Whenever date or time quantities are accepted or returned from a data API, these values MUST conform to <a class="reference external" href="https://tools.ietf.org/html/rfc3339">RFC 3339</a>. This is referenced elsewhere in this document as <strong>date/time</strong></p>
+</div>
+<div class="section" id="endpoint-security">
+<h3>Endpoint security<a class="headerlink" href="#endpoint-security" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="open-data-endpoints">
+<h4>Open data endpoints<a class="headerlink" href="#open-data-endpoints" title="Permalink to this headline">¶</a></h4>
+<p>Data endpoints which provide access to open data MUST NOT require any form of authentication prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.</p>
+</div>
+<div class="section" id="shared-data-endpoints">
+<h4>Shared data endpoints<a class="headerlink" href="#shared-data-endpoints" title="Permalink to this headline">¶</a></h4>
+<p>Data endpoints which provide access to shared data MUST implement the resource server part of the FAPI specification, and authorize against the OEGP authorization service.</p>
+<p>Protected data endpoints MAY use the token introspection mechanism provided by FAPI to gather additional information about the client making the request prior to any access decision.</p>
+</div>
+</div>
+<div class="section" id="heartbeat-and-monitoring-endpoint">
+<h3>Heartbeat and monitoring endpoint<a class="headerlink" href="#heartbeat-and-monitoring-endpoint" title="Permalink to this headline">¶</a></h3>
+<p>All data APIs MUST include a FAPI protected heartbeat infrastructure endpoint. This serves two purposes:</p>
+<ul class="simple">
+<li><p>It allows the OEGP to monitor the liveness of the data API</p></li>
+<li><p>It provides some level of verification that the resource server has been correctly configured</p></li>
+</ul>
+<p>The heartbeat endpoint is located at <a class="reference external" href="https://example.com/data/heartbeat">https://example.com/data/heartbeat</a> and MUST respond to GET requests from the OEGP monitoring system with a 200 status code.</p>
+<p>If the heartbeat response contains a body, the body will be interpreted by the OEGP monitoring system as a JSON dictionary containing statistics for the period between the most recent two successful calls to the heartbeat endpoint (including the call to which this is a response). This response is RECOMMENDED as it provides oversight of API usage to the OEGP.</p>
+<p>Legal keys, and the semantics of their associated values, are as follows:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 97%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>per</p></td>
+<td><p><strong>date/time</strong> of the end of the period for which statistics are reported,
+this will typically be the date and time of the heartbeat request</p></td>
+</tr>
+<tr class="row-even"><td><p>api
+_ca</p></td>
+<td><p><strong>integer</strong> number of requests to non-heartbeat endpoints within this data API which resulted in a response of type <strong>CODE</strong>. A distinct key:value
+pair is sent in the response for each distinct HTTP status code returned.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="self-documenting">
+<h3>Self documenting<a class="headerlink" href="#self-documenting" title="Permalink to this headline">¶</a></h3>
+<p>All data APIs MUST include an unsecured infrastructure endpoint at <a class="reference external" href="https://example.com/data/api">https://example.com/data/api</a> which responds to GET requests with some kind of human readable API documentation, or a redirection to this documentation held elsewhere.</p>
+</div>
+<div class="section" id="versioning">
+<h3>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h3>
+<p>All data APIs MUST include a version number in the path of each data endpoint. This version SHOULD use <a class="reference external" href="https://semver.org/">semantic versioning</a> to differentiate between breaking and backwards compatible changes.</p>
+<div class="section" id="version-infrastructure-endpoint">
+<h4>Version infrastructure endpoint<a class="headerlink" href="#version-infrastructure-endpoint" title="Permalink to this headline">¶</a></h4>
+<p>A data API making use of semantic versioning SHOULD expose an unprotected infrastructure endpoint at <a class="reference external" href="https://example.com/data/versions">https://example.com/data/versions</a> which responds to GET requests with the following JSON structure:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;semantic_version&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;versions&quot;</span> <span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;v1.0&quot;</span><span class="p">,</span> <span class="s2">&quot;v1.1&quot;</span><span class="p">,</span> <span class="s2">&quot;v2.0&quot;</span> <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The intent is to allow clients to dynamically call compatible versions of APIs as and when patch or back-compatible changes are made by the data provider.</p>
+<p><em>Example:</em></p>
+<p>Version 1.0 of a query API might be available at <code class="docutils literal notranslate"><span class="pre">https://example.com/data/v1.0.0/solarpv</span></code>, the data provider creates and deploys version <code class="docutils literal notranslate"><span class="pre">1.0.1</span></code> to fix a minor performance issue, this is deployed at <code class="docutils literal notranslate"><span class="pre">https://example.com/data/v1.0.1/solarpv</span></code>.</p>
+<p>If the data API uses semantic versioning and is providing the version infrastructure endpoint, there is no need to run both APIs in parallel - a client can introspect and determine that version 1.0.1 is inherently compatible with 1.0.0.</p>
+</div>
+</div>
+</div>
+<div class="section" id="problem-resolution">
+<h2>Problem Resolution<a class="headerlink" href="#problem-resolution" title="Permalink to this headline">¶</a></h2>
+<p>Note - sections lifted from open banking ops guidelines, for discussion! I’ve attempted to be selective in what I’ve copied across, not everything was applicable and much of it was excessively verbose.</p>
+<div class="section" id="effective-resolution-of-problems">
+<h3>Effective resolution of problems<a class="headerlink" href="#effective-resolution-of-problems" title="Permalink to this headline">¶</a></h3>
+<p>A DP should create documentation to clearly outline the policies, processes and systems it has in place for problem resolution and its respective service level objectives. This framework should enable the effective resolution of Service Provider (SP) issues and therefore cater for problems that relate specifically to a SP’s use of a DP’s data APIs.</p>
+</div>
+<div class="section" id="online-support">
+<h3>Online support<a class="headerlink" href="#online-support" title="Permalink to this headline">¶</a></h3>
+<p>DPs should provide FAQs, which address areas that may be specific to SPs such as technical advice or test facility guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be collated into FAQs to support the early resolution of problems.
+Problem resolution documentation, FAQs, contact details, opening times and out of hours support should be published and easily accessible in one collective area on the DP’s website.</p>
+</div>
+<div class="section" id="ticket-management-process">
+<h3>Ticket management process<a class="headerlink" href="#ticket-management-process" title="Permalink to this headline">¶</a></h3>
+<p>DPs must ensure they have a functioning ticket management system which enables them to respond to issues and problems raised within clearly defined service level targets. A successful problem resolution framework will enable the efficient identification and resolution of problems which specifically impact SPs. The system for raising and reporting on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.
+[elided - a massively long section on precise ticket classifications and first response SLA expectations, do we need these?]</p>
+</div>
+<div class="section" id="oegp-support">
+<h3>OEGP support<a class="headerlink" href="#oegp-support" title="Permalink to this headline">¶</a></h3>
+<p>OEGP Service Desk provides participants with a supplementary ticket management process and supports DPs in communicating problems to ecosystem participants via the noticeboard.</p>
+</div>
+</div>
+<div class="section" id="change-management">
+<h2>Change Management<a class="headerlink" href="#change-management" title="Permalink to this headline">¶</a></h2>
+<p>This chapter outlines various change scenarios that may impact SPs, and provides guidance for a DP to consider when implementing a change and communicating to SPs.</p>
+<div class="section" id="down-time">
+<h3>Down time<a class="headerlink" href="#down-time" title="Permalink to this headline">¶</a></h3>
+<p>Planned downtime, by its nature, is something that a DP anticipates and therefore is able to give advance notice to SPs. It is not generally possible to give advance notice of unplanned downtime, but DPs should give notice as soon as they are aware of the downtime.
+When providing notifications, DPs should provide a specific time period, so SPs are aware that the data API will be unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner than anticipated.
+OEGP Support Services can assist DPs with the dissemination of downtime information to the wider Open Energy ecosystem via its central noticeboard facility**.**Planned downtime should be given at least five business days before the event. Apart from cancelling the planned downtime, no changes should be made to the planned downtime notification within the five business day period. Where practical, DPs should give advance notice via their own website, developer portal or OEGP of any planned downtime one calendar month in advance.</p>
+</div>
+<div class="section" id="data-api-changes">
+<h3>Data API changes<a class="headerlink" href="#data-api-changes" title="Permalink to this headline">¶</a></h3>
+<p>Data providers may periodically wish to upgrade and / or to deprecate versions of their data APIs. The following mitigation measures will reduce the impact on service providers of these changes.</p>
+<div class="section" id="dual-running-and-deprecation">
+<h4>Dual running and deprecation<a class="headerlink" href="#dual-running-and-deprecation" title="Permalink to this headline">¶</a></h4>
+<p>DPs should support a minimum of two non-compatible API versions in a production context, providing both versions were previously supported by the DP, for a period of time long enough to ensure that SPs have had sufficient time to successfully test the new version and migrate their applications and customers. OEGP recommends dual running for at least six months for a major version, and three months for a minor version. Where a DP implements a data API for the first time, they will only need to support this one version to start with.
+The ability to support two data API versions allows SPs to maintain existing integrations with the older version, and benefit from features and enhancements offered by the new version. Over time, SPs will migrate all their applications to consume the new data API version. Once migrated, SPs should not access resources via the old API version.
+The deprecation of unsupported versions is at the DP’s discretion – based on usage metrics. However, the OEGP may recommend that any specified version (major, minor, or patch) should be deprecated at any time, and this should be implemented within three months of notification by the OEGP. This is to cater for critical defects, especially those relating to security. In exceptional circumstances it may be agreed by OEGP that support for a specified version is terminated earlier.
+DPs must not apply any measures to induce SPs to adopt a new version of the APIs (e.g. rate limiting the older version while providing better performance on a newer version).</p>
+</div>
+<div class="section" id="api-credentials-consent-and-authorisation">
+<h4>API credentials, consent and authorisation<a class="headerlink" href="#api-credentials-consent-and-authorisation" title="Permalink to this headline">¶</a></h4>
+<p>API Credentials associated with an API should be version agnostic. Therefore, a SP accessing v1.0, v1.1 or v2.0 should be able to use the same API Credentials across all available API endpoints.
+[ elided another list of change management categories and SLAs that isn’t really appropriate for open energy ]</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<p>
+    &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
+    <span class="lastupdated">
+        Last updated on Jun 02, 2021.
+      </span>
+
+</p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    v: main
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Branches</dt>
+      <dd><a href="draft_data_provider_oe3_operational_guidelines_shared.html">main</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
