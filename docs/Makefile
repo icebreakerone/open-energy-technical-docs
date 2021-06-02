@@ -48,9 +48,9 @@ ghpages:
 	# This requires setup! Don't run it unless you know it'll work.
 	git tag -l | xargs git tag -d
 	git fetch --tags
-	sphinx-multiversion . ../../../open-energy-technical-docs-pages/html
-	touch ../../../open-energy-technical-docs-pages/html/.nojekyll
-	python build_index_redirect.py -b ../../../open-energy-technical-docs-pages/html
-	cd ../../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
+	sphinx-multiversion . ../../open-energy-technical-docs-pages/html
+	touch ../../open-energy-technical-docs-pages/html/.nojekyll
+	python build_index_redirect.py -b ../../open-energy-technical-docs-pages/html
+	cd ../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
 	@echo
 	@echo "Pushed docs to https://icebreakerone.github.io/open-energy-technical-docs/index.html"
