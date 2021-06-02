@@ -13,11 +13,21 @@
 <div class="admonition warning">
     <p class="admonition-title">Warning</p>
     <p>
-        You're reading the documentation for a development version <em>({{current_version.name}})</em>.
+        You're reading a development version <em>({{current_version.name}})</em> of the documentation.
         For the latest <em>released</em> version, please see <a href="{{ vpathto(latest_version.name) }}">{{latest_version.name}}</a>.
     </p>
 </div>
 {% endif %}
+{% else %}
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the a development version of the documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
 {% endif %}
+
 {{ super() }}
 {% endblock %}%
