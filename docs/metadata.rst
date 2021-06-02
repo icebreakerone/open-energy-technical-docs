@@ -88,6 +88,20 @@ as in the example above.
      - An identifier, unique to this :term:`Data Provider`, which will not be changed, and which will be used along with
        the data provider's own ID to create a unique identifier for this data set within the Open Energy search system.
 
+Additional metadata
+###################
+
+The information above is the minimum needed to ensure that a data set is visible in the Open Energy search system. There
+are, however, other properties of a data set which may be useful to potential data consumers. Where such information can
+be provided, it should be provided in as standard a form as possible - in practice this translates to making use of
+existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only
+using internal or custom representation when absolutely necessary.
+
+Of particular note, and something we would like to ultimately expose in our search interface, is information about the
+geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been
+handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out
+`here <https://www.w3.org/TR/vocab-dcat-2/#time-and-space>`_.
+
 Access Block
 ------------
 
@@ -108,7 +122,21 @@ Each item within this section contains:
 
 .. note::
 
-   This is the subject of a current consultation, more information will be added to this document after mid-June.
+   This is the subject of a current consultation, more information will be added to this document after mid-June. The
+   example below is not definitive!
+
+.. code-block:: yaml
+
+   access:
+     # Access constraint to licensing predicates
+     - rule: oe:verified and oe:last_update within 60 days grants oe:use
+       sufficient: true
+       appliesFrom: 2021-04-22
+       appliesTo: 2022-04-22
+     - rule: oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate
+       sufficient: false
+       appliesFrom: 2021-04-22
+       appliesTo: 2022-04-22
 
 Transport Block
 ---------------
@@ -122,25 +150,25 @@ For example:
 .. code-block:: yaml
 
    transport:
-     - http:
-         # This block is mandatory, and contains the OpenAPI spec for the secured or open
-         # HTTP endpoints (depending on data class)
-         openapi: 3.0.0
-         info:
-           title: Sample API
-           description: CSV format data
-           version: 0.1.0
-         servers:
-           - url: http://data-provider-example.com
-             description: Describe this particular server if needed
-         paths:
-           "/data":
-             get:
-               summary: Returns a CSV containing all the data
-                 description: If we had any more to describe, we'd do it here
-               responses:
-                 '200':
-                   description: CSV data stream
+     http:
+       # This block is mandatory, and contains the OpenAPI spec for the secured or open
+       # HTTP endpoints (depending on data class)
+       openapi: 3.0.0
+       info:
+         title: Sample API
+         description: CSV format data
+         version: 0.1.0
+       servers:
+         - url: http://data-provider-example.com
+           description: Describe this particular server if needed
+       paths:
+         "/data":
+           get:
+             summary: Returns a CSV containing all the data
+             description: If we had any more to describe, we'd do it here
+             responses:
+               '200':
+                 description: CSV data stream
 
 .. note::
 
@@ -188,3 +216,166 @@ This is currently open for consultation, we would like to be able to guide data 
 representation types for particular kinds of information, and make use of any existing ontologies or standards such as
 the `Common Information Model <https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)>`_ where such
 standards will aid interoperability between Open Energy participants and the wider community.
+
+Full Example
+------------
+
+Putting together all the fragments from previous sections produces the following - this represents a single data set,
+in the full metadata file this would be contained within a list. YAML form:
+
+.. code-block:: yaml
+
+   - content:
+       "@type": "dcat:Dataset"
+       "@context":
+         dcat: http://www.w3.org/ns/dcat#
+         dct: http://purl.org/dc/terms/
+         oe: http://energydata.org.uk/oe/terms/
+       dct:title: My amazing data set
+       dct:description: This is a free text description of the data set
+       dcat:version: 0.1.2
+       dcat:versionNotes: This is a note on this particular version of the dataset
+       oe:sensitivityClass: OE-SA
+       oe:dataSetStableIdentifier: myData
+     access:
+       # Access constraint to licensing predicates
+       - rule: oe:verified and oe:last_update within 60 days grants oe:use
+         sufficient: true
+         appliesFrom: 2021-04-22
+         appliesTo: 2022-04-22
+       - rule: oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate
+         sufficient: false
+         appliesFrom: 2021-04-22
+         appliesTo: 2022-04-22
+     transport:
+       http:
+         # This block is mandatory, and contains the OpenAPI spec for the secured or open
+         # HTTP endpoints (depending on data class)
+         openapi: 3.0.0
+         info:
+           title: Sample API
+           description: CSV format data
+           version: 0.1.0
+         servers:
+           - url: http://data-provider-example.com
+             description: Describe this particular server if needed
+         paths:
+           "/data":
+             get:
+               summary: Returns a CSV containing all the data
+               description: If we had any more to describe, we'd do it here
+             responses:
+               '200':
+                 description: CSV data stream
+     representation:
+       mime: text/csv
+       csvw:
+         # This is only applicable if the mime type is text/csv
+         "@context": http://www.w3.org/ns/csvw
+         tableSchema:
+           columns:
+             - titles: country
+             - titles: country group
+             - titles: name (en)
+             - titles: name (fr)
+             - titles: name (de)
+             - titles: latitude
+             - titles: longitude
+
+
+Or, in JSON form:
+
+.. code-block:: json
+
+    [
+      {
+        "content": {
+          "@type": "dcat:Dataset",
+          "@context": {
+            "dcat": "http://www.w3.org/ns/dcat#",
+            "dct": "http://purl.org/dc/terms/",
+            "oe": "http://energydata.org.uk/oe/terms/"
+          },
+          "dct:title": "My amazing data set",
+          "dct:description": "This is a free text description of the data set",
+          "dcat:version": "0.1.2",
+          "dcat:versionNotes": "This is a note on this particular version of the dataset",
+          "oe:sensitivityClass": "OE-SA",
+          "oe:dataSetStableIdentifier": "myData"
+        },
+        "access": [
+          {
+            "rule": "oe:verified and oe:last_update within 60 days grants oe:use",
+            "sufficient": true,
+            "appliesFrom": "2021-04-22T00:00:00.000Z",
+            "appliesTo": "2022-04-22T00:00:00.000Z"
+          },
+          {
+            "rule": "oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate",
+            "sufficient": false,
+            "appliesFrom": "2021-04-22T00:00:00.000Z",
+            "appliesTo": "2022-04-22T00:00:00.000Z"
+          }
+        ],
+        "transport": {
+          "http": {
+            "openapi": "3.0.0",
+            "info": {
+              "title": "Sample API",
+              "description": "CSV format data",
+              "version": "0.1.0"
+            },
+            "servers": [
+              {
+                "url": "http://data-provider-example.com",
+                "description": "Describe this particular server if needed"
+              }
+            ],
+            "paths": {
+              "/data": {
+                "get": {
+                  "summary": "Returns a CSV containing all the data",
+                  "description": "If we had any more to describe, we'd do it here"
+                },
+                "responses": {
+                  "200": {
+                    "description": "CSV data stream"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "representation": {
+          "mime": "text/csv",
+          "csvw": {
+            "@context": "http://www.w3.org/ns/csvw",
+            "tableSchema": {
+              "columns": [
+                {
+                  "titles": "country"
+                },
+                {
+                  "titles": "country group"
+                },
+                {
+                  "titles": "name (en)"
+                },
+                {
+                  "titles": "name (fr)"
+                },
+                {
+                  "titles": "name (de)"
+                },
+                {
+                  "titles": "latitude"
+                },
+                {
+                  "titles": "longitude"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
