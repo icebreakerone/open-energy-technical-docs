@@ -54,3 +54,9 @@ ghpages:
 	cd ../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
 	@echo
 	@echo "Pushed docs to https://icebreakerone.github.io/open-energy-technical-docs/index.html"
+
+latexpdf:
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	@echo "Running LaTeX files through pdflatex..."
+	$(MAKE) -C $(BUILDDIR)/latex all-pdf
+	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."

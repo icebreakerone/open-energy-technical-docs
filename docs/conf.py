@@ -49,8 +49,12 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.autosectionlabel',
     'sphinx_multiversion',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.githubpages',
+    'sphinxcontrib.inkscapeconverter'
 ]
+
+# Configure inkscape
+inkscape_converter_bin = 'inkscape'
 
 # Configure graphviz to generate PNG and set up some default colours and graph styling. We were using SVGs here, but
 # it seems that pythonhosted.org isn't setting their MIME type correctly and is therefore failing to display.
