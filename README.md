@@ -1,6 +1,11 @@
 # oe-technical-docs
 Open Energy technical docs
 
+## Viewing the docs
+
+This documentation is rendered at
+https://icebreakerone.github.io/open-energy-technical-docs/
+
 ## Sphinx installation
 
 Using whichever version of Python 3 makes you happiest:
