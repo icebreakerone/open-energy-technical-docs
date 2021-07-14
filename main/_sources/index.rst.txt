@@ -14,5 +14,6 @@ Contents
     architecture
     metadata
     glossary
+    ops_guidelines/technical_common
 
 .. _IcebreakerOne: https://icebreakerone.org
