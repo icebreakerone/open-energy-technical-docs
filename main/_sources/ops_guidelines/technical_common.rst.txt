@@ -101,7 +101,7 @@ To participate in the Open Energy ecosystem, a :term:`data provider` MUST:
     above
 
 If any of the above checks fail, the data provider MUST NOT continue processing the request, and SHOULD respond with
-an error response as defined in `this section <https://datatracker.ietf.org/doc/html/rfc6750#section-6.2>` of RFC6750
+an error response as defined in `this section <https://datatracker.ietf.org/doc/html/rfc6750#section-6.2>`_ of RFC6750
 
 Token introspection
 ###################
