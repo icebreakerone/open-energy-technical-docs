@@ -1,0 +1,77 @@
+---
+
+- content:
+    "@type": "dcat:Dataset"
+    "@context":
+       dcat: http://www.w3.org/ns/dcat#
+       dct: http://purl.org/dc/terms/
+       oe: http://energydata.org.uk/oe/terms/
+    # Content element contains information about the conceptual content of
+    # the data set, the kinds of information it carries, as opposed to how
+    # these concepts are materialised.
+
+    # Title, this will be combined with the identity of the organisation
+    # to create the data set ID in CKAN
+    dct:title: My amazing data set
+    # Free text description, this will be searchable within CKAN
+    dct:description: This is a free text description of the data set
+    # Version of the data set
+    dcat:version: 0.1.2
+    dcat:versionNotes: This is a note on this particular version of the dataset
+    # This is the data sensitivity class, for shared data this MUST be
+    # one of OE-SA or OE-SB, it may also indicate open data with OE-O.
+    # Any more sensitive classes are errors in this file as they denote
+    # information that should not be shared.
+    oe:sensitivityClass: OE-SA
+    # Stable identifier for this data set, this is used along with a prefix
+    # derived from information about the data provider held by OE to produce
+    # a stable, human readable, URI for use in CKAN.
+    oe:dataSetStableIdentifier: myData
+    # Free text tags, primarily used for search
+    dcat:keyword:
+      - solar
+      - electricity
+      - retrofit
+    # We expect further information in this section, particularly in the
+    # form of sector-specific ontologies. Do not include aspects such as
+    # licensing or access control, or transport mechanisms, as these are
+    # dealt with elsewhere in this file.
+  access:
+    # Access constraint to licensing predicates
+    - oe:verified and oe:last_update within 60 days grants oe:license1
+    - oe:groups:some_group grants oe:license2
+
+  transport:
+    - http:
+        # This block is mandatory, and contains the OpenAPI spec for the secured or open
+        # HTTP endpoints (depending on data class)
+        openapi: 3.0.0
+        info:
+        title: Sample API
+        description: CSV format data}
+        version: 0.1.0
+        servers:
+          - url: http://data-provider-example.com
+        paths:
+          "/data":
+            get:
+              summary: Returns a CSV
+                description: Optional extended description in CommonMark or HTML.
+              responses:
+                '200':
+                  description: CSV data stream
+
+  representation:
+    mime: text/csv
+    csvw:
+      # This is only applicable if the mime type is text/csv
+      "@context": http://www.w3.org/ns/csvw
+      tableSchema:
+        columns:
+          - titles: country
+          - titles: country group
+          - titles: name (en)
+          - titles: name (fr)
+          - titles: name (de)
+          - titles: latitude
+          - titles: longitude
