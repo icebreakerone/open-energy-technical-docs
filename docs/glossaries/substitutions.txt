@@ -63,9 +63,11 @@
 .. |NIC| replace:: :term:`NIC<National Infrastructure Commission>`
 .. |OAuth2| replace:: :term:`OAuth2<Open Authorization 2>`
 .. |ODI| replace:: :term:`ODI<Open Data Institute>`
+.. |OE-C| replace:: :term:`OE-C<Data sensitivity class - closed>`
 .. |OE-O| replace:: :term:`OE-O<Data sensitivity class - open>`
 .. |OE-SA| replace:: :term:`OE-SA<Data sensitivity class - shared (A)>`
 .. |OE-SB| replace:: :term:`OE-SB<Data sensitivity class - shared (B)>`
+.. |OE-SP| replace:: :term:`OE-SP<Data sensitivity class - personal>`
 .. |OE3| replace:: :term:`OE3<Open Energy Phase 3>`
 .. |OEGS| replace:: :term:`OEGS<Open Energy Governance Service>`
 .. |Ofgem| replace:: :term:`Ofgem<Office for Gas and Electricity Markets>`

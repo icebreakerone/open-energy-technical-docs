@@ -1,6 +1,10 @@
 Data Set Metadata
 =================
 
+.. contents::
+   :depth: 4
+   :local:
+
 Each :term:`Data Provider` (|DP|) maintains a set of one or more metadata files, each of which can describe one or more
 distinct data sets. These descriptions serve several purposes:
 

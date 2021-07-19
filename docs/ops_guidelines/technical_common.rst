@@ -1,5 +1,9 @@
-Security Requirements
-=====================
+Common Security Requirements
+============================
+
+.. contents::
+   :depth: 4
+   :local:
 
 Open Energy defines a security and trust model for shared data APIs. Three
 parties are involved in each shared data request:
@@ -12,7 +16,7 @@ parties are involved in each shared data request:
 The interactions are shown graphically below in the form of a sequence diagram.
 
 .. figure:: images/FAPI_sequence_diagram.svg
-    :name: map_image
+    :name: fapi_interactions_image
 
     FAPI Sequence Diagram - client credentials flow
 

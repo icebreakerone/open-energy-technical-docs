@@ -22,6 +22,9 @@
     Minimum Viable Product
         *MVP* - An early version of a product for initial release, potentially with limited features or space for future development.
 
+    Data sensitivity class - closed
+        *OE-C* - Closed data - datasets which must not be shared within Open Energy
+
     Data sensitivity class - open
         *OE-O* - Open Data - full open access, under an open data licence. Free to use, by anyone, for any purpose.
 
@@ -30,6 +33,9 @@
 
     Data sensitivity class - shared (B)
         *OE-SB* - Shared data - datasets which can/could be shared, but currently require some bilateral contract negotiation. May include data currently shared on the basis of group-based access. May include aggregated, anonymised or pseudonymised data about individuals.
+
+    Data sensitivity class - personal
+        *OE-SP* - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data processing, as defined by the UK DPA 2018.
 
     Open Energy Phase 3
         *OE3* - The current phase of Open Energy's development running from February - July 2021.
