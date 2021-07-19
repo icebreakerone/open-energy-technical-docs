@@ -118,7 +118,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">3. Open Energy Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">4. Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">4. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">5. Common Security Requirements</a></li>
 </ul>
 
             
@@ -188,7 +189,7 @@
 <div class="admonition warning">
     <p class="admonition-title">Warning</p>
     <p>
-        You're reading the a development version of the documentation, at present there is no release version. Please
+        You're reading the development version of this documentation, at present there is no release version. Please
         bear in mind that this instance of the site is subject to change and should be considered provisional.
     </p>
 </div>
@@ -198,6 +199,25 @@
 
   <div class="section" id="data-set-metadata">
 <h1><span class="section-number">2. </span>Data Set Metadata<a class="headerlink" href="#data-set-metadata" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#metadata-file-structure" id="id2">Metadata File Structure</a></p></li>
+<li><p><a class="reference internal" href="#content-block" id="id3">Content Block</a></p>
+<ul>
+<li><p><a class="reference internal" href="#additional-metadata" id="id4">Additional metadata</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#access-block" id="id5">Access Block</a></p></li>
+<li><p><a class="reference internal" href="#transport-block" id="id6">Transport Block</a></p></li>
+<li><p><a class="reference internal" href="#representation-block" id="id7">Representation Block</a></p>
+<ul>
+<li><p><a class="reference internal" href="#text-csv" id="id8">text/csv</a></p></li>
+<li><p><a class="reference internal" href="#other-types" id="id9">Other types</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#full-example" id="id10">Full Example</a></p></li>
+</ul>
+</div>
 <p>Each <a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> (<a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">DP</span></a>) maintains a set of one or more metadata files, each of which can describe one or more
 distinct data sets. These descriptions serve several purposes:</p>
 <ol class="arabic simple">
@@ -213,7 +233,7 @@ searching for particular kinds of data.</p></li>
 </li>
 </ol>
 <div class="section" id="metadata-file-structure">
-<h2><span class="section-number">2.1. </span>Metadata File Structure<a class="headerlink" href="#metadata-file-structure" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2"><span class="section-number">2.1. </span>Metadata File Structure</a><a class="headerlink" href="#metadata-file-structure" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The examples below use <a class="reference internal" href="glossary.html#term-YAML-Ain-t-Markup-Language"><span class="xref std std-term">YAML</span></a> format for compactness and increased readability. Data providers may present this
@@ -232,7 +252,7 @@ information either in <a class="reference internal" href="glossary.html#term-YAM
 </div>
 </div>
 <div class="section" id="content-block">
-<h2><span class="section-number">2.2. </span>Content Block<a class="headerlink" href="#content-block" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3"><span class="section-number">2.2. </span>Content Block</a><a class="headerlink" href="#content-block" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">content</span></code> key contains a block of <a class="reference internal" href="glossary.html#term-JavaScript-Object-Notation-for-Linked-Data"><span class="xref std std-term">JSON-LD</span></a> compatible information describing the conceptual content of the dataset.
 A simple example is shown below:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">content</span><span class="p">:</span>
@@ -294,7 +314,7 @@ the data provider’s own ID to create a unique identifier for this data set wit
 </tbody>
 </table>
 <div class="section" id="additional-metadata">
-<h3><span class="section-number">2.2.1. </span>Additional metadata<a class="headerlink" href="#additional-metadata" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4"><span class="section-number">2.2.1. </span>Additional metadata</a><a class="headerlink" href="#additional-metadata" title="Permalink to this headline">¶</a></h3>
 <p>The information above is the minimum needed to ensure that a data set is visible in the Open Energy search system. There
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of
@@ -307,7 +327,7 @@ handled by DCAT. If you need to express this kind of information, please do so a
 </div>
 </div>
 <div class="section" id="access-block">
-<h2><span class="section-number">2.3. </span>Access Block<a class="headerlink" href="#access-block" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5"><span class="section-number">2.3. </span>Access Block</a><a class="headerlink" href="#access-block" title="Permalink to this headline">¶</a></h2>
 <p>This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be
 satisfied before a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> can acquire these data.</p>
 <p>Each item within this section contains:</p>
@@ -341,7 +361,7 @@ example below is not definitive!</p>
 </div>
 </div>
 <div class="section" id="transport-block">
-<h2><span class="section-number">2.4. </span>Transport Block<a class="headerlink" href="#transport-block" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6"><span class="section-number">2.4. </span>Transport Block</a><a class="headerlink" href="#transport-block" title="Permalink to this headline">¶</a></h2>
 <p>This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band
 transports with an initial HTTP negotiation process. It contains at least a single <code class="docutils literal notranslate"><span class="pre">http</span></code> key, the value of which
 must be valid <a class="reference external" href="https://swagger.io/specification/">OpenAPI</a></p>
@@ -376,14 +396,14 @@ security measures, and those in <a class="reference internal" href="glossary.htm
 </div>
 </div>
 <div class="section" id="representation-block">
-<h2><span class="section-number">2.5. </span>Representation Block<a class="headerlink" href="#representation-block" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7"><span class="section-number">2.5. </span>Representation Block</a><a class="headerlink" href="#representation-block" title="Permalink to this headline">¶</a></h2>
 <p>This section describes the format of any data received by a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> from this data set. Open Energy does
 not mandate particular formats, so this section is guidance rather than specification.</p>
 <p>The only required element in this section is a key <code class="docutils literal notranslate"><span class="pre">mime</span></code> which should contain the
 <a class="reference external" href="https://en.wikipedia.org/wiki/Media_type">media type</a> of the returned data. At a bare minimum this allows a client to
 load data into some kind of tooling. Depending on this value, other objects may be present.</p>
 <div class="section" id="text-csv">
-<h3><span class="section-number">2.5.1. </span>text/csv<a class="headerlink" href="#text-csv" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8"><span class="section-number">2.5.1. </span>text/csv</a><a class="headerlink" href="#text-csv" title="Permalink to this headline">¶</a></h3>
 <p>This type indicates that data is presented in CSV format. In this case, an optional key <code class="docutils literal notranslate"><span class="pre">csvw</span></code> may be defined, and
 should contain valid <a class="reference internal" href="glossary.html#term-JavaScript-Object-Notation-for-Linked-Data"><span class="xref std std-term">JSON-LD</span></a> following the <a class="reference external" href="https://www.w3.org/TR/tabular-data-primer/">CSV for the Web</a> guidelines:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">representation</span><span class="p">:</span>
@@ -404,7 +424,7 @@ should contain valid <a class="reference internal" href="glossary.html#term-Java
 </div>
 </div>
 <div class="section" id="other-types">
-<h3><span class="section-number">2.5.2. </span>Other types<a class="headerlink" href="#other-types" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9"><span class="section-number">2.5.2. </span>Other types</a><a class="headerlink" href="#other-types" title="Permalink to this headline">¶</a></h3>
 <p>This is currently open for consultation, we would like to be able to guide data providers towards particular
 representation types for particular kinds of information, and make use of any existing ontologies or standards such as
 the <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)">Common Information Model</a> where such
@@ -412,7 +432,7 @@ standards will aid interoperability between Open Energy participants and the wid
 </div>
 </div>
 <div class="section" id="full-example">
-<h2><span class="section-number">2.6. </span>Full Example<a class="headerlink" href="#full-example" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10"><span class="section-number">2.6. </span>Full Example</a><a class="headerlink" href="#full-example" title="Permalink to this headline">¶</a></h2>
 <p>Putting together all the fragments from previous sections produces the following - this represents a single data set,
 in the full metadata file this would be contained within a list. YAML form:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">content</span><span class="p">:</span>
@@ -588,7 +608,7 @@ in the full metadata file this would be contained within a list. YAML form:</p>
 <p>
     &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
     <span class="lastupdated">
-        Last updated on Jul 14, 2021.
+        Last updated on Jul 19, 2021.
       </span>
 
 </p>
