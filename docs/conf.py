@@ -50,8 +50,13 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinx_multiversion',
     'sphinx.ext.githubpages',
-    'sphinxcontrib.inkscapeconverter'
+    'sphinxcontrib.inkscapeconverter',
+    'sphinx.ext.todo'
 ]
+
+# Show to do items, uses a command line switch to set todo_include_todos to True for local build and
+# not otherwise, so we never have to-do items in the published docs.
+todo_emit_warnings = True
 
 # Configure inkscape
 inkscape_converter_bin = 'inkscape'
@@ -187,9 +192,6 @@ pygments_style = 'sphinx'
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
-
-# If true, `to do` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 

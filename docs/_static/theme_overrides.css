@@ -26,3 +26,10 @@
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal;
 }
+
+div.admonition-todo {
+    background-color: #ffd4d4 !important;
+}
+div.admonition-todo p.admonition-title {
+    background-color: #f07e7e !important;
+}

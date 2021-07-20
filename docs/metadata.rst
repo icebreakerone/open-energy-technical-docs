@@ -114,15 +114,15 @@ satisfied before a :term:`data consumer` can acquire these data.
 
 Each item within this section contains:
 
-1. A statement describing a set of conditions which must be satisfied to grant access. If this block is empty, access
-   is granted by default (subject to authentication if the data set is in class |OE-SA| or |OE-SB|)
+1. A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities
+   granted should access be provided by this set of conditions. The exact specification for these statements can be
+   found at `Access Control and Capability Grant Language`
 2. A boolean property indicating whether the access conditions in [1] are sufficient (``true``), or simply indicative
    (``false``). In the former case, a :term:`data consumer` which satisfies all the conditions *will* be granted access,
    in the latter they *may* be granted access, but there may be additional requirements not fully described here
 3. A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to
    commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
    activities
-4. A set of capabilities making up a license grant for data retrieved under these access conditions.
 
 .. note::
 
@@ -179,6 +179,16 @@ For example:
    Because API security is defined in relation to the data sensitivity class of the data set, it is not necessary to
    define the security of any presented API in this section. Data sets in class |OE-O| must expose an API with no extra
    security measures, and those in |OE-SA| and |OE-SB| must be secured by |FAPI| using the Open Energy trust services.
+
+Heartbeat URL
+#############
+
+Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the OEGS will
+periodically call it to assertain liveness and optionally gather metrics as described in
+`Heartbeat and monitoring endpoint`
+
+A hearbeat URL can be specified as a single key ``heartbeat_url`` with the value being the fully qualified URL at which
+the hearbeat response is exposed.
 
 Representation Block
 --------------------
