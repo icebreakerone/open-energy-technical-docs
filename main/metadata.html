@@ -350,18 +350,13 @@ in the latter they <em>may</em> be granted access, but there may be additional r
 commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
 activities</p></li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is the subject of a current consultation, more information will be added to this document after mid-June. The
-example below is not definitive!</p>
-</div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">access</span><span class="p">:</span>
   <span class="c1"># Access constraint to licensing predicates</span>
-  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified and oe:last_update within 60 days grants oe:use</span>
+  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified, oe:last_update max_age_days 60 grants oe:use_any</span>
     <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
     <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
-  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate</span>
+  <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">group:some_group grants oe:use_any, oe:adapt_any</span>
     <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
     <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
     <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
@@ -465,11 +460,11 @@ in the full metadata file this would be contained within a list. YAML form:</p>
     <span class="l l-Scalar l-Scalar-Plain">oe:dataSetStableIdentifier</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">myData</span>
   <span class="nt">access</span><span class="p">:</span>
     <span class="c1"># Access constraint to licensing predicates</span>
-    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified and oe:last_update within 60 days grants oe:use</span>
+    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:verified, oe:last_update max_age_days 60 grants oe:use_any</span>
       <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
       <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
       <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
-    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate</span>
+    <span class="p p-Indicator">-</span> <span class="nt">rule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">group:some_group grants oe:use_any, oe:adapt_any</span>
       <span class="nt">sufficient</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
       <span class="nt">appliesFrom</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021-04-22</span>
       <span class="nt">appliesTo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2022-04-22</span>
@@ -528,13 +523,13 @@ in the full metadata file this would be contained within a list. YAML form:</p>
     <span class="p">},</span>
     <span class="nt">&quot;access&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
-        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;oe:verified and oe:last_update within 60 days grants oe:use&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;oe:verified, oe:last_update max_age_days 60 grants oe:use_any&quot;</span><span class="p">,</span>
         <span class="nt">&quot;sufficient&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;appliesFrom&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-04-22T00:00:00.000Z&quot;</span><span class="p">,</span>
         <span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-04-22T00:00:00.000Z&quot;</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rule&quot;</span><span class="p">:</span> <span class="s2">&quot;group:some_group grants oe:use_any, oe:adapt_any&quot;</span><span class="p">,</span>
         <span class="nt">&quot;sufficient&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;appliesFrom&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-04-22T00:00:00.000Z&quot;</span><span class="p">,</span>
         <span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-04-22T00:00:00.000Z&quot;</span>
