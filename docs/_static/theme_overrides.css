@@ -33,3 +33,9 @@ div.admonition-todo {
 div.admonition-todo p.admonition-title {
     background-color: #f07e7e !important;
 }
+table.docutils tbody tr td {
+    vertical-align: top !important;
+}
+table.docutils tbody tr td p:not(:first-child) {
+    padding-top: 8px;
+}
