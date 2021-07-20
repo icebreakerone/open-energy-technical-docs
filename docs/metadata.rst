@@ -124,20 +124,15 @@ Each item within this section contains:
    commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
    activities
 
-.. note::
-
-   This is the subject of a current consultation, more information will be added to this document after mid-June. The
-   example below is not definitive!
-
 .. code-block:: yaml
 
    access:
      # Access constraint to licensing predicates
-     - rule: oe:verified and oe:last_update within 60 days grants oe:use
+     - rule: oe:verified, oe:last_update max_age_days 60 grants oe:use_any
        sufficient: true
        appliesFrom: 2021-04-22
        appliesTo: 2022-04-22
-     - rule: oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate
+     - rule: group:some_group grants oe:use_any, oe:adapt_any
        sufficient: false
        appliesFrom: 2021-04-22
        appliesTo: 2022-04-22
@@ -253,11 +248,11 @@ in the full metadata file this would be contained within a list. YAML form:
        oe:dataSetStableIdentifier: myData
      access:
        # Access constraint to licensing predicates
-       - rule: oe:verified and oe:last_update within 60 days grants oe:use
+       - rule: oe:verified, oe:last_update max_age_days 60 grants oe:use_any
          sufficient: true
          appliesFrom: 2021-04-22
          appliesTo: 2022-04-22
-       - rule: oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate
+       - rule: group:some_group grants oe:use_any, oe:adapt_any
          sufficient: false
          appliesFrom: 2021-04-22
          appliesTo: 2022-04-22
@@ -319,13 +314,13 @@ Or, in JSON form:
         },
         "access": [
           {
-            "rule": "oe:verified and oe:last_update within 60 days grants oe:use",
+            "rule": "oe:verified, oe:last_update max_age_days 60 grants oe:use_any",
             "sufficient": true,
             "appliesFrom": "2021-04-22T00:00:00.000Z",
             "appliesTo": "2022-04-22T00:00:00.000Z"
           },
           {
-            "rule": "oe:groups:some_group grants oe:use, oe:redistribute, oe:aggregate",
+            "rule": "group:some_group grants oe:use_any, oe:adapt_any",
             "sufficient": false,
             "appliesFrom": "2021-04-22T00:00:00.000Z",
             "appliesTo": "2022-04-22T00:00:00.000Z"
