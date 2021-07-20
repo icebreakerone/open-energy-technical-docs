@@ -6,14 +6,14 @@ Access Control and Capability Grant Language
    :depth: 4
    :local:
 
-.. todo::
-
-    Link to appropriate part of ops guidelines imported in from gdrive
+Access rules, capability grants, and obligations are explained in `Data Access Conditions`, this document specifies the
+precise syntax and values that can be used.
 
 An access rule contains:
 
-1. Zero or more conditions
-2. One or more capability grants
+1. Zero or more conditions for access
+2. One or more capability grants to the data consumer if access is granted
+3. Zero or more obligations falling on the data consumer if access is granted
 
 They are applied to properties of a :term:`Data Consumer` while processing a request for data from a
 :term:`Data Provider`. These properties can be modelled as a map of names to values; some values may be inferred by
@@ -33,16 +33,18 @@ Rule syntax
 -----------
 
 An access rule is represented as a single line string containing a comma separated list of zero or more `Conditions`,
-the literal string ``grants``, and then a comma separated list of one or more `Capabilities`:
+the literal string ``grants``, and then a comma separated list of one or more `Capabilities`. Optionally, this may
+be followed by the literal ``requires`` and one or more `Obligations` in a comma separated list.
 
 .. code-block::
 
-   [CONDITION]? ["," ADDITIONAL_CONDITION]* "grants" CAPABILITY ["," ADDITIONAL_CAPABILITY]*
+   [CONDITION]? ["," CONDITION]* "grants" CAPABILITY ["," CAPABILITY]* ["requires" OBLIGATION+ ["," OBLIGATION]
 
 .. note::
 
    * A rule with no conditions is valid, and is satisfied by all requests
    * All rules must grant at least one capability
+   * Rules may have zero or more obligations
 
 See the following sections for specification of conditions and capabilities.
 
@@ -163,8 +165,13 @@ Standard capabilities
 ---------------------
 
 These are capabilities where the namespace part of the **name** is ``oe``, indicating that they are defined as part
-of the open energy project. Data providers **MAY**, but **SHOULD NOT**, create their own capabilities unless absolutely
+of the open energy project. Data providers **SHOULD NOT**, create their own capabilities unless absolutely
 necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+
+Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible
+for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such
+capabilities. In addition, data providers creating custom capabilities **MUST** inform the OEGS of this, providing
+links to the aforementioned documentation.
 
 .. warning::
 
@@ -259,3 +266,42 @@ semantics of this are not well defined.
      - `Free Art License <http://artlibre.org/licence/lal/en/>`_ (v1.2, v1.3 respectively)
 
 Open data sets **SHOULD** be released under the latest version of any given license.
+
+Obligations
+###########
+
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities
+granted. They are specified as a single **name**.
+
+Standard obligations
+--------------------
+
+.. warning::
+
+   This set of standard obligations is provisional and may be subject to change
+
+.. list-table:: Standard obligations
+   :header-rows: 1
+   :widths: 10 10 80
+
+   * - Obligation
+     - Name
+     - Explanation
+   * - Fulltext
+     - ``oe:ft``
+     - Re-users must display the full text of the license every time they use the work
+   * - Attribution
+     - ``oe:by``
+     - Re-users must attribute the work to the original source when they use it
+   * - ShareAlike
+     - ``oe:sa``
+     - Re-users who create derivatives of the work must release the derivatives under the same license as the original
+       work, if they choose to distribute the derivatives
+
+.. note::
+
+   Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
+   explicitly not included here as it is possible to express this through the access conditions (i.e. rather than
+   declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
+   entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
+   of defining 'non commercial use'.

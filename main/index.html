@@ -103,8 +103,9 @@
 <li class="toctree-l1"><a class="reference internal" href="metadata.html">2. Data Set Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="access_control_specification.html">3. Access Control and Capability Grant Language</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">4. Open Energy Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/common_policies.html">5. Operational Guidelines - Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">6. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">7. Common Security Requirements</a></li>
 </ul>
 
             
@@ -227,6 +228,10 @@
 <li class="toctree-l3"><a class="reference internal" href="access_control_specification.html#expressing-open-data-licenses-with-capabilities">3.3.2. Expressing Open Data licenses with capabilities</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="access_control_specification.html#obligations">3.4. Obligations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="access_control_specification.html#standard-obligations">3.4.1. Standard obligations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">4. Open Energy Glossary</a><ul>
@@ -247,66 +252,101 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#unit-of-measurement">4.15. Unit of measurement</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">5. Guidance for Data Providers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-provider-role-and-responsibilities">5.1. Data Provider Role and Responsibilities</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-classification">5.1.1. Responsibility - Data classification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-access-and-licensing-specification">5.1.2. Responsibility - Access and licensing specification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-provision">5.1.3. Responsibility - Data provision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-integrity-and-correctness">5.1.4. Responsibility - Data integrity and correctness</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-metadata-provision">5.1.5. Responsibility - Metadata provision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-api-availability">5.1.6. Responsibility - API availability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-api-stability-and-change-management">5.1.7. Responsibility - API stability and change management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/common_policies.html">5. Operational Guidelines - Core Policies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#introduction">5.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#metadata">5.2. Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#data-sensitivity-classes">5.3. Data Sensitivity Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#policy-details">5.3.1. Policy details</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-api-requirements">5.2. Data API Requirements</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#date-and-time-formats">5.2.1. Date and time formats</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#endpoint-security">5.2.2. Endpoint security</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#open-data-endpoints">5.2.2.1. Open data endpoints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#shared-data-endpoints">5.2.2.2. Shared data endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#data-access-conditions">5.4. Data Access Conditions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#id1">5.4.1. Policy details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#group-based-access-control">5.4.2. Group based access control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#use-case-based-access-control">5.4.3. Use case based access control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#prioritisation">5.4.4. Prioritisation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#heartbeat-and-monitoring-endpoint">5.2.3. Heartbeat and monitoring endpoint</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#api-documentation">5.2.4. API documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#versioning">5.2.5. Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#data-licensing">5.5. Data Licensing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#creating-access-rules">5.5.1. Creating access rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#associating-access-rules-with-capabilities">5.5.2. Associating access rules with capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#what-are-licenses-and-capabilities">5.5.3. What are licenses and capabilities?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#how-will-capability-grants-work-in-practice">5.5.4. How will capability grants work in practice?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#obligations-accompanying-capability-grants">5.5.5. Obligations accompanying capability grants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#why-are-we-proposing-this-approach">5.5.6. Why are we proposing this approach?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#example-access-control-and-capability-grant-scenarios">5.5.7. Example access control and capability grant scenarios</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#risks-of-license-proliferation">5.5.8. Risks of license proliferation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice">5.5.9. Is there a risk of licences changing too frequently or without notice?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#where-are-these-rules-specified">5.5.10. Where are these rules specified?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/common_policies.html#where-are-these-rules-evaluated-and-by-whom">5.5.11. Where are these rules evaluated, and by whom?</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#problem-resolution">5.3. Problem Resolution</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#effective-resolution-of-problems">5.3.1. Effective resolution of problems</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#online-support">5.3.2. Online support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#ticket-management-process">5.3.3. Ticket management process</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#dispute-resolution-for-access-control-and-capability-grant-policies">5.3.4. Dispute resolution for access control and capability grant policies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#oegs-support">5.3.5. OEGS support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#service-desk-and-notifications">5.6. Service Desk and Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/common_policies.html#dispute-resolution">5.7. Dispute Resolution</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#change-management">5.4. Change Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#downtime">5.4.1. Downtime</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#licensing-and-access-control-changes">5.4.2. Licensing and access control changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-api-changes">5.4.3. Data API changes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#dual-running-and-deprecation">5.4.3.1. Dual running and deprecation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#api-credentials-consent-and-authorisation">5.4.3.2. API credentials, consent and authorisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">6. Guidance for Data Providers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-provider-role-and-responsibilities">6.1. Data Provider Role and Responsibilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-classification">6.1.1. Responsibility - Data classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-access-and-licensing-specification">6.1.2. Responsibility - Access and licensing specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-provision">6.1.3. Responsibility - Data provision</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-formats">6.1.3.1. Data formats</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-data-integrity-and-correctness">6.1.4. Responsibility - Data integrity and correctness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-metadata-provision">6.1.5. Responsibility - Metadata provision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-api-availability">6.1.6. Responsibility - API availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#responsibility-api-stability-and-change-management">6.1.7. Responsibility - API stability and change management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-api-requirements">6.2. Data API Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#date-and-time-formats">6.2.1. Date and time formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#endpoint-security">6.2.2. Endpoint security</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#open-data-endpoints">6.2.2.1. Open data endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#shared-data-endpoints">6.2.2.2. Shared data endpoints</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#heartbeat-and-monitoring-endpoint">6.2.3. Heartbeat and monitoring endpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#api-documentation">6.2.4. API documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#versioning">6.2.5. Versioning</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#problem-resolution">6.3. Problem Resolution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#effective-resolution-of-problems">6.3.1. Effective resolution of problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#online-support">6.3.2. Online support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#ticket-management-process">6.3.3. Ticket management process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#dispute-resolution-for-access-control-and-capability-grant-policies">6.3.4. Dispute resolution for access control and capability grant policies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#oegs-support">6.3.5. OEGS support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#change-management">6.4. Change Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#downtime">6.4.1. Downtime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#licensing-and-access-control-changes">6.4.2. Licensing and access control changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#data-api-changes">6.4.3. Data API changes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#dual-running-and-deprecation">6.4.3.1. Dual running and deprecation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html#api-credentials-consent-and-authorisation">6.4.3.2. API credentials, consent and authorisation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">6. Common Security Requirements</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#applicable-standards">6.1. Applicable standards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#discovery-of-endpoint-urls">6.1.1. Discovery of endpoint URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">7. Common Security Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#applicable-standards">7.1. Applicable standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#discovery-of-endpoint-urls">7.1.1. Discovery of endpoint URLs</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#token-acquisition">6.2. Token acquisition</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#token-usage-calling-a-shared-data-api">6.3. Token usage - calling a shared data API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#request-validation">6.4. Request validation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#token-introspection">6.4.1. Token introspection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#introspection-response-validation">6.4.2. Introspection response validation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#active">6.4.2.1. active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#time-ranges">6.4.2.2. time ranges</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#certificate-thumbprint">6.4.2.3. certificate thumbprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#token-acquisition">7.2. Token acquisition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#token-usage-calling-a-shared-data-api">7.3. Token usage - calling a shared data API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ops_guidelines/technical_common.html#request-validation">7.4. Request validation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#token-introspection">7.4.1. Token introspection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#introspection-response-validation">7.4.2. Introspection response validation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#active">7.4.2.1. active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#time-ranges">7.4.2.2. time ranges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ops_guidelines/technical_common.html#certificate-thumbprint">7.4.2.3. certificate thumbprint</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#interaction-header">6.4.3. Interaction header</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#other-validation">6.4.4. Other validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#interaction-header">7.4.3. Interaction header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_guidelines/technical_common.html#other-validation">7.4.4. Other validation</a></li>
 </ul>
 </li>
 </ul>

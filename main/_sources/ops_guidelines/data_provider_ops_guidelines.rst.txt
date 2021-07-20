@@ -69,6 +69,17 @@ on a per-data-set basis)
 * Shared data **MUST** made available through a FAPI compliant resource server connected to the OEGSs authorization
   service
 
+Data formats
+____________
+
+Open Energy does not define or mandate individual data formats to be returned from data APIs - the diversity of kinds
+of information in the sector renders this impractical, and the additional overhead imposed on data providers would be
+undesirable.
+
+With this said, we would encourage data providers to consider likely automated consumption of data when designing their
+data APIs - this implies using machine readable formats such as CSV, JSON and similar, with a preference for those
+formats compatible with existing software tools and libraries.
+
 Responsibility - Data integrity and correctness
 ###############################################
 
@@ -176,9 +187,11 @@ Legal keys, and the semantics of their associated values, are as follows:
    * - ``period_start``
      - **date/time** of the start of the period for which statistics are reported
    * - ``period_end``
-     - **date/time** of the end of the period for which statistics are reported, this will typically be the date and time of the heartbeat request
+     - **date/time** of the end of the period for which statistics are reported, this will typically be the date and
+       time of the heartbeat request
    * - ``api_call_response_[CODE]_count``
-     - integer number of requests to non-heartbeat endpoints within this data API which resulted in a response of type CODE. A distinct key:value pair is sent in the response for each distinct HTTP status code returned.
+     - integer number of requests to non-heartbeat endpoints within this data API which resulted in a response of type
+       CODE. A distinct key:value pair is sent in the response for each distinct HTTP status code returned.
 
 API documentation
 #################
