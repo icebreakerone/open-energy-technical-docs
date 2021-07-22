@@ -41,7 +41,7 @@ def acronyms(s: str):
     """
     for match in re.finditer(r'[^a-z0-9_|\W\s]([A-Z][0-9A-Z-]{1,})+', s):
         start, end = match.span()
-        if start == 0 or s[start - 1] not in ['|', '<', '_']:
+        if start == 0 or s[start - 1] not in ['|', '<', '_', '/']:
             if match.group() not in EXCLUSIONS:
                 if (end + 1) < len(s) and s[end] == 's':
                     yield match.group() + 's', start
@@ -56,11 +56,15 @@ def rewrite_line(s: str, acronyms: List[Tuple[str, int]]):
             positions.append(start)
             positions.append(start + len(acronym))
         positions = sorted(positions)
-        for offset, position in enumerate(positions):
-            s = s[:(position + offset)] + '|' + s[(position + offset):]
+        for i, position in enumerate(positions):
+            location = i + position
+            s = s[:location] + '|' + s[location:]
         print(s)
     return s
 
+
+#: Change this to True to enable automated file rewrites
+REWRITE_FILES = False
 
 # Iterate over all RST files, find acronyms that aren't already in | characters and print out the report
 for file in files_with_extension(extension='rst'):
@@ -77,7 +81,10 @@ for file in files_with_extension(extension='rst'):
                     auto_replace[line_number].append((acronym, start_position))
                 print(f'{file} - line {line_number + 1}:{start_position} : {acronym} '
                       f'{"" if acronym in KNOWN_ACRONYMS else "[unknown]"}')
-    if auto_replace:
-        for line_number, line in enumerate(lines):
-            if line_number in auto_replace:
-                rewrite_line(line, auto_replace[line_number])
+    if auto_replace and REWRITE_FILES:
+        with open(file, 'w') as f:
+            for line_number, line in enumerate(lines):
+                if line_number in auto_replace:
+                    f.write(rewrite_line(line, auto_replace[line_number]))
+                else:
+                    f.write(line)

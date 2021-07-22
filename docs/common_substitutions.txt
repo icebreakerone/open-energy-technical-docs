@@ -1,3 +1,4 @@
 .. |DPs| replace:: :term:`Data Providers<Data Provider>`
 .. |DCs| replace:: :term:`Data Consumers<Data Consumer>`
 .. |SPs| replace:: :term:`Service Providers<Service Provider>`
+.. |APIs| replace:: :term:`APIs<Application programming interface>`

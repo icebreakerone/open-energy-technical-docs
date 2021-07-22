@@ -35,7 +35,7 @@ The overall structure of the metadata file is a list of objects, each of which h
       access:
         # Access control and licensing information
       transport:
-        # API information
+        # |API| information
       representation:
         # Data format information
 
@@ -86,7 +86,7 @@ as in the example above.
    * - ``oe:sensitivityClass``
      - The :term:`data sensitivity class` of this data set. In the current Open Energy system this should always be one of
        |OE-O|, |OE-SA|, or |OE-SB|, no other classes are permitted. The value of this property also determines the
-       level of API security imposed, with |OE-O| data sets being open data with no additional security, and the two
+       level of |API| security imposed, with |OE-O| data sets being open data with no additional security, and the two
        shared data classes mandating |FAPI| security using the Open Energy trust services.
    * - ``oe:dataSetStableIdentifier``
      - An identifier, unique to this :term:`Data Provider`, which will not be changed, and which will be used along with
@@ -142,7 +142,7 @@ Transport Block
 
 This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band
 transports with an initial HTTP negotiation process. It contains at least a single ``http`` key, the value of which
-must be valid `OpenAPI <https://swagger.io/specification/>`_
+must be valid `Open|API| <https://swagger.io/specification/>`_
 
 For example:
 
@@ -150,11 +150,11 @@ For example:
 
    transport:
      http:
-       # This block is mandatory, and contains the OpenAPI spec for the secured or open
+       # This block is mandatory, and contains the Open|API| spec for the secured or open
        # HTTP endpoints (depending on data class)
        openapi: 3.0.0
        info:
-         title: Sample API
+         title: Sample |API|
          description: CSV format data
          version: 0.1.0
        servers:
@@ -171,14 +171,14 @@ For example:
 
 .. note::
 
-   Because API security is defined in relation to the data sensitivity class of the data set, it is not necessary to
-   define the security of any presented API in this section. Data sets in class |OE-O| must expose an API with no extra
+   Because |API| security is defined in relation to the data sensitivity class of the data set, it is not necessary to
+   define the security of any presented |API| in this section. Data sets in class |OE-O| must expose an |API| with no extra
    security measures, and those in |OE-SA| and |OE-SB| must be secured by |FAPI| using the Open Energy trust services.
 
 Heartbeat URL
 #############
 
-Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the OEGS will
+Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the |OEGS| will
 periodically call it to assertain liveness and optionally gather metrics as described in
 `Heartbeat and monitoring endpoint`
 
@@ -230,7 +230,7 @@ Full Example
 ------------
 
 Putting together all the fragments from previous sections produces the following - this represents a single data set,
-in the full metadata file this would be contained within a list. YAML form:
+in the full metadata file this would be contained within a list. |YAML| form:
 
 .. code-block:: yaml
 
@@ -258,11 +258,11 @@ in the full metadata file this would be contained within a list. YAML form:
          appliesTo: 2022-04-22
      transport:
        http:
-         # This block is mandatory, and contains the OpenAPI spec for the secured or open
+         # This block is mandatory, and contains the Open|API| spec for the secured or open
          # HTTP endpoints (depending on data class)
          openapi: 3.0.0
          info:
-           title: Sample API
+           title: Sample |API|
            description: CSV format data
            version: 0.1.0
          servers:
@@ -292,7 +292,7 @@ in the full metadata file this would be contained within a list. YAML form:
              - titles: longitude
 
 
-Or, in JSON form:
+Or, in |JSON| form:
 
 .. code-block:: json
 
@@ -309,7 +309,7 @@ Or, in JSON form:
           "dct:description": "This is a free text description of the data set",
           "dcat:version": "0.1.2",
           "dcat:versionNotes": "This is a note on this particular version of the dataset",
-          "oe:sensitivityClass": "OE-SA",
+          "oe:sensitivityClass": "|OE-SA|",
           "oe:dataSetStableIdentifier": "myData"
         },
         "access": [
@@ -330,7 +330,7 @@ Or, in JSON form:
           "http": {
             "openapi": "3.0.0",
             "info": {
-              "title": "Sample API",
+              "title": "Sample |API|",
               "description": "CSV format data",
               "version": "0.1.0"
             },

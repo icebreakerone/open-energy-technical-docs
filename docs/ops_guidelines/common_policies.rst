@@ -64,7 +64,7 @@ organisations.
       - Personal Sensitivity
       - Commercial Sensitivity
       - Security Sensitivity
-    * - **OE-C**
+    * - |OE-C|
       - Closed data - limited to internal organisational access only or limited, bespoke bilateral contracts under
         specific circumstances. May be subject to hard legal barriers to sharing. May be security-critical information
         relating to operational technology supporting critical national infrastructure owned by an Operator of
@@ -75,9 +75,9 @@ organisations.
       - Very High
       - Very High
       - Very High
-    * - **OE-SP**
+    * - |OE-SP|
       - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-        processing, as defined by the EU GDPR and brought into UK law via the DPA 2018.
+        processing, as defined by the EU |GDPR| and brought into UK law via the DPA 2018.
 
         **Currently not suitable to share within the OE ecosystem, with future extensibility subject to consultation.**
       - Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
@@ -85,11 +85,11 @@ organisations.
       - Very High
       - Medium / High
       - Medium / High
-    * - **OE-SB**
+    * - |OE-SB|
       - Datasets which do not include personal data and which can/could be shared, but currently require bilateral
         contract negotiation. May include data currently shared on the basis of group-based, name-based or
         purpose-limited access. May include aggregated data about individuals, subject to best practice adherence
-        (e.g. ICO anonymisation code.)
+        (e.g. |ICO| anonymisation code.)
 
         **Anonymised data using non-aggregative techniques are currently not suitable to share within this sensitivity
         class due to complex risks related to individual re-identification. Future extensibility to sharing anonymised
@@ -100,7 +100,7 @@ organisations.
       - Medium
       - Medium / High
       - Medium / High
-    * - **OE-SA**
+    * - |OE-SA|
       - Shared data - datasets which can/could be shared, but which require the user to agree to ‘light touch’ T&Cs to
         access and use (e.g. non-commercial clauses such as those under CC-BY-NC).
       - Network capacity, outage data, weather predictions, European space agency data, daily smart meter installations,
@@ -108,7 +108,7 @@ organisations.
       - Low
       - Medium
       - Low
-    * - **OE-O**
+    * - |OE-O|
       - Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.
       - Lower Super Output Layer ID (LSOA), Digest of UK Energy Statistics, regulatory data (e.g. licensing categories,
         institutional charters or Terms of Reference, etc.)
@@ -125,19 +125,19 @@ for |DCs| to meet in order to gain access** to datasets in different sensitivity
 are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
 consultation responses.
 
-The Open Energy Governance Service (OEGS) is responsible for providing |DPs| with verified information about
+The Open Energy Governance Service (|OEGS|) is responsible for providing |DPs| with verified information about
 |DCs|, in line with specified access conditions for each dataset. However, the |DP| is solely
-responsible for determining whether any given API request should be honoured (i.e. data access granted), and the
+responsible for determining whether any given |API| request should be honoured (i.e. data access granted), and the
 licensing terms for any data returned in response to that request. This is due to requirements for control to rest
 with the |DP| only.
 
 It is expected that |DPs| will grant access reliably and fairly, in line with the access conditions that they
-specify. In the event that access is refused, there will be a mechanism for flagging this with the OEGS for review and
+specify. In the event that access is refused, there will be a mechanism for flagging this with the |OEGS| for review and
 dispute management. |DPs| must be able to show clear justification for access refusal. Repeat refusal or
 non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
 
-This policy focuses on access conditions for classes OE-SA and OE-SB only. Personal data (OE-SP) are out of scope for
-development during Phase 3. Future extensibility of the Open Energy ecosystem to OE-SP data will be consulted on in
+This policy focuses on access conditions for classes |OE-SA| and |OE-SB| only. Personal data (|OE-SP|) are out of scope for
+development during Phase 3. Future extensibility of the Open Energy ecosystem to |OE-SP| data will be consulted on in
 future phases of project development.
 
 Policy details (Data access conditions)
@@ -159,7 +159,7 @@ This acknowledges the need for more nuance than would be captured under a ‘one
 sensitivity class. Instead, our policy enables some tailoring within defined parameters.
 
 The table below describes access conditions for each of the Open Energy data sensitivity classes. It also demonstrates
-the rationale for this guidance - identifying the lack of standardised access conditions for OE-SA and OE-SB datasets
+the rationale for this guidance - identifying the lack of standardised access conditions for |OE-SA| and |OE-SB| datasets
 as a cause of cost and friction in energy data sharing.
 
 .. list-table:: Data sensitivity classes and access conditions in scope
@@ -168,25 +168,25 @@ as a cause of cost and friction in energy data sharing.
 
     * - Data Class
       - Access Conditions
-    * - **OE-C**
+    * - |OE-C|
       - Determined and governed by the |DP| only.
-    * - **OE-SP**
-      - Currently determined by legislation including, but not limited to: GDPR / DPA 2018, the Data Access and
+    * - |OE-SP|
+      - Currently determined by legislation including, but not limited to: |GDPR| / DPA 2018, the Data Access and
         Privacy Framework, and the Smart Energy Code. |DPs| may also apply additional non-standard access
         conditions, such as payment or purpose-based.
 
         Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
         July 2021) and beyond the scope of this consultation. Future extensibility to be considered based on
         consultation in due course.
-    * - **OE-SB**
+    * - |OE-SB|
       - Currently non-standardised, determined by bilateral contract and bespoke negotiation.
 
         Subject of the current policy.
-    * - **OE-SA**
+    * - |OE-SA|
       - Currently some standardisation, however bespoke arrangements remain common.
 
         Subject of the current policy.
-    * - **OE-O**
+    * - |OE-O|
       - No access conditions - free and accessible to all users.
 
 .. list-table:: Open Energy access conditions
@@ -202,26 +202,26 @@ as a cause of cost and friction in energy data sharing.
         Graduated payment rates (e.g. higher granularity)
 
         One-off or subscription payment rates
-      - OE-SB and OE-SA
+      - |OE-SB| and |OE-SA|
     * - Security compliance
       - UK Government Minimum Cybersecurity Standard
 
         UK Government  ‘Secure by Design’ IoT guidance
 
         Codes of conduct governing Critical National Infrastructure
-      - OE-SB and OE-SA
+      - |OE-SB| and |OE-SA|
     * - Regulatory compliance
       - Networks business separation provisions
 
         Competition law
 
         Adherence to section 105 of the Utilities Act 2000
-      - OE-SB and OE-SA
+      - |OE-SB| and |OE-SA|
     * - Standards compliance
-      - Meets MED Data Best Practice Guidance
+      - Meets |MED| Data Best Practice Guidance
 
-        Meets relevant ISO standards
-      - OE-SB and OE-SA
+        Meets relevant |ISO| standards
+      - |OE-SB| and |OE-SA|
     * - Organisation type
       - Local Authorities
 
@@ -234,7 +234,7 @@ as a cause of cost and friction in energy data sharing.
         Charities
 
         Specific Open Energy membership tiers (e.g. SME)
-      - OE-SB
+      - |OE-SB|
     * - Group membership
       - Certain use cases (e.g. community energy project development)
 
@@ -245,13 +245,13 @@ as a cause of cost and friction in energy data sharing.
         Social housing retrofit
 
         Public EV charge-point planning
-      - OE-SB
+      - |OE-SB|
     * - Other
       - Auditing clauses
 
         Individuals handling the data within a |DC| must have completed certain training (e.g. ONS Safe
         Researcher).
-      - OE-SB and OE-SA
+      - |OE-SB| and |OE-SA|
 
 Group based access control
 --------------------------
@@ -271,7 +271,7 @@ Further policy-development is required to ensure the inclusion of self-defining 
 fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent
 confusion for |DPs| or instability associated with too-frequent changes in group creation or membership. As
 such, it is likely that group-based access defined through authoritative external sources will be explored first in
-OEGS development going forward.
+|OEGS| development going forward.
 
 Use case based access control
 -----------------------------
@@ -309,18 +309,18 @@ Creating access rules
 
 The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
 which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system
-whereby access and capability grants are determined, for each request to a |DP|’s API, on the basis of a set
+whereby access and capability grants are determined, for each request to a |DP|’s |API|, on the basis of a set
 of rules defined and published by that |DP|.
 
 Grants are based on three sources of information:
 
-1. Information from the Open Energy Governance Service (OEGS) about the |DC| making the request
+1. Information from the Open Energy Governance Service (|OEGS|) about the |DC| making the request
 2. Information known by the |DP| (separately from Open Energy) about the |DC| making the request,
    such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar
-3. Rules defined by the |DP| - predicated on information provided by OEGS and/or, where necessary to preserve
+3. Rules defined by the |DP| - predicated on information provided by |OEGS| and/or, where necessary to preserve
    privacy or security, properties known to the |DP| only
 
-Information provided by OEGS to |DPs| can cover two kinds of properties:
+Information provided by |OEGS| to |DPs| can cover two kinds of properties:
 
 * **Inherently true** properties known to Open Energy, such as:
 
@@ -342,8 +342,8 @@ Indicative rules stipulate that a |DC| satisfying the stated conditions may be g
 also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data
 Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, |DPs|
 must be able to demonstrate a justifiable reason for doing so. |DCs| can challenge access refusals through
-a dispute-resolution mechanism (part of the OEGS) if this is required. Guidance regarding acceptable/unacceptable
-reasons for access refusal, the dispute-resolution mechanism, and OEGS dispute-resolution processes will be developed
+a dispute-resolution mechanism (part of the |OEGS|) if this is required. Guidance regarding acceptable/unacceptable
+reasons for access refusal, the dispute-resolution mechanism, and |OEGS| dispute-resolution processes will be developed
 and published in Phase 4 of the project.
 
 The flow of information associated with access control is shown below - this assumes the |DC| has already
@@ -359,7 +359,7 @@ Associating access rules with capabilities
 ------------------------------------------
 
 In the Open Energy model, licensing is expressed as the grant of a set of capabilities and associated obligations,
-scoped to the results of a single API call and verified through a non-repudiable digital signature.
+scoped to the results of a single |API| call and verified through a non-repudiable digital signature.
 
 This is defined using a rules language, the details of which can be found at
 `Access Control and Capability Grant Language`
@@ -378,10 +378,10 @@ derivatives of the artefact.
 How will capability grants work in practice?
 --------------------------------------------
 
-Each time a |DC| makes an API call, the data returned will be associated with a particular set of capability
+Each time a |DC| makes an |API| call, the data returned will be associated with a particular set of capability
 grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in
 the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy
-Governance Service (OEGS). Alongside the legal text of the licence, the OEGS will make details of capabilities available
+Governance Service (|OEGS|). Alongside the legal text of the licence, the |OEGS| will make details of capabilities available
 to |DCs| as an easy to understand set of notation/icons. Open Energy Search will also show the license
 (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
 license in order to promote transparency from the outset.
@@ -409,7 +409,7 @@ Obligations accompanying capability grants
 Capability grants will be accompanied by details of any obligations that the |DC| must abide by when exercising
 a capability. |DPs| must specify any such obligations when associating capabilities with an access rule. As
 with capabilities, the range of obligations will be standardised within the Open Energy ecosystem and will be included
-in the digital signature binding the API return with the capability grant.
+in the digital signature binding the |API| return with the capability grant.
 
 Open Energy research has identified a set of common obligations associated with capabilities granted by licences used
 in the energy sector. These include obligations to:
@@ -460,7 +460,7 @@ incentivise |DPs| to align with Open Energy standardisation.
 .. figure:: images/licensing_model_per_api_call.svg
     :name: licensing_model_api_call
 
-    Licensing model per API call
+    Licensing model per |API| call
 
 .. todo::
 
@@ -641,7 +641,7 @@ Where are these rules evaluated, and by whom?
 ---------------------------------------------
 
 Following our guiding principle that |DPs| remain in control of their data at all times, these rules are
-evaluated within the |DP| API implementation. This is necessary to allow for decisions predicated on
+evaluated within the |DP| |API| implementation. This is necessary to allow for decisions predicated on
 information only known to the |DP|, but this could impose additional complexity when setting up and
 implementing a |DP|. To mitigate this, we will provide clear specifications and semantics for the rules
 language, along with a reference implementation in the Python language.
@@ -655,7 +655,7 @@ Service Desk and Notifications
 Open Energy acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
 Developing the full function is beyond the scope of project Phase 3, however it remains an active area for future
 development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and
-discuss appropriate OEGS support. We proposed to use learning from this prototype to inform future service and policy
+discuss appropriate |OEGS| support. We proposed to use learning from this prototype to inform future service and policy
 design.
 
 Dispute Resolution

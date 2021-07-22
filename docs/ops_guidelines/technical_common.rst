@@ -7,20 +7,20 @@ Common Security Requirements
    :depth: 4
    :local:
 
-Open Energy defines a security and trust model for shared data APIs. Three
+Open Energy defines a security and trust model for shared data |APIs|. Three
 parties are involved in each shared data request:
 
 1. The |DC| wishing to access the :term:`shared data` |API|
 2. The :term:`authorization` server, as part of the governance service (|OEGS|), with knowledge about the
    |DC| as represented by an organisation account within the |OEGS|
-3. The |DP| responsible for supplying shared data through its shared data API
+3. The |DP| responsible for supplying shared data through its shared data |API|
 
 The interactions are shown graphically below in the form of a sequence diagram.
 
 .. figure:: images/fapi_sequence_diagram.svg
     :name: fapi_interactions_image
 
-    FAPI Sequence Diagram - client credentials flow
+    |FAPI| Sequence Diagram - client credentials flow
 
 Applicable standards
 --------------------
@@ -45,7 +45,7 @@ e.g. ``token_endpoint`` refer to properties discoverable in this fashion.
 Token acquisition
 -----------------
 
-In order to access a shared data API, a |DC| must first acquire an access token. This is done by sending an
+In order to access a shared data |API|, a |DC| must first acquire an access token. This is done by sending an
 HTTP request to the authorization server (part of the |OEGS|). The |DC| **MUST**:
 
 * Use Mutual TLS, presenting a client certificate when requested. This is the ``tls_client_auth`` authentication method
@@ -67,7 +67,7 @@ HTTP request to the authorization server (part of the |OEGS|). The |DC| **MUST**
   be obtained from the ``software statement`` within the directory corresponding to this client
 
 A successful call to the ``token_endpoint`` is indicated by a ``200`` response code, in which case the body of the
-response will contain a JSON object with at least two properties:
+response will contain a |JSON| object with at least two properties:
 
 1. ``access_token`` is an opaque string to be used as a bearer token for requests to resource servers
    (a |DC| :term:`shared data` |API| in our context)
@@ -77,7 +77,7 @@ response will contain a JSON object with at least two properties:
 Token usage - calling a shared data API
 ---------------------------------------
 
-To call a shared data API within a |DP|, the |DC| MUST:
+To call a shared data |API| within a |DP|, the |DC| MUST:
 
 * Use Mutual TLS as previously described
 * Pass the previously acquired bearer token in an HTTP header::
@@ -98,8 +98,8 @@ Request validation
 
 To participate in the Open Energy ecosystem, a |DP| **MUST**:
 
-* Expose an HTTPS API
-* Perform validation on any requests to this API
+* Expose an HTTPS |API|
+* Perform validation on any requests to this |API|
 
   * Reject any requests which do not present a valid client certificate. Client certificates are validated in the
     context of the root CAs provided by the |OEGS| directory.
@@ -128,7 +128,7 @@ obtain additional information. To obtain this introspection response, the |DP| *
 Introspection response validation
 #################################
 
-The response body of this introspection call contains a JSON object with information about the entity which requested
+The response body of this introspection call contains a |JSON| object with information about the entity which requested
 the supplied token from the authorization server, as well as properties of the token itself. An example introspection
 response is shown below:
 
@@ -215,7 +215,7 @@ It **MAY**, however, apply additional checks based on information in the introsp
 is where any Open Energy specific access control and licensing policies are applied.
 
 To inform any additional processing, the |DP| **MAY** make use of the
-``['additional_client_metadata']['metadata']`` key within the introspection response. This contains a JSON object with
+``['additional_client_metadata']['metadata']`` key within the introspection response. This contains a |JSON| object with
 properties asserted about the |DC|. The exact set of properties is not defined here, please see the access
 control language specification for more information about what could be specified.
 
