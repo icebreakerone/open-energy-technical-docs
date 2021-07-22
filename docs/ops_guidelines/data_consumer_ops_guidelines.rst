@@ -23,6 +23,9 @@ are organisations able to configure their infrastructure (in terms of the consum
 `Common Security Requirements`, specifically `Token acquisition` and `Token usage - calling a shared data API`). This
 is covered by the bottom two boxes.
 
+Data Consumer vs Service Provider
+---------------------------------
+
 Open Energy does not differentiate between |DCs| that access data to solve a problem internal to their
 organisation and those (known as |SPs|) which offer this as a service to other organisations. A |DC| may also be a |DP|
 , the roles are not mutually exclusive.

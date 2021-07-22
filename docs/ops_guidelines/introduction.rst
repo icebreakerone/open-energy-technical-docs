@@ -24,33 +24,34 @@ Overarching aims of these operational guidelines:
   participating in the ecosystem.
 * To minimise potential costs associated with insufficient API or other technical system testing, downtime, or
   other common faults.
-* To reduce any reputational risks associated with individual members or the Open Energy ecosystem as a whole.
+* To reduce any reputational risks associated with individual members, incorrect application of core policies, or
+  the Open Energy ecosystem as a whole.
 
 These guidelines are structured in six sections, outlining:
 
-**Introduction**: background to the Open Energy project, clarifications of the roles and responsibilities
+Introduction (this section): background to the Open Energy project, clarifications of the roles and responsibilities
 of different types of actors operating in the Open Energy ecosystem.
 
-`**Glossary**<Open Energy Glossary>`: definitions of common acronyms, terminology, and technical tools used in Open Energy
+`Open Energy Glossary`: definitions of common acronyms, terminology, and technical tools used in Open Energy
 documentation.
 
-**Considerations before you start**: ‘at a glance’ list of items that all types of new members will need
+`Considerations Before You Start`: ‘at a glance’ list of items that all types of new members will need
 to consider in order to meet operational requirements.
 
 .. note::
 
     The *Considerations before you start* is still in review and so is not present in this version of the documentation
 
-**Core policies**: operational principles and policies central to Open Energy function. Includes policies
+`Core Policies`: operational principles and policies central to Open Energy function. Includes policies
 governing data sensitivity classification, access controls, and licensing.
 
-**Data Providers and Data Consumers**: guidelines outlining how |DPs| can share data safely and
+`Guidance for Data Consumers` and `Guidance for Data Providers`: guidelines outlining how |DPs| can share data safely and
 securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
 and design safe and effective APIs enabling data-sharing. Guidelines outlining how |DCs| can meet the
 requirements for offering data services, access and licensing conditions for different data classes, and best
 practice with regards to testing, security, ethics and dispute management.
 
-**Additional Resources**: links to other relevant documentation (e.g. technical, legal, etc.) sitting
+`Additional Material`: links to other relevant documentation (e.g. technical, legal, etc.) sitting
 outside the operational guidelines.
 
 .. warning::
@@ -96,9 +97,10 @@ Dataset Search
 --------------
 
 Open Energy’s first core function - Open Energy Search - enables dataset search and discovery. Open Energy Search
-empowers users to find out what datasets exist and who owns/controls them. Search results will also outline the
-sensitivity class, access rules, and capability grants associated with a certain dataset, meaning that access and
-licensing details are transparent (see Section 4 for details). This works through a search engine designed
+empowers users to find out what datasets exist and who owns/controls them. Search results also outline the
+`sensitivity class<Data Sensitivity Classes>`, `access rules<Data Access Conditions>`, and
+`capability grants<Data Licensing>` associated with a certain dataset, meaning that access and
+licensing details are transparent. This works through a search engine designed
 specifically to search for datasets, with options to search by different parameters in order to refine results.
 It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture
 of the energy data landscape in their sphere of interest. Open Energy search is free, available to all, and will
@@ -118,9 +120,9 @@ Governance Service
 
     Fix references
 
-Open Energy's second core function - our Governance Service (OEGS) - supports members to provide, share and
-access different classes of Shared data (defined in Section 1 point 4.2) on the basis of preemptive licensing
-(see Section 4 of the for details). Shared Data accessed via the OEGS will be provided by members only
+Open Energy's second core function - our Governance Service (|OEGS|) - supports members to provide, share and
+access different classes of Shared data (see `Data Sensitivity Classes`) on the basis of preemptive licensing
+(see `Data Licensing`). Shared Data accessed via the |OEGS| will be provided by members only
 (|DPs|). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
 across the sector by reducing the time and financial costs currently associated with accessing Shared data.
 For providers of Shared data, the Governance Platform offers a secure and effective way to list datasets and
@@ -134,15 +136,15 @@ Project Governance
 During Phase 3, Open Energy was governed by two Advisory Groups (Membership and Delivery) and a Steering Group.
 The groups met once a month and a brief description of each group’s activities is given below.
 
-Membership Advisory Group: Consulted on the Membership contract, key policies, including conditions to participate,
+**Membership Advisory Group**: Consulted on the Membership contract, key policies, including conditions to participate,
 roles, responsibilities and liabilities, draft preemptive licence, funding model, operational guidelines, and
 ongoing governance.
 
-Delivery Advisory Group: Consulted on the drafting of operational guidelines and understanding data production
+**Delivery Advisory Group**: Consulted on the drafting of operational guidelines and understanding data production
 and usage. Fed into the requirements for technical delivery of the Open Energy Governance Platform and the Energy
 Data Search to ensure they meet user needs. Alongside this, examined the day-to-day operational aspects of Open Energy including security and systems.
 
-Steering Group: Supported the overarching strategy, ensured the delivery of our objectives, and helped
+**Steering Group**: Supported the overarching strategy, ensured the delivery of our objectives, and helped
 disseminate work.
 
 The membership of these groups was designed to represent a range of different types of organisations in the
@@ -157,8 +159,8 @@ What data can be found and used through Open Energy?
 ####################################################
 
 Open Energy supports both Open and Shared datasets containing energy, and energy-related, data. Different classes
-of data within the Open Energy ecosystem, assessed by their levels of sensitivity, are described in the Open
-Energy Data Sensitivity Classes Policy (see Section 4).
+of data within the Open Energy ecosystem, assessed by their levels of sensitivity, are described in
+`Data Sensitivity Classes`.
 
 Open data
 ---------
@@ -222,21 +224,21 @@ outlines the meaning of the different roles and outlines their basic responsibil
 Open Energy ecosystem. |DPs| can provide Open and/or Shared datasets. |DPs| are responsible for:
 data sensitivity classification, creation of access rules, creation of capability grants, data provision, data
 integrity and correctness, metadata provision, and API availability, stability and change management. Full guidance
-regarding |DP| responsibilities can be found in Section 5 of the Open Energy Operational Guidelines.
+regarding |DP| responsibilities can be found in `Guidance for Data Providers`.
 
 Data Consumers
 --------------
 
 |DCs| are organisations that seek to find and access datasets through the Open Energy Governance Service
 Platform. |DCs| can be established to serve internal organisational needs, to serve external customers,
-or both. |DCs| is a catch-all term referring to all parties accessing data via the OEGS.
+or both. |DCs| is a catch-all term referring to all parties accessing data via the OEGS. Full guidance can be found
+in `Guidance for Data Consumers`
 
 Service Providers
 _________________
 
 |DCs| who access data to serve external customers, potentially including customers outside the Open Energy
-ecosystem, are categorised as a specific type of |DC| called a ‘Service Provider’. The term Service Provider
-will henceforth be used in these guidelines as ‘Service Providers’ where differentiation is required
+ecosystem, are categorised as a specific type of |DC| called a |SP|. See `Data Consumer vs Service Provider`.
 
 Dual Roles
 ----------

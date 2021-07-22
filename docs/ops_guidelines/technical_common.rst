@@ -148,13 +148,13 @@ response is shown below:
           "something": "something else"
         }
       },
-      "client_id": "kZuAsn7UYZ98WWh29hDPf",
+      "client_id": "kZuAsn7UyZ98Wwh29hDpf",
       "exp": 1626279245,
       "iat": 1626278645,
       "iss": "https://auth.directory.energydata.org.uk",
       "scope": "directory:software",
       "cnf": {
-        "x5t#S256": "rP_-9u3ZyVo4rOQxG-bn4rr6gJGNu1dTOwEeppOIIt8"
+        "x5t#S256": "rP_-9u3ZyVo4ryQxg-bn4rr6gJGNu1dTowEeppOuIt8"
       },
       "token_type": "Bearer"
     }
