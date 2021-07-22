@@ -205,11 +205,11 @@ All data APIs **MUST** include a version number in the path of each data endpoin
 versioning to differentiate between breaking and backwards compatible changes. This **MUST** be documented within the
 OpenAPI transport section of the metadata file.
 
-Problem Resolution
-------------------
+Problem Resolution (Data Providers)
+-----------------------------------
 
-Effective resolution of problems
-################################
+Effective resolution of problems (Data Providers)
+#################################################
 
 A DP **MUST** create documentation to clearly outline the policies, processes and systems it has in place for problem
 resolution and its respective service level objectives. This framework should enable the effective resolution of DC
@@ -235,14 +235,14 @@ problems raised within clearly defined service level targets. A successful probl
 efficient identification and resolution of problems which specifically impact DCs. The system for raising and reporting
 on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.
 
-Dispute resolution for access control and capability grant policies
-###################################################################
+Dispute resolution for access control and capability grant policies (Data Providers)
+####################################################################################
 
 In cases where a DC believes that access conditions or capability grant rules are being applied unfairly, the OEGS
 will act as a mediating party.
 
-OEGS support
-############
+OEGS support (Data Providers)
+#############################
 
 The OEGS Service Desk will provide participants with a supplementary ticket management process and supports DPs in
 communicating problems to ecosystem participants via the noticeboard.

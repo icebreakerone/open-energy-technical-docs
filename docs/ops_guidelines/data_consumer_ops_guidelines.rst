@@ -53,11 +53,11 @@ Data Consumers are responsible for honouring the licenses for any data obtained 
 provides technical measures such as cryptographically signed receipts binding data and license conditions together, the
 Data Consumer is responsible for retaining and storing such receipts.
 
-Problem Resolution
-##################
+Problem Resolution (Data Consumers)
+###################################
 
-Effective resolution of problems
---------------------------------
+Effective resolution of problems (Data Consumers)
+-------------------------------------------------
 
 We encourage Data Consumers to direct any problems with data APIs first to the Data Provider concerned. In the event
 that a Data Consumer is unable to resolve an issue with a Data Provider, the issue MAY be flagged to the OEGS Dispute

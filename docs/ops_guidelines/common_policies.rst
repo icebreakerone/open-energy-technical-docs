@@ -5,8 +5,8 @@ Operational Guidelines - Core Policies
    :depth: 4
    :local:
 
-Introduction
-############
+Introduction (Core Policies)
+############################
 
 This section aims to outline core policies and principles with implications for all members of the Open Energy
 ecosystem. Please note that it is beyond the scope of Open Energy Phase 3 to produce detailed guidance and tooling
@@ -140,8 +140,8 @@ This policy focuses on access conditions for classes OE-SA and OE-SB only. Perso
 development during Phase 3. Future extensibility of the Open Energy ecosystem to OE-SP data will be consulted on in
 future phases of project development.
 
-Policy details
---------------
+Policy details (Data access conditions)
+---------------------------------------
 
 Data Providers will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
 Energy ecosystem. Data access conditions will then be applied in a manner that is proportionate to the sensitivity

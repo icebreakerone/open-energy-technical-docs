@@ -1,5 +1,5 @@
-Introduction
-============
+Introduction to Open Energy
+===========================
 
 .. contents::
    :depth: 4
@@ -28,36 +28,42 @@ Overarching aims of these operational guidelines:
 
 These guidelines are structured in six sections, outlining:
 
-Section 1 - Introduction: background to the Open Energy project, clarifications of the roles and responsibilities
+**Introduction**: background to the Open Energy project, clarifications of the roles and responsibilities
 of different types of actors operating in the Open Energy ecosystem.
 
-Section 2 - Glossary: definitions of common acronyms, terminology, and technical tools used in Open Energy
+`**Glossary**<Open Energy Glossary>`: definitions of common acronyms, terminology, and technical tools used in Open Energy
 documentation.
 
-Section 3 - Considerations before you start: ‘at a glance’ list of items that all types of new members will need
+**Considerations before you start**: ‘at a glance’ list of items that all types of new members will need
 to consider in order to meet operational requirements.
 
-Section 4 - Core policies: operational principles and policies central to Open Energy function. Includes policies
+.. note::
+
+    The *Considerations before you start* is still in review and so is not present in this version of the documentation
+
+**Core policies**: operational principles and policies central to Open Energy function. Includes policies
 governing data sensitivity classification, access controls, and licensing.
 
-Section 5 - Data Providers and Data Consumers: guidelines outlining how Data Providers can share data safely and
+**Data Providers and Data Consumers**: guidelines outlining how :term:`Data Providers <Data Provider>` can share data safely and
 securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
-and design safe and effective APIs enabling data-sharing. Guidelines outlining how Data Consumers can meet the
+and design safe and effective APIs enabling data-sharing. Guidelines outlining how :term:`Data Consumers <Data Consumer>` can meet the
 requirements for offering data services, access and licensing conditions for different data classes, and best
 practice with regards to testing, security, ethics and dispute management.
 
-Section 6 - Additional Resources: links to other relevant documentation (e.g. technical, legal, etc.) sitting
+**Additional Resources**: links to other relevant documentation (e.g. technical, legal, etc.) sitting
 outside the operational guidelines.
 
-Disclaimer: The contents of the Operational Guidelines do not constitute legal advice. While they have been
-drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the
-regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent
-with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
-Participants are responsible for their own compliance with all applicable regulations and laws, including but not
-limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes
-(where applicable). The Open Energy operational guidelines will be revised in future in accordance with further
-development of services offered in the ecosystem, or changes to the regulatory and policy environment in which
-it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
+.. warning::
+
+    **Disclaimer**: The contents of the Operational Guidelines do not constitute legal advice. While they have been
+    drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the
+    regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent
+    with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
+    Participants are responsible for their own compliance with all applicable regulations and laws, including but not
+    limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes
+    (where applicable). The Open Energy operational guidelines will be revised in future in accordance with further
+    development of services offered in the ecosystem, or changes to the regulatory and policy environment in which
+    it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
 
 What is Open Energy, how was it made and who is it for?
 #######################################################
@@ -256,15 +262,15 @@ Open Energy has established a set of conditions which may be specified for Data 
 access to datasets in different sensitivity classes. These include, but are not limited to: payment, security
 compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.
 
-Creating Access Rules
----------------------
+Creating Access Rules (Introduction)
+------------------------------------
 
 To operationalise Data Access conditions above, we propose a system whereby access grants are determined, for each
 request to a Data Provider’s API, on the basis of a set of rules defined and published by that Data Provider in the
 dataset metadata.
 
-Data Licensing
---------------
+Data Licensing (Introduction)
+-----------------------------
 
 A data licence is a legal instrument setting out what a Data Consumer can do with a particular artefact (e.g.
 dataset). This grants certain ‘capabilities’ to the Data Consumer, comprising a clear expression of things they
