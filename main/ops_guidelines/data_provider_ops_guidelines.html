@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>6. Guidance for Data Providers &mdash; Open Energy Technical Documentation  documentation</title>
+  <title>5. Guidance for Data Providers &mdash; Open Energy Technical Documentation  documentation</title>
   
 
   
@@ -45,8 +45,8 @@
           href="../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Common Security Requirements" href="technical_common.html" />
-    <link rel="prev" title="5. Operational Guidelines - Core Policies" href="common_policies.html" /> 
+    <link rel="next" title="6. Common Security Requirements" href="technical_common.html" />
+    <link rel="prev" title="4. Guidance for Data Consumers" href="data_consumer_ops_guidelines.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,58 +100,62 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../architecture.html">1. Open Energy Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../metadata.html">2. Data Set Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">3. Access Control and Capability Grant Language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">4. Open Energy Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="common_policies.html">5. Operational Guidelines - Core Policies</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Guidance for Data Providers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#data-provider-role-and-responsibilities">6.1. Data Provider Role and Responsibilities</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-classification">6.1.1. Responsibility - Data classification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-access-and-licensing-specification">6.1.2. Responsibility - Access and licensing specification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-provision">6.1.3. Responsibility - Data provision</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#data-formats">6.1.3.1. Data formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction to Open Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_starting.html">2. Considerations Before You Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common_policies.html">3. Operational Guidelines - Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Guidance for Data Providers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-provider-role-and-responsibilities">5.1. Data Provider Role and Responsibilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-classification">5.1.1. Responsibility - Data classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-access-and-licensing-specification">5.1.2. Responsibility - Access and licensing specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-provision">5.1.3. Responsibility - Data provision</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data-formats">5.1.3.1. Data formats</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-integrity-and-correctness">6.1.4. Responsibility - Data integrity and correctness</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-metadata-provision">6.1.5. Responsibility - Metadata provision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-api-availability">6.1.6. Responsibility - API availability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsibility-api-stability-and-change-management">6.1.7. Responsibility - API stability and change management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-data-integrity-and-correctness">5.1.4. Responsibility - Data integrity and correctness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-metadata-provision">5.1.5. Responsibility - Metadata provision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-api-availability">5.1.6. Responsibility - API availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsibility-api-stability-and-change-management">5.1.7. Responsibility - API stability and change management</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#data-api-requirements">6.2. Data API Requirements</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#date-and-time-formats">6.2.1. Date and time formats</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#endpoint-security">6.2.2. Endpoint security</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#open-data-endpoints">6.2.2.1. Open data endpoints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#shared-data-endpoints">6.2.2.2. Shared data endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-api-requirements">5.2. Data API Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#date-and-time-formats">5.2.1. Date and time formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#endpoint-security">5.2.2. Endpoint security</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#open-data-endpoints">5.2.2.1. Open data endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shared-data-endpoints">5.2.2.2. Shared data endpoints</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#heartbeat-and-monitoring-endpoint">6.2.3. Heartbeat and monitoring endpoint</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#api-documentation">6.2.4. API documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#versioning">6.2.5. Versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heartbeat-and-monitoring-endpoint">5.2.3. Heartbeat and monitoring endpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-documentation">5.2.4. API documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#versioning">5.2.5. Versioning</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#problem-resolution">6.3. Problem Resolution</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#effective-resolution-of-problems">6.3.1. Effective resolution of problems</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#online-support">6.3.2. Online support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ticket-management-process">6.3.3. Ticket management process</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dispute-resolution-for-access-control-and-capability-grant-policies">6.3.4. Dispute resolution for access control and capability grant policies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#oegs-support">6.3.5. OEGS support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-resolution-data-providers">5.3. Problem Resolution (Data Providers)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#effective-resolution-of-problems-data-providers">5.3.1. Effective resolution of problems (Data Providers)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#online-support">5.3.2. Online support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ticket-management-process">5.3.3. Ticket management process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers">5.3.4. Dispute resolution for access control and capability grant policies (Data Providers)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#oegs-support-data-providers">5.3.5. OEGS support (Data Providers)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#change-management">6.4. Change Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#downtime">6.4.1. Downtime</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#licensing-and-access-control-changes">6.4.2. Licensing and access control changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-api-changes">6.4.3. Data API changes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dual-running-and-deprecation">6.4.3.1. Dual running and deprecation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#api-credentials-consent-and-authorisation">6.4.3.2. API credentials, consent and authorisation</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#change-management">5.4. Change Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downtime">5.4.1. Downtime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#licensing-and-access-control-changes">5.4.2. Licensing and access control changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-api-changes">5.4.3. Data API changes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dual-running-and-deprecation">5.4.3.1. Dual running and deprecation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#api-credentials-consent-and-authorisation">5.4.3.2. API credentials, consent and authorisation</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="technical_common.html">7. Common Security Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">9. Access Control and Capability Grant Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_material.html">11. Additional Material</a></li>
 </ul>
 
             
@@ -200,7 +204,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">6. </span>Guidance for Data Providers</li>
+      <li><span class="section-number">5. </span>Guidance for Data Providers</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -230,11 +234,11 @@
 
 
   <div class="section" id="guidance-for-data-providers">
-<h1><span class="section-number">6. </span>Guidance for Data Providers<a class="headerlink" href="#guidance-for-data-providers" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Guidance for Data Providers<a class="headerlink" href="#guidance-for-data-providers" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This documented is primarily intended for technical and operations teams within organisations wishing
-to participate in Open Energy as Data Providers.</p>
+to participate in Open Energy as <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -273,13 +277,13 @@ as described in <a class="reference external" href="https://www.ietf.org/rfc/rfc
 <li><p><a class="reference internal" href="#versioning" id="id17">Versioning</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#problem-resolution" id="id18">Problem Resolution</a></p>
+<li><p><a class="reference internal" href="#problem-resolution-data-providers" id="id18">Problem Resolution (Data Providers)</a></p>
 <ul>
-<li><p><a class="reference internal" href="#effective-resolution-of-problems" id="id19">Effective resolution of problems</a></p></li>
+<li><p><a class="reference internal" href="#effective-resolution-of-problems-data-providers" id="id19">Effective resolution of problems (Data Providers)</a></p></li>
 <li><p><a class="reference internal" href="#online-support" id="id20">Online support</a></p></li>
 <li><p><a class="reference internal" href="#ticket-management-process" id="id21">Ticket management process</a></p></li>
-<li><p><a class="reference internal" href="#dispute-resolution-for-access-control-and-capability-grant-policies" id="id22">Dispute resolution for access control and capability grant policies</a></p></li>
-<li><p><a class="reference internal" href="#oegs-support" id="id23">OEGS support</a></p></li>
+<li><p><a class="reference internal" href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" id="id22">Dispute resolution for access control and capability grant policies (Data Providers)</a></p></li>
+<li><p><a class="reference internal" href="#oegs-support-data-providers" id="id23">OEGS support (Data Providers)</a></p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#change-management" id="id24">Change Management</a></p>
@@ -297,10 +301,10 @@ as described in <a class="reference external" href="https://www.ietf.org/rfc/rfc
 </ul>
 </div>
 <div class="section" id="data-provider-role-and-responsibilities">
-<h2><a class="toc-backref" href="#id1"><span class="section-number">6.1. </span>Data Provider Role and Responsibilities</a><a class="headerlink" href="#data-provider-role-and-responsibilities" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> (<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">DP</span></a>) are Open Energy members which make data sets available to:</p>
+<h2><a class="toc-backref" href="#id1"><span class="section-number">5.1. </span>Data Provider Role and Responsibilities</a><a class="headerlink" href="#data-provider-role-and-responsibilities" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are Open Energy members which make data sets available to:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> (<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">DC</span></a>) within the Open Energy ecosystem</p>
+<li><p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> within the Open Energy ecosystem</p>
 <ul>
 <li><p>Applies to shared data sets</p></li>
 <li><p>Data APIs secured using Financial-grade API security (<a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a>)</p></li>
@@ -315,10 +319,10 @@ as described in <a class="reference external" href="https://www.ietf.org/rfc/rfc
 </ul>
 <p>In this context, Data APIs can be anything from a simple link to a CSV or other file (for open data) to a complex
 query system returning custom output on demand.</p>
-<p>To support this role, DPs have certain responsibilities:</p>
+<p>To support this role, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> have certain responsibilities:</p>
 <div class="section" id="responsibility-data-classification">
-<h3><a class="toc-backref" href="#id2"><span class="section-number">6.1.1. </span>Responsibility - Data classification</a><a class="headerlink" href="#responsibility-data-classification" title="Permalink to this headline">¶</a></h3>
-<p>Data providers are responsible for classification of their data sets by data sensitivity class, and for ensuring that
+<h3><a class="toc-backref" href="#id2"><span class="section-number">5.1.1. </span>Responsibility - Data classification</a><a class="headerlink" href="#responsibility-data-classification" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for classification of their data sets by data sensitivity class, and for ensuring that
 data are shared, or not shared, as appropriate.</p>
 <ul class="simple">
 <li><p>Any data classed as <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-closed"><span class="xref std std-term">OE-C</span></a> (Closed) or <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a> (Personal) <strong>MUST NOT</strong> be shared within the Open Energy ecosystem
@@ -328,46 +332,46 @@ following sections</p></li>
 </ul>
 </div>
 <div class="section" id="responsibility-access-and-licensing-specification">
-<h3><a class="toc-backref" href="#id3"><span class="section-number">6.1.2. </span>Responsibility - Access and licensing specification</a><a class="headerlink" href="#responsibility-access-and-licensing-specification" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for creating access rules for each dataset shared via Open Energy. For each data set, the DP must
+<h3><a class="toc-backref" href="#id3"><span class="section-number">5.1.2. </span>Responsibility - Access and licensing specification</a><a class="headerlink" href="#responsibility-access-and-licensing-specification" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for creating access rules for each dataset shared via Open Energy. For each data set, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> must
 create a set of one or more access rules as defined in <a class="reference internal" href="../metadata.html#data-set-metadata"><span class="std std-ref">Data Set Metadata</span></a>. These rules specify the conditions under which access will be
 granted, along with the capabilities forming the license grant should those conditions be satisfied.</p>
 <ul class="simple">
-<li><p>DPs <strong>MUST</strong> ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers</p></li>
-<li><p>DPs <strong>SHOULD</strong> ensure that the validity time bounds of any published capability grants are sufficient for
+<li><p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MUST</strong> ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers</p></li>
+<li><p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> ensure that the validity time bounds of any published capability grants are sufficient for
 reasonable commercial operation of a data consumer</p></li>
 </ul>
 </div>
 <div class="section" id="responsibility-data-provision">
-<h3><a class="toc-backref" href="#id4"><span class="section-number">6.1.3. </span>Responsibility - Data provision</a><a class="headerlink" href="#responsibility-data-provision" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for providing a data API for each data set, and for configuring and securing each API in accordance
-with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the DP
+<h3><a class="toc-backref" href="#id4"><span class="section-number">5.1.3. </span>Responsibility - Data provision</a><a class="headerlink" href="#responsibility-data-provision" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for providing a data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> for each data set, and for configuring and securing each <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> in accordance
+with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>
 on a per-data-set basis)</p>
 <ul class="simple">
 <li><p>Open data <strong>MUST</strong> be made available with no authentication or authorization requirements</p></li>
-<li><p>Shared data <strong>MUST</strong> made available through a FAPI compliant resource server connected to the OEGSs authorization
-service</p></li>
+<li><p>Shared data <strong>MUST</strong> made available through a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> compliant resource server connected to the OEGSs authorization
+service (see <a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a> for more details)</p></li>
 </ul>
 <div class="section" id="data-formats">
-<h4><a class="toc-backref" href="#id5"><span class="section-number">6.1.3.1. </span>Data formats</a><a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id5"><span class="section-number">5.1.3.1. </span>Data formats</a><a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h4>
 <p>Open Energy does not define or mandate individual data formats to be returned from data APIs - the diversity of kinds
 of information in the sector renders this impractical, and the additional overhead imposed on data providers would be
 undesirable.</p>
-<p>With this said, we would encourage data providers to consider likely automated consumption of data when designing their
+<p>With this said, we would encourage <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to consider likely automated consumption of data when designing their
 data APIs - this implies using machine readable formats such as CSV, JSON and similar, with a preference for those
 formats compatible with existing software tools and libraries.</p>
 </div>
 </div>
 <div class="section" id="responsibility-data-integrity-and-correctness">
-<h3><a class="toc-backref" href="#id6"><span class="section-number">6.1.4. </span>Responsibility - Data integrity and correctness</a><a class="headerlink" href="#responsibility-data-integrity-and-correctness" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for the correctness of data returned by their published data APIs. The OEGS will provide a
-mechanism by which DCs can report any data quality issues, and will convey any such reports to a nominated contact
-within the DP.</p>
+<h3><a class="toc-backref" href="#id6"><span class="section-number">5.1.4. </span>Responsibility - Data integrity and correctness</a><a class="headerlink" href="#responsibility-data-integrity-and-correctness" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for the correctness of data returned by their published data APIs. The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will provide a
+mechanism by which <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can report any data quality issues, and will convey any such reports to a nominated contact
+within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
 </div>
 <div class="section" id="responsibility-metadata-provision">
-<h3><a class="toc-backref" href="#id7"><span class="section-number">6.1.5. </span>Responsibility - Metadata provision</a><a class="headerlink" href="#responsibility-metadata-provision" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each
-data set within the Open Energy Governance Platform (OEGS) Registry.</p>
+<h3><a class="toc-backref" href="#id7"><span class="section-number">5.1.5. </span>Responsibility - Metadata provision</a><a class="headerlink" href="#responsibility-metadata-provision" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each
+data set within the Open Energy Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>) Registry.</p>
 <p>The metadata file covers, for each provided data set, whether shared or open:</p>
 <ul class="simple">
 <li><p>Semantic content</p></li>
@@ -376,18 +380,18 @@ data set within the Open Energy Governance Platform (OEGS) Registry.</p>
 <li><p>Syntactic content</p></li>
 </ul>
 <p>The content and format of the metadata file can be found at <a class="reference internal" href="../metadata.html#data-set-metadata"><span class="std std-ref">Data Set Metadata</span></a>.</p>
-<p>The DP is responsible for the accuracy and completeness of this metadata.</p>
+<p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> is responsible for the accuracy and completeness of this metadata.</p>
 </div>
 <div class="section" id="responsibility-api-availability">
-<h3><a class="toc-backref" href="#id8"><span class="section-number">6.1.6. </span>Responsibility - API availability</a><a class="headerlink" href="#responsibility-api-availability" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for availability of their published data APIs. Availability will be monitored automatically by the
-OEGS, availability information will form part of the metadata for each data set record in the OEGS Registry.</p>
-<p>The OEGS will provide a mechanism for DPs to announce scheduled downtime when planned, and to report unscheduled
+<h3><a class="toc-backref" href="#id8"><span class="section-number">5.1.6. </span>Responsibility - API availability</a><a class="headerlink" href="#responsibility-api-availability" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for availability of their published data APIs. Availability will be monitored automatically by the
+<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>, availability information will form part of the metadata for each data set record in the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Registry.</p>
+<p>The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will provide a mechanism for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to announce scheduled downtime when planned, and to report unscheduled
 downtime when necessary.</p>
 </div>
 <div class="section" id="responsibility-api-stability-and-change-management">
-<h3><a class="toc-backref" href="#id9"><span class="section-number">6.1.7. </span>Responsibility - API stability and change management</a><a class="headerlink" href="#responsibility-api-stability-and-change-management" title="Permalink to this headline">¶</a></h3>
-<p>DPs are responsible for managing any change to the data APIs such that disruption to DCs is minimised. This is handled
+<h3><a class="toc-backref" href="#id9"><span class="section-number">5.1.7. </span>Responsibility - API stability and change management</a><a class="headerlink" href="#responsibility-api-stability-and-change-management" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for managing any change to the data APIs such that disruption to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> is minimised. This is handled
 through:</p>
 <ul class="simple">
 <li><p>Semantic versioning of all API methods</p></li>
@@ -397,7 +401,7 @@ through:</p>
 </div>
 </div>
 <div class="section" id="data-api-requirements">
-<h2><a class="toc-backref" href="#id10"><span class="section-number">6.2. </span>Data API Requirements</a><a class="headerlink" href="#data-api-requirements" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10"><span class="section-number">5.2. </span>Data API Requirements</a><a class="headerlink" href="#data-api-requirements" title="Permalink to this headline">¶</a></h2>
 <p>Unlike open banking, open energy does not mandate particular APIs for data provision - it is expected that there will
 be a variety of mechanisms to expose data, with varying inputs (from a single data set ID to a complex query object)
 and varying kinds of output dependent on the information exposed.</p>
@@ -405,39 +409,39 @@ and varying kinds of output dependent on the information exposed.</p>
 parties within the open energy ecosystem.</p>
 <p>We refer to endpoints used to retrieve energy data as data endpoints, and others as infrastructure endpoints.</p>
 <div class="section" id="date-and-time-formats">
-<h3><a class="toc-backref" href="#id11"><span class="section-number">6.2.1. </span>Date and time formats</a><a class="headerlink" href="#date-and-time-formats" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11"><span class="section-number">5.2.1. </span>Date and time formats</a><a class="headerlink" href="#date-and-time-formats" title="Permalink to this headline">¶</a></h3>
 <p>Whenever date or time quantities are accepted or returned from a data API, these values MUST conform to
 <a class="reference external" href="https://tools.ietf.org/html/rfc3339">RFC 3339</a>. This is referenced elsewhere in this document as <strong>date/time</strong></p>
 </div>
 <div class="section" id="endpoint-security">
-<h3><a class="toc-backref" href="#id12"><span class="section-number">6.2.2. </span>Endpoint security</a><a class="headerlink" href="#endpoint-security" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12"><span class="section-number">5.2.2. </span>Endpoint security</a><a class="headerlink" href="#endpoint-security" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="open-data-endpoints">
-<h4><a class="toc-backref" href="#id13"><span class="section-number">6.2.2.1. </span>Open data endpoints</a><a class="headerlink" href="#open-data-endpoints" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id13"><span class="section-number">5.2.2.1. </span>Open data endpoints</a><a class="headerlink" href="#open-data-endpoints" title="Permalink to this headline">¶</a></h4>
 <p>Data endpoints which provide access to open data (in class <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a>) <strong>MUST NOT</strong> require any form of authentication
 prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.</p>
 </div>
 <div class="section" id="shared-data-endpoints">
-<h4><a class="toc-backref" href="#id14"><span class="section-number">6.2.2.2. </span>Shared data endpoints</a><a class="headerlink" href="#shared-data-endpoints" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id14"><span class="section-number">5.2.2.2. </span>Shared data endpoints</a><a class="headerlink" href="#shared-data-endpoints" title="Permalink to this headline">¶</a></h4>
 <p>Data endpoints which provide access to shared data (in classes <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a>) <strong>MUST</strong> implement the subset
-of the resource server part of the FAPI specification used within Open Energy as described in
-<a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a>, and authorize against the OEGS authorization service.</p>
+of the resource server part of the <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> specification used within Open Energy as described in
+<a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a>, and authorize against the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> authorization service.</p>
 <p>Protected data endpoints <strong>MAY</strong> use the token introspection mechanism provided by <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> to gather additional
 information about the client making the request prior to any access decision.</p>
 </div>
 </div>
 <div class="section" id="heartbeat-and-monitoring-endpoint">
-<h3><a class="toc-backref" href="#id15"><span class="section-number">6.2.3. </span>Heartbeat and monitoring endpoint</a><a class="headerlink" href="#heartbeat-and-monitoring-endpoint" title="Permalink to this headline">¶</a></h3>
-<p>All data APIs SHOULD include a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
+<h3><a class="toc-backref" href="#id15"><span class="section-number">5.2.3. </span>Heartbeat and monitoring endpoint</a><a class="headerlink" href="#heartbeat-and-monitoring-endpoint" title="Permalink to this headline">¶</a></h3>
+<p>All data APIs <strong>SHOULD</strong> include a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
 <ul class="simple">
-<li><p>It allows the OEGS to monitor the liveness of the data API</p></li>
+<li><p>It allows the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> to monitor the liveness of the data API</p></li>
 <li><p>It provides some level of verification that the resource server has been correctly configured</p></li>
 </ul>
 <p>The heartbeat endpoint location is defined within the data set metadata file, if specified it <strong>MUST</strong> respond to
-<code class="docutils literal notranslate"><span class="pre">GET</span></code> requests from the OEGS monitoring system with a <code class="docutils literal notranslate"><span class="pre">200</span></code> status code.</p>
-<p>If the heartbeat response contains a body, the body will be interpreted by the OEGS monitoring system as a JSON
+<code class="docutils literal notranslate"><span class="pre">GET</span></code> requests from the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> monitoring system with a <code class="docutils literal notranslate"><span class="pre">200</span></code> status code.</p>
+<p>If the heartbeat response contains a body, the body will be interpreted by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> monitoring system as a JSON
 dictionary containing statistics for the period between the most recent two successful calls to the heartbeat
 endpoint (including the call to which this is a response). This response is <strong>RECOMMENDED</strong> as it provides oversight
-of API usage to the OEGS.</p>
+of API usage to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>.</p>
 <p>Legal keys, and the semantics of their associated values, are as follows:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -465,99 +469,99 @@ CODE. A distinct key:value pair is sent in the response for each distinct HTTP s
 </table>
 </div>
 <div class="section" id="api-documentation">
-<h3><a class="toc-backref" href="#id16"><span class="section-number">6.2.4. </span>API documentation</a><a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16"><span class="section-number">5.2.4. </span>API documentation</a><a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h3>
 <p>Data APIs <strong>MUST</strong> be described within the transport section of the data set metadata file.</p>
 </div>
 <div class="section" id="versioning">
-<h3><a class="toc-backref" href="#id17"><span class="section-number">6.2.5. </span>Versioning</a><a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id17"><span class="section-number">5.2.5. </span>Versioning</a><a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h3>
 <p>All data APIs <strong>MUST</strong> include a version number in the path of each data endpoint. This version SHOULD use semantic
 versioning to differentiate between breaking and backwards compatible changes. This <strong>MUST</strong> be documented within the
 OpenAPI transport section of the metadata file.</p>
 </div>
 </div>
-<div class="section" id="problem-resolution">
-<h2><a class="toc-backref" href="#id18"><span class="section-number">6.3. </span>Problem Resolution</a><a class="headerlink" href="#problem-resolution" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="effective-resolution-of-problems">
-<h3><a class="toc-backref" href="#id19"><span class="section-number">6.3.1. </span>Effective resolution of problems</a><a class="headerlink" href="#effective-resolution-of-problems" title="Permalink to this headline">¶</a></h3>
-<p>A DP <strong>MUST</strong> create documentation to clearly outline the policies, processes and systems it has in place for problem
-resolution and its respective service level objectives. This framework should enable the effective resolution of DC
-issues and therefore cater for problems that relate specifically to a DC’s use of a DP’s data APIs. In the event that a
-DC is unable to resolve an issue with a DP, the issue <strong>MAY</strong> be flagged to the OEGS Dispute Resolution function for
+<div class="section" id="problem-resolution-data-providers">
+<h2><a class="toc-backref" href="#id18"><span class="section-number">5.3. </span>Problem Resolution (Data Providers)</a><a class="headerlink" href="#problem-resolution-data-providers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="effective-resolution-of-problems-data-providers">
+<h3><a class="toc-backref" href="#id19"><span class="section-number">5.3.1. </span>Effective resolution of problems (Data Providers)</a><a class="headerlink" href="#effective-resolution-of-problems-data-providers" title="Permalink to this headline">¶</a></h3>
+<p>A <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> create documentation to clearly outline the policies, processes and systems it has in place for problem
+resolution and its respective service level objectives. This framework should enable the effective resolution of <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>
+issues and therefore cater for problems that relate specifically to a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>’s use of a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s data APIs. In the event that a
+<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> is unable to resolve an issue with a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, the issue <strong>MAY</strong> be flagged to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Dispute Resolution function for
 independent support.</p>
 </div>
 <div class="section" id="online-support">
-<h3><a class="toc-backref" href="#id20"><span class="section-number">6.3.2. </span>Online support</a><a class="headerlink" href="#online-support" title="Permalink to this headline">¶</a></h3>
-<p>DPs <strong>SHOULD</strong> provide FAQs, which address areas that may be specific to DCs such as technical advice or test facility
+<h3><a class="toc-backref" href="#id20"><span class="section-number">5.3.2. </span>Online support</a><a class="headerlink" href="#online-support" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> provide FAQs, which address areas that may be specific to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> such as technical advice or test facility
 guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be
 collated into FAQs to support the early resolution of problems.</p>
 <p>Problem resolution documentation, FAQs, contact details, opening times and out of hours support <strong>SHOULD</strong> be published
-and easily accessible in one collective area on the DP’s website.</p>
+and easily accessible in one collective area on the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s website.</p>
 </div>
 <div class="section" id="ticket-management-process">
-<h3><a class="toc-backref" href="#id21"><span class="section-number">6.3.3. </span>Ticket management process</a><a class="headerlink" href="#ticket-management-process" title="Permalink to this headline">¶</a></h3>
-<p>DPs <strong>MUST</strong> ensure they have a functioning ticket management system which enables them to respond to issues and
+<h3><a class="toc-backref" href="#id21"><span class="section-number">5.3.3. </span>Ticket management process</a><a class="headerlink" href="#ticket-management-process" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MUST</strong> ensure they have a functioning ticket management system which enables them to respond to issues and
 problems raised within clearly defined service level targets. A successful problem resolution framework will enable the
-efficient identification and resolution of problems which specifically impact DCs. The system for raising and reporting
+efficient identification and resolution of problems which specifically impact <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>. The system for raising and reporting
 on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.</p>
 </div>
-<div class="section" id="dispute-resolution-for-access-control-and-capability-grant-policies">
-<h3><a class="toc-backref" href="#id22"><span class="section-number">6.3.4. </span>Dispute resolution for access control and capability grant policies</a><a class="headerlink" href="#dispute-resolution-for-access-control-and-capability-grant-policies" title="Permalink to this headline">¶</a></h3>
-<p>In cases where a DC believes that access conditions or capability grant rules are being applied unfairly, the OEGS
+<div class="section" id="dispute-resolution-for-access-control-and-capability-grant-policies-data-providers">
+<h3><a class="toc-backref" href="#id22"><span class="section-number">5.3.4. </span>Dispute resolution for access control and capability grant policies (Data Providers)</a><a class="headerlink" href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" title="Permalink to this headline">¶</a></h3>
+<p>In cases where a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> believes that access conditions or capability grant rules are being applied unfairly, the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>
 will act as a mediating party.</p>
 </div>
-<div class="section" id="oegs-support">
-<h3><a class="toc-backref" href="#id23"><span class="section-number">6.3.5. </span>OEGS support</a><a class="headerlink" href="#oegs-support" title="Permalink to this headline">¶</a></h3>
-<p>The OEGS Service Desk will provide participants with a supplementary ticket management process and supports DPs in
+<div class="section" id="oegs-support-data-providers">
+<h3><a class="toc-backref" href="#id23"><span class="section-number">5.3.5. </span>OEGS support (Data Providers)</a><a class="headerlink" href="#oegs-support-data-providers" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Service Desk will provide participants with a supplementary ticket management process and supports <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> in
 communicating problems to ecosystem participants via the noticeboard.</p>
 </div>
 </div>
 <div class="section" id="change-management">
-<h2><a class="toc-backref" href="#id24"><span class="section-number">6.4. </span>Change Management</a><a class="headerlink" href="#change-management" title="Permalink to this headline">¶</a></h2>
-<p>This section outlines various change scenarios that may impact DCs, and provides guidance for a DP to consider when
-implementing a change and communicating to DCs.</p>
+<h2><a class="toc-backref" href="#id24"><span class="section-number">5.4. </span>Change Management</a><a class="headerlink" href="#change-management" title="Permalink to this headline">¶</a></h2>
+<p>This section outlines various change scenarios that may impact <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, and provides guidance for a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> to consider when
+implementing a change and communicating to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>.</p>
 <div class="section" id="downtime">
-<h3><a class="toc-backref" href="#id25"><span class="section-number">6.4.1. </span>Downtime</a><a class="headerlink" href="#downtime" title="Permalink to this headline">¶</a></h3>
-<p>Planned downtime, by definition, is something that a DP anticipates and therefore is able to give advance notice to DCs.
-It is not generally possible to give advance notice of unplanned downtime, but DPs should give notice as soon as they
+<h3><a class="toc-backref" href="#id25"><span class="section-number">5.4.1. </span>Downtime</a><a class="headerlink" href="#downtime" title="Permalink to this headline">¶</a></h3>
+<p>Planned downtime, by definition, is something that a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> anticipates and therefore is able to give advance notice to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>.
+It is not generally possible to give advance notice of unplanned downtime, but <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> should give notice as soon as they
 are aware of the downtime.</p>
-<p>When providing notifications, DPs <strong>SHOULD</strong> provide a specific time period, so DCs are aware that the data API will be
+<p>When providing notifications, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> provide a specific time period, so <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> are aware that the data API will be
 unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner
 than anticipated.</p>
-<p>OEGS Support Services can assist DPs with the dissemination of downtime information to the wider Open Energy ecosystem
+<p><a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Support Services can assist <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> with the dissemination of downtime information to the wider Open Energy ecosystem
 via its central noticeboard facility.</p>
 <p>Planned downtime should be given at least five business days before the event. Apart from cancelling the planned
 downtime, no changes should be made to the planned downtime notification within the five business day period. Where
-practical, DPs should give advance notice via their own website, developer portal or OEGS of any planned downtime one
+practical, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> should give advance notice via their own website, developer portal or <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> of any planned downtime one
 calendar month in advance.</p>
 </div>
 <div class="section" id="licensing-and-access-control-changes">
-<h3><a class="toc-backref" href="#id26"><span class="section-number">6.4.2. </span>Licensing and access control changes</a><a class="headerlink" href="#licensing-and-access-control-changes" title="Permalink to this headline">¶</a></h3>
-<p>DPs <strong>MUST</strong> provide advance notice of any changes to access control and capability grant policies. This is normally
-covered by the time-bounded nature of these grants, but DPs MAY also use any notification services provided by the OEGS
+<h3><a class="toc-backref" href="#id26"><span class="section-number">5.4.2. </span>Licensing and access control changes</a><a class="headerlink" href="#licensing-and-access-control-changes" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MUST</strong> provide advance notice of any changes to access control and capability grant policies. This is normally
+covered by the time-bounded nature of these grants, but <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MAY</strong> also use any notification services provided by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>
 to publish additional information about changes.</p>
 </div>
 <div class="section" id="data-api-changes">
-<h3><a class="toc-backref" href="#id27"><span class="section-number">6.4.3. </span>Data API changes</a><a class="headerlink" href="#data-api-changes" title="Permalink to this headline">¶</a></h3>
-<p>Data providers may periodically wish to upgrade and / or to deprecate versions of their data APIs. The following
+<h3><a class="toc-backref" href="#id27"><span class="section-number">5.4.3. </span>Data API changes</a><a class="headerlink" href="#data-api-changes" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may periodically wish to upgrade and / or to deprecate versions of their data APIs. The following
 mitigation measures will reduce the impact on service providers of these changes.</p>
 <div class="section" id="dual-running-and-deprecation">
-<h4><a class="toc-backref" href="#id28"><span class="section-number">6.4.3.1. </span>Dual running and deprecation</a><a class="headerlink" href="#dual-running-and-deprecation" title="Permalink to this headline">¶</a></h4>
-<p>DPs <strong>SHOULD</strong> support a minimum of two non-compatible API versions in a production context, providing both versions
-were previously supported by the DP, for a period of time long enough to ensure that DCs have had sufficient time to
-successfully test the new version and migrate their applications and customers. OEGS recommends dual running for at
-least six months for a major version, and three months for a minor version. Where a DP implements a data API for the
+<h4><a class="toc-backref" href="#id28"><span class="section-number">5.4.3.1. </span>Dual running and deprecation</a><a class="headerlink" href="#dual-running-and-deprecation" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> support a minimum of two non-compatible API versions in a production context, providing both versions
+were previously supported by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, for a period of time long enough to ensure that <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> have had sufficient time to
+successfully test the new version and migrate their applications and customers. <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> recommends dual running for at
+least six months for a major version, and three months for a minor version. Where a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> implements a data API for the
 first time, they will only need to support this one version to start with.</p>
-<p>The deprecation of unsupported versions is at the DP’s discretion – based on usage metrics. However, the OEGS may
+<p>The deprecation of unsupported versions is at the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s discretion – based on usage metrics. However, the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> may
 recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be
-implemented within three months of notification by the OEGS. This is to cater for critical defects, especially those
-relating to security. In exceptional circumstances it may be agreed by OEGS that support for a specific version is
+implemented within three months of notification by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>. This is to cater for critical defects, especially those
+relating to security. In exceptional circumstances it may be agreed by <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> that support for a specific version is
 terminated earlier.</p>
-<p>DPs must not apply any measures to induce DCs to adopt a new version of the APIs (e.g. rate limiting the older version
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must not apply any measures to induce <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> to adopt a new version of the APIs (e.g. rate limiting the older version
 while providing better performance on a newer version).</p>
 </div>
 <div class="section" id="api-credentials-consent-and-authorisation">
-<h4><a class="toc-backref" href="#id29"><span class="section-number">6.4.3.2. </span>API credentials, consent and authorisation</a><a class="headerlink" href="#api-credentials-consent-and-authorisation" title="Permalink to this headline">¶</a></h4>
-<p>API Credentials associated with an API should be version agnostic. Therefore, a DC accessing v1.0, v1.1 or v2.0 should
+<h4><a class="toc-backref" href="#id29"><span class="section-number">5.4.3.2. </span>API credentials, consent and authorisation</a><a class="headerlink" href="#api-credentials-consent-and-authorisation" title="Permalink to this headline">¶</a></h4>
+<p>API Credentials associated with an API should be version agnostic. Therefore, a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> accessing v1.0, v1.1 or v2.0 should
 be able to use the same API Credentials across all available API endpoints.</p>
 </div>
 </div>
@@ -571,8 +575,8 @@ be able to use the same API Credentials across all available API endpoints.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="technical_common.html" class="btn btn-neutral float-right" title="7. Common Security Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="common_policies.html" class="btn btn-neutral float-left" title="5. Operational Guidelines - Core Policies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="technical_common.html" class="btn btn-neutral float-right" title="6. Common Security Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="data_consumer_ops_guidelines.html" class="btn btn-neutral float-left" title="4. Guidance for Data Consumers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
@@ -581,7 +585,7 @@ be able to use the same API Credentials across all available API endpoints.</p>
 <p>
     &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
     <span class="lastupdated">
-        Last updated on Jul 20, 2021.
+        Last updated on Jul 22, 2021.
       </span>
 
 </p>

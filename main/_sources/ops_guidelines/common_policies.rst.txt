@@ -5,19 +5,19 @@ Operational Guidelines - Core Policies
    :depth: 4
    :local:
 
-Introduction
-############
+Introduction (Core Policies)
+############################
 
 This section aims to outline core policies and principles with implications for all members of the Open Energy
 ecosystem. Please note that it is beyond the scope of Open Energy Phase 3 to produce detailed guidance and tooling
 accompanying all policies in this section. Development of these resources is a priority for future development and
-will be approached openly; using consultation with Advisory Groups, tester organisations and members to ensure that
+will be approached openly; using consultation with :term:`Advisory Groups<Advisory Group>`, tester organisations and members to ensure that
 resources meet member needs. All terminology used in this section is outlined in the `Open Energy Glossary`.
 
 Metadata
 ########
 
-Data sets are described by :term:`Data Providers <Data Provider>` through metadata files. The format for these can be
+Data sets are described by |DPs| through metadata files. The format for these can be
 found at `Data Set Metadata`
 
 Data Sensitivity Classes
@@ -41,7 +41,7 @@ privacy and consumer protection implications. Commercial sensitivity considers i
 commerciality. Security sensitivity includes critical national infrastructure and cybersecurity.
 
 Classes are presented in the table below. A definition, specification and dataset examples for each class will be
-provided in the Open Energy Operational Guidelines. Data Providers will then assess their datasets using the
+provided in the Open Energy Operational Guidelines. |DPs| will then assess their datasets using the
 Operational Guidelines and allocate them to a class, prior to sharing them via the Open Energy ecosystem.
 
 Open Energy data classes are designed to supplement, not replace, the
@@ -50,7 +50,7 @@ Open Energy data classes are designed to supplement, not replace, the
 designed to provide further nuance to the category of Shared data - identifying three different classes in this space,
 with different sensitivity profiles.
 
-Detailed guidance and tooling, designed to support Data Providers to classify datasets consistently and fairly, will be
+Detailed guidance and tooling, designed to support |DPs| to classify datasets consistently and fairly, will be
 inserted in due course beyond Phase 3. This will follow processes of consultation with Advisory Groups and tester
 organisations.
 
@@ -121,29 +121,29 @@ Data Access Conditions
 ######################
 
 This policy focuses on **data access**. Data access refers to **determining what types of conditions may be specified
-for Data Consumers to meet in order to gain access** to datasets in different sensitivity classes, and how access rules
+for |DCs| to meet in order to gain access** to datasets in different sensitivity classes, and how access rules
 are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
 consultation responses.
 
-The Open Energy Governance Service (OEGS) is responsible for providing Data Providers with verified information about
-Data Consumers, in line with specified access conditions for each dataset. However, the Data Provider is solely
+The Open Energy Governance Service (OEGS) is responsible for providing |DPs| with verified information about
+|DCs|, in line with specified access conditions for each dataset. However, the |DP| is solely
 responsible for determining whether any given API request should be honoured (i.e. data access granted), and the
 licensing terms for any data returned in response to that request. This is due to requirements for control to rest
-with the Data Provider only.
+with the |DP| only.
 
-It is expected that Data Providers will grant access reliably and fairly, in line with the access conditions that they
+It is expected that |DPs| will grant access reliably and fairly, in line with the access conditions that they
 specify. In the event that access is refused, there will be a mechanism for flagging this with the OEGS for review and
-dispute management. Data Providers must be able to show clear justification for access refusal. Repeat refusal or
+dispute management. |DPs| must be able to show clear justification for access refusal. Repeat refusal or
 non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
 
 This policy focuses on access conditions for classes OE-SA and OE-SB only. Personal data (OE-SP) are out of scope for
 development during Phase 3. Future extensibility of the Open Energy ecosystem to OE-SP data will be consulted on in
 future phases of project development.
 
-Policy details
---------------
+Policy details (Data access conditions)
+---------------------------------------
 
-Data Providers will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
+|DPs| will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
 Energy ecosystem. Data access conditions will then be applied in a manner that is proportionate to the sensitivity
 profile of each class. We propose to use the data sensitivity classes previously established as a basis for considering
 access conditions, but not as a complete determinant.
@@ -151,8 +151,8 @@ access conditions, but not as a complete determinant.
 Our approach must serve the goal of reducing friction in sharing energy data, while also balancing two distinct
 sets of needs:
 
-1. Data Providers: to retain control over their data.
-2. Data Consumers and Service Providers: to access multiple datasets in a clear and manageable way.
+1. |DPs|: to retain control over their data.
+2. |DCs| and Service Providers: to access multiple datasets in a clear and manageable way.
 
 As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
 This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each
@@ -169,10 +169,10 @@ as a cause of cost and friction in energy data sharing.
     * - Data Class
       - Access Conditions
     * - **OE-C**
-      - Determined and governed by the Data Provider only.
+      - Determined and governed by the |DP| only.
     * - **OE-SP**
       - Currently determined by legislation including, but not limited to: GDPR / DPA 2018, the Data Access and
-        Privacy Framework, and the Smart Energy Code. Data Providers may also apply additional non-standard access
+        Privacy Framework, and the Smart Energy Code. |DPs| may also apply additional non-standard access
         conditions, such as payment or purpose-based.
 
         Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
@@ -249,7 +249,7 @@ as a cause of cost and friction in energy data sharing.
     * - Other
       - Auditing clauses
 
-        Individuals handling the data within a Data Consumer must have completed certain training (e.g. ONS Safe
+        Individuals handling the data within a |DC| must have completed certain training (e.g. ONS Safe
         Researcher).
       - OE-SB and OE-SA
 
@@ -269,7 +269,7 @@ There are two ways in which group-based access can be defined.
 
 Further policy-development is required to ensure the inclusion of self-defining groups in the Open Energy ecosystem is
 fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent
-confusion for Data Providers or instability associated with too-frequent changes in group creation or membership. As
+confusion for |DPs| or instability associated with too-frequent changes in group creation or membership. As
 such, it is likely that group-based access defined through authoritative external sources will be explored first in
 OEGS development going forward.
 
@@ -277,12 +277,12 @@ Use case based access control
 -----------------------------
 
 This type of access condition is difficult to design due to inherent subjectivity in defining the bounds and meaning of
-particular use cases. While some Data Providers could be comfortable granting access on the basis of broadly defined use
-cases, such as fuel poverty reduction, this may not be appropriate to all Data Providers or for more sensitive datasets.
+particular use cases. While some |DPs| could be comfortable granting access on the basis of broadly defined use
+cases, such as fuel poverty reduction, this may not be appropriate to all |DPs| or for more sensitive datasets.
 As such, it is proposed that use case-based access could also be facilitated through the creation of either
 externally-defined or self-defined groups as outlined above. For example, partners within a Local Authority social
 housing retrofit project could form a group. This group would be accompanied by information about the specific use case
-it represents - for example participants, timescale, activities, commercial status etc.) enabling Data Providers to make
+it represents - for example participants, timescale, activities, commercial status etc.) enabling |DPs| to make
 an informed decision regarding whether to grant access. Any future consideration of access based on more broadly-defined
 use-cases would be subject to consultation and further policy development.
 
@@ -309,46 +309,46 @@ Creating access rules
 
 The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
 which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system
-whereby access and capability grants are determined, for each request to a Data Provider’s API, on the basis of a set
-of rules defined and published by that Data Provider.
+whereby access and capability grants are determined, for each request to a |DP|’s API, on the basis of a set
+of rules defined and published by that |DP|.
 
 Grants are based on three sources of information:
 
-1. Information from the Open Energy Governance Service (OEGS) about the Data Consumer making the request
-2. Information known by the Data Provider (separately from Open Energy) about the Data Consumer making the request,
+1. Information from the Open Energy Governance Service (OEGS) about the |DC| making the request
+2. Information known by the |DP| (separately from Open Energy) about the |DC| making the request,
    such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar
-3. Rules defined by the Data Provider - predicated on information provided by OEGS and/or, where necessary to preserve
-   privacy or security, properties known to the Data Provider only
+3. Rules defined by the |DP| - predicated on information provided by OEGS and/or, where necessary to preserve
+   privacy or security, properties known to the |DP| only
 
-Information provided by OEGS to Data Providers can cover two kinds of properties:
+Information provided by OEGS to |DPs| can cover two kinds of properties:
 
 * **Inherently true** properties known to Open Energy, such as:
 
-  - The unique ID of the Data Consumer
-  - The Data Consumer represents a Local Authority / SME / Enterprise / Community Organisation / Academic group, etc
-  - The Data Consumer has a particular identity such as a registered name
+  - The unique ID of the |DC|
+  - The |DC| represents a Local Authority / SME / Enterprise / Community Organisation / Academic group, etc
+  - The |DC| has a particular identity such as a registered name
   - Open Energy has performed identity assurance to a particular level
 
 * **Transient, time-bounded** properties known to Open Energy, such as:
 
-  - The Data Consumer is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
+  - The |DC| is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
     project under grant XYZ)
-  - The Data Consumer has signed a particular document on a particular date (e.g. documentation of a research
+  - The |DC| has signed a particular document on a particular date (e.g. documentation of a research
     partnership)
 
-When defining an access rule, Data Providers will also be required to confirm whether the rule is definitive or
-indicative. Definitive rules stipulate that a Data Consumer satisfying the stated conditions will be given access.
-Indicative rules stipulate that a Data Consumer satisfying the stated conditions may be given access, but there may
+When defining an access rule, |DPs| will also be required to confirm whether the rule is definitive or
+indicative. Definitive rules stipulate that a |DC| satisfying the stated conditions will be given access.
+Indicative rules stipulate that a |DC| satisfying the stated conditions may be given access, but there may
 also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data
-Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, Data Providers
-must be able to demonstrate a justifiable reason for doing so. Data Consumers can challenge access refusals through
+Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, |DPs|
+must be able to demonstrate a justifiable reason for doing so. |DCs| can challenge access refusals through
 a dispute-resolution mechanism (part of the OEGS) if this is required. Guidance regarding acceptable/unacceptable
 reasons for access refusal, the dispute-resolution mechanism, and OEGS dispute-resolution processes will be developed
 and published in Phase 4 of the project.
 
-The flow of information associated with access control is shown below - this assumes the data consumer has already
+The flow of information associated with access control is shown below - this assumes the |DC| has already
 acquired an access token from the authorization server. Access control and capability grants are processed on a
-pre-request basis, within the data provider, in the box *Make access and license decision based on details*:
+pre-request basis, within the |DP|, in the box *Make access and license decision based on details*:
 
 .. figure:: images/FAPI_sequence_diagram_introspection_only.svg
     :name: access_control_fapi_flow
@@ -367,8 +367,8 @@ This is defined using a rules language, the details of which can be found at
 What are licenses and capabilities?
 -----------------------------------
 
-A data licence is a legal instrument setting out what a Data Consumer can do with a particular artefact (e.g. dataset).
-This grants certain ‘capabilities’ to the Data Consumer, comprising a clear expression of things they can do with the
+A data licence is a legal instrument setting out what a |DC| can do with a particular artefact (e.g. dataset).
+This grants certain ‘capabilities’ to the |DC|, comprising a clear expression of things they can do with the
 artefact. For example, the CC BY 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
 reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact
 - so long as the author is credited with the original. By contrast, the CC BY-ND 4.0 Creative Commons licence grants
@@ -378,15 +378,15 @@ derivatives of the artefact.
 How will capability grants work in practice?
 --------------------------------------------
 
-Each time a Data Consumer makes an API call, the data returned will be associated with a particular set of capability
+Each time a |DC| makes an API call, the data returned will be associated with a particular set of capability
 grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in
 the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy
 Governance Service (OEGS). Alongside the legal text of the licence, the OEGS will make details of capabilities available
-to Data Consumers as an easy to understand set of notation/icons. Open Energy Search will also show the license
+to |DCs| as an easy to understand set of notation/icons. Open Energy Search will also show the license
 (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
 license in order to promote transparency from the outset.
 
-Open Energy defines a set of common capabilities - Data Providers may create custom capabilities, but we strongly
+Open Energy defines a set of common capabilities - |DPs| may create custom capabilities, but we strongly
 suggest that this should only be done in exceptional cases. The common initial set of capabilities can be found at
 `Standard capabilities`. We propose to use this list as the building blocks for our system of capability grants; whereby
 the range of capabilities, associated legal text, and ‘human readable’ notation/icons is standardised within the Open
@@ -395,7 +395,7 @@ Energy ecosystem.
 .. note::
 
     There is potential for redistribution of derivatives to be managed in more granularity through use of the data
-    pyramid (see Figure 2 below). This could permit Data Providers to specify what level of derivative insights can be
+    pyramid (see Figure 2 below). This could permit |DPs| to specify what level of derivative insights can be
     passed on (e.g. raw data / results of analysis / recommendations building on analysis).
 
 .. figure:: images/data_pyramid.svg
@@ -406,8 +406,8 @@ Energy ecosystem.
 Obligations accompanying capability grants
 ------------------------------------------
 
-Capability grants will be accompanied by details of any obligations that the Data Consumer must abide by when exercising
-a capability. Data Providers must specify any such obligations when associating capabilities with an access rule. As
+Capability grants will be accompanied by details of any obligations that the |DC| must abide by when exercising
+a capability. |DPs| must specify any such obligations when associating capabilities with an access rule. As
 with capabilities, the range of obligations will be standardised within the Open Energy ecosystem and will be included
 in the digital signature binding the API return with the capability grant.
 
@@ -429,7 +429,7 @@ Why are we proposing this approach?
 -----------------------------------
 
 Constructing a single licence for each dataset, designed to govern all possible scenarios for its use, has to date
-resulted in the creation of long, complex licensing agreements that are not easily readable by Data Consumers. Industry
+resulted in the creation of long, complex licensing agreements that are not easily readable by |DCs|. Industry
 feedback indicates that this creates friction and costs, for example associated with data-related legal support or
 accidental misuse of licensed data. These issues are further compounded by growth in the creation of bespoke licences
 that include non-standard capabilities or legal wording.
@@ -445,8 +445,8 @@ data types, actors and use-cases within the energy data ecosystem. We are aware 
 prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these
 risks by rationalising and standardising the parameters in which licensing occurs. To do this, Open Energy will work to
 standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the
-‘human-readable’ ways in which these capabilities are communicated to Data Consumers. Beyond Phase 3, we will further
-develop guidance for Data Providers encouraging simplicity and discouraging unnecessary protectionism, while also
+‘human-readable’ ways in which these capabilities are communicated to |DCs|. Beyond Phase 3, we will further
+develop guidance for |DPs| encouraging simplicity and discouraging unnecessary protectionism, while also
 maintaining appropriate protections for higher sensitivity classes of data.
 
 Early feedback from Advisory Groups and critical friends has suggested that benefits of this approach could include
@@ -454,7 +454,7 @@ reduced legal, staff and time costs associated with improved searchability, tran
 standardisation of capability grants. By making licensing simpler and faster, it could also help level the digital
 playing field by offering particular benefits to new, small or ‘public interest’ actors lacking in-house expertise
 or budget. In the longer term, adoption of this approach could have benefits across the sector as new data markets
-incentivise Data Providers to align with Open Energy standardisation.
+incentivise |DPs| to align with Open Energy standardisation.
 
 
 .. figure:: images/licensing_model_per_api_call.svg
@@ -471,9 +471,9 @@ Example access control and capability grant scenarios
 
 .. note::
 
-    These scenarios have been created to reflect decisions that could be faced by Data Providers in our Phase 3 use-case,
+    These scenarios have been created to reflect decisions that could be faced by |DPs| in our Phase 3 use-case,
     in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies.
-    Please note that the scenarios are exemplary only and do not necessarily represent the stances of any Data Providers
+    Please note that the scenarios are exemplary only and do not necessarily represent the stances of any |DPs|
     involved in testing.
 
 .. list-table:: Scenario 1
@@ -489,7 +489,7 @@ Example access control and capability grant scenarios
     * - **Access rules**
       - ``oe:member`` unary access condition
     * - **Capability grants**
-      - ``oe:member grants oe:use_any``, all data consumers who are members of Open Energy can access this data set, and
+      - ``oe:member grants oe:use_any``, all |DCs| who are members of Open Energy can access this data set, and
         receive the right to use for any purpose (see `Standard capabilities` for more detail)
     * - **Obligations**
       - Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their
@@ -509,21 +509,21 @@ Example access control and capability grant scenarios
       - Two distinct access constraints:
 
         1. ``oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1`` -  local authorities and
-           educational institutions are granted access if they are paid customers of the Data Provider at their standard
+           educational institutions are granted access if they are paid customers of the |DP| at their standard
            rate
         2. ``provider:customer_level >= 2`` - energy networks are granted access if they are paid customers of the Data
            Provider at their large business level
     * - **Capability grants**
-      -  In this scenario it would be technically possible for the Data Provider to apply different capability grants
-         to the two different access rules. In this case the Data Provider chooses not to as they have charged
-         commercial entities a higher access fee and are therefore happy for all Data Consumers to be granted the same
+      -  In this scenario it would be technically possible for the |DP| to apply different capability grants
+         to the two different access rules. In this case the |DP| chooses not to as they have charged
+         commercial entities a higher access fee and are therefore happy for all |DCs| to be granted the same
          capabilities. The result is the same set of capabilities (the same licence) is applied to both access rules.
 
          ``oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any``
 
          ``provider:customer_level >= 2 grants oe:use_any``
     * - **Obligations**
-      -  The Data Provider chooses the same obligations to be applied to both access rules
+      -  The |DP| chooses the same obligations to be applied to both access rules
 
          ``oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by``
 
@@ -532,10 +532,10 @@ Example access control and capability grant scenarios
 .. note:: **Scenario 2**
 
     This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
-    sector of the Data Consumer - Local Authority, Educational Institution, or Energy Network) along with properties
-    which are only known to the Data Provider (the payment status of the Data Consumer). We can do this because the
-    rules are evaluated within the Data Provider, and not externally within Open Energy’s Governance Service, an entity
-    which is not aware of any commercial arrangements between the Data Provider and Data Consumer.
+    sector of the |DC| - Local Authority, Educational Institution, or Energy Network) along with properties
+    which are only known to the |DP| (the payment status of the |DC|). We can do this because the
+    rules are evaluated within the |DP|, and not externally within Open Energy’s Governance Service, an entity
+    which is not aware of any commercial arrangements between the |DP| and |DC|.
 
 .. list-table:: Scenario 3
     :header-rows: 0
@@ -552,10 +552,9 @@ Example access control and capability grant scenarios
 
         1. ``oe_group:plymouth_lct`` - access to use case participants, here defined as a group ``lct`` managed by
            ``plymouth`` (the ID of a local council organisation) and administered using the |OEGS| facilities
-        2. ``provider:customer`` - access to all other Open Energy members if they have a paid account with the
-           data provider
+        2. ``provider:customer`` - access to all other Open Energy members if they have a paid account with the |DP|
     * - **Capability grants**
-      - The Data Provider chooses to apply two different capability grants (dual licences) for the two access rules,
+      - The |DP| chooses to apply two different capability grants (dual licences) for the two access rules,
         reflecting the fact that their dataset is commercially sensitive, therefore they require payment for its use
         beyond non-profit or development activities.
 
@@ -589,13 +588,13 @@ risk and presents the following points of response:
 
     Firstly, some stakeholders have suggested that Open Energy should take a ‘modular approach’ to building a
     ‘single Open Energy licence’. This suggestion outlines a permissive core or standard licence that is presented
-    to all Data Providers as the default option for publishing their data. If this is not appropriate for a particular
-    dataset, Data Providers would then have the option of adding restrictions (i.e. removing capabilities) by adding
+    to all |DPs| as the default option for publishing their data. If this is not appropriate for a particular
+    dataset, |DPs| would then have the option of adding restrictions (i.e. removing capabilities) by adding
     modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each
     modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence.
     Open Energy’s approach instead accepts a degree of licence plurality, but will work to standardise the
     discoverability, scope and ease of understanding of that pluralism by offering a limited, standardised and
-    searchable range of capabilities. This will be accompanied in due course by guidance for Data Providers,
+    searchable range of capabilities. This will be accompanied in due course by guidance for |DPs|,
     tailored to each sensitivity class, encouraging as much openness as possible while publishing data safely and
     creating a thriving marketplace.
 
@@ -603,23 +602,23 @@ risk and presents the following points of response:
     proliferation. For example, it is already common for energy system actors to publish data under bespoke licences
     containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities,
     Open Energy aims to rationalise some unnecessary forms of licence proliferation in the sector and reduce legal
-    costs to Data Providers by reducing the circumstances under which bespoke licences are necessary.
+    costs to |DPs| by reducing the circumstances under which bespoke licences are necessary.
 
 Is there a risk of licences changing too frequently or without notice?
 ----------------------------------------------------------------------
 
-In any licensing model that is not explicitly time-bound, there is a risk that the Data Provider may choose to change
+In any licensing model that is not explicitly time-bound, there is a risk that the |DP| may choose to change
 the licence arbitrarily. We have received feedback that bespoke licensing in the energy sector already produces
-insecurity for Data Consumers, who are concerned about the longevity of particular licences in a changeable
+insecurity for |DCs|, who are concerned about the longevity of particular licences in a changeable
 environment. For example, an energy forecasting company relies on predictable access to, and capabilities to use, a
 range of datasets (e.g. weather data). Changes to the capabilities granted for any of these datasets undermine this
 kind of business model, with additional proxy consequences for carbon savings that could be achieved as a result of
 better integration of renewable energy generation.
 
-Open Energy aims to address this problem by encouraging Data Providers to indicate the length of time they commit to
+Open Energy aims to address this problem by encouraging |DPs| to indicate the length of time they commit to
 retaining the same capability grant for a particular access rule. Although this will be optional, we hope that Data
 Providers will be incentivised to do so as this encourages confidence in the market. We are also exploring the
-possibility of building a notification system to alert Data Consumers either to upcoming or new changes in capability
+possibility of building a notification system to alert |DCs| either to upcoming or new changes in capability
 grants to ensure this is done transparently and with adequate warning where possible.
 
 .. note::
@@ -629,22 +628,22 @@ grants to ensure this is done transparently and with adequate warning where poss
     change.
 
 Beyond designing positive behavioural and market incentives, it is beyond the scope of Open Energy to control
-licence-changes as this remains within the legal rights of the Data Provider.
+licence-changes as this remains within the legal rights of the |DP|.
 
 Where are these rules specified?
 --------------------------------
 
 The access control, capability, and obligation grants form part of the metadata for a dataset. This is expressed in a
-file, hosted and maintained by the Data Provider responsible for the data set. The provisional structure of the entire
+file, hosted and maintained by the |DP| responsible for the data set. The provisional structure of the entire
 file can be found at `Data Set Metadata`, in particular the section on the `Access Block`
 
 Where are these rules evaluated, and by whom?
 ---------------------------------------------
 
-Following our guiding principle that Data Providers remain in control of their data at all times, these rules are
-evaluated within the Data Provider API implementation. This is necessary to allow for decisions predicated on
-information only known to the Data Provider, but this could impose additional complexity when setting up and
-implementing a Data Provider. To mitigate this, we will provide clear specifications and semantics for the rules
+Following our guiding principle that |DPs| remain in control of their data at all times, these rules are
+evaluated within the |DP| API implementation. This is necessary to allow for decisions predicated on
+information only known to the |DP|, but this could impose additional complexity when setting up and
+implementing a |DP|. To mitigate this, we will provide clear specifications and semantics for the rules
 language, along with a reference implementation in the Python language.
 
 The current language specification can be found at `Access Control and Capability Grant Language`, the time bounds

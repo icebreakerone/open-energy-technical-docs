@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>5. Operational Guidelines - Core Policies &mdash; Open Energy Technical Documentation  documentation</title>
+  <title>3. Operational Guidelines - Core Policies &mdash; Open Energy Technical Documentation  documentation</title>
   
 
   
@@ -45,8 +45,8 @@
           href="../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. Guidance for Data Providers" href="data_provider_ops_guidelines.html" />
-    <link rel="prev" title="4. Open Energy Glossary" href="../glossary.html" /> 
+    <link rel="next" title="4. Guidance for Data Consumers" href="data_consumer_ops_guidelines.html" />
+    <link rel="prev" title="2. Considerations Before You Start" href="before_starting.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,44 +100,48 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../architecture.html">1. Open Energy Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../metadata.html">2. Data Set Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">3. Access Control and Capability Grant Language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">4. Open Energy Glossary</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Operational Guidelines - Core Policies</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">5.1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#metadata">5.2. Metadata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-sensitivity-classes">5.3. Data Sensitivity Classes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#policy-details">5.3.1. Policy details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction to Open Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_starting.html">2. Considerations Before You Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Operational Guidelines - Core Policies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-core-policies">3.1. Introduction (Core Policies)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metadata">3.2. Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-sensitivity-classes">3.3. Data Sensitivity Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#policy-details">3.3.1. Policy details</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#data-access-conditions">5.4. Data Access Conditions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">5.4.1. Policy details</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#group-based-access-control">5.4.2. Group based access control</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#use-case-based-access-control">5.4.3. Use case based access control</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#prioritisation">5.4.4. Prioritisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-access-conditions">3.4. Data Access Conditions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#policy-details-data-access-conditions">3.4.1. Policy details (Data access conditions)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#group-based-access-control">3.4.2. Group based access control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-case-based-access-control">3.4.3. Use case based access control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prioritisation">3.4.4. Prioritisation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#data-licensing">5.5. Data Licensing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#creating-access-rules">5.5.1. Creating access rules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#associating-access-rules-with-capabilities">5.5.2. Associating access rules with capabilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#what-are-licenses-and-capabilities">5.5.3. What are licenses and capabilities?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-will-capability-grants-work-in-practice">5.5.4. How will capability grants work in practice?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#obligations-accompanying-capability-grants">5.5.5. Obligations accompanying capability grants</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#why-are-we-proposing-this-approach">5.5.6. Why are we proposing this approach?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example-access-control-and-capability-grant-scenarios">5.5.7. Example access control and capability grant scenarios</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#risks-of-license-proliferation">5.5.8. Risks of license proliferation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice">5.5.9. Is there a risk of licences changing too frequently or without notice?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#where-are-these-rules-specified">5.5.10. Where are these rules specified?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#where-are-these-rules-evaluated-and-by-whom">5.5.11. Where are these rules evaluated, and by whom?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-licensing">3.5. Data Licensing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-access-rules">3.5.1. Creating access rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#associating-access-rules-with-capabilities">3.5.2. Associating access rules with capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-licenses-and-capabilities">3.5.3. What are licenses and capabilities?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-will-capability-grants-work-in-practice">3.5.4. How will capability grants work in practice?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obligations-accompanying-capability-grants">3.5.5. Obligations accompanying capability grants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-are-we-proposing-this-approach">3.5.6. Why are we proposing this approach?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-access-control-and-capability-grant-scenarios">3.5.7. Example access control and capability grant scenarios</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#risks-of-license-proliferation">3.5.8. Risks of license proliferation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice">3.5.9. Is there a risk of licences changing too frequently or without notice?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-are-these-rules-specified">3.5.10. Where are these rules specified?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-are-these-rules-evaluated-and-by-whom">3.5.11. Where are these rules evaluated, and by whom?</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#service-desk-and-notifications">5.6. Service Desk and Notifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dispute-resolution">5.7. Dispute Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#service-desk-and-notifications">3.6. Service Desk and Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dispute-resolution">3.7. Dispute Resolution</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">6. Guidance for Data Providers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="technical_common.html">7. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">9. Access Control and Capability Grant Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_material.html">11. Additional Material</a></li>
 </ul>
 
             
@@ -186,7 +190,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">5. </span>Operational Guidelines - Core Policies</li>
+      <li><span class="section-number">3. </span>Operational Guidelines - Core Policies</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -216,58 +220,58 @@
 
 
   <div class="section" id="operational-guidelines-core-policies">
-<h1><span class="section-number">5. </span>Operational Guidelines - Core Policies<a class="headerlink" href="#operational-guidelines-core-policies" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Operational Guidelines - Core Policies<a class="headerlink" href="#operational-guidelines-core-policies" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#introduction" id="id9">Introduction</a></p></li>
-<li><p><a class="reference internal" href="#metadata" id="id10">Metadata</a></p></li>
-<li><p><a class="reference internal" href="#data-sensitivity-classes" id="id11">Data Sensitivity Classes</a></p>
+<li><p><a class="reference internal" href="#introduction-core-policies" id="id8">Introduction (Core Policies)</a></p></li>
+<li><p><a class="reference internal" href="#metadata" id="id9">Metadata</a></p></li>
+<li><p><a class="reference internal" href="#data-sensitivity-classes" id="id10">Data Sensitivity Classes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#policy-details" id="id12">Policy details</a></p></li>
+<li><p><a class="reference internal" href="#policy-details" id="id11">Policy details</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#data-access-conditions" id="id13">Data Access Conditions</a></p>
+<li><p><a class="reference internal" href="#data-access-conditions" id="id12">Data Access Conditions</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id1" id="id14">Policy details</a></p></li>
-<li><p><a class="reference internal" href="#group-based-access-control" id="id15">Group based access control</a></p></li>
-<li><p><a class="reference internal" href="#use-case-based-access-control" id="id16">Use case based access control</a></p></li>
-<li><p><a class="reference internal" href="#prioritisation" id="id17">Prioritisation</a></p></li>
+<li><p><a class="reference internal" href="#policy-details-data-access-conditions" id="id13">Policy details (Data access conditions)</a></p></li>
+<li><p><a class="reference internal" href="#group-based-access-control" id="id14">Group based access control</a></p></li>
+<li><p><a class="reference internal" href="#use-case-based-access-control" id="id15">Use case based access control</a></p></li>
+<li><p><a class="reference internal" href="#prioritisation" id="id16">Prioritisation</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#data-licensing" id="id18">Data Licensing</a></p>
+<li><p><a class="reference internal" href="#data-licensing" id="id17">Data Licensing</a></p>
 <ul>
-<li><p><a class="reference internal" href="#creating-access-rules" id="id19">Creating access rules</a></p></li>
-<li><p><a class="reference internal" href="#associating-access-rules-with-capabilities" id="id20">Associating access rules with capabilities</a></p></li>
-<li><p><a class="reference internal" href="#what-are-licenses-and-capabilities" id="id21">What are licenses and capabilities?</a></p></li>
-<li><p><a class="reference internal" href="#how-will-capability-grants-work-in-practice" id="id22">How will capability grants work in practice?</a></p></li>
-<li><p><a class="reference internal" href="#obligations-accompanying-capability-grants" id="id23">Obligations accompanying capability grants</a></p></li>
-<li><p><a class="reference internal" href="#why-are-we-proposing-this-approach" id="id24">Why are we proposing this approach?</a></p></li>
-<li><p><a class="reference internal" href="#example-access-control-and-capability-grant-scenarios" id="id25">Example access control and capability grant scenarios</a></p></li>
-<li><p><a class="reference internal" href="#risks-of-license-proliferation" id="id26">Risks of license proliferation</a></p></li>
-<li><p><a class="reference internal" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice" id="id27">Is there a risk of licences changing too frequently or without notice?</a></p></li>
-<li><p><a class="reference internal" href="#where-are-these-rules-specified" id="id28">Where are these rules specified?</a></p></li>
-<li><p><a class="reference internal" href="#where-are-these-rules-evaluated-and-by-whom" id="id29">Where are these rules evaluated, and by whom?</a></p></li>
+<li><p><a class="reference internal" href="#creating-access-rules" id="id18">Creating access rules</a></p></li>
+<li><p><a class="reference internal" href="#associating-access-rules-with-capabilities" id="id19">Associating access rules with capabilities</a></p></li>
+<li><p><a class="reference internal" href="#what-are-licenses-and-capabilities" id="id20">What are licenses and capabilities?</a></p></li>
+<li><p><a class="reference internal" href="#how-will-capability-grants-work-in-practice" id="id21">How will capability grants work in practice?</a></p></li>
+<li><p><a class="reference internal" href="#obligations-accompanying-capability-grants" id="id22">Obligations accompanying capability grants</a></p></li>
+<li><p><a class="reference internal" href="#why-are-we-proposing-this-approach" id="id23">Why are we proposing this approach?</a></p></li>
+<li><p><a class="reference internal" href="#example-access-control-and-capability-grant-scenarios" id="id24">Example access control and capability grant scenarios</a></p></li>
+<li><p><a class="reference internal" href="#risks-of-license-proliferation" id="id25">Risks of license proliferation</a></p></li>
+<li><p><a class="reference internal" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice" id="id26">Is there a risk of licences changing too frequently or without notice?</a></p></li>
+<li><p><a class="reference internal" href="#where-are-these-rules-specified" id="id27">Where are these rules specified?</a></p></li>
+<li><p><a class="reference internal" href="#where-are-these-rules-evaluated-and-by-whom" id="id28">Where are these rules evaluated, and by whom?</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#service-desk-and-notifications" id="id30">Service Desk and Notifications</a></p></li>
-<li><p><a class="reference internal" href="#dispute-resolution" id="id31">Dispute Resolution</a></p></li>
+<li><p><a class="reference internal" href="#service-desk-and-notifications" id="id29">Service Desk and Notifications</a></p></li>
+<li><p><a class="reference internal" href="#dispute-resolution" id="id30">Dispute Resolution</a></p></li>
 </ul>
 </div>
-<div class="section" id="introduction">
-<h2><a class="toc-backref" href="#id9"><span class="section-number">5.1. </span>Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="introduction-core-policies">
+<h2><a class="toc-backref" href="#id8"><span class="section-number">3.1. </span>Introduction (Core Policies)</a><a class="headerlink" href="#introduction-core-policies" title="Permalink to this headline">¶</a></h2>
 <p>This section aims to outline core policies and principles with implications for all members of the Open Energy
 ecosystem. Please note that it is beyond the scope of Open Energy Phase 3 to produce detailed guidance and tooling
 accompanying all policies in this section. Development of these resources is a priority for future development and
-will be approached openly; using consultation with Advisory Groups, tester organisations and members to ensure that
+will be approached openly; using consultation with <a class="reference internal" href="../glossary.html#term-Advisory-Group"><span class="xref std std-term">Advisory Groups</span></a>, tester organisations and members to ensure that
 resources meet member needs. All terminology used in this section is outlined in the <a class="reference internal" href="../glossary.html#open-energy-glossary"><span class="std std-ref">Open Energy Glossary</span></a>.</p>
 </div>
 <div class="section" id="metadata">
-<h2><a class="toc-backref" href="#id10"><span class="section-number">5.2. </span>Metadata</a><a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9"><span class="section-number">3.2. </span>Metadata</a><a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
 <p>Data sets are described by <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> through metadata files. The format for these can be
 found at <a class="reference internal" href="../metadata.html#data-set-metadata"><span class="std std-ref">Data Set Metadata</span></a></p>
 </div>
 <div class="section" id="data-sensitivity-classes">
-<h2><a class="toc-backref" href="#id11"><span class="section-number">5.3. </span>Data Sensitivity Classes</a><a class="headerlink" href="#data-sensitivity-classes" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10"><span class="section-number">3.3. </span>Data Sensitivity Classes</a><a class="headerlink" href="#data-sensitivity-classes" title="Permalink to this headline">¶</a></h2>
 <p>The Open Energy ecosystem incorporates a range of categories of data that have varied levels of sensitivity. In order
 to handle this complexity, and to ensure data is appropriately protected, Open Energy has developed a system of data
 sensitivity classification.</p>
@@ -276,24 +280,24 @@ of data classes should be used to distinguish data of different sensitivities sh
 This policy builds from Phase 2 foundations and has been created with input from the Open Energy Advisory Groups,
 Review Track, and public consultation responses.</p>
 <div class="section" id="policy-details">
-<h3><a class="toc-backref" href="#id12"><span class="section-number">5.3.1. </span>Policy details</a><a class="headerlink" href="#policy-details" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11"><span class="section-number">3.3.1. </span>Policy details</a><a class="headerlink" href="#policy-details" title="Permalink to this headline">¶</a></h3>
 <p>Open Energy operates a system of five data sensitivity classes, graded across three dimensions of sensitivity: personal,
 commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the UK DPA 2018, and related
 privacy and consumer protection implications. Commercial sensitivity considers intellectual property, risk and
 commerciality. Security sensitivity includes critical national infrastructure and cybersecurity.</p>
 <p>Classes are presented in the table below. A definition, specification and dataset examples for each class will be
-provided in the Open Energy Operational Guidelines. Data Providers will then assess their datasets using the
+provided in the Open Energy Operational Guidelines. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> will then assess their datasets using the
 Operational Guidelines and allocate them to a class, prior to sharing them via the Open Energy ecosystem.</p>
 <p>Open Energy data classes are designed to supplement, not replace, the
 <a class="reference external" href="https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/69042178/Data+Best+Practice+latest+release+v0.21">Modernising Energy Data Best Practice Guidance</a>
 (Point 12) determining whether data should be made Open, Shared or Closed. In particular, Open Energy data classes are
 designed to provide further nuance to the category of Shared data - identifying three different classes in this space,
 with different sensitivity profiles.</p>
-<p>Detailed guidance and tooling, designed to support Data Providers to classify datasets consistently and fairly, will be
+<p>Detailed guidance and tooling, designed to support <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to classify datasets consistently and fairly, will be
 inserted in due course beyond Phase 3. This will follow processes of consultation with Advisory Groups and tester
 organisations.</p>
-<table class="colwidths-given docutils align-default" id="id3">
-<caption><span class="caption-number">Table 5.1 </span><span class="caption-text">data sensitivity classes in the Open Energy ecosystem</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">data sensitivity classes in the Open Energy ecosystem</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 11%" />
 <col style="width: 42%" />
@@ -373,34 +377,34 @@ institutional charters or Terms of Reference, etc.)</p></td>
 </div>
 </div>
 <div class="section" id="data-access-conditions">
-<h2><a class="toc-backref" href="#id13"><span class="section-number">5.4. </span>Data Access Conditions</a><a class="headerlink" href="#data-access-conditions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12"><span class="section-number">3.4. </span>Data Access Conditions</a><a class="headerlink" href="#data-access-conditions" title="Permalink to this headline">¶</a></h2>
 <p>This policy focuses on <strong>data access</strong>. Data access refers to <strong>determining what types of conditions may be specified
-for Data Consumers to meet in order to gain access</strong> to datasets in different sensitivity classes, and how access rules
+for |DCs| to meet in order to gain access</strong> to datasets in different sensitivity classes, and how access rules
 are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
 consultation responses.</p>
-<p>The Open Energy Governance Service (OEGS) is responsible for providing Data Providers with verified information about
-Data Consumers, in line with specified access conditions for each dataset. However, the Data Provider is solely
+<p>The Open Energy Governance Service (OEGS) is responsible for providing <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> with verified information about
+<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, in line with specified access conditions for each dataset. However, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> is solely
 responsible for determining whether any given API request should be honoured (i.e. data access granted), and the
 licensing terms for any data returned in response to that request. This is due to requirements for control to rest
-with the Data Provider only.</p>
-<p>It is expected that Data Providers will grant access reliably and fairly, in line with the access conditions that they
+with the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only.</p>
+<p>It is expected that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> will grant access reliably and fairly, in line with the access conditions that they
 specify. In the event that access is refused, there will be a mechanism for flagging this with the OEGS for review and
-dispute management. Data Providers must be able to show clear justification for access refusal. Repeat refusal or
+dispute management. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must be able to show clear justification for access refusal. Repeat refusal or
 non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).</p>
 <p>This policy focuses on access conditions for classes OE-SA and OE-SB only. Personal data (OE-SP) are out of scope for
 development during Phase 3. Future extensibility of the Open Energy ecosystem to OE-SP data will be consulted on in
 future phases of project development.</p>
-<div class="section" id="id1">
-<h3><a class="toc-backref" href="#id14"><span class="section-number">5.4.1. </span>Policy details</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Data Providers will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
+<div class="section" id="policy-details-data-access-conditions">
+<h3><a class="toc-backref" href="#id13"><span class="section-number">3.4.1. </span>Policy details (Data access conditions)</a><a class="headerlink" href="#policy-details-data-access-conditions" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
 Energy ecosystem. Data access conditions will then be applied in a manner that is proportionate to the sensitivity
 profile of each class. We propose to use the data sensitivity classes previously established as a basis for considering
 access conditions, but not as a complete determinant.</p>
 <p>Our approach must serve the goal of reducing friction in sharing energy data, while also balancing two distinct
 sets of needs:</p>
 <ol class="arabic simple">
-<li><p>Data Providers: to retain control over their data.</p></li>
-<li><p>Data Consumers and Service Providers: to access multiple datasets in a clear and manageable way.</p></li>
+<li><p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>: to retain control over their data.</p></li>
+<li><p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> and Service Providers: to access multiple datasets in a clear and manageable way.</p></li>
 </ol>
 <p>As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
 This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each
@@ -408,8 +412,8 @@ sensitivity class. Instead, our policy enables some tailoring within defined par
 <p>The table below describes access conditions for each of the Open Energy data sensitivity classes. It also demonstrates
 the rationale for this guidance - identifying the lack of standardised access conditions for OE-SA and OE-SB datasets
 as a cause of cost and friction in energy data sharing.</p>
-<table class="colwidths-given docutils align-default" id="id4">
-<caption><span class="caption-number">Table 5.2 </span><span class="caption-text">Data sensitivity classes and access conditions in scope</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-number">Table 3.2 </span><span class="caption-text">Data sensitivity classes and access conditions in scope</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
@@ -421,11 +425,11 @@ as a cause of cost and friction in energy data sharing.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>OE-C</strong></p></td>
-<td><p>Determined and governed by the Data Provider only.</p></td>
+<td><p>Determined and governed by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>OE-SP</strong></p></td>
 <td><p>Currently determined by legislation including, but not limited to: GDPR / DPA 2018, the Data Access and
-Privacy Framework, and the Smart Energy Code. Data Providers may also apply additional non-standard access
+Privacy Framework, and the Smart Energy Code. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may also apply additional non-standard access
 conditions, such as payment or purpose-based.</p>
 <p>Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
 July 2021) and beyond the scope of this consultation. Future extensibility to be considered based on
@@ -447,8 +451,8 @@ consultation in due course.</p>
 </tr>
 </tbody>
 </table>
-<table class="colwidths-given docutils align-default" id="id5">
-<caption><span class="caption-number">Table 5.3 </span><span class="caption-text">Open Energy access conditions</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-number">Table 3.3 </span><span class="caption-text">Open Energy access conditions</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 50%" />
@@ -509,7 +513,7 @@ consultation in due course.</p>
 </tr>
 <tr class="row-even"><td><p>Other</p></td>
 <td><p>Auditing clauses</p>
-<p>Individuals handling the data within a Data Consumer must have completed certain training (e.g. ONS Safe
+<p>Individuals handling the data within a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must have completed certain training (e.g. ONS Safe
 Researcher).</p>
 </td>
 <td><p>OE-SB and OE-SA</p></td>
@@ -518,7 +522,7 @@ Researcher).</p>
 </table>
 </div>
 <div class="section" id="group-based-access-control">
-<h3><a class="toc-backref" href="#id15"><span class="section-number">5.4.2. </span>Group based access control</a><a class="headerlink" href="#group-based-access-control" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14"><span class="section-number">3.4.2. </span>Group based access control</a><a class="headerlink" href="#group-based-access-control" title="Permalink to this headline">¶</a></h3>
 <p>There are two ways in which group-based access can be defined.</p>
 <ol class="arabic simple">
 <li><p>The group can be externally defined. In this case, an external source provides documentation group membership and
@@ -532,24 +536,24 @@ commercial agreement.</p></li>
 </ol>
 <p>Further policy-development is required to ensure the inclusion of self-defining groups in the Open Energy ecosystem is
 fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent
-confusion for Data Providers or instability associated with too-frequent changes in group creation or membership. As
+confusion for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> or instability associated with too-frequent changes in group creation or membership. As
 such, it is likely that group-based access defined through authoritative external sources will be explored first in
 OEGS development going forward.</p>
 </div>
 <div class="section" id="use-case-based-access-control">
-<h3><a class="toc-backref" href="#id16"><span class="section-number">5.4.3. </span>Use case based access control</a><a class="headerlink" href="#use-case-based-access-control" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15"><span class="section-number">3.4.3. </span>Use case based access control</a><a class="headerlink" href="#use-case-based-access-control" title="Permalink to this headline">¶</a></h3>
 <p>This type of access condition is difficult to design due to inherent subjectivity in defining the bounds and meaning of
-particular use cases. While some Data Providers could be comfortable granting access on the basis of broadly defined use
-cases, such as fuel poverty reduction, this may not be appropriate to all Data Providers or for more sensitive datasets.
+particular use cases. While some <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> could be comfortable granting access on the basis of broadly defined use
+cases, such as fuel poverty reduction, this may not be appropriate to all <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> or for more sensitive datasets.
 As such, it is proposed that use case-based access could also be facilitated through the creation of either
 externally-defined or self-defined groups as outlined above. For example, partners within a Local Authority social
 housing retrofit project could form a group. This group would be accompanied by information about the specific use case
-it represents - for example participants, timescale, activities, commercial status etc.) enabling Data Providers to make
+it represents - for example participants, timescale, activities, commercial status etc.) enabling <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to make
 an informed decision regarding whether to grant access. Any future consideration of access based on more broadly-defined
 use-cases would be subject to consultation and further policy development.</p>
 </div>
 <div class="section" id="prioritisation">
-<h3><a class="toc-backref" href="#id17"><span class="section-number">5.4.4. </span>Prioritisation</a><a class="headerlink" href="#prioritisation" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16"><span class="section-number">3.4.4. </span>Prioritisation</a><a class="headerlink" href="#prioritisation" title="Permalink to this headline">¶</a></h3>
 <p>Inclusion of all access conditions outlined above will require significant technical build. In the near future,
 Open Energy may prioritise the establishment of access conditions that industry feedback has indicated take priority.
 These include: payment, security compliance, regulatory compliance and externally defined groups. As flagged above,
@@ -558,72 +562,72 @@ may require further policy work.</p>
 </div>
 </div>
 <div class="section" id="data-licensing">
-<h2><a class="toc-backref" href="#id18"><span class="section-number">5.5. </span>Data Licensing</a><a class="headerlink" href="#data-licensing" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id17"><span class="section-number">3.5. </span>Data Licensing</a><a class="headerlink" href="#data-licensing" title="Permalink to this headline">¶</a></h2>
 <p>This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public consultation
 responses. These policies are presented jointly as they unite the processes of determining who can access a particular
 dataset and what can be done with that dataset. Please note that this policy does not outline draft legal text of the
 final licences - this is being developed separately with legal support. All ideas outlined in this document remain
 subject to legal assessment.</p>
 <div class="section" id="creating-access-rules">
-<h3><a class="toc-backref" href="#id19"><span class="section-number">5.5.1. </span>Creating access rules</a><a class="headerlink" href="#creating-access-rules" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id18"><span class="section-number">3.5.1. </span>Creating access rules</a><a class="headerlink" href="#creating-access-rules" title="Permalink to this headline">¶</a></h3>
 <p>The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
 which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system
-whereby access and capability grants are determined, for each request to a Data Provider’s API, on the basis of a set
-of rules defined and published by that Data Provider.</p>
+whereby access and capability grants are determined, for each request to a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s API, on the basis of a set
+of rules defined and published by that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
 <p>Grants are based on three sources of information:</p>
 <ol class="arabic simple">
-<li><p>Information from the Open Energy Governance Service (OEGS) about the Data Consumer making the request</p></li>
-<li><p>Information known by the Data Provider (separately from Open Energy) about the Data Consumer making the request,
+<li><p>Information from the Open Energy Governance Service (OEGS) about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> making the request</p></li>
+<li><p>Information known by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> (separately from Open Energy) about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> making the request,
 such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar</p></li>
-<li><p>Rules defined by the Data Provider - predicated on information provided by OEGS and/or, where necessary to preserve
-privacy or security, properties known to the Data Provider only</p></li>
+<li><p>Rules defined by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> - predicated on information provided by OEGS and/or, where necessary to preserve
+privacy or security, properties known to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only</p></li>
 </ol>
-<p>Information provided by OEGS to Data Providers can cover two kinds of properties:</p>
+<p>Information provided by OEGS to <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> can cover two kinds of properties:</p>
 <ul class="simple">
 <li><p><strong>Inherently true</strong> properties known to Open Energy, such as:</p>
 <ul>
-<li><p>The unique ID of the Data Consumer</p></li>
-<li><p>The Data Consumer represents a Local Authority / SME / Enterprise / Community Organisation / Academic group, etc</p></li>
-<li><p>The Data Consumer has a particular identity such as a registered name</p></li>
+<li><p>The unique ID of the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a></p></li>
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> represents a Local Authority / SME / Enterprise / Community Organisation / Academic group, etc</p></li>
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> has a particular identity such as a registered name</p></li>
 <li><p>Open Energy has performed identity assurance to a particular level</p></li>
 </ul>
 </li>
 <li><p><strong>Transient, time-bounded</strong> properties known to Open Energy, such as:</p>
 <ul>
-<li><p>The Data Consumer is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
 project under grant XYZ)</p></li>
-<li><p>The Data Consumer has signed a particular document on a particular date (e.g. documentation of a research
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> has signed a particular document on a particular date (e.g. documentation of a research
 partnership)</p></li>
 </ul>
 </li>
 </ul>
-<p>When defining an access rule, Data Providers will also be required to confirm whether the rule is definitive or
-indicative. Definitive rules stipulate that a Data Consumer satisfying the stated conditions will be given access.
-Indicative rules stipulate that a Data Consumer satisfying the stated conditions may be given access, but there may
+<p>When defining an access rule, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> will also be required to confirm whether the rule is definitive or
+indicative. Definitive rules stipulate that a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> satisfying the stated conditions will be given access.
+Indicative rules stipulate that a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> satisfying the stated conditions may be given access, but there may
 also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data
-Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, Data Providers
-must be able to demonstrate a justifiable reason for doing so. Data Consumers can challenge access refusals through
+Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>
+must be able to demonstrate a justifiable reason for doing so. <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can challenge access refusals through
 a dispute-resolution mechanism (part of the OEGS) if this is required. Guidance regarding acceptable/unacceptable
 reasons for access refusal, the dispute-resolution mechanism, and OEGS dispute-resolution processes will be developed
 and published in Phase 4 of the project.</p>
-<p>The flow of information associated with access control is shown below - this assumes the data consumer has already
+<p>The flow of information associated with access control is shown below - this assumes the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> has already
 acquired an access token from the authorization server. Access control and capability grants are processed on a
-pre-request basis, within the data provider, in the box <em>Make access and license decision based on details</em>:</p>
+pre-request basis, within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, in the box <em>Make access and license decision based on details</em>:</p>
 <div class="figure align-default" id="access-control-fapi-flow">
-<img alt="../_images/FAPI_sequence_diagram_introspection_only.svg" src="../_images/FAPI_sequence_diagram_introspection_only.svg" /><p class="caption"><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Access control authorization flow showing application point for access control and capability grant rules</span><a class="headerlink" href="#access-control-fapi-flow" title="Permalink to this image">¶</a></p>
+<img alt="../_images/FAPI_sequence_diagram_introspection_only.svg" src="../_images/FAPI_sequence_diagram_introspection_only.svg" /><p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Access control authorization flow showing application point for access control and capability grant rules</span><a class="headerlink" href="#access-control-fapi-flow" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="associating-access-rules-with-capabilities">
-<h3><a class="toc-backref" href="#id20"><span class="section-number">5.5.2. </span>Associating access rules with capabilities</a><a class="headerlink" href="#associating-access-rules-with-capabilities" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id19"><span class="section-number">3.5.2. </span>Associating access rules with capabilities</a><a class="headerlink" href="#associating-access-rules-with-capabilities" title="Permalink to this headline">¶</a></h3>
 <p>In the Open Energy model, licensing is expressed as the grant of a set of capabilities and associated obligations,
 scoped to the results of a single API call and verified through a non-repudiable digital signature.</p>
 <p>This is defined using a rules language, the details of which can be found at
 <a class="reference internal" href="../access_control_specification.html#access-control-and-capability-grant-language"><span class="std std-ref">Access Control and Capability Grant Language</span></a></p>
 </div>
 <div class="section" id="what-are-licenses-and-capabilities">
-<h3><a class="toc-backref" href="#id21"><span class="section-number">5.5.3. </span>What are licenses and capabilities?</a><a class="headerlink" href="#what-are-licenses-and-capabilities" title="Permalink to this headline">¶</a></h3>
-<p>A data licence is a legal instrument setting out what a Data Consumer can do with a particular artefact (e.g. dataset).
-This grants certain ‘capabilities’ to the Data Consumer, comprising a clear expression of things they can do with the
+<h3><a class="toc-backref" href="#id20"><span class="section-number">3.5.3. </span>What are licenses and capabilities?</a><a class="headerlink" href="#what-are-licenses-and-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>A data licence is a legal instrument setting out what a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> can do with a particular artefact (e.g. dataset).
+This grants certain ‘capabilities’ to the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>, comprising a clear expression of things they can do with the
 artefact. For example, the CC BY 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
 reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact
 - so long as the author is credited with the original. By contrast, the CC BY-ND 4.0 Creative Commons licence grants
@@ -631,15 +635,15 @@ the capability to reuse the licensed artefact for any purpose, however it does n
 derivatives of the artefact.</p>
 </div>
 <div class="section" id="how-will-capability-grants-work-in-practice">
-<h3><a class="toc-backref" href="#id22"><span class="section-number">5.5.4. </span>How will capability grants work in practice?</a><a class="headerlink" href="#how-will-capability-grants-work-in-practice" title="Permalink to this headline">¶</a></h3>
-<p>Each time a Data Consumer makes an API call, the data returned will be associated with a particular set of capability
+<h3><a class="toc-backref" href="#id21"><span class="section-number">3.5.4. </span>How will capability grants work in practice?</a><a class="headerlink" href="#how-will-capability-grants-work-in-practice" title="Permalink to this headline">¶</a></h3>
+<p>Each time a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> makes an API call, the data returned will be associated with a particular set of capability
 grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in
 the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy
 Governance Service (OEGS). Alongside the legal text of the licence, the OEGS will make details of capabilities available
-to Data Consumers as an easy to understand set of notation/icons. Open Energy Search will also show the license
+to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> as an easy to understand set of notation/icons. Open Energy Search will also show the license
 (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
 license in order to promote transparency from the outset.</p>
-<p>Open Energy defines a set of common capabilities - Data Providers may create custom capabilities, but we strongly
+<p>Open Energy defines a set of common capabilities - <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may create custom capabilities, but we strongly
 suggest that this should only be done in exceptional cases. The common initial set of capabilities can be found at
 <a class="reference internal" href="../access_control_specification.html#standard-capabilities"><span class="std std-ref">Standard capabilities</span></a>. We propose to use this list as the building blocks for our system of capability grants; whereby
 the range of capabilities, associated legal text, and ‘human readable’ notation/icons is standardised within the Open
@@ -647,17 +651,17 @@ Energy ecosystem.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There is potential for redistribution of derivatives to be managed in more granularity through use of the data
-pyramid (see Figure 2 below). This could permit Data Providers to specify what level of derivative insights can be
+pyramid (see Figure 2 below). This could permit <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to specify what level of derivative insights can be
 passed on (e.g. raw data / results of analysis / recommendations building on analysis).</p>
 </div>
 <div class="figure align-default" id="data-pyramid">
-<img alt="../_images/data_pyramid.svg" src="../_images/data_pyramid.svg" /><p class="caption"><span class="caption-number">Fig. 5.2 </span><span class="caption-text">The data pyramid</span><a class="headerlink" href="#data-pyramid" title="Permalink to this image">¶</a></p>
+<img alt="../_images/data_pyramid.svg" src="../_images/data_pyramid.svg" /><p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">The data pyramid</span><a class="headerlink" href="#data-pyramid" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="obligations-accompanying-capability-grants">
-<h3><a class="toc-backref" href="#id23"><span class="section-number">5.5.5. </span>Obligations accompanying capability grants</a><a class="headerlink" href="#obligations-accompanying-capability-grants" title="Permalink to this headline">¶</a></h3>
-<p>Capability grants will be accompanied by details of any obligations that the Data Consumer must abide by when exercising
-a capability. Data Providers must specify any such obligations when associating capabilities with an access rule. As
+<h3><a class="toc-backref" href="#id22"><span class="section-number">3.5.5. </span>Obligations accompanying capability grants</a><a class="headerlink" href="#obligations-accompanying-capability-grants" title="Permalink to this headline">¶</a></h3>
+<p>Capability grants will be accompanied by details of any obligations that the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must abide by when exercising
+a capability. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must specify any such obligations when associating capabilities with an access rule. As
 with capabilities, the range of obligations will be standardised within the Open Energy ecosystem and will be included
 in the digital signature binding the API return with the capability grant.</p>
 <p>Open Energy research has identified a set of common obligations associated with capabilities granted by licences used
@@ -675,9 +679,9 @@ whereby the range of associations, associated legal text, and ‘human readable�
 the Open Energy ecosystem.</p>
 </div>
 <div class="section" id="why-are-we-proposing-this-approach">
-<h3><a class="toc-backref" href="#id24"><span class="section-number">5.5.6. </span>Why are we proposing this approach?</a><a class="headerlink" href="#why-are-we-proposing-this-approach" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id23"><span class="section-number">3.5.6. </span>Why are we proposing this approach?</a><a class="headerlink" href="#why-are-we-proposing-this-approach" title="Permalink to this headline">¶</a></h3>
 <p>Constructing a single licence for each dataset, designed to govern all possible scenarios for its use, has to date
-resulted in the creation of long, complex licensing agreements that are not easily readable by Data Consumers. Industry
+resulted in the creation of long, complex licensing agreements that are not easily readable by <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>. Industry
 feedback indicates that this creates friction and costs, for example associated with data-related legal support or
 accidental misuse of licensed data. These issues are further compounded by growth in the creation of bespoke licences
 that include non-standard capabilities or legal wording.</p>
@@ -691,30 +695,30 @@ data types, actors and use-cases within the energy data ecosystem. We are aware 
 prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these
 risks by rationalising and standardising the parameters in which licensing occurs. To do this, Open Energy will work to
 standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the
-‘human-readable’ ways in which these capabilities are communicated to Data Consumers. Beyond Phase 3, we will further
-develop guidance for Data Providers encouraging simplicity and discouraging unnecessary protectionism, while also
+‘human-readable’ ways in which these capabilities are communicated to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>. Beyond Phase 3, we will further
+develop guidance for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> encouraging simplicity and discouraging unnecessary protectionism, while also
 maintaining appropriate protections for higher sensitivity classes of data.</p>
 <p>Early feedback from Advisory Groups and critical friends has suggested that benefits of this approach could include
 reduced legal, staff and time costs associated with improved searchability, transparency, readability and
 standardisation of capability grants. By making licensing simpler and faster, it could also help level the digital
 playing field by offering particular benefits to new, small or ‘public interest’ actors lacking in-house expertise
 or budget. In the longer term, adoption of this approach could have benefits across the sector as new data markets
-incentivise Data Providers to align with Open Energy standardisation.</p>
+incentivise <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to align with Open Energy standardisation.</p>
 <div class="figure align-default" id="licensing-model-api-call">
-<img alt="../_images/licensing_model_per_api_call.svg" src="../_images/licensing_model_per_api_call.svg" /><p class="caption"><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Licensing model per API call</span><a class="headerlink" href="#licensing-model-api-call" title="Permalink to this image">¶</a></p>
+<img alt="../_images/licensing_model_per_api_call.svg" src="../_images/licensing_model_per_api_call.svg" /><p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Licensing model per API call</span><a class="headerlink" href="#licensing-model-api-call" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="example-access-control-and-capability-grant-scenarios">
-<h3><a class="toc-backref" href="#id25"><span class="section-number">5.5.7. </span>Example access control and capability grant scenarios</a><a class="headerlink" href="#example-access-control-and-capability-grant-scenarios" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id24"><span class="section-number">3.5.7. </span>Example access control and capability grant scenarios</a><a class="headerlink" href="#example-access-control-and-capability-grant-scenarios" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>These scenarios have been created to reflect decisions that could be faced by Data Providers in our Phase 3 use-case,
+<p>These scenarios have been created to reflect decisions that could be faced by <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> in our Phase 3 use-case,
 in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies.
-Please note that the scenarios are exemplary only and do not necessarily represent the stances of any Data Providers
+Please note that the scenarios are exemplary only and do not necessarily represent the stances of any <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>
 involved in testing.</p>
 </div>
-<table class="colwidths-given docutils align-default" id="id6">
-<caption><span class="caption-number">Table 5.4 </span><span class="caption-text">Scenario 1</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-number">Table 3.4 </span><span class="caption-text">Scenario 1</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
@@ -733,7 +737,7 @@ involved in testing.</p>
 <td><p><code class="docutils literal notranslate"><span class="pre">oe:member</span></code> unary access condition</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Capability grants</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">oe:member</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span></code>, all data consumers who are members of Open Energy can access this data set, and
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:member</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span></code>, all <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> who are members of Open Energy can access this data set, and
 receive the right to use for any purpose (see <a class="reference internal" href="../access_control_specification.html#standard-capabilities"><span class="std std-ref">Standard capabilities</span></a> for more detail)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Obligations</strong></p></td>
@@ -742,15 +746,15 @@ creation. <code class="docutils literal notranslate"><span class="pre">oe:member
 </tr>
 </tbody>
 </table>
-<table class="colwidths-given docutils align-default" id="id7">
-<caption><span class="caption-number">Table 5.5 </span><span class="caption-text">Scenario 2</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id6">
+<caption><span class="caption-number">Table 3.5 </span><span class="caption-text">Scenario 2</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Dataset</strong></p></td>
-<td><p>Public <a class="reference internal" href="../glossary.html#term-Electric-vehicle"><span class="xref std std-term">EV</span></a> chargepoint use and economic performance profiles</p></td>
+<td><p>Public <a class="reference internal" href="../glossary.html#term-Electric-vehicle"><span class="xref std std-term">Electric vehicle</span></a> chargepoint use and economic performance profiles</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Sensitivity class</strong></p></td>
 <td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a></p></td>
@@ -762,7 +766,7 @@ creation. <code class="docutils literal notranslate"><span class="pre">oe:member
 <td><p>Two distinct access constraints:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">oe:org_type</span> <span class="pre">in</span> <span class="pre">['local_authority',</span> <span class="pre">'academic'],</span> <span class="pre">provider:customer_level</span> <span class="pre">==</span> <span class="pre">1</span></code> -  local authorities and
-educational institutions are granted access if they are paid customers of the Data Provider at their standard
+educational institutions are granted access if they are paid customers of the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> at their standard
 rate</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">provider:customer_level</span> <span class="pre">&gt;=</span> <span class="pre">2</span></code> - energy networks are granted access if they are paid customers of the Data
 Provider at their large business level</p></li>
@@ -770,16 +774,16 @@ Provider at their large business level</p></li>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Capability grants</strong></p></td>
-<td><p>In this scenario it would be technically possible for the Data Provider to apply different capability grants
-to the two different access rules. In this case the Data Provider chooses not to as they have charged
-commercial entities a higher access fee and are therefore happy for all Data Consumers to be granted the same
+<td><p>In this scenario it would be technically possible for the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> to apply different capability grants
+to the two different access rules. In this case the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> chooses not to as they have charged
+commercial entities a higher access fee and are therefore happy for all <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> to be granted the same
 capabilities. The result is the same set of capabilities (the same licence) is applied to both access rules.</p>
 <p><code class="docutils literal notranslate"><span class="pre">oe:org_type</span> <span class="pre">in</span> <span class="pre">['local_authority',</span> <span class="pre">'academic'],</span> <span class="pre">provider:customer_level</span> <span class="pre">==</span> <span class="pre">1</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">provider:customer_level</span> <span class="pre">&gt;=</span> <span class="pre">2</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span></code></p>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Obligations</strong></p></td>
-<td><p>The Data Provider chooses the same obligations to be applied to both access rules</p>
+<td><p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> chooses the same obligations to be applied to both access rules</p>
 <p><code class="docutils literal notranslate"><span class="pre">oe:org_type</span> <span class="pre">in</span> <span class="pre">['local_authority',</span> <span class="pre">'academic'],</span> <span class="pre">provider:customer_level</span> <span class="pre">==</span> <span class="pre">1</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span> <span class="pre">requires</span> <span class="pre">oe:by</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">provider:customer_level</span> <span class="pre">&gt;=</span> <span class="pre">2</span> <span class="pre">grants</span> <span class="pre">oe:use_any</span> <span class="pre">requires</span> <span class="pre">oe:by</span></code></p>
 </td>
@@ -790,13 +794,13 @@ capabilities. The result is the same set of capabilities (the same licence) is a
 <p class="admonition-title">Note</p>
 <p><strong>Scenario 2</strong></p>
 <p>This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
-sector of the Data Consumer - Local Authority, Educational Institution, or Energy Network) along with properties
-which are only known to the Data Provider (the payment status of the Data Consumer). We can do this because the
-rules are evaluated within the Data Provider, and not externally within Open Energy’s Governance Service, an entity
-which is not aware of any commercial arrangements between the Data Provider and Data Consumer.</p>
+sector of the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> - Local Authority, Educational Institution, or Energy Network) along with properties
+which are only known to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> (the payment status of the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>). We can do this because the
+rules are evaluated within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, and not externally within Open Energy’s Governance Service, an entity
+which is not aware of any commercial arrangements between the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> and <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>.</p>
 </div>
-<table class="colwidths-given docutils align-default" id="id8">
-<caption><span class="caption-number">Table 5.6 </span><span class="caption-text">Scenario 3</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id7">
+<caption><span class="caption-number">Table 3.6 </span><span class="caption-text">Scenario 3</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
@@ -816,13 +820,12 @@ which is not aware of any commercial arrangements between the Data Provider and 
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">oe_group:plymouth_lct</span></code> - access to use case participants, here defined as a group <code class="docutils literal notranslate"><span class="pre">lct</span></code> managed by
 <code class="docutils literal notranslate"><span class="pre">plymouth</span></code> (the ID of a local council organisation) and administered using the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> facilities</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">provider:customer</span></code> - access to all other Open Energy members if they have a paid account with the
-data provider</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">provider:customer</span></code> - access to all other Open Energy members if they have a paid account with the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a></p></li>
 </ol>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Capability grants</strong></p></td>
-<td><p>The Data Provider chooses to apply two different capability grants (dual licences) for the two access rules,
+<td><p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> chooses to apply two different capability grants (dual licences) for the two access rules,
 reflecting the fact that their dataset is commercially sensitive, therefore they require payment for its use
 beyond non-profit or development activities.</p>
 <ol class="arabic simple">
@@ -850,7 +853,7 @@ obligation to license derivatives of the artefact under the same terms as the or
 </table>
 </div>
 <div class="section" id="risks-of-license-proliferation">
-<h3><a class="toc-backref" href="#id26"><span class="section-number">5.5.8. </span>Risks of license proliferation</a><a class="headerlink" href="#risks-of-license-proliferation" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id25"><span class="section-number">3.5.8. </span>Risks of license proliferation</a><a class="headerlink" href="#risks-of-license-proliferation" title="Permalink to this headline">¶</a></h3>
 <p>As outlined in previous consultations, the Open Energy data ecosystem is more complex than Open Banking. We are
 therefore proposing a different approach to licensing in order to balance a wide range of needs and data types. The
 approach further responds to feedback from our Advisory Groups and Review Track that data access and licensing cannot
@@ -862,35 +865,35 @@ risk and presents the following points of response:</p>
 <blockquote>
 <div><p>Firstly, some stakeholders have suggested that Open Energy should take a ‘modular approach’ to building a
 ‘single Open Energy licence’. This suggestion outlines a permissive core or standard licence that is presented
-to all Data Providers as the default option for publishing their data. If this is not appropriate for a particular
-dataset, Data Providers would then have the option of adding restrictions (i.e. removing capabilities) by adding
+to all <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> as the default option for publishing their data. If this is not appropriate for a particular
+dataset, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> would then have the option of adding restrictions (i.e. removing capabilities) by adding
 modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each
 modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence.
 Open Energy’s approach instead accepts a degree of licence plurality, but will work to standardise the
 discoverability, scope and ease of understanding of that pluralism by offering a limited, standardised and
-searchable range of capabilities. This will be accompanied in due course by guidance for Data Providers,
+searchable range of capabilities. This will be accompanied in due course by guidance for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>,
 tailored to each sensitivity class, encouraging as much openness as possible while publishing data safely and
 creating a thriving marketplace.</p>
 <p>Secondly, we acknowledge that the energy data landscape already incorporates a significant degree of licence
 proliferation. For example, it is already common for energy system actors to publish data under bespoke licences
 containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities,
 Open Energy aims to rationalise some unnecessary forms of licence proliferation in the sector and reduce legal
-costs to Data Providers by reducing the circumstances under which bespoke licences are necessary.</p>
+costs to <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> by reducing the circumstances under which bespoke licences are necessary.</p>
 </div></blockquote>
 </div>
 <div class="section" id="is-there-a-risk-of-licences-changing-too-frequently-or-without-notice">
-<h3><a class="toc-backref" href="#id27"><span class="section-number">5.5.9. </span>Is there a risk of licences changing too frequently or without notice?</a><a class="headerlink" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice" title="Permalink to this headline">¶</a></h3>
-<p>In any licensing model that is not explicitly time-bound, there is a risk that the Data Provider may choose to change
+<h3><a class="toc-backref" href="#id26"><span class="section-number">3.5.9. </span>Is there a risk of licences changing too frequently or without notice?</a><a class="headerlink" href="#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice" title="Permalink to this headline">¶</a></h3>
+<p>In any licensing model that is not explicitly time-bound, there is a risk that the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> may choose to change
 the licence arbitrarily. We have received feedback that bespoke licensing in the energy sector already produces
-insecurity for Data Consumers, who are concerned about the longevity of particular licences in a changeable
+insecurity for <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, who are concerned about the longevity of particular licences in a changeable
 environment. For example, an energy forecasting company relies on predictable access to, and capabilities to use, a
 range of datasets (e.g. weather data). Changes to the capabilities granted for any of these datasets undermine this
 kind of business model, with additional proxy consequences for carbon savings that could be achieved as a result of
 better integration of renewable energy generation.</p>
-<p>Open Energy aims to address this problem by encouraging Data Providers to indicate the length of time they commit to
+<p>Open Energy aims to address this problem by encouraging <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to indicate the length of time they commit to
 retaining the same capability grant for a particular access rule. Although this will be optional, we hope that Data
 Providers will be incentivised to do so as this encourages confidence in the market. We are also exploring the
-possibility of building a notification system to alert Data Consumers either to upcoming or new changes in capability
+possibility of building a notification system to alert <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> either to upcoming or new changes in capability
 grants to ensure this is done transparently and with adequate warning where possible.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -899,27 +902,27 @@ it instead specifies a range within which the access rules and their correspondi
 change.</p>
 </div>
 <p>Beyond designing positive behavioural and market incentives, it is beyond the scope of Open Energy to control
-licence-changes as this remains within the legal rights of the Data Provider.</p>
+licence-changes as this remains within the legal rights of the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
 </div>
 <div class="section" id="where-are-these-rules-specified">
-<h3><a class="toc-backref" href="#id28"><span class="section-number">5.5.10. </span>Where are these rules specified?</a><a class="headerlink" href="#where-are-these-rules-specified" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id27"><span class="section-number">3.5.10. </span>Where are these rules specified?</a><a class="headerlink" href="#where-are-these-rules-specified" title="Permalink to this headline">¶</a></h3>
 <p>The access control, capability, and obligation grants form part of the metadata for a dataset. This is expressed in a
-file, hosted and maintained by the Data Provider responsible for the data set. The provisional structure of the entire
+file, hosted and maintained by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> responsible for the data set. The provisional structure of the entire
 file can be found at <a class="reference internal" href="../metadata.html#data-set-metadata"><span class="std std-ref">Data Set Metadata</span></a>, in particular the section on the <a class="reference internal" href="../metadata.html#access-block"><span class="std std-ref">Access Block</span></a></p>
 </div>
 <div class="section" id="where-are-these-rules-evaluated-and-by-whom">
-<h3><a class="toc-backref" href="#id29"><span class="section-number">5.5.11. </span>Where are these rules evaluated, and by whom?</a><a class="headerlink" href="#where-are-these-rules-evaluated-and-by-whom" title="Permalink to this headline">¶</a></h3>
-<p>Following our guiding principle that Data Providers remain in control of their data at all times, these rules are
-evaluated within the Data Provider API implementation. This is necessary to allow for decisions predicated on
-information only known to the Data Provider, but this could impose additional complexity when setting up and
-implementing a Data Provider. To mitigate this, we will provide clear specifications and semantics for the rules
+<h3><a class="toc-backref" href="#id28"><span class="section-number">3.5.11. </span>Where are these rules evaluated, and by whom?</a><a class="headerlink" href="#where-are-these-rules-evaluated-and-by-whom" title="Permalink to this headline">¶</a></h3>
+<p>Following our guiding principle that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> remain in control of their data at all times, these rules are
+evaluated within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> API implementation. This is necessary to allow for decisions predicated on
+information only known to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, but this could impose additional complexity when setting up and
+implementing a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>. To mitigate this, we will provide clear specifications and semantics for the rules
 language, along with a reference implementation in the Python language.</p>
 <p>The current language specification can be found at <a class="reference internal" href="../access_control_specification.html#access-control-and-capability-grant-language"><span class="std std-ref">Access Control and Capability Grant Language</span></a>, the time bounds
 and other properties form part of the <a class="reference internal" href="../metadata.html#access-block"><span class="std std-ref">Access Block</span></a> specification in the metadata file format.</p>
 </div>
 </div>
 <div class="section" id="service-desk-and-notifications">
-<h2><a class="toc-backref" href="#id30"><span class="section-number">5.6. </span>Service Desk and Notifications</a><a class="headerlink" href="#service-desk-and-notifications" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id29"><span class="section-number">3.6. </span>Service Desk and Notifications</a><a class="headerlink" href="#service-desk-and-notifications" title="Permalink to this headline">¶</a></h2>
 <p>Open Energy acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
 Developing the full function is beyond the scope of project Phase 3, however it remains an active area for future
 development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and
@@ -927,7 +930,7 @@ discuss appropriate OEGS support. We proposed to use learning from this prototyp
 design.</p>
 </div>
 <div class="section" id="dispute-resolution">
-<h2><a class="toc-backref" href="#id31"><span class="section-number">5.7. </span>Dispute Resolution</a><a class="headerlink" href="#dispute-resolution" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id30"><span class="section-number">3.7. </span>Dispute Resolution</a><a class="headerlink" href="#dispute-resolution" title="Permalink to this headline">¶</a></h2>
 <p>Open Energy acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the
 OEGS. While developing the full function of dispute resolution falls beyond the scope of Open Energy Phase 3, this
 remains an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and
@@ -944,8 +947,8 @@ inform future service and policy design, alongside consultation activity.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="data_provider_ops_guidelines.html" class="btn btn-neutral float-right" title="6. Guidance for Data Providers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../glossary.html" class="btn btn-neutral float-left" title="4. Open Energy Glossary" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="data_consumer_ops_guidelines.html" class="btn btn-neutral float-right" title="4. Guidance for Data Consumers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="before_starting.html" class="btn btn-neutral float-left" title="2. Considerations Before You Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
@@ -954,7 +957,7 @@ inform future service and policy design, alongside consultation activity.</p>
 <p>
     &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
     <span class="lastupdated">
-        Last updated on Jul 20, 2021.
+        Last updated on Jul 22, 2021.
       </span>
 
 </p>

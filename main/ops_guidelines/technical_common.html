@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>7. Common Security Requirements &mdash; Open Energy Technical Documentation  documentation</title>
+  <title>6. Common Security Requirements &mdash; Open Energy Technical Documentation  documentation</title>
   
 
   
@@ -45,7 +45,8 @@
           href="../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="6. Guidance for Data Providers" href="data_provider_ops_guidelines.html" /> 
+    <link rel="next" title="7. Open Energy Architecture" href="../architecture.html" />
+    <link rel="prev" title="5. Guidance for Data Providers" href="data_provider_ops_guidelines.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -99,33 +100,37 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../architecture.html">1. Open Energy Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../metadata.html">2. Data Set Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">3. Access Control and Capability Grant Language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">4. Open Energy Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="common_policies.html">5. Operational Guidelines - Core Policies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">6. Guidance for Data Providers</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Common Security Requirements</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#applicable-standards">7.1. Applicable standards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#discovery-of-endpoint-urls">7.1.1. Discovery of endpoint URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction to Open Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_starting.html">2. Considerations Before You Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common_policies.html">3. Operational Guidelines - Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Common Security Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#applicable-standards">6.1. Applicable standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#discovery-of-endpoint-urls">6.1.1. Discovery of endpoint URLs</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#token-acquisition">7.2. Token acquisition</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#token-usage-calling-a-shared-data-api">7.3. Token usage - calling a shared data API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#request-validation">7.4. Request validation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#token-introspection">7.4.1. Token introspection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#introspection-response-validation">7.4.2. Introspection response validation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#active">7.4.2.1. active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#time-ranges">7.4.2.2. time ranges</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#certificate-thumbprint">7.4.2.3. certificate thumbprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#token-acquisition">6.2. Token acquisition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#token-usage-calling-a-shared-data-api">6.3. Token usage - calling a shared data API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#request-validation">6.4. Request validation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#token-introspection">6.4.1. Token introspection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#introspection-response-validation">6.4.2. Introspection response validation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#active">6.4.2.1. active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#time-ranges">6.4.2.2. time ranges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#certificate-thumbprint">6.4.2.3. certificate thumbprint</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#interaction-header">7.4.3. Interaction header</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#other-validation">7.4.4. Other validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interaction-header">6.4.3. Interaction header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-validation">6.4.4. Other validation</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">9. Access Control and Capability Grant Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_material.html">11. Additional Material</a></li>
 </ul>
 
             
@@ -174,7 +179,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">7. </span>Common Security Requirements</li>
+      <li><span class="section-number">6. </span>Common Security Requirements</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -204,7 +209,13 @@
 
 
   <div class="section" id="common-security-requirements">
-<h1><span class="section-number">7. </span>Common Security Requirements<a class="headerlink" href="#common-security-requirements" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">6. </span>Common Security Requirements<a class="headerlink" href="#common-security-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>,
+<strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted
+as described in <a class="reference external" href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+</div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#applicable-standards" id="id1">Applicable standards</a></p>
@@ -233,18 +244,18 @@
 <p>Open Energy defines a security and trust model for shared data APIs. Three
 parties are involved in each shared data request:</p>
 <ol class="arabic simple">
-<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> wishing to access the <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">shared data</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p></li>
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> wishing to access the <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">shared data</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p></li>
 <li><p>The <a class="reference internal" href="../glossary.html#term-Authorization"><span class="xref std std-term">authorization</span></a> server, as part of the governance service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>), with knowledge about the
-<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> as represented by an organisation account within the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a></p></li>
-<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">data provider</span></a> responsible for supplying shared data through its shared data API</p></li>
+<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> as represented by an organisation account within the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a></p></li>
+<li><p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> responsible for supplying shared data through its shared data API</p></li>
 </ol>
 <p>The interactions are shown graphically below in the form of a sequence diagram.</p>
 <div class="figure align-default" id="fapi-interactions-image">
-<img alt="../_images/FAPI_sequence_diagram.svg" src="../_images/FAPI_sequence_diagram.svg" /><p class="caption"><span class="caption-number">Fig. 7.1 </span><span class="caption-text">FAPI Sequence Diagram - client credentials flow</span><a class="headerlink" href="#fapi-interactions-image" title="Permalink to this image">¶</a></p>
+<img alt="../_images/FAPI_sequence_diagram.svg" src="../_images/FAPI_sequence_diagram.svg" /><p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">FAPI Sequence Diagram - client credentials flow</span><a class="headerlink" href="#fapi-interactions-image" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="applicable-standards">
-<h2><a class="toc-backref" href="#id1"><span class="section-number">7.1. </span>Applicable standards</a><a class="headerlink" href="#applicable-standards" title="Permalink to this headline">¶</a></h2>
-<p>We use a strict sub-set of the <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> specification for interactions between data providers and data consumers. The
+<h2><a class="toc-backref" href="#id1"><span class="section-number">6.1. </span>Applicable standards</a><a class="headerlink" href="#applicable-standards" title="Permalink to this headline">¶</a></h2>
+<p>We use a strict sub-set of the <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> specification for interactions between <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> and <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>. The
 applicable standards are linked here for reference, we reference the precise elements of these standards in later
 sections.</p>
 <ul class="simple">
@@ -254,7 +265,7 @@ sections.</p>
 <li><p><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc8705.html">RFC8705 OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens</a></p></li>
 </ul>
 <div class="section" id="discovery-of-endpoint-urls">
-<h3><a class="toc-backref" href="#id2"><span class="section-number">7.1.1. </span>Discovery of endpoint URLs</a><a class="headerlink" href="#discovery-of-endpoint-urls" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2"><span class="section-number">6.1.1. </span>Discovery of endpoint URLs</a><a class="headerlink" href="#discovery-of-endpoint-urls" title="Permalink to this headline">¶</a></h3>
 <p>While not strictly necessary, the authorization server deployed as part of the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> implements the OpenID Connect
 Discovery provider configuration information endpoint as described
 <a class="reference external" href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig">here</a>, references in this document to
@@ -262,9 +273,9 @@ e.g. <code class="docutils literal notranslate"><span class="pre">token_endpoint
 </div>
 </div>
 <div class="section" id="token-acquisition">
-<h2><a class="toc-backref" href="#id3"><span class="section-number">7.2. </span>Token acquisition</a><a class="headerlink" href="#token-acquisition" title="Permalink to this headline">¶</a></h2>
-<p>In order to access a shared data API, a data consumer must first acquire an access token. This is done by sending an
-HTTP request to the authorization server (part of the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>). The data consumer MUST:</p>
+<h2><a class="toc-backref" href="#id3"><span class="section-number">6.2. </span>Token acquisition</a><a class="headerlink" href="#token-acquisition" title="Permalink to this headline">¶</a></h2>
+<p>In order to access a shared data API, a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must first acquire an access token. This is done by sending an
+HTTP request to the authorization server (part of the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>). The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <strong>MUST</strong>:</p>
 <ul>
 <li><p>Use Mutual TLS, presenting a client certificate when requested. This is the <code class="docutils literal notranslate"><span class="pre">tls_client_auth</span></code> authentication method
 described in section <a class="reference external" href="https://www.rfc-editor.org/rfc/rfc8705.html#name-mutual-tls-for-oauth-client">2 of RFC8705</a></p>
@@ -291,14 +302,14 @@ be obtained from the <code class="docutils literal notranslate"><span class="pre
 response will contain a JSON object with at least two properties:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">access_token</span></code> is an opaque string to be used as a bearer token for requests to resource servers
-(a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">data consumer</span></a> <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">shared data</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> in our context)</p></li>
+(a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">shared data</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> in our context)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">expires_in</span></code> is an integer number of seconds from the current time, after which the token will no longer be valid
-- after this point the data consumer MUST request a new token in order to continue to access shared data resources</p></li>
+- after this point the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <strong>MUST</strong> request a new token in order to continue to access shared data resources</p></li>
 </ol>
 </div>
 <div class="section" id="token-usage-calling-a-shared-data-api">
-<h2><a class="toc-backref" href="#id4"><span class="section-number">7.3. </span>Token usage - calling a shared data API</a><a class="headerlink" href="#token-usage-calling-a-shared-data-api" title="Permalink to this headline">¶</a></h2>
-<p>To call a shared data API within a data provider, the data consumer MUST:</p>
+<h2><a class="toc-backref" href="#id4"><span class="section-number">6.3. </span>Token usage - calling a shared data API</a><a class="headerlink" href="#token-usage-calling-a-shared-data-api" title="Permalink to this headline">¶</a></h2>
+<p>To call a shared data API within a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> MUST:</p>
 <ul>
 <li><p>Use Mutual TLS as previously described</p></li>
 <li><p>Pass the previously acquired bearer token in an HTTP header:</p>
@@ -307,7 +318,7 @@ response will contain a JSON object with at least two properties:</p>
 </div>
 </li>
 </ul>
-<p>In addition, the data consumer SHOULD:</p>
+<p>In addition, the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <strong>SHOULD</strong>:</p>
 <ul>
 <li><p>Specify an interaction ID for this call in an HTTP header:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">-</span><span class="n">fapi</span><span class="o">-</span><span class="n">interaction</span><span class="o">-</span><span class="nb">id</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">UUID</span><span class="o">&gt;</span>
@@ -319,8 +330,8 @@ in our reference implementation</p>
 </ul>
 </div>
 <div class="section" id="request-validation">
-<h2><a class="toc-backref" href="#id5"><span class="section-number">7.4. </span>Request validation</a><a class="headerlink" href="#request-validation" title="Permalink to this headline">¶</a></h2>
-<p>To participate in the Open Energy ecosystem, a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">data provider</span></a> MUST:</p>
+<h2><a class="toc-backref" href="#id5"><span class="section-number">6.4. </span>Request validation</a><a class="headerlink" href="#request-validation" title="Permalink to this headline">¶</a></h2>
+<p>To participate in the Open Energy ecosystem, a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong>:</p>
 <ul class="simple">
 <li><p>Expose an HTTPS API</p></li>
 <li><p>Perform validation on any requests to this API</p>
@@ -332,18 +343,18 @@ above</p></li>
 </ul>
 </li>
 </ul>
-<p>If any of the above checks fail, the data provider MUST NOT continue processing the request, and SHOULD respond with
+<p>If any of the above checks fail, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST NOT</strong> continue processing the request, and <strong>SHOULD</strong> respond with
 an error response as defined in <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc6750#section-6.2">this section</a> of RFC6750</p>
 <div class="section" id="token-introspection">
-<h3><a class="toc-backref" href="#id6"><span class="section-number">7.4.1. </span>Token introspection</a><a class="headerlink" href="#token-introspection" title="Permalink to this headline">¶</a></h3>
-<p>If all the above checks pass, the data provider MUST then validate the presented token. Tokens in our case are opaque
+<h3><a class="toc-backref" href="#id6"><span class="section-number">6.4.1. </span>Token introspection</a><a class="headerlink" href="#token-introspection" title="Permalink to this headline">¶</a></h3>
+<p>If all the above checks pass, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> then validate the presented token. Tokens in our case are opaque
 identifiers (as opposed to JWTs) and must be passed to the <code class="docutils literal notranslate"><span class="pre">introspection_endpoint</span></code> of the authorization server to
-obtain additional information. To obtain this introspection response, the data provider MUST:</p>
+obtain additional information. To obtain this introspection response, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong>:</p>
 <ul>
 <li><p>Make a <code class="docutils literal notranslate"><span class="pre">POST</span></code> request to the <code class="docutils literal notranslate"><span class="pre">introspection_endpoint</span></code> of the authorization server</p></li>
-<li><p>Use Mutual TLS, this means data providers must also have a provisioned client within the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> directory in the form
+<li><p>Use Mutual TLS, this means <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must also have a provisioned client within the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> directory in the form
 of a <code class="docutils literal notranslate"><span class="pre">software</span> <span class="pre">statement</span></code> and corresponding transport certificate</p></li>
-<li><p>Send the bearer token and client ID of the data provider as an <code class="docutils literal notranslate"><span class="pre">application/x-www-form-urlencoded</span></code> body with the
+<li><p>Send the bearer token and client ID of the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> as an <code class="docutils literal notranslate"><span class="pre">application/x-www-form-urlencoded</span></code> body with the
 following values:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">token</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">BEARER_TOKEN</span><span class="o">&gt;</span>
 <span class="n">client_id</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">CLIENT_ID</span><span class="o">&gt;</span>
@@ -353,7 +364,7 @@ following values:</p>
 </ul>
 </div>
 <div class="section" id="introspection-response-validation">
-<h3><a class="toc-backref" href="#id7"><span class="section-number">7.4.2. </span>Introspection response validation</a><a class="headerlink" href="#introspection-response-validation" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7"><span class="section-number">6.4.2. </span>Introspection response validation</a><a class="headerlink" href="#introspection-response-validation" title="Permalink to this headline">¶</a></h3>
 <p>The response body of this introspection call contains a JSON object with information about the entity which requested
 the supplied token from the authorization server, as well as properties of the token itself. An example introspection
 response is shown below:</p>
@@ -383,53 +394,59 @@ response is shown below:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The following elements of the introspection response MUST be validated further before any Open Energy specific
+<p>The following elements of the introspection response <strong>MUST</strong> be validated further before any Open Energy specific
 processing is performed:</p>
 <div class="section" id="active">
-<h4><a class="toc-backref" href="#id8"><span class="section-number">7.4.2.1. </span>active</a><a class="headerlink" href="#active" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id8"><span class="section-number">6.4.2.1. </span>active</a><a class="headerlink" href="#active" title="Permalink to this headline">¶</a></h4>
 <p>If the introspection response does not contain the key <code class="docutils literal notranslate"><span class="pre">active</span></code>, or the value of this key is anything other than the
-boolean <code class="docutils literal notranslate"><span class="pre">true</span></code> value, the data provider MUST reject the request and cease further processing.</p>
-<p>If the <code class="docutils literal notranslate"><span class="pre">active</span></code> key was not present, it SHOULD respond with <code class="docutils literal notranslate"><span class="pre">400</span> <span class="pre">invalid_request</span></code></p>
-<p>If the <code class="docutils literal notranslate"><span class="pre">active</span></code> key was present but not <code class="docutils literal notranslate"><span class="pre">true</span></code> it SHOULD respond with <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code></p>
+boolean <code class="docutils literal notranslate"><span class="pre">true</span></code> value, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> reject the request and cease further processing.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">active</span></code> key was not present, it <strong>SHOULD</strong> respond with <code class="docutils literal notranslate"><span class="pre">400</span> <span class="pre">invalid_request</span></code></p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">active</span></code> key was present but not <code class="docutils literal notranslate"><span class="pre">true</span></code> it <strong>SHOULD</strong> respond with <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code></p>
 </div>
 <div class="section" id="time-ranges">
-<h4><a class="toc-backref" href="#id9"><span class="section-number">7.4.2.2. </span>time ranges</a><a class="headerlink" href="#time-ranges" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id9"><span class="section-number">6.4.2.2. </span>time ranges</a><a class="headerlink" href="#time-ranges" title="Permalink to this headline">¶</a></h4>
 <p>If the introspection response contains <code class="docutils literal notranslate"><span class="pre">iat</span></code> this is interpreted as a number of seconds since the epoch at which the
-token was issued. If this is in the future the data provider MUST reject the request and cease further processing. It
+token was issued. If this is in the future the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> reject the request and cease further processing. It
 SHOULD respond with a <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>SHOULD</strong> allow for a reasonable degree of clock skew when interpreting the <code class="docutils literal notranslate"><span class="pre">iat</span></code> timestamp, an
+allowance of no more than 10 seconds should cover all reasonable cases.</p>
+</div>
 <p>If the introspection response contains <code class="docutils literal notranslate"><span class="pre">exp</span></code> this is interpreted as a number of seconds since the epoch after which
-the token should be considered invalid. If this is in the past, the data provider MUST reject the request and cease
-further processing. It SHOULD respond with a <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code></p>
+the token should be considered invalid. If this is in the past, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> reject the request and cease
+further processing. It <strong>SHOULD</strong> respond with a <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code></p>
 </div>
 <div class="section" id="certificate-thumbprint">
-<h4><a class="toc-backref" href="#id10"><span class="section-number">7.4.2.3. </span>certificate thumbprint</a><a class="headerlink" href="#certificate-thumbprint" title="Permalink to this headline">¶</a></h4>
-<p>Open Energy uses certificate pinning combined with MTLS on all requests between data consumers and data providers. This
-ensures that a token issued to one client cannot be re-used by another client. Data providers MUST check that the
+<h4><a class="toc-backref" href="#id10"><span class="section-number">6.4.2.3. </span>certificate thumbprint</a><a class="headerlink" href="#certificate-thumbprint" title="Permalink to this headline">¶</a></h4>
+<p>Open Energy uses certificate pinning combined with MTLS on all requests between <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> and <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>. This
+ensures that a token issued to one client cannot be re-used by another client. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MUST</strong> check that the
 thumbprint of the presented client certificate matches that provided within the introspection response.</p>
 <p>The introspection response contains the SHA256 thumbprint of the certificate used to acquire the token as a nested
-property <code class="docutils literal notranslate"><span class="pre">['cnf']['x5t#S256']</span></code>. This MUST be equal to the SHA256 thumbprint of the client certificate, if this is not
-the case the data provider MUST reject the request and cease any further processing, responding with a
+property <code class="docutils literal notranslate"><span class="pre">['cnf']['x5t#S256']</span></code>. This <strong>MUST</strong> be equal to the SHA256 thumbprint of the client certificate, if this is
+not the case the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> reject the request and cease any further processing, responding with a
 <code class="docutils literal notranslate"><span class="pre">401</span> <span class="pre">invalid_token</span></code></p>
 </div>
 </div>
 <div class="section" id="interaction-header">
-<h3><a class="toc-backref" href="#id11"><span class="section-number">7.4.3. </span>Interaction header</a><a class="headerlink" href="#interaction-header" title="Permalink to this headline">¶</a></h3>
-<p>If the <code class="docutils literal notranslate"><span class="pre">x-fapi-interaction-id</span></code> header is set in the request, it MUST be set to the same value in the response header
-of the same name. If not set, a new ID MUST be generated and set in the response header.</p>
+<h3><a class="toc-backref" href="#id11"><span class="section-number">6.4.3. </span>Interaction header</a><a class="headerlink" href="#interaction-header" title="Permalink to this headline">¶</a></h3>
+<p>If the <code class="docutils literal notranslate"><span class="pre">x-fapi-interaction-id</span></code> header is set in the request, it <strong>MUST</strong> be set to the same value in the response
+header of the same name. If not set, a new ID <strong>MUST</strong> be generated and set in the response header.</p>
 </div>
 <div class="section" id="other-validation">
-<h3><a class="toc-backref" href="#id12"><span class="section-number">7.4.4. </span>Other validation</a><a class="headerlink" href="#other-validation" title="Permalink to this headline">¶</a></h3>
-<p>If all the above checks have passed, the data provider can service the request and return whatever data were requested.
-It MAY, however, apply additional checks based on information in the introspection response about the client. This is
-where any Open Energy specific access control and licensing policies are applied.</p>
-<p>To inform any additional processing, the data provider MAY make use of the
+<h3><a class="toc-backref" href="#id12"><span class="section-number">6.4.4. </span>Other validation</a><a class="headerlink" href="#other-validation" title="Permalink to this headline">¶</a></h3>
+<p>If all the above checks have passed, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> can service the request and return whatever data were requested.
+It <strong>MAY</strong>, however, apply additional checks based on information in the introspection response about the client. This
+is where any Open Energy specific access control and licensing policies are applied.</p>
+<p>To inform any additional processing, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MAY</strong> make use of the
 <code class="docutils literal notranslate"><span class="pre">['additional_client_metadata']['metadata']</span></code> key within the introspection response. This contains a JSON object with
-properties asserted about the data consumer. The exact set of properties is not defined here, please see the access
+properties asserted about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>. The exact set of properties is not defined here, please see the access
 control language specification for more information about what could be specified.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>TODO - link to access control spec here</p>
-</div>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>MAY</strong> make use of the <code class="docutils literal notranslate"><span class="pre">organisation_id</span></code> field in the token introspection response to uniquely and consistently
+identify the organisation of the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> where required, for example to reference a customer record within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
+<p>More information on the Open Energy specific access control language can be found in
+<a class="reference internal" href="../access_control_specification.html#access-control-and-capability-grant-language"><span class="std std-ref">Access Control and Capability Grant Language</span></a>, and its expression in the metadata file at <a class="reference internal" href="../metadata.html#data-set-metadata"><span class="std std-ref">Data Set Metadata</span></a> in the
+<a class="reference internal" href="../metadata.html#access-block"><span class="std std-ref">Access Block</span></a> section.</p>
 </div>
 </div>
 </div>
@@ -441,7 +458,8 @@ control language specification for more information about what could be specifie
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="data_provider_ops_guidelines.html" class="btn btn-neutral float-left" title="6. Guidance for Data Providers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../architecture.html" class="btn btn-neutral float-right" title="7. Open Energy Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="data_provider_ops_guidelines.html" class="btn btn-neutral float-left" title="5. Guidance for Data Providers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
@@ -450,7 +468,7 @@ control language specification for more information about what could be specifie
 <p>
     &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
     <span class="lastupdated">
-        Last updated on Jul 20, 2021.
+        Last updated on Jul 22, 2021.
       </span>
 
 </p>
