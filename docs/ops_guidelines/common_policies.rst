@@ -350,7 +350,7 @@ The flow of information associated with access control is shown below - this ass
 acquired an access token from the authorization server. Access control and capability grants are processed on a
 pre-request basis, within the |DP|, in the box *Make access and license decision based on details*:
 
-.. figure:: images/FAPI_sequence_diagram_introspection_only.svg
+.. figure:: images/fapi_sequence_diagram_introspection_only.svg
     :name: access_control_fapi_flow
 
     Access control authorization flow showing application point for access control and capability grant rules

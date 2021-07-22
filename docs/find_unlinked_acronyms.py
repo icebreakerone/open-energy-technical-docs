@@ -1,22 +1,12 @@
 import os
 import re
-from typing import List
-
-
-def files_with_extension(extension='rst'):
-    """
-    Yields a list of all filenames ending with the specified extension (defaults to rst)
-
-    :return:
-        A generator over file paths
-    """
-    for dirpath, dirnames, filenames in os.walk(os.path.dirname(os.path.realpath(__file__))):
-        for file in filenames:
-            if file.lower().endswith(extension.lower()):
-                yield f'{dirpath}/{file}'
+from typing import List, Tuple
 
 
 def get_known_substitutions(sub_files: List[str]):
+    """
+    Retrieve substitution keys from a list of sphinx compatible substitution files
+    """
     for sub_file in sub_files:
         with open(sub_file, 'r') as f:
             for line in f.readlines():
@@ -25,30 +15,69 @@ def get_known_substitutions(sub_files: List[str]):
                 yield chopped[:end]
 
 
+#: These are the acronyms defined in substitution files, the plurals one we maintain
+#: manually, the other is automatically built from the glossary gdoc
 KNOWN_ACRONYMS = list(get_known_substitutions(['common_substitutions.txt',
                                                'glossaries/substitutions.txt']))
 
+#: Things that look like, but are not, acronyms. These are excluded from results
+EXCLUSIONS = ['MUST', 'REQUIRED', 'SHALL', 'SHOULD', 'NOT', 'RECOMMENDED', 'MAY', 'OPTIONAL',
+              'POST', 'GET', 'CLIENT', 'CONDITION', 'CAPABILITY', 'OBLIGATION', 'LHS', 'RHS']
 
-def acronyms(s: str, known_acronyms: List[str]):
+
+def files_with_extension(extension='rst'):
     """
-    Returns all acronyms, multiple
-    :param s:
-    :return:
+    Yields a list of all filenames ending with the specified extension (defaults to rst)
+    """
+    for dir_path, _, file_names in os.walk(os.path.dirname(os.path.realpath(__file__))):
+        for filename in file_names:
+            if filename.lower().endswith(extension.lower()):
+                yield f'{dir_path}/{filename}'
+
+
+def acronyms(s: str):
+    """
+    Returns generator over acronyms found within a string along with their positions as (str, int) tuples
     """
     for match in re.finditer(r'[^a-z0-9_|\W\s]([A-Z][0-9A-Z-]{1,})+', s):
         start, end = match.span()
         if start == 0 or s[start - 1] not in ['|', '<', '_']:
-            if match.group() not in ['MUST', 'REQUIRED', 'SHALL', 'SHOULD', 'NOT',
-                                     'RECOMMENDED', 'MAY', 'OPTIONAL', 'POST', 'GET', 'CLIENT', 'CONDITION',
-                                     'CAPABILITY', 'OBLIGATION', 'LHS', 'RHS']:
+            if match.group() not in EXCLUSIONS:
                 if (end + 1) < len(s) and s[end] == 's':
                     yield match.group() + 's', start
                 else:
                     yield match.group(), start
 
 
+def rewrite_line(s: str, acronyms: List[Tuple[str, int]]):
+    if acronyms:
+        positions = []
+        for acronym, start in acronyms:
+            positions.append(start)
+            positions.append(start + len(acronym))
+        positions = sorted(positions)
+        for offset, position in enumerate(positions):
+            s = s[:(position + offset)] + '|' + s[(position + offset):]
+        print(s)
+    return s
+
+
+# Iterate over all RST files, find acronyms that aren't already in | characters and print out the report
 for file in files_with_extension(extension='rst'):
+    auto_replace = {}
+    lines = []
     with open(file, 'r') as f:
         for line_number, line in enumerate(f.readlines()):
-            for acronym, start_position in acronyms(line, []):
-                print(f'{file} - line {line_number + 1}:{start_position} : {acronym} {"" if acronym in KNOWN_ACRONYMS else "[unknown]"}')
+            lines.append(line)
+            for acronym, start_position in acronyms(line):
+                if acronym in KNOWN_ACRONYMS:
+                    # Candidate for auto-replace
+                    if line_number not in auto_replace:
+                        auto_replace[line_number] = []
+                    auto_replace[line_number].append((acronym, start_position))
+                print(f'{file} - line {line_number + 1}:{start_position} : {acronym} '
+                      f'{"" if acronym in KNOWN_ACRONYMS else "[unknown]"}')
+    if auto_replace:
+        for line_number, line in enumerate(lines):
+            if line_number in auto_replace:
+                rewrite_line(line, auto_replace[line_number])
