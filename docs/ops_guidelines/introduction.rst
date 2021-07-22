@@ -16,7 +16,7 @@ Overarching aims of these operational guidelines:
 
 * To deliver a safe and effective Open Energy ecosystem that meets the needs of members and supports the broader
   sector transition to Net Zero by enabling better discovery and sharing of data via a robust trust framework.
-* To support the operational requirements of Data Providers and Data Consumers, stimulating an active Open Energy
+* To support the operational requirements of |DPs| and |DCs|, stimulating an active Open Energy
   ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
   for data shared in the ecosystem.
 * To encourage an active data sharing ecosystem in which transparency and interoperability are incentivised.
@@ -44,9 +44,9 @@ to consider in order to meet operational requirements.
 **Core policies**: operational principles and policies central to Open Energy function. Includes policies
 governing data sensitivity classification, access controls, and licensing.
 
-**Data Providers and Data Consumers**: guidelines outlining how :term:`Data Providers <Data Provider>` can share data safely and
+**Data Providers and Data Consumers**: guidelines outlining how |DPs| can share data safely and
 securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
-and design safe and effective APIs enabling data-sharing. Guidelines outlining how :term:`Data Consumers <Data Consumer>` can meet the
+and design safe and effective APIs enabling data-sharing. Guidelines outlining how |DCs| can meet the
 requirements for offering data services, access and licensing conditions for different data classes, and best
 practice with regards to testing, security, ethics and dispute management.
 
@@ -104,7 +104,7 @@ It can also be used to discover datasets adjacent to searches; helping users to 
 of the energy data landscape in their sphere of interest. Open Energy search is free, available to all, and will
 remain so. Access pathways to Open and Shared data are described in the following section.
 
-Datasets provided by Open Energy members (Data Providers) and non-Open Energy members (e.g. web scraped Open Data)
+Datasets provided by Open Energy members (|DPs|) and non-Open Energy members (e.g. web scraped Open Data)
 may both be visible in Open Energy Search. Datasets provided by an Open Energy member will be demarcated with a
 green tick to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation
 format is known, and users have a mechanism to provide feedback on the dataset if issues are detected. (Please
@@ -121,7 +121,7 @@ Governance Service
 Open Energy's second core function - our Governance Service (OEGS) - supports members to provide, share and
 access different classes of Shared data (defined in Section 1 point 4.2) on the basis of preemptive licensing
 (see Section 4 of the for details). Shared Data accessed via the OEGS will be provided by members only
-(Data Providers). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
+(|DPs|). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
 across the sector by reducing the time and financial costs currently associated with accessing Shared data.
 For providers of Shared data, the Governance Platform offers a secure and effective way to list datasets and
 set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
@@ -168,7 +168,7 @@ accessible under an Open data licence’. Examples of open datasets include (non
 Layer ID (LSOA) data, Digest of UK Energy Statistics, and OpenStreetMap data.
 
 Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
-Energy members (Data Providers) and non-Open Energy members will both be visible. There are no barriers to accessing
+Energy members (|DPs|) and non-Open Energy members will both be visible. There are no barriers to accessing
 Open data once it is discovered - users are directed to an appropriate URL or API to access the data themselves.
 Open data access is not moderated via the OEGS as no additional access controls are required.
 
@@ -193,7 +193,7 @@ to ICO/ONS best practice) is not permitted in the Open Energy ecosystem. Functio
 in future subject to further consultation.
 
 The metadata and sensitivity class of Shared datasets are listed in Open Energy Search and are visible to any user.
-Shared datasets provided by Open Energy members (Data Providers) and non-Open Energy members will both be visible
+Shared datasets provided by Open Energy members (|DPs|) and non-Open Energy members will both be visible
 (where the latter are known), as described later in this section. Access to Shared datasets provided by Open Energy
 members is moderated through the Open Energy Governance Platform, on the basis of preemptive licensing. Access to
 Shared data listed on the Search that is not provided by an Open Energy member is not supported - users should
@@ -212,53 +212,53 @@ this function in future will be subject to consultation.
 What role does your organisation play in the Open Energy ecosystem?
 ###################################################################
 
-Members of the Open Energy ecosystem have different roles: Data Providers, Data Consumers, or both. This section
+Members of the Open Energy ecosystem have different roles: |DPs|, |DCs|, or both. This section
 outlines the meaning of the different roles and outlines their basic responsibilities.
 
-Data Providers
+|DPs|
 --------------
 
-Data Providers are organisations that control datasets that they wish to make visible and/or accessible through the
-Open Energy ecosystem. Data Providers can provide Open and/or Shared datasets. Data Providers are responsible for:
+|DPs| are organisations that control datasets that they wish to make visible and/or accessible through the
+Open Energy ecosystem. |DPs| can provide Open and/or Shared datasets. |DPs| are responsible for:
 data sensitivity classification, creation of access rules, creation of capability grants, data provision, data
 integrity and correctness, metadata provision, and API availability, stability and change management. Full guidance
-regarding Data Provider responsibilities can be found in Section 5 of the Open Energy Operational Guidelines.
+regarding |DP| responsibilities can be found in Section 5 of the Open Energy Operational Guidelines.
 
 Data Consumers
 --------------
 
-Data Consumers are organisations that seek to find and access datasets through the Open Energy Governance Service
-Platform. Data Consumers can be established to serve internal organisational needs, to serve external customers,
-or both. Data Consumers is a catch-all term referring to all parties accessing data via the OEGS.
+|DCs| are organisations that seek to find and access datasets through the Open Energy Governance Service
+Platform. |DCs| can be established to serve internal organisational needs, to serve external customers,
+or both. |DCs| is a catch-all term referring to all parties accessing data via the OEGS.
 
 Service Providers
 _________________
 
-Data Consumers who access data to serve external customers, potentially including customers outside the Open Energy
-ecosystem, are categorised as a specific type of Data Consumer called a ‘Service Provider’. The term Service Provider
+|DCs| who access data to serve external customers, potentially including customers outside the Open Energy
+ecosystem, are categorised as a specific type of |DC| called a ‘Service Provider’. The term Service Provider
 will henceforth be used in these guidelines as ‘Service Providers’ where differentiation is required
 
 Dual Roles
 ----------
 
 Organisations wishing to both provide and access data through the Open Energy ecosystem are able to do so, so long
-as they fulfill the responsibilities of both roles. Data Providers who do not want to register as Data Consumers,
+as they fulfill the responsibilities of both roles. |DPs| who do not want to register as |DCs|,
 but who wish to access Open Energy datasets, are able to do so by using the services of a Service Provider (a
-type of Data Consumer in the Open Energy ecosystem that provides services to customers, potentially including non
+type of |DC| in the Open Energy ecosystem that provides services to customers, potentially including non
 Open Energy members).
 
 How does dataset access and licensing operate under Open Energy?
 ################################################################
 
 Open Energy has consulted publicly and with industry on policies pertaining to: the types of conditions on which
-data access controls can be based, the process by which Data Providers establish access rules for a dataset, and
+data access controls can be based, the process by which |DPs| establish access rules for a dataset, and
 the model for associating access rules with the grant of particular capabilities and obligations (licensing model).
 These policies are outlined briefly below, and set out in full detail in Section 3 of the Operational Guidelines.
 
 Types of Access Conditions
 --------------------------
 
-Open Energy has established a set of conditions which may be specified for Data Consumers to meet in order to gain
+Open Energy has established a set of conditions which may be specified for |DCs| to meet in order to gain
 access to datasets in different sensitivity classes. These include, but are not limited to: payment, security
 compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.
 
@@ -266,20 +266,20 @@ Creating Access Rules (Introduction)
 ------------------------------------
 
 To operationalise Data Access conditions above, we propose a system whereby access grants are determined, for each
-request to a Data Provider’s API, on the basis of a set of rules defined and published by that Data Provider in the
+request to the API of a |DP|, on the basis of a set of rules defined and published by that |DP| in the
 dataset metadata.
 
 Data Licensing (Introduction)
 -----------------------------
 
-A data licence is a legal instrument setting out what a Data Consumer can do with a particular artefact (e.g.
-dataset). This grants certain ‘capabilities’ to the Data Consumer, comprising a clear expression of things they
-can do with the artefact. Capability grants are accompanied by any obligations that the Data Consumer must abide
+A data licence is a legal instrument setting out what a |DC| can do with a particular artefact (e.g.
+dataset). This grants certain ‘capabilities’ to the |DC|, comprising a clear expression of things they
+can do with the artefact. Capability grants are accompanied by any obligations that the |DC| must abide
 by when exercising a capability. The capabilities and obligations associated with each API call will be converted
 into a licence through the Open Energy Governance Service (OEGS).
 
 We propose a system operating through a range of standardised capability grants and obligations. Standardisation
-will include legal text, ‘human readable’ text and summary notation. Data Providers must specify which capabilities
+will include legal text, ‘human readable’ text and summary notation. |DPs| must specify which capabilities
 and obligations are associated with each access rule, and publish this transparently in the dataset metadata.
 
 Future development of the guidelines

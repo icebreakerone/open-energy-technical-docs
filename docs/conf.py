@@ -129,6 +129,7 @@ nitpicky = True
 # Pull in substitutions to each file as epilog
 rst_epilog = """
 .. include:: /glossaries/substitutions.txt
+.. include:: /common_substitutions.txt
 """
 
 # Configure auto section labelling

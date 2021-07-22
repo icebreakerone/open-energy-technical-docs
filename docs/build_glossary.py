@@ -97,12 +97,17 @@ def master_glossary(entries: List[GlossaryEntry], prefix='glossaries/') -> str:
     return g
 
 
-def substitutions(entries: List[GlossaryEntry]) -> str:
+def substitutions(entries: List[GlossaryEntry], min_acronym_length=3) -> str:
     """
     Build a string containing acronym substitions. This can then be added to the epilogue of every page to make
     substitions work from acronyms to their respective terms.
     :param entries:
         A list of GlossaryEntry objects
+    :param min_acronym_length:
+        Minimum length of acronym. Below this we replace the acronym in substitutions with the full
+        text of the entry, above this it will appear as the acronym. This means we can have e.g. DP
+        expanding to Data Provider while OEGS remains as OEGS on the page. Open energy policy is currently
+        to always avoid two letter acronyms.
     :return:
         String containing RST substitution rules
     """
@@ -110,7 +115,10 @@ def substitutions(entries: List[GlossaryEntry]) -> str:
     for entry in entries:
         for acronym in entry.acronym.split(','):
             if acronym:
-                s += f'.. |{acronym}| replace:: :term:`{acronym}<{entry.expansion}>`\n'
+                if len(acronym) >= min_acronym_length:
+                    s += f'.. |{acronym}| replace:: :term:`{acronym}<{entry.expansion}>`\n'
+                else:
+                    s += f'.. |{acronym}| replace:: :term:`{entry.expansion}<{entry.expansion}>`\n'
     return s
 
 

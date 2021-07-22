@@ -1,4 +1,4 @@
-.. |AG| replace:: :term:`AG<Advisory Group>`
+.. |AG| replace:: :term:`Advisory Group<Advisory Group>`
 .. |API| replace:: :term:`API<Application programming interface>`
 .. |AuthN| replace:: :term:`AuthN<Authentication>`
 .. |AuthZ| replace:: :term:`AuthZ<Authorization>`
@@ -9,14 +9,14 @@
 .. |CHP| replace:: :term:`CHP<Combined Heat and Power>`
 .. |CIM| replace:: :term:`CIM<Common Information Model>`
 .. |CMA| replace:: :term:`CMA<Competition and Markets Authority>`
-.. |DC| replace:: :term:`DC<Data Consumer>`
+.. |DC| replace:: :term:`Data Consumer<Data Consumer>`
 .. |DCC| replace:: :term:`DCC<Data and Communications Company>`
 .. |DER| replace:: :term:`DER<Distributed energy resources>`
 .. |DFES| replace:: :term:`DFES<Distribution Future Energy Scenarios>`
 .. |DGA| replace:: :term:`DGA<Data Governance Act>`
 .. |DNO| replace:: :term:`DNO<Distribution Network Operator>`
-.. |DP| replace:: :term:`DP<Data Provider>`
-.. |DS| replace:: :term:`DS<Data subject>`
+.. |DP| replace:: :term:`Data Provider<Data Provider>`
+.. |DS| replace:: :term:`Data subject<Data subject>`
 .. |DSO| replace:: :term:`DSO<Distribution System Operator>`
 .. |DSR| replace:: :term:`DSR<Demand-side response>`
 .. |EASM| replace:: :term:`EASM<Enterprise Asset Management System>`
@@ -26,7 +26,7 @@
 .. |EEBUS| replace:: :term:`EEBUS<EEBUS>`
 .. |ESC| replace:: :term:`ESC<Energy Systems Capatult>`
 .. |ESO| replace:: :term:`ESO<Electricity System Operator>`
-.. |EV| replace:: :term:`EV<Electric vehicle>`
+.. |EV| replace:: :term:`Electric vehicle<Electric vehicle>`
 .. |EVSE| replace:: :term:`EVSE<Electric vehicle supply equipment>`
 .. |FAPI| replace:: :term:`FAPI<Financial Grade API>`
 .. |FES| replace:: :term:`FES<Future Energy Scenarios>`
@@ -35,13 +35,13 @@
 .. |GDPR| replace:: :term:`GDPR<General Data Protection Regulation>`
 .. |GIS| replace:: :term:`GIS<Geographical Information System>`
 .. |GSO| replace:: :term:`GSO<Gas System Operator>`
-.. |GW| replace:: :term:`GW<Gigawatt>`
+.. |GW| replace:: :term:`Gigawatt<Gigawatt>`
 .. |HEMS| replace:: :term:`HEMS<Home Energy Management System>`
-.. |HH| replace:: :term:`HH<Half hourly meter>`
+.. |HH| replace:: :term:`Half hourly meter<Half hourly meter>`
 .. |I&C| replace:: :term:`I&C<Industrial and commercial>`
 .. |ICO| replace:: :term:`ICO<Information Commissioner's Office>`
 .. |ICS| replace:: :term:`ICS<Industrial Control System>`
-.. |ID| replace:: :term:`ID<Identification>`
+.. |ID| replace:: :term:`Identification<Identification>`
 .. |iDNO| replace:: :term:`iDNO<Independent Distribution Network Operator>`
 .. |IoT| replace:: :term:`IoT<Internet of Things>`
 .. |ISO| replace:: :term:`ISO<Independent System Operator>`
@@ -49,16 +49,16 @@
 .. |JSON| replace:: :term:`JSON<Javascript Object Notation>`
 .. |JSON-LD| replace:: :term:`JSON-LD<JavaScript Object Notation for Linked Data>`
 .. |kgCO2e| replace:: :term:`kgCO2e<Kilograms of carbon dioxide equivalent (per unit of fuel)>`
-.. |kW| replace:: :term:`kW<Kilowatt>`
+.. |kW| replace:: :term:`Kilowatt<Kilowatt>`
 .. |kWh| replace:: :term:`kWh<Kilowatt hour>`
 .. |KYC| replace:: :term:`KYC<Know Your Customer>`
-.. |LB| replace:: :term:`LB<Lawful basis>`
-.. |LI| replace:: :term:`LI<Legitimate interest>`
+.. |LB| replace:: :term:`Lawful basis<Lawful basis>`
+.. |LI| replace:: :term:`Legitimate interest<Legitimate interest>`
 .. |M2M| replace:: :term:`M2M<Machine to machine>`
 .. |MED| replace:: :term:`MED<Modernising Energy Data>`
 .. |MFA| replace:: :term:`MFA<Multi Factor Authorisation>`
 .. |MVP| replace:: :term:`MVP<Minimum Viable Product>`
-.. |MW| replace:: :term:`MW<Megawatt>`
+.. |MW| replace:: :term:`Megawatt<Megawatt>`
 .. |NCSC| replace:: :term:`NCSC<National Cyber Security Centre>`
 .. |NIC| replace:: :term:`NIC<National Infrastructure Commission>`
 .. |OAuth2| replace:: :term:`OAuth2<Open Authorization 2>`
@@ -72,21 +72,21 @@
 .. |OEGS| replace:: :term:`OEGS<Open Energy Governance Service>`
 .. |Ofgem| replace:: :term:`Ofgem<Office for Gas and Electricity Markets>`
 .. |OIDC| replace:: :term:`OIDC<Open ID Connect>`
-.. |OS| replace:: :term:`OS<Ordanance Survey>`
+.. |OS| replace:: :term:`Ordanance Survey<Ordanance Survey>`
 .. |OTP| replace:: :term:`OTP<One time passcode>`
 .. |OZEV| replace:: :term:`OZEV<Office for Zero Emissions Vehicles>`
 .. |P2P| replace:: :term:`P2P<Peer to peer>`
 .. |PAYG| replace:: :term:`PAYG<Pay As You Go>`
 .. |PPA| replace:: :term:`PPA<Purchase Power Agreement>`
-.. |PV| replace:: :term:`PV<Photovoltaic (cells/panels)>`
+.. |PV| replace:: :term:`Photovoltaic (cells/panels)<Photovoltaic (cells/panels)>`
 .. |RHI| replace:: :term:`RHI<Renewable Heat Incentive>`
 .. |RIIO| replace:: :term:`RIIO<Revenues = Incentives + Innovation + Outputs>`
 .. |SCADA| replace:: :term:`SCADA<Supervisory Control and Data Acquisition>`
 .. |SEC| replace:: :term:`SEC<Smart Energy Code>`
 .. |SEG| replace:: :term:`SEG<Smart Export Guarantee>`
-.. |SG| replace:: :term:`SG<Steering Group>`
+.. |SG| replace:: :term:`Steering Group<Steering Group>`
 .. |SMETS| replace:: :term:`SMETS<Smart Metering Equipment Technical Specifications>`
-.. |SP| replace:: :term:`SP<Service Provider>`
+.. |SP| replace:: :term:`Service Provider<Service Provider>`
 .. |SSO| replace:: :term:`SSO<Single sign-on>`
 .. |TOU| replace:: :term:`TOU<Time of use>`
 .. |TPI| replace:: :term:`TPI<Third Party Intermediary>`

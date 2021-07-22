@@ -1,7 +1,6 @@
 Access Control and Capability Grant Language
 ============================================
 
-
 .. contents::
    :depth: 4
    :local:
