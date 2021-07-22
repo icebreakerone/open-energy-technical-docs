@@ -79,7 +79,7 @@ space character.
 **Values** can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as
 ``dd/mm/yyyy``, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
 a datetime must be specified as a string compliant with `RFC3339 <https://datatracker.ietf.org/doc/html/rfc3339>`_. To
-simplify expression in JSON, quoted strings should be enclosed in single quote ``'`` characters. Lists are written as a
+simplify expression in |JSON|, quoted strings should be enclosed in single quote ``'`` characters. Lists are written as a
 comma separated list of strings surrounded by ``[`` and ``]`` characters. Lists are only valid RHS values for the
 ``in`` operator.
 
@@ -169,7 +169,7 @@ necessary as doing so acts against the aim of easy interoperability and comprehe
 
 Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible
 for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such
-capabilities. In addition, data providers creating custom capabilities **MUST** inform the OEGS of this, providing
+capabilities. In addition, data providers creating custom capabilities **MUST** inform the |OEGS| of this, providing
 links to the aforementioned documentation.
 
 .. warning::

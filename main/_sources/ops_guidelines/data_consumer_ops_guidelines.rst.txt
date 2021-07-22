@@ -16,7 +16,7 @@ Data Consumer Role and Responsibilities
 #######################################
 
 |DCs| are Open Energy members which can consume Shared Data (classes |OE-SA| and |OE-SB| in our
-`Data Sensitivity Classes`) from APIs produced and maintained by |DPs|.
+`Data Sensitivity Classes`) from |APIs| produced and maintained by |DPs|.
 
 In the figure below, we expect |DCs| to occupy a number of roles from the lowest in the diagram upwards - they
 are organisations able to configure their infrastructure (in terms of the consumer parts of the
@@ -41,7 +41,7 @@ search system to locate data sets of interest, both open and shared.
 Responsibility - Data consumption
 ---------------------------------
 
-The definition of a |DC| is that it consumes data from :term:`shared data` APIs. To do this, the organisation **MUST**
+The definition of a |DC| is that it consumes data from :term:`shared data` |APIs|. To do this, the organisation **MUST**
 create cryptographic key material, and maintain a record within the |OEGS| directory. It is responsible for the
 integrity of this key material, and **MUST** put appropriate policies in place to ensure that this material is not
 misused.
@@ -49,7 +49,7 @@ misused.
 Responsibility - Data licensing
 -------------------------------
 
-|DCs| are responsible for honouring the licenses for any data obtained through :term:`shared data` APIs. Where the |OEGS|
+|DCs| are responsible for honouring the licenses for any data obtained through :term:`shared data` |APIs|. Where the |OEGS|
 provides technical measures such as cryptographically signed receipts binding data and license conditions together, the
 |DC| is responsible for retaining and storing such receipts.
 
@@ -59,7 +59,7 @@ Problem Resolution (Data Consumers)
 Effective resolution of problems (Data Consumers)
 -------------------------------------------------
 
-We encourage |DCs| to direct any problems with data APIs first to the |DP| concerned. In the event
+We encourage |DCs| to direct any problems with data |APIs| first to the |DP| concerned. In the event
 that a |DC| is unable to resolve an issue with a |DP|, the issue MAY be flagged to the |OEGS| Dispute
 Resolution function for independent support.
 

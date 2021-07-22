@@ -316,7 +316,7 @@ organisations.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>OE-C</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-closed"><span class="xref std std-term">OE-C</span></a></p></td>
 <td><p>Closed data - limited to internal organisational access only or limited, bespoke bilateral contracts under
 specific circumstances. May be subject to hard legal barriers to sharing. May be security-critical information
 relating to operational technology supporting critical national infrastructure owned by an Operator of
@@ -328,9 +328,9 @@ Essential Services.</p>
 <td><p>Very High</p></td>
 <td><p>Very High</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>OE-SP</strong></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a></p></td>
 <td><p>Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-processing, as defined by the EU GDPR and brought into UK law via the DPA 2018.</p>
+processing, as defined by the EU <a class="reference internal" href="../glossary.html#term-General-Data-Protection-Regulation"><span class="xref std std-term">GDPR</span></a> and brought into UK law via the DPA 2018.</p>
 <p><strong>Currently not suitable to share within the OE ecosystem, with future extensibility subject to consultation.</strong></p>
 </td>
 <td><p>Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
@@ -339,11 +339,11 @@ dependence on power due to health conditions), individual EV charging records, t
 <td><p>Medium / High</p></td>
 <td><p>Medium / High</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>OE-SB</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a></p></td>
 <td><p>Datasets which do not include personal data and which can/could be shared, but currently require bilateral
 contract negotiation. May include data currently shared on the basis of group-based, name-based or
 purpose-limited access. May include aggregated data about individuals, subject to best practice adherence
-(e.g. ICO anonymisation code.)</p>
+(e.g. <a class="reference internal" href="../glossary.html#term-Information-Commissioner-s-Office"><span class="xref std std-term">ICO</span></a> anonymisation code.)</p>
 <p><strong>Anonymised data using non-aggregative techniques are currently not suitable to share within this sensitivity
 class due to complex risks related to individual re-identification. Future extensibility to sharing anonymised
 data is subject to consultation.</strong></p>
@@ -355,7 +355,7 @@ decision-making), sensitive asset data.</p></td>
 <td><p>Medium / High</p></td>
 <td><p>Medium / High</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>OE-SA</strong></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 <td><p>Shared data - datasets which can/could be shared, but which require the user to agree to ‘light touch’ T&amp;Cs to
 access and use (e.g. non-commercial clauses such as those under CC-BY-NC).</p></td>
 <td><p>Network capacity, outage data, weather predictions, European space agency data, daily smart meter installations,
@@ -364,7 +364,7 @@ geolocation information for non-sensitive assets (e.g. Renewable Assets, EPC cer
 <td><p>Medium</p></td>
 <td><p>Low</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>OE-O</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a></p></td>
 <td><p>Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.</p></td>
 <td><p>Lower Super Output Layer ID (LSOA), Digest of UK Energy Statistics, regulatory data (e.g. licensing categories,
 institutional charters or Terms of Reference, etc.)</p></td>
@@ -382,17 +382,17 @@ institutional charters or Terms of Reference, etc.)</p></td>
 for |DCs| to meet in order to gain access</strong> to datasets in different sensitivity classes, and how access rules
 are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
 consultation responses.</p>
-<p>The Open Energy Governance Service (OEGS) is responsible for providing <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> with verified information about
+<p>The Open Energy Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>) is responsible for providing <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> with verified information about
 <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, in line with specified access conditions for each dataset. However, the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> is solely
-responsible for determining whether any given API request should be honoured (i.e. data access granted), and the
+responsible for determining whether any given <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> request should be honoured (i.e. data access granted), and the
 licensing terms for any data returned in response to that request. This is due to requirements for control to rest
 with the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only.</p>
 <p>It is expected that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> will grant access reliably and fairly, in line with the access conditions that they
-specify. In the event that access is refused, there will be a mechanism for flagging this with the OEGS for review and
+specify. In the event that access is refused, there will be a mechanism for flagging this with the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> for review and
 dispute management. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must be able to show clear justification for access refusal. Repeat refusal or
 non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).</p>
-<p>This policy focuses on access conditions for classes OE-SA and OE-SB only. Personal data (OE-SP) are out of scope for
-development during Phase 3. Future extensibility of the Open Energy ecosystem to OE-SP data will be consulted on in
+<p>This policy focuses on access conditions for classes <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> only. Personal data (<a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a>) are out of scope for
+development during Phase 3. Future extensibility of the Open Energy ecosystem to <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a> data will be consulted on in
 future phases of project development.</p>
 <div class="section" id="policy-details-data-access-conditions">
 <h3><a class="toc-backref" href="#id13"><span class="section-number">3.4.1. </span>Policy details (Data access conditions)</a><a class="headerlink" href="#policy-details-data-access-conditions" title="Permalink to this headline">¶</a></h3>
@@ -410,7 +410,7 @@ sets of needs:</p>
 This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each
 sensitivity class. Instead, our policy enables some tailoring within defined parameters.</p>
 <p>The table below describes access conditions for each of the Open Energy data sensitivity classes. It also demonstrates
-the rationale for this guidance - identifying the lack of standardised access conditions for OE-SA and OE-SB datasets
+the rationale for this guidance - identifying the lack of standardised access conditions for <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> datasets
 as a cause of cost and friction in energy data sharing.</p>
 <table class="colwidths-given docutils align-default" id="id3">
 <caption><span class="caption-number">Table 3.2 </span><span class="caption-text">Data sensitivity classes and access conditions in scope</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
@@ -424,11 +424,11 @@ as a cause of cost and friction in energy data sharing.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>OE-C</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-closed"><span class="xref std std-term">OE-C</span></a></p></td>
 <td><p>Determined and governed by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>OE-SP</strong></p></td>
-<td><p>Currently determined by legislation including, but not limited to: GDPR / DPA 2018, the Data Access and
+<tr class="row-odd"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a></p></td>
+<td><p>Currently determined by legislation including, but not limited to: <a class="reference internal" href="../glossary.html#term-General-Data-Protection-Regulation"><span class="xref std std-term">GDPR</span></a> / DPA 2018, the Data Access and
 Privacy Framework, and the Smart Energy Code. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may also apply additional non-standard access
 conditions, such as payment or purpose-based.</p>
 <p>Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
@@ -436,17 +436,17 @@ July 2021) and beyond the scope of this consultation. Future extensibility to be
 consultation in due course.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>OE-SB</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a></p></td>
 <td><p>Currently non-standardised, determined by bilateral contract and bespoke negotiation.</p>
 <p>Subject of the current policy.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>OE-SA</strong></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 <td><p>Currently some standardisation, however bespoke arrangements remain common.</p>
 <p>Subject of the current policy.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>OE-O</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-open"><span class="xref std std-term">OE-O</span></a></p></td>
 <td><p>No access conditions - free and accessible to all users.</p></td>
 </tr>
 </tbody>
@@ -470,27 +470,27 @@ consultation in due course.</p>
 <p>Graduated payment rates (e.g. higher granularity)</p>
 <p>One-off or subscription payment rates</p>
 </td>
-<td><p>OE-SB and OE-SA</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Security compliance</p></td>
 <td><p>UK Government Minimum Cybersecurity Standard</p>
 <p>UK Government  ‘Secure by Design’ IoT guidance</p>
 <p>Codes of conduct governing Critical National Infrastructure</p>
 </td>
-<td><p>OE-SB and OE-SA</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Regulatory compliance</p></td>
 <td><p>Networks business separation provisions</p>
 <p>Competition law</p>
 <p>Adherence to section 105 of the Utilities Act 2000</p>
 </td>
-<td><p>OE-SB and OE-SA</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Standards compliance</p></td>
-<td><p>Meets MED Data Best Practice Guidance</p>
-<p>Meets relevant ISO standards</p>
+<td><p>Meets <a class="reference internal" href="../glossary.html#term-Modernising-Energy-Data"><span class="xref std std-term">MED</span></a> Data Best Practice Guidance</p>
+<p>Meets relevant <a class="reference internal" href="../glossary.html#term-Independent-System-Operator"><span class="xref std std-term">ISO</span></a> standards</p>
 </td>
-<td><p>OE-SB and OE-SA</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Organisation type</p></td>
 <td><p>Local Authorities</p>
@@ -500,7 +500,7 @@ consultation in due course.</p>
 <p>Charities</p>
 <p>Specific Open Energy membership tiers (e.g. SME)</p>
 </td>
-<td><p>OE-SB</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Group membership</p></td>
 <td><p>Certain use cases (e.g. community energy project development)</p>
@@ -509,14 +509,14 @@ consultation in due course.</p>
 <p>Social housing retrofit</p>
 <p>Public EV charge-point planning</p>
 </td>
-<td><p>OE-SB</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Other</p></td>
 <td><p>Auditing clauses</p>
 <p>Individuals handling the data within a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must have completed certain training (e.g. ONS Safe
 Researcher).</p>
 </td>
-<td><p>OE-SB and OE-SA</p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-B"><span class="xref std std-term">OE-SB</span></a> and <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-shared-A"><span class="xref std std-term">OE-SA</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -538,7 +538,7 @@ commercial agreement.</p></li>
 fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent
 confusion for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> or instability associated with too-frequent changes in group creation or membership. As
 such, it is likely that group-based access defined through authoritative external sources will be explored first in
-OEGS development going forward.</p>
+<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> development going forward.</p>
 </div>
 <div class="section" id="use-case-based-access-control">
 <h3><a class="toc-backref" href="#id15"><span class="section-number">3.4.3. </span>Use case based access control</a><a class="headerlink" href="#use-case-based-access-control" title="Permalink to this headline">¶</a></h3>
@@ -572,17 +572,17 @@ subject to legal assessment.</p>
 <h3><a class="toc-backref" href="#id18"><span class="section-number">3.5.1. </span>Creating access rules</a><a class="headerlink" href="#creating-access-rules" title="Permalink to this headline">¶</a></h3>
 <p>The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
 which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system
-whereby access and capability grants are determined, for each request to a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s API, on the basis of a set
+whereby access and capability grants are determined, for each request to a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a>, on the basis of a set
 of rules defined and published by that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
 <p>Grants are based on three sources of information:</p>
 <ol class="arabic simple">
-<li><p>Information from the Open Energy Governance Service (OEGS) about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> making the request</p></li>
+<li><p>Information from the Open Energy Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>) about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> making the request</p></li>
 <li><p>Information known by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> (separately from Open Energy) about the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> making the request,
 such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar</p></li>
-<li><p>Rules defined by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> - predicated on information provided by OEGS and/or, where necessary to preserve
+<li><p>Rules defined by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> - predicated on information provided by <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> and/or, where necessary to preserve
 privacy or security, properties known to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> only</p></li>
 </ol>
-<p>Information provided by OEGS to <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> can cover two kinds of properties:</p>
+<p>Information provided by <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> to <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> can cover two kinds of properties:</p>
 <ul class="simple">
 <li><p><strong>Inherently true</strong> properties known to Open Energy, such as:</p>
 <ul>
@@ -607,20 +607,20 @@ Indicative rules stipulate that a <a class="reference internal" href="../glossar
 also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data
 Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>
 must be able to demonstrate a justifiable reason for doing so. <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can challenge access refusals through
-a dispute-resolution mechanism (part of the OEGS) if this is required. Guidance regarding acceptable/unacceptable
-reasons for access refusal, the dispute-resolution mechanism, and OEGS dispute-resolution processes will be developed
+a dispute-resolution mechanism (part of the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>) if this is required. Guidance regarding acceptable/unacceptable
+reasons for access refusal, the dispute-resolution mechanism, and <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> dispute-resolution processes will be developed
 and published in Phase 4 of the project.</p>
 <p>The flow of information associated with access control is shown below - this assumes the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> has already
 acquired an access token from the authorization server. Access control and capability grants are processed on a
 pre-request basis, within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, in the box <em>Make access and license decision based on details</em>:</p>
 <div class="figure align-default" id="access-control-fapi-flow">
-<img alt="../_images/FAPI_sequence_diagram_introspection_only.svg" src="../_images/FAPI_sequence_diagram_introspection_only.svg" /><p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Access control authorization flow showing application point for access control and capability grant rules</span><a class="headerlink" href="#access-control-fapi-flow" title="Permalink to this image">¶</a></p>
+<img alt="../_images/fapi_sequence_diagram_introspection_only.svg" src="../_images/fapi_sequence_diagram_introspection_only.svg" /><p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Access control authorization flow showing application point for access control and capability grant rules</span><a class="headerlink" href="#access-control-fapi-flow" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="associating-access-rules-with-capabilities">
 <h3><a class="toc-backref" href="#id19"><span class="section-number">3.5.2. </span>Associating access rules with capabilities</a><a class="headerlink" href="#associating-access-rules-with-capabilities" title="Permalink to this headline">¶</a></h3>
 <p>In the Open Energy model, licensing is expressed as the grant of a set of capabilities and associated obligations,
-scoped to the results of a single API call and verified through a non-repudiable digital signature.</p>
+scoped to the results of a single <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> call and verified through a non-repudiable digital signature.</p>
 <p>This is defined using a rules language, the details of which can be found at
 <a class="reference internal" href="../access_control_specification.html#access-control-and-capability-grant-language"><span class="std std-ref">Access Control and Capability Grant Language</span></a></p>
 </div>
@@ -636,10 +636,10 @@ derivatives of the artefact.</p>
 </div>
 <div class="section" id="how-will-capability-grants-work-in-practice">
 <h3><a class="toc-backref" href="#id21"><span class="section-number">3.5.4. </span>How will capability grants work in practice?</a><a class="headerlink" href="#how-will-capability-grants-work-in-practice" title="Permalink to this headline">¶</a></h3>
-<p>Each time a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> makes an API call, the data returned will be associated with a particular set of capability
+<p>Each time a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> makes an <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> call, the data returned will be associated with a particular set of capability
 grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in
 the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy
-Governance Service (OEGS). Alongside the legal text of the licence, the OEGS will make details of capabilities available
+Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>). Alongside the legal text of the licence, the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will make details of capabilities available
 to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> as an easy to understand set of notation/icons. Open Energy Search will also show the license
 (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
 license in order to promote transparency from the outset.</p>
@@ -663,7 +663,7 @@ passed on (e.g. raw data / results of analysis / recommendations building on ana
 <p>Capability grants will be accompanied by details of any obligations that the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must abide by when exercising
 a capability. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must specify any such obligations when associating capabilities with an access rule. As
 with capabilities, the range of obligations will be standardised within the Open Energy ecosystem and will be included
-in the digital signature binding the API return with the capability grant.</p>
+in the digital signature binding the <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> return with the capability grant.</p>
 <p>Open Energy research has identified a set of common obligations associated with capabilities granted by licences used
 in the energy sector. These include obligations to:</p>
 <ul class="simple">
@@ -705,7 +705,7 @@ playing field by offering particular benefits to new, small or ‘public interes
 or budget. In the longer term, adoption of this approach could have benefits across the sector as new data markets
 incentivise <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to align with Open Energy standardisation.</p>
 <div class="figure align-default" id="licensing-model-api-call">
-<img alt="../_images/licensing_model_per_api_call.svg" src="../_images/licensing_model_per_api_call.svg" /><p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Licensing model per API call</span><a class="headerlink" href="#licensing-model-api-call" title="Permalink to this image">¶</a></p>
+<img alt="../_images/licensing_model_per_api_call.svg" src="../_images/licensing_model_per_api_call.svg" /><p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Licensing model per <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> call</span><a class="headerlink" href="#licensing-model-api-call" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="example-access-control-and-capability-grant-scenarios">
@@ -913,7 +913,7 @@ file can be found at <a class="reference internal" href="../metadata.html#data-s
 <div class="section" id="where-are-these-rules-evaluated-and-by-whom">
 <h3><a class="toc-backref" href="#id28"><span class="section-number">3.5.11. </span>Where are these rules evaluated, and by whom?</a><a class="headerlink" href="#where-are-these-rules-evaluated-and-by-whom" title="Permalink to this headline">¶</a></h3>
 <p>Following our guiding principle that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> remain in control of their data at all times, these rules are
-evaluated within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> API implementation. This is necessary to allow for decisions predicated on
+evaluated within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> implementation. This is necessary to allow for decisions predicated on
 information only known to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, but this could impose additional complexity when setting up and
 implementing a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>. To mitigate this, we will provide clear specifications and semantics for the rules
 language, along with a reference implementation in the Python language.</p>
@@ -926,7 +926,7 @@ and other properties form part of the <a class="reference internal" href="../met
 <p>Open Energy acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
 Developing the full function is beyond the scope of project Phase 3, however it remains an active area for future
 development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and
-discuss appropriate OEGS support. We proposed to use learning from this prototype to inform future service and policy
+discuss appropriate <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> support. We proposed to use learning from this prototype to inform future service and policy
 design.</p>
 </div>
 <div class="section" id="dispute-resolution">

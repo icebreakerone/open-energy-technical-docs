@@ -22,7 +22,7 @@ Overarching aims of these operational guidelines:
 * To encourage an active data sharing ecosystem in which transparency and interoperability are incentivised.
 * To ensure positive member experiences that demonstrate the value of Open Energy and encourage them to continue
   participating in the ecosystem.
-* To minimise potential costs associated with insufficient API or other technical system testing, downtime, or
+* To minimise potential costs associated with insufficient |API| or other technical system testing, downtime, or
   other common faults.
 * To reduce any reputational risks associated with individual members, incorrect application of core policies, or
   the Open Energy ecosystem as a whole.
@@ -47,7 +47,7 @@ governing data sensitivity classification, access controls, and licensing.
 
 `Guidance for Data Consumers` and `Guidance for Data Providers`: guidelines outlining how |DPs| can share data safely and
 securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
-and design safe and effective APIs enabling data-sharing. Guidelines outlining how |DCs| can meet the
+and design safe and effective |APIs| enabling data-sharing. Guidelines outlining how |DCs| can meet the
 requirements for offering data services, access and licensing conditions for different data classes, and best
 practice with regards to testing, security, ethics and dispute management.
 
@@ -76,7 +76,7 @@ and its related social and economic benefits.
 
 Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
 the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
-(BEIS), and Innovate UK. The project has built on learning from Open Banking - identifying which elements are
+(|BEIS|), and Innovate UK. The project has built on learning from Open Banking - identifying which elements are
 transferable to the energy sector, and which require adaptation or fresh thinking. Throughout this process, the
 Open Energy team has engaged in extensive consultation with the energy sector, in order to ensure that the project
 meets the widest possible variety of needs. The ethos of Open Energy will remain grounded in sector engagement
@@ -171,8 +171,8 @@ Layer ID (LSOA) data, Digest of UK Energy Statistics, and OpenStreetMap data.
 
 Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
 Energy members (|DPs|) and non-Open Energy members will both be visible. There are no barriers to accessing
-Open data once it is discovered - users are directed to an appropriate URL or API to access the data themselves.
-Open data access is not moderated via the OEGS as no additional access controls are required.
+Open data once it is discovered - users are directed to an appropriate URL or |API| to access the data themselves.
+Open data access is not moderated via the |OEGS| as no additional access controls are required.
 
 Shared data
 -----------
@@ -187,11 +187,11 @@ Energy consultations have established a set of five data sensitivity classes, in
 separate categories of Shared data.
 
 Due to the sheer diversity of data types in the energy sector, as opposed to the Open Banking model where the
-data types are more restricted, Open Energy has to limit focus for Phase 3 development. At present, the OEGS
+data types are more restricted, Open Energy has to limit focus for Phase 3 development. At present, the |OEGS|
 can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of
 non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
-to ICO/ONS best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
-(class OE-SP), and data that has been anonymised using techniques other than aggregation, may be extensible
+to |ICO|/ONS best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
+(class |OE-SP|), and data that has been anonymised using techniques other than aggregation, may be extensible
 in future subject to further consultation.
 
 The metadata and sensitivity class of Shared datasets are listed in Open Energy Search and are visible to any user.
@@ -208,7 +208,7 @@ Closed data is defined in the Open Energy ecosystem as: ‘Data that either cann
 custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share
 within the Open Energy ecosystem and is not visible through Open Energy Search. While we acknowledge industry
 feedback flagging potential value in using Open Energy infrastructure to privately share Closed data not listed in
-the Search or OEGS Directory, this is not a focus of project development in the present phase. Any extensibility of
+the Search or |OEGS| Directory, this is not a focus of project development in the present phase. Any extensibility of
 this function in future will be subject to consultation.
 
 What role does your organisation play in the Open Energy ecosystem?
@@ -223,7 +223,7 @@ outlines the meaning of the different roles and outlines their basic responsibil
 |DPs| are organisations that control datasets that they wish to make visible and/or accessible through the
 Open Energy ecosystem. |DPs| can provide Open and/or Shared datasets. |DPs| are responsible for:
 data sensitivity classification, creation of access rules, creation of capability grants, data provision, data
-integrity and correctness, metadata provision, and API availability, stability and change management. Full guidance
+integrity and correctness, metadata provision, and |API| availability, stability and change management. Full guidance
 regarding |DP| responsibilities can be found in `Guidance for Data Providers`.
 
 Data Consumers
@@ -231,7 +231,7 @@ Data Consumers
 
 |DCs| are organisations that seek to find and access datasets through the Open Energy Governance Service
 Platform. |DCs| can be established to serve internal organisational needs, to serve external customers,
-or both. |DCs| is a catch-all term referring to all parties accessing data via the OEGS. Full guidance can be found
+or both. |DCs| is a catch-all term referring to all parties accessing data via the |OEGS|. Full guidance can be found
 in `Guidance for Data Consumers`
 
 Service Providers
@@ -268,7 +268,7 @@ Creating Access Rules (Introduction)
 ------------------------------------
 
 To operationalise Data Access conditions above, we propose a system whereby access grants are determined, for each
-request to the API of a |DP|, on the basis of a set of rules defined and published by that |DP| in the
+request to the |API| of a |DP|, on the basis of a set of rules defined and published by that |DP| in the
 dataset metadata.
 
 Data Licensing (Introduction)
@@ -277,8 +277,8 @@ Data Licensing (Introduction)
 A data licence is a legal instrument setting out what a |DC| can do with a particular artefact (e.g.
 dataset). This grants certain ‘capabilities’ to the |DC|, comprising a clear expression of things they
 can do with the artefact. Capability grants are accompanied by any obligations that the |DC| must abide
-by when exercising a capability. The capabilities and obligations associated with each API call will be converted
-into a licence through the Open Energy Governance Service (OEGS).
+by when exercising a capability. The capabilities and obligations associated with each |API| call will be converted
+into a licence through the Open Energy Governance Service (|OEGS|).
 
 We propose a system operating through a range of standardised capability grants and obligations. Standardisation
 will include legal text, ‘human readable’ text and summary notation. |DPs| must specify which capabilities

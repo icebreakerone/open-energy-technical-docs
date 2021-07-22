@@ -307,17 +307,17 @@ as described in <a class="reference external" href="https://www.ietf.org/rfc/rfc
 <li><p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> within the Open Energy ecosystem</p>
 <ul>
 <li><p>Applies to shared data sets</p></li>
-<li><p>Data APIs secured using Financial-grade API security (<a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a>)</p></li>
+<li><p>Data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> secured using Financial-grade <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> security (<a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a>)</p></li>
 </ul>
 </li>
 <li><p>Any third party, in the case of open data</p>
 <ul>
-<li><p>Open data sets are made available through publicly accessible APIs</p></li>
+<li><p>Open data sets are made available through publicly accessible <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a></p></li>
 <li><p>Data are made available under an appropriate open license agreement</p></li>
 </ul>
 </li>
 </ul>
-<p>In this context, Data APIs can be anything from a simple link to a CSV or other file (for open data) to a complex
+<p>In this context, Data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> can be anything from a simple link to a CSV or other file (for open data) to a complex
 query system returning custom output on demand.</p>
 <p>To support this role, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> have certain responsibilities:</p>
 <div class="section" id="responsibility-data-classification">
@@ -349,22 +349,22 @@ with the kinds of data it exposes (along with any other access conditions deemed
 on a per-data-set basis)</p>
 <ul class="simple">
 <li><p>Open data <strong>MUST</strong> be made available with no authentication or authorization requirements</p></li>
-<li><p>Shared data <strong>MUST</strong> made available through a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> compliant resource server connected to the OEGSs authorization
+<li><p>Shared data <strong>MUST</strong> made available through a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> compliant resource server connected to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>’s authorization
 service (see <a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a> for more details)</p></li>
 </ul>
 <div class="section" id="data-formats">
 <h4><a class="toc-backref" href="#id5"><span class="section-number">5.1.3.1. </span>Data formats</a><a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h4>
-<p>Open Energy does not define or mandate individual data formats to be returned from data APIs - the diversity of kinds
+<p>Open Energy does not define or mandate individual data formats to be returned from data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> - the diversity of kinds
 of information in the sector renders this impractical, and the additional overhead imposed on data providers would be
 undesirable.</p>
 <p>With this said, we would encourage <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to consider likely automated consumption of data when designing their
-data APIs - this implies using machine readable formats such as CSV, JSON and similar, with a preference for those
+data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> - this implies using machine readable formats such as CSV, <a class="reference internal" href="../glossary.html#term-Javascript-Object-Notation"><span class="xref std std-term">JSON</span></a> and similar, with a preference for those
 formats compatible with existing software tools and libraries.</p>
 </div>
 </div>
 <div class="section" id="responsibility-data-integrity-and-correctness">
 <h3><a class="toc-backref" href="#id6"><span class="section-number">5.1.4. </span>Responsibility - Data integrity and correctness</a><a class="headerlink" href="#responsibility-data-integrity-and-correctness" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for the correctness of data returned by their published data APIs. The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will provide a
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for the correctness of data returned by their published data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a>. The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will provide a
 mechanism by which <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can report any data quality issues, and will convey any such reports to a nominated contact
 within the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>.</p>
 </div>
@@ -384,33 +384,33 @@ data set within the Open Energy Governance Service (<a class="reference internal
 </div>
 <div class="section" id="responsibility-api-availability">
 <h3><a class="toc-backref" href="#id8"><span class="section-number">5.1.6. </span>Responsibility - API availability</a><a class="headerlink" href="#responsibility-api-availability" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for availability of their published data APIs. Availability will be monitored automatically by the
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for availability of their published data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a>. Availability will be monitored automatically by the
 <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>, availability information will form part of the metadata for each data set record in the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Registry.</p>
 <p>The <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will provide a mechanism for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> to announce scheduled downtime when planned, and to report unscheduled
 downtime when necessary.</p>
 </div>
 <div class="section" id="responsibility-api-stability-and-change-management">
 <h3><a class="toc-backref" href="#id9"><span class="section-number">5.1.7. </span>Responsibility - API stability and change management</a><a class="headerlink" href="#responsibility-api-stability-and-change-management" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for managing any change to the data APIs such that disruption to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> is minimised. This is handled
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for managing any change to the data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> such that disruption to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> is minimised. This is handled
 through:</p>
 <ul class="simple">
-<li><p>Semantic versioning of all API methods</p></li>
-<li><p>Publication of anticipated changes and retirement of API versions through the OEGS</p></li>
-<li><p>Changeover periods where new and prior API versions are run in parallel</p></li>
+<li><p>Semantic versioning of all <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> methods</p></li>
+<li><p>Publication of anticipated changes and retirement of <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> versions through the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a></p></li>
+<li><p>Changeover periods where new and prior <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> versions are run in parallel</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="data-api-requirements">
 <h2><a class="toc-backref" href="#id10"><span class="section-number">5.2. </span>Data API Requirements</a><a class="headerlink" href="#data-api-requirements" title="Permalink to this headline">¶</a></h2>
-<p>Unlike open banking, open energy does not mandate particular APIs for data provision - it is expected that there will
+<p>Unlike open banking, open energy does not mandate particular <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> for data provision - it is expected that there will
 be a variety of mechanisms to expose data, with varying inputs (from a single data set ID to a complex query object)
 and varying kinds of output dependent on the information exposed.</p>
-<p>With that said, there are certain properties that all data APIs must satisfy to interoperate successfully with other
+<p>With that said, there are certain properties that all data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> must satisfy to interoperate successfully with other
 parties within the open energy ecosystem.</p>
 <p>We refer to endpoints used to retrieve energy data as data endpoints, and others as infrastructure endpoints.</p>
 <div class="section" id="date-and-time-formats">
 <h3><a class="toc-backref" href="#id11"><span class="section-number">5.2.1. </span>Date and time formats</a><a class="headerlink" href="#date-and-time-formats" title="Permalink to this headline">¶</a></h3>
-<p>Whenever date or time quantities are accepted or returned from a data API, these values MUST conform to
+<p>Whenever date or time quantities are accepted or returned from a data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a>, these values MUST conform to
 <a class="reference external" href="https://tools.ietf.org/html/rfc3339">RFC 3339</a>. This is referenced elsewhere in this document as <strong>date/time</strong></p>
 </div>
 <div class="section" id="endpoint-security">
@@ -431,17 +431,17 @@ information about the client making the request prior to any access decision.</p
 </div>
 <div class="section" id="heartbeat-and-monitoring-endpoint">
 <h3><a class="toc-backref" href="#id15"><span class="section-number">5.2.3. </span>Heartbeat and monitoring endpoint</a><a class="headerlink" href="#heartbeat-and-monitoring-endpoint" title="Permalink to this headline">¶</a></h3>
-<p>All data APIs <strong>SHOULD</strong> include a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
+<p>All data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> <strong>SHOULD</strong> include a <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
 <ul class="simple">
-<li><p>It allows the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> to monitor the liveness of the data API</p></li>
+<li><p>It allows the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> to monitor the liveness of the data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p></li>
 <li><p>It provides some level of verification that the resource server has been correctly configured</p></li>
 </ul>
 <p>The heartbeat endpoint location is defined within the data set metadata file, if specified it <strong>MUST</strong> respond to
 <code class="docutils literal notranslate"><span class="pre">GET</span></code> requests from the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> monitoring system with a <code class="docutils literal notranslate"><span class="pre">200</span></code> status code.</p>
-<p>If the heartbeat response contains a body, the body will be interpreted by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> monitoring system as a JSON
+<p>If the heartbeat response contains a body, the body will be interpreted by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> monitoring system as a <a class="reference internal" href="../glossary.html#term-Javascript-Object-Notation"><span class="xref std std-term">JSON</span></a>
 dictionary containing statistics for the period between the most recent two successful calls to the heartbeat
 endpoint (including the call to which this is a response). This response is <strong>RECOMMENDED</strong> as it provides oversight
-of API usage to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>.</p>
+of <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> usage to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>.</p>
 <p>Legal keys, and the semantics of their associated values, are as follows:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -462,7 +462,7 @@ of API usage to the <a class="reference internal" href="../glossary.html#term-Op
 time of the heartbeat request</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">api_call_response_[CODE]_count</span></code></p></td>
-<td><p>integer number of requests to non-heartbeat endpoints within this data API which resulted in a response of type
+<td><p>integer number of requests to non-heartbeat endpoints within this data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> which resulted in a response of type
 CODE. A distinct key:value pair is sent in the response for each distinct HTTP status code returned.</p></td>
 </tr>
 </tbody>
@@ -470,13 +470,13 @@ CODE. A distinct key:value pair is sent in the response for each distinct HTTP s
 </div>
 <div class="section" id="api-documentation">
 <h3><a class="toc-backref" href="#id16"><span class="section-number">5.2.4. </span>API documentation</a><a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h3>
-<p>Data APIs <strong>MUST</strong> be described within the transport section of the data set metadata file.</p>
+<p>Data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> <strong>MUST</strong> be described within the transport section of the data set metadata file.</p>
 </div>
 <div class="section" id="versioning">
 <h3><a class="toc-backref" href="#id17"><span class="section-number">5.2.5. </span>Versioning</a><a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h3>
-<p>All data APIs <strong>MUST</strong> include a version number in the path of each data endpoint. This version SHOULD use semantic
+<p>All data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> <strong>MUST</strong> include a version number in the path of each data endpoint. This version SHOULD use semantic
 versioning to differentiate between breaking and backwards compatible changes. This <strong>MUST</strong> be documented within the
-OpenAPI transport section of the metadata file.</p>
+Open|API| transport section of the metadata file.</p>
 </div>
 </div>
 <div class="section" id="problem-resolution-data-providers">
@@ -485,7 +485,7 @@ OpenAPI transport section of the metadata file.</p>
 <h3><a class="toc-backref" href="#id19"><span class="section-number">5.3.1. </span>Effective resolution of problems (Data Providers)</a><a class="headerlink" href="#effective-resolution-of-problems-data-providers" title="Permalink to this headline">¶</a></h3>
 <p>A <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong> create documentation to clearly outline the policies, processes and systems it has in place for problem
 resolution and its respective service level objectives. This framework should enable the effective resolution of <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>
-issues and therefore cater for problems that relate specifically to a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>’s use of a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s data APIs. In the event that a
+issues and therefore cater for problems that relate specifically to a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>’s use of a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a>. In the event that a
 <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> is unable to resolve an issue with a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, the issue <strong>MAY</strong> be flagged to the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Dispute Resolution function for
 independent support.</p>
 </div>
@@ -524,7 +524,7 @@ implementing a change and communicating to <a class="reference internal" href=".
 <p>Planned downtime, by definition, is something that a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> anticipates and therefore is able to give advance notice to <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>.
 It is not generally possible to give advance notice of unplanned downtime, but <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> should give notice as soon as they
 are aware of the downtime.</p>
-<p>When providing notifications, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> provide a specific time period, so <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> are aware that the data API will be
+<p>When providing notifications, <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> provide a specific time period, so <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> are aware that the data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> will be
 unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner
 than anticipated.</p>
 <p><a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Support Services can assist <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> with the dissemination of downtime information to the wider Open Energy ecosystem
@@ -542,27 +542,27 @@ to publish additional information about changes.</p>
 </div>
 <div class="section" id="data-api-changes">
 <h3><a class="toc-backref" href="#id27"><span class="section-number">5.4.3. </span>Data API changes</a><a class="headerlink" href="#data-api-changes" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may periodically wish to upgrade and / or to deprecate versions of their data APIs. The following
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> may periodically wish to upgrade and / or to deprecate versions of their data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a>. The following
 mitigation measures will reduce the impact on service providers of these changes.</p>
 <div class="section" id="dual-running-and-deprecation">
 <h4><a class="toc-backref" href="#id28"><span class="section-number">5.4.3.1. </span>Dual running and deprecation</a><a class="headerlink" href="#dual-running-and-deprecation" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> support a minimum of two non-compatible API versions in a production context, providing both versions
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> <strong>SHOULD</strong> support a minimum of two non-compatible <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> versions in a production context, providing both versions
 were previously supported by the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, for a period of time long enough to ensure that <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> have had sufficient time to
 successfully test the new version and migrate their applications and customers. <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> recommends dual running for at
-least six months for a major version, and three months for a minor version. Where a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> implements a data API for the
+least six months for a major version, and three months for a minor version. Where a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> implements a data <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> for the
 first time, they will only need to support this one version to start with.</p>
 <p>The deprecation of unsupported versions is at the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>’s discretion – based on usage metrics. However, the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> may
 recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be
 implemented within three months of notification by the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>. This is to cater for critical defects, especially those
 relating to security. In exceptional circumstances it may be agreed by <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> that support for a specific version is
 terminated earlier.</p>
-<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must not apply any measures to induce <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> to adopt a new version of the APIs (e.g. rate limiting the older version
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must not apply any measures to induce <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> to adopt a new version of the <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> (e.g. rate limiting the older version
 while providing better performance on a newer version).</p>
 </div>
 <div class="section" id="api-credentials-consent-and-authorisation">
 <h4><a class="toc-backref" href="#id29"><span class="section-number">5.4.3.2. </span>API credentials, consent and authorisation</a><a class="headerlink" href="#api-credentials-consent-and-authorisation" title="Permalink to this headline">¶</a></h4>
-<p>API Credentials associated with an API should be version agnostic. Therefore, a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> accessing v1.0, v1.1 or v2.0 should
-be able to use the same API Credentials across all available API endpoints.</p>
+<p><a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> Credentials associated with an <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> should be version agnostic. Therefore, a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> accessing v1.0, v1.1 or v2.0 should
+be able to use the same <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> Credentials across all available <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> endpoints.</p>
 </div>
 </div>
 </div>
