@@ -1,5 +1,5 @@
-Operational Guidelines - Core Policies
-======================================
+Core Policies
+=============
 
 .. contents::
    :depth: 4
@@ -369,9 +369,9 @@ What are licenses and capabilities?
 
 A data licence is a legal instrument setting out what a |DC| can do with a particular artefact (e.g. dataset).
 This grants certain ‘capabilities’ to the |DC|, comprising a clear expression of things they can do with the
-artefact. For example, the CC BY 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
+artefact. For example, the CC-BY 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
 reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact
-- so long as the author is credited with the original. By contrast, the CC BY-ND 4.0 Creative Commons licence grants
+- so long as the author is credited with the original. By contrast, the CC-BY-ND 4.0 Creative Commons licence grants
 the capability to reuse the licensed artefact for any purpose, however it does not grant the capability to redistribute
 derivatives of the artefact.
 
@@ -662,9 +662,9 @@ Dispute Resolution
 ##################
 
 Open Energy acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the
-OEGS. While developing the full function of dispute resolution falls beyond the scope of Open Energy Phase 3, this
+|OEGS|. While developing the full function of dispute resolution falls beyond the scope of Open Energy Phase 3, this
 remains an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and
 consultation will be used to shape the future service. In the meantime, members will be requested to use a specific
-email address to catalogue any difficulties and discuss appropriate OEGS support. Learning from this prototype will
+email address to catalogue any difficulties and discuss appropriate |OEGS| support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 
