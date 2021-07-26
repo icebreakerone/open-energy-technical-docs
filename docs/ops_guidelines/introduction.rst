@@ -8,8 +8,8 @@ Introduction to Open Energy
 Overview and purpose of the guidelines
 ######################################
 
-The Open Energy |OE| operational guidelines aim to provide practical advice to all types of actors participating in
-the Open Energy ecosystem. The guidelines are supplemented by links to more detailed technical and membership
+The |OE| operational guidelines aim to provide practical advice to all types of actors participating in
+the |OE| ecosystem. The guidelines are supplemented by links to more detailed technical and membership
 documentation.
 
 Overarching aims of these operational guidelines:
@@ -20,19 +20,19 @@ Overarching aims of these operational guidelines:
   ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
   for data shared in the ecosystem.
 * To encourage an active data sharing ecosystem in which transparency and interoperability are incentivised.
-* To ensure positive member experiences that demonstrate the value of Open Energy and encourage them to continue
+* To ensure positive member experiences that demonstrate the value of |OE| and encourage them to continue
   participating in the ecosystem.
 * To minimise potential costs associated with insufficient |API| or other technical system testing, downtime, or
   other common faults.
 * To reduce any reputational risks associated with individual members, incorrect application of core policies, or
-  the Open Energy ecosystem as a whole.
+  the |OE| ecosystem as a whole.
 
 These guidelines are structured in six sections, outlining:
 
 Introduction (this section): background to the Open Energy project, clarifications of the roles and responsibilities
 of different types of actors operating in the Open Energy ecosystem.
 
-`Open Energy Glossary`: definitions of common acronyms, terminology, and technical tools used in Open Energy
+`Open Energy Glossary`: definitions of common acronyms, terminology, and technical tools used in |OE|
 documentation.
 
 `Considerations Before You Start`: ‘at a glance’ list of items that all types of new members will need
