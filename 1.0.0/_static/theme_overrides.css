@@ -1,0 +1,41 @@
+.wy-nav-content {
+    max-width: 1100px;
+}
+
+.wy-side-nav-search {
+    background-color: #0C3945;
+}
+
+.wy-nav-top {
+    background: #0C3945;
+}
+
+.wy-side-nav-search > a img.logo {
+    max-width: 50%;
+}
+
+.rst-versions span.rst-current-version {
+    color: #ffec00;
+}
+
+.rst-versions.shift-up {
+    overflow-y: auto;
+}
+
+/* override table no-wrap */
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}
+
+div.admonition-todo {
+    background-color: #ffd4d4 !important;
+}
+div.admonition-todo p.admonition-title {
+    background-color: #f07e7e !important;
+}
+table.docutils tbody tr td {
+    vertical-align: top !important;
+}
+table.docutils tbody tr td p:not(:first-child) {
+    padding-top: 8px;
+}

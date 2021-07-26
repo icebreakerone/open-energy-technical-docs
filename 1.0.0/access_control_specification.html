@@ -1,0 +1,673 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>9. Access Control and Capability Grant Language &mdash; Open Energy Technical Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Open Energy Technical Documentation  documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="10. Open Energy Glossary" href="glossary.html" />
+    <link rel="prev" title="8. Data Set Metadata" href="metadata.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0C3945" >
+          
+
+
+    <a href="index.html" class="icon icon-home"> Open Energy Technical Documentation
+        
+
+        
+        
+        <img src="_static/logo.png" class="logo" alt="Logo"/>
+        
+    </a>
+
+    
+
+    
+    <div class="version">
+        1.0.0
+    </div>
+    
+
+    
+
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+    
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/introduction.html">1. Introduction to Open Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/before_starting.html">2. Considerations Before You Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/common_policies.html">3. Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops_guidelines/technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">9. Access Control and Capability Grant Language</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syntax">9.1. Syntax</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#names">9.1.1. Names</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rule-syntax">9.1.2. Rule syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conditions">9.2. Conditions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#unary-clauses">9.2.1. Unary clauses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#binary-clauses">9.2.2. Binary clauses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-conditions">9.2.3. Example conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specifying-multiple-conditions">9.2.4. Specifying multiple conditions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#capabilities">9.3. Capabilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-capabilities">9.3.1. Standard capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expressing-open-data-licenses-with-capabilities">9.3.2. Expressing Open Data licenses with capabilities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#obligations">9.4. Obligations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-obligations">9.4.1. Standard obligations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional_material.html">11. Additional Material</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Open Energy Technical Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">9. </span>Access Control and Capability Grant Language</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the development version of this documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
+
+
+
+  <div class="section" id="access-control-and-capability-grant-language">
+<h1><span class="section-number">9. </span>Access Control and Capability Grant Language<a class="headerlink" href="#access-control-and-capability-grant-language" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#syntax" id="id6">Syntax</a></p>
+<ul>
+<li><p><a class="reference internal" href="#names" id="id7">Names</a></p></li>
+<li><p><a class="reference internal" href="#rule-syntax" id="id8">Rule syntax</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#conditions" id="id9">Conditions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#unary-clauses" id="id10">Unary clauses</a></p></li>
+<li><p><a class="reference internal" href="#binary-clauses" id="id11">Binary clauses</a></p></li>
+<li><p><a class="reference internal" href="#example-conditions" id="id12">Example conditions</a></p></li>
+<li><p><a class="reference internal" href="#specifying-multiple-conditions" id="id13">Specifying multiple conditions</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#capabilities" id="id14">Capabilities</a></p>
+<ul>
+<li><p><a class="reference internal" href="#standard-capabilities" id="id15">Standard capabilities</a></p></li>
+<li><p><a class="reference internal" href="#expressing-open-data-licenses-with-capabilities" id="id16">Expressing Open Data licenses with capabilities</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#obligations" id="id17">Obligations</a></p>
+<ul>
+<li><p><a class="reference internal" href="#standard-obligations" id="id18">Standard obligations</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Access rules, capability grants, and obligations are explained in <a class="reference internal" href="ops_guidelines/common_policies.html#data-access-conditions"><span class="std std-ref">Data Access Conditions</span></a>, this document specifies the
+precise syntax and values that can be used.</p>
+<p>An access rule contains:</p>
+<ol class="arabic simple">
+<li><p>Zero or more conditions for access</p></li>
+<li><p>One or more capability grants to the data consumer if access is granted</p></li>
+<li><p>Zero or more obligations falling on the data consumer if access is granted</p></li>
+</ol>
+<p>They are applied to properties of a <a class="reference internal" href="glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> while processing a request for data from a
+<a class="reference internal" href="glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>. These properties can be modelled as a map of names to values; some values may be inferred by
+joining on the <a class="reference internal" href="glossary.html#term-Identification"><span class="xref std std-term">ID</span></a> of the data consumer, some may be directly provided in the <a class="reference internal" href="ops_guidelines/technical_common.html#token-introspection"><span class="std std-ref">Token introspection</span></a> response.</p>
+<div class="section" id="syntax">
+<h2><a class="toc-backref" href="#id6"><span class="section-number">9.1. </span>Syntax</a><a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="names">
+<h3><a class="toc-backref" href="#id7"><span class="section-number">9.1.1. </span>Names</a><a class="headerlink" href="#names" title="Permalink to this headline">¶</a></h3>
+<p><strong>Names</strong> consist of a namespace (<code class="docutils literal notranslate"><span class="pre">[a-z0-9_]+</span></code>), a <code class="docutils literal notranslate"><span class="pre">:</span></code> character, and a suffix (<code class="docutils literal notranslate"><span class="pre">[a-z0-9_.]+</span></code>). For example,
+<code class="docutils literal notranslate"><span class="pre">oe:some_value</span></code>. Values asserted by Open Energy will always have a namespace <code class="docutils literal notranslate"><span class="pre">oe</span></code>. The suffix may contain <code class="docutils literal notranslate"><span class="pre">.</span></code>
+characters, the namespace may not.</p>
+</div>
+<div class="section" id="rule-syntax">
+<h3><a class="toc-backref" href="#id8"><span class="section-number">9.1.2. </span>Rule syntax</a><a class="headerlink" href="#rule-syntax" title="Permalink to this headline">¶</a></h3>
+<p>An access rule is represented as a single line string containing a comma separated list of zero or more <a class="reference internal" href="#conditions"><span class="std std-ref">Conditions</span></a>,
+the literal string <code class="docutils literal notranslate"><span class="pre">grants</span></code>, and then a comma separated list of one or more <a class="reference internal" href="#capabilities"><span class="std std-ref">Capabilities</span></a>. Optionally, this may
+be followed by the literal <code class="docutils literal notranslate"><span class="pre">requires</span></code> and one or more <a class="reference internal" href="#obligations"><span class="std std-ref">Obligations</span></a> in a comma separated list.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[CONDITION]? [&quot;,&quot; CONDITION]* &quot;grants&quot; CAPABILITY [&quot;,&quot; CAPABILITY]* [&quot;requires&quot; OBLIGATION+ [&quot;,&quot; OBLIGATION]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>A rule with no conditions is valid, and is satisfied by all requests</p></li>
+<li><p>All rules must grant at least one capability</p></li>
+<li><p>Rules may have zero or more obligations</p></li>
+</ul>
+</div>
+<p>See the following sections for specification of conditions and capabilities.</p>
+</div>
+</div>
+<div class="section" id="conditions">
+<h2><a class="toc-backref" href="#id9"><span class="section-number">9.2. </span>Conditions</a><a class="headerlink" href="#conditions" title="Permalink to this headline">¶</a></h2>
+<p>Conditions are unary or binary clauses.</p>
+<p>All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators
+such as <code class="docutils literal notranslate"><span class="pre">or</span></code> or similar. For cases where alternative sets of rules could be applied the expectation is that data
+providers will specify multiple, potentially overlapping, rules to express this.</p>
+<div class="section" id="unary-clauses">
+<h3><a class="toc-backref" href="#id10"><span class="section-number">9.2.1. </span>Unary clauses</a><a class="headerlink" href="#unary-clauses" title="Permalink to this headline">¶</a></h3>
+<p>Unary clauses consist of a single <strong>named</strong> condition. The clause is satisfied if that condition is <code class="docutils literal notranslate"><span class="pre">true</span></code>.
+This is typically used to denote a particular property such as <em>Open Energy current membership</em> or similar where the
+existence of the property is sufficient to accept the data consumer.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-number">Listing 9.1 </span><span class="caption-text">the condition <code class="docutils literal notranslate"><span class="pre">oe:member</span></code> passes if used with this context</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span> <span class="p">{</span><span class="nt">&quot;oe:member&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="binary-clauses">
+<h3><a class="toc-backref" href="#id11"><span class="section-number">9.2.2. </span>Binary clauses</a><a class="headerlink" href="#binary-clauses" title="Permalink to this headline">¶</a></h3>
+<p>Binary clauses consist of a <strong>name</strong> on the left hand side, an <strong>operator</strong>, and a <strong>value</strong> on the right hand side.
+The valid <strong>operators</strong> are shown in the table below. LHS, operator, and RHS are separated with at least one
+space character.</p>
+<p><strong>Values</strong> can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as
+<code class="docutils literal notranslate"><span class="pre">dd/mm/yyyy</span></code>, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
+a datetime must be specified as a string compliant with <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>. To
+simplify expression in <a class="reference internal" href="glossary.html#term-Javascript-Object-Notation"><span class="xref std std-term">JSON</span></a>, quoted strings should be enclosed in single quote <code class="docutils literal notranslate"><span class="pre">'</span></code> characters. Lists are written as a
+comma separated list of strings surrounded by <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code> characters. Lists are only valid RHS values for the
+<code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-number">Table 9.1 </span><span class="caption-text">Operators</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">is</span></code></p></td>
+<td><p>Any</p></td>
+<td><p>The condition passes if the value of the property on the LHS is exactly equal to the value in the RHS</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">before</span></code></p></td>
+<td><p>date or datetime</p></td>
+<td><p>The condition passes if the value of the property on the LHS is before the date or datetime specifed as the
+RHS. Where a date needs to be coerced to a datetime, it is done by setting it to 00:00.00 with the same date</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">after</span></code></p></td>
+<td><p>date or datetime</p></td>
+<td><p>As above, but passes if the value of the property on the LHS is after the date or datetime specified on the RHS.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max_age_days</span></code></p></td>
+<td><p>date or datetime</p></td>
+<td><p>The condition passes if the value on the LHS corresponds to a date at most X days in the past compared to the
+current date, where X is integer numeral specified as the RHS</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">==</span></code></p></td>
+<td><p>number</p></td>
+<td><p>Conditions pass if the LHS is, respectively, less than, less than or equal, greater than or equal, greater than,
+or strictly equal, to the number on the RHS. Note that <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">is</span></code> are equivalent for numeric quantities</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">in</span></code></p></td>
+<td><p>number or string</p></td>
+<td><p>Conditions pass if there is at least one item in the list specified in the RHS which would match the <code class="docutils literal notranslate"><span class="pre">is</span></code>
+condition with respect to the LHS value</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="example-conditions">
+<h3><a class="toc-backref" href="#id12"><span class="section-number">9.2.3. </span>Example conditions</a><a class="headerlink" href="#example-conditions" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The conditions shown below are examples, and should not be taken as indicative of standard properties of data
+consumers in the final system.</p>
+</div>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-number">Table 9.2 </span><span class="caption-text">Example condition clauses</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Condition</p></th>
+<th class="head"><p>Interpretation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oe:status</span> <span class="pre">is</span> <span class="pre">'active'</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">oe:status</span></code> is set, and is equal under string comparison to <code class="docutils literal notranslate"><span class="pre">active</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">oe:membership_expires</span> <span class="pre">after</span> <span class="pre">24/10/2022</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">oe:membership_expires</span></code> is either a date or a datetime, and is after the 24th October
+2022</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oe:terms_signed</span> <span class="pre">max_age_days</span> <span class="pre">20</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">oe:terms_signed</span></code> is either a date or a datetime, and is at most 20 days from the
+current datetime. Note that dates with no time component are equivalent to 00:00.00 on the specified date for
+comparison purposes</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">some_group:membership_level</span> <span class="pre">&gt;=</span> <span class="pre">2</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">some_group:membership_level</span></code> is a number and is greater to or equal to two.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oe:org_type</span> <span class="pre">in</span> <span class="pre">['council',</span> <span class="pre">'academic']</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">oe:org_type</span></code> would be considered equal to either <code class="docutils literal notranslate"><span class="pre">'council'</span></code> or <code class="docutils literal notranslate"><span class="pre">'academic'</span></code>
+as if compared with <code class="docutils literal notranslate"><span class="pre">is</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">oe:member</span></code></p></td>
+<td><p>passes if the value of <code class="docutils literal notranslate"><span class="pre">oe:member</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="specifying-multiple-conditions">
+<h3><a class="toc-backref" href="#id13"><span class="section-number">9.2.4. </span>Specifying multiple conditions</a><a class="headerlink" href="#specifying-multiple-conditions" title="Permalink to this headline">¶</a></h3>
+<p>Multiple conditions are separated with <code class="docutils literal notranslate"><span class="pre">,</span></code> characters. All conditions must be satisfied for the rule to pass, there
+are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the <code class="docutils literal notranslate"><span class="pre">,</span></code> in a
+condition list.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">oe:status</span> <span class="pre">is</span> <span class="pre">'active',</span> <span class="pre">some_group:membership_level</span> <span class="pre">&gt;=2</span></code> is the union of those two example conditions
+from the previous section and will only be satisfied if both conditions are individually satisfiable.</p>
+</div>
+</div>
+<div class="section" id="capabilities">
+<h2><a class="toc-backref" href="#id14"><span class="section-number">9.3. </span>Capabilities</a><a class="headerlink" href="#capabilities" title="Permalink to this headline">¶</a></h2>
+<p>Capability grants for a given set of access conditions are specified as a comma (<code class="docutils literal notranslate"><span class="pre">,</span></code>) separated list of <strong>names</strong>.
+There <strong>MUST</strong> be at least one <strong>name</strong> in this list, an empty capability grant list is not considered valid.</p>
+<div class="section" id="standard-capabilities">
+<h3><a class="toc-backref" href="#id15"><span class="section-number">9.3.1. </span>Standard capabilities</a><a class="headerlink" href="#standard-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>These are capabilities where the namespace part of the <strong>name</strong> is <code class="docutils literal notranslate"><span class="pre">oe</span></code>, indicating that they are defined as part
+of the open energy project. Data providers <strong>SHOULD NOT</strong>, create their own capabilities unless absolutely
+necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.</p>
+<p>Any additional capabilities designed <strong>MUST</strong> be prefixed with the organisation ID of the data provider responsible
+for their definition, and any such data provider <strong>MUST</strong> publish a clear, legally valid, definition of any such
+capabilities. In addition, data providers creating custom capabilities <strong>MUST</strong> inform the <a class="reference internal" href="glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> of this, providing
+links to the aforementioned documentation.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below
+are a plausible first cut but should not be considered definitive.</p>
+</div>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-number">Table 9.3 </span><span class="caption-text">Standard capabilities</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Capability name</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Use</strong></p></td>
+<td></td>
+<td><p><strong>Use the artefact internally</strong></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:use_any</span></code></p></td>
+<td><p>For any purpose</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:use_dev</span></code></p></td>
+<td><p>For development purposes only (i.e. private or limited development of new works, products or services)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:use_noncom</span></code></p></td>
+<td><p>For non-commercial purposes only (e.g. education, research, charity work etc.)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Adapt</strong></p></td>
+<td></td>
+<td><p><strong>Adapt the artefact for internal use</strong></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:adapt_any</span></code></p></td>
+<td><p>For any purpose</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:adapt_dev</span></code></p></td>
+<td><p>For development purposes only (i.e. private or limited development of new works, products or services)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:adapt_noncom</span></code></p></td>
+<td><p>For non-commercial purposes only (e.g. education, research, charity work etc.)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Combine</strong></p></td>
+<td></td>
+<td><p><strong>Combine (‘remix’) the artefact</strong></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:combine_any</span></code></p></td>
+<td><p>With any other artefacts</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:combine_external</span></code></p></td>
+<td><p>With other external artefacts</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:combine_internal</span></code></p></td>
+<td><p>With the Data Consumer’s own products or services</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Redistribute</strong></p></td>
+<td></td>
+<td><p><strong>Redistribute (‘onward share’ - including to any customers of the Service Provider)</strong></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:redistribute_original</span></code></p></td>
+<td><p>The original artefact</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:redistribute_derived</span></code></p></td>
+<td><p>Derivatives of the original artefact not produced from other data sets, i.e. filtered or cleaned data</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:redistribute_combined</span></code></p></td>
+<td><p>Derivatives of the artefact produced through artefact combination or use in the Data Consumer’s own products or
+services</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="expressing-open-data-licenses-with-capabilities">
+<h3><a class="toc-backref" href="#id16"><span class="section-number">9.3.2. </span>Expressing Open Data licenses with capabilities</a><a class="headerlink" href="#expressing-open-data-licenses-with-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>The capabilities defined above in <a class="reference internal" href="#standard-capabilities"><span class="std std-ref">Standard capabilities</span></a> are intended for <a class="reference internal" href="glossary.html#term-Shared-data"><span class="xref std std-term">shared data</span></a>, but data providers may
+also publish <a class="reference internal" href="glossary.html#term-Open-data"><span class="xref std std-term">open data</span></a>. An open data set by definition has no access conditions, so any access rules for such
+data sets <strong>MUST</strong> have an empty access condition list, and must use one of the following capabilities to declare that
+the data are licensed under a known OSI approved open license</p>
+<p>Rules <strong>MUST NOT</strong> grant a mix of capabilities in the <code class="docutils literal notranslate"><span class="pre">open</span></code> namespace and capabilities in other namespaces, as the
+semantics of this are not well defined.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Capability name</p></th>
+<th class="head"><p>Corresponding open data license</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">open:cc_by_1.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_2.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_2.5</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_3.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_4.0</span></code></p></td>
+<td><p><a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> (v1.0, v2.0, v2.5, v3.0, v4.0
+respectively)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">open:cc_by_sa_1.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_sa_2.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_sa_2.5</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_sa_3.0</span></code> <code class="docutils literal notranslate"><span class="pre">open:cc_by_sa_4.0</span></code></p></td>
+<td><p><a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution ShareAlike</a> (v1.0, v2.0, v2.5,
+v3.0, v4.0 respectively)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">open:cc0</span></code></p></td>
+<td><p><a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain Dedication</a> v1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">open:gfdl_1.1</span></code> <code class="docutils literal notranslate"><span class="pre">open:gfdl_1.2</span></code> <code class="docutils literal notranslate"><span class="pre">open:gfdl_1.3</span></code></p></td>
+<td><p><a class="reference external" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a> (v1.1, 1.2, 1.3 respectively)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">open:fal_1.2</span></code> <code class="docutils literal notranslate"><span class="pre">open:fal1.3</span></code></p></td>
+<td><p><a class="reference external" href="http://artlibre.org/licence/lal/en/">Free Art License</a> (v1.2, v1.3 respectively)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Open data sets <strong>SHOULD</strong> be released under the latest version of any given license.</p>
+</div>
+</div>
+<div class="section" id="obligations">
+<h2><a class="toc-backref" href="#id17"><span class="section-number">9.4. </span>Obligations</a><a class="headerlink" href="#obligations" title="Permalink to this headline">¶</a></h2>
+<p>Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities
+granted. They are specified as a single <strong>name</strong>.</p>
+<div class="section" id="standard-obligations">
+<h3><a class="toc-backref" href="#id18"><span class="section-number">9.4.1. </span>Standard obligations</a><a class="headerlink" href="#standard-obligations" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This set of standard obligations is provisional and may be subject to change</p>
+</div>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-number">Table 9.4 </span><span class="caption-text">Standard obligations</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Obligation</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fulltext</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:ft</span></code></p></td>
+<td><p>Re-users must display the full text of the license every time they use the work</p></td>
+</tr>
+<tr class="row-odd"><td><p>Attribution</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:by</span></code></p></td>
+<td><p>Re-users must attribute the work to the original source when they use it</p></td>
+</tr>
+<tr class="row-even"><td><p>ShareAlike</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">oe:sa</span></code></p></td>
+<td><p>Re-users who create derivatives of the work must release the derivatives under the same license as the original
+work, if they choose to distribute the derivatives</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
+explicitly not included here as it is possible to express this through the access conditions (i.e. rather than
+declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
+entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
+of defining ‘non commercial use’.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="glossary.html" class="btn btn-neutral float-right" title="10. Open Energy Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="metadata.html" class="btn btn-neutral float-left" title="8. Data Set Metadata" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+<p>
+    &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
+    <span class="lastupdated">
+        Last updated on Jul 26, 2021.
+      </span>
+
+</p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    v: 1.0.0
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Tags</dt>
+      <dd><a href="access_control_specification.html">1.0.0</a></dd>
+    </dl>
+    <dl>
+      <dt>Branches</dt>
+      <dd><a href="../main/access_control_specification.html">main</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

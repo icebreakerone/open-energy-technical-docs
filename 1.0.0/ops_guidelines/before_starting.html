@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. Considerations Before You Start &mdash; Open Energy Technical Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Open Energy Technical Documentation  documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Core Policies" href="common_policies.html" />
+    <link rel="prev" title="1. Introduction to Open Energy" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0C3945" >
+          
+
+
+    <a href="../index.html" class="icon icon-home"> Open Energy Technical Documentation
+        
+
+        
+        
+        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+        
+    </a>
+
+    
+
+    
+    <div class="version">
+        1.0.0
+    </div>
+    
+
+    
+
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+    
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction to Open Energy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Considerations Before You Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-before-you-start">2.1. Introduction (Before you start)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#considerations-for-data-providers">2.2. Considerations for Data Providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#considerations-for-data-consumers">2.3. Considerations for Data Consumers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="common_policies.html">3. Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">9. Access Control and Capability Grant Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_material.html">11. Additional Material</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Open Energy Technical Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>Considerations Before You Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the development version of this documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
+
+
+
+  <div class="section" id="considerations-before-you-start">
+<h1><span class="section-number">2. </span>Considerations Before You Start<a class="headerlink" href="#considerations-before-you-start" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is designed primarily as a summary tool and should <strong>not</strong> be used in place of more
+detailed operational and technical documentation elsewhere in this site.</p>
+</div>
+<div class="section" id="introduction-before-you-start">
+<h2><span class="section-number">2.1. </span>Introduction (Before you start)<a class="headerlink" href="#introduction-before-you-start" title="Permalink to this headline">¶</a></h2>
+<p>This section provides ‘at a glance’ lists of items that new members will need to consider in order to meet
+operational requirements. It may also be useful for existing members to revisit when they publish (<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>) or access
+(<a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>) a new dataset.</p>
+<p>As <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> evolves, this section will be updated to form a definitive checklist for compliance. At present however,
+it is designed to outline general considerations regarding skills, capabilities and tasks that organisations will
+require in order to take part in the <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> ecosystem.</p>
+<p>The tables below outline considerations for <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> and <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>. Each item includes a suggestion of its relevance
+to different areas of readiness: commercial, operational, technical, and legal. It is suggested that prospective
+members proactively engage teams or staff members with responsibilities for the above four areas of readiness
+prior to joining Open Energy as members. Please note that this section is designed to support members to
+prepare for data sharing. However, sharing of real data will not commence until the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> goes fully live.</p>
+</div>
+<div class="section" id="considerations-for-data-providers">
+<h2><span class="section-number">2.2. </span>Considerations for Data Providers<a class="headerlink" href="#considerations-for-data-providers" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 60%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Consideration</p></th>
+<th class="head"><p>Includes</p></th>
+<th class="head"><p>Readiness area(s)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Membership contract and fees</p></td>
+<td><ul class="simple">
+<li><p>Contract review by legal counsel</p></li>
+<li><p>Contract signature by person with appropriate authority</p></li>
+<li><p>Membership fees paid</p></li>
+</ul>
+</td>
+<td><p>Legal, commercial</p></td>
+</tr>
+<tr class="row-odd"><td><p>Onboarding to the Directory</p></td>
+<td><ul class="simple">
+<li><p>Generic contact email addresses and organisation details provided to Open Energy for publishing in the Directory</p></li>
+<li><p>Software statement created (<a class="reference external" href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p></li>
+<li><p>Transport certificate created (<a class="reference external" href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p></li>
+</ul>
+</td>
+<td><p>Operational, technical</p></td>
+</tr>
+<tr class="row-even"><td><p>Metadata file creation</p></td>
+<td><p>Applies to <strong>all</strong> datasets, both <a class="reference internal" href="../glossary.html#term-Open-data"><span class="xref std std-term">Open Data</span></a> and <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared Data</span></a>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="common_policies.html#metadata"><span class="std std-ref">Metadata</span></a> file created for each dataset</p></li>
+<li><p>Metadata file published and available on a public web server (such as <a class="reference external" href="https://github.com/icebreakerone/open-energy-metadata-demo/tree/main/metadata_files">public GitHub repo</a>)</p></li>
+<li><p>Records of the metadata file location created (<a class="reference external" href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p></li>
+<li><p>Verification that Open Energy automated processes have picked up the file and surfaced contents in <a class="reference external" href="https://openenergy.org.uk">Search</a></p></li>
+</ul>
+</td>
+<td><p>Technical</p></td>
+</tr>
+<tr class="row-odd"><td><p>Secure <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> creation and deployment compliant with <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> subset of <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> specification</p></td>
+<td><p>For example, using one of the following methods:</p>
+<ol class="arabic simple">
+<li><p>Deploy a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> to <a class="reference internal" href="../glossary.html#term-Amazon-Elastic-Cloud-Compute"><span class="xref std std-term">EC2</span></a> using the walkthrough <a class="reference external" href="https://icebreakerone.github.io/open-energy-python-infrastructure/ec2.html">here</a></p></li>
+<li><p>Use our <a class="reference external" href="https://icebreakerone.github.io/open-energy-python-infrastructure/">Python Support Library</a> to build
+a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> on your own infrastructure</p></li>
+<li><p>Create a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> based on the <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> subset defined in <a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a> using your choice of language
+and deployment infrastructure</p></li>
+</ol>
+</td>
+<td><p>Technical</p></td>
+</tr>
+<tr class="row-even"><td><p>Creation of a rule, or rules, for each dataset and publication of rule(s) in the metadata file</p></td>
+<td><ul class="simple">
+<li><p>Dataset assigned to an Open Energy Sensitivity Class</p></li>
+<li><p><a class="reference internal" href="../access_control_specification.html#access-control-and-capability-grant-language"><span class="std std-ref">Access rule</span></a> or rules created, for each of which:</p>
+<ul>
+<li><p><a class="reference internal" href="common_policies.html#data-access-conditions"><span class="std std-ref">Data Access Conditions</span></a> are specified</p></li>
+<li><p>A grant of <a class="reference internal" href="../access_control_specification.html#capabilities"><span class="std std-ref">Capabilities</span></a> is articulated</p></li>
+<li><p>Any accompanying <a class="reference internal" href="../access_control_specification.html#obligations"><span class="std std-ref">Obligations</span></a> are articulated</p></li>
+</ul>
+</li>
+</ul>
+</td>
+<td><p>Operational, commercial, technical</p></td>
+</tr>
+<tr class="row-odd"><td><p>Internal legal sign-off for rules</p></td>
+<td><ul class="simple">
+<li><p>Internal legal advice sought on converting any existing <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared data</span></a> licenses into <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a>
+<a class="reference internal" href="../access_control_specification.html#capabilities"><span class="std std-ref">Capabilities</span></a> and <a class="reference internal" href="../access_control_specification.html#obligations"><span class="std std-ref">Obligations</span></a></p></li>
+<li><p>Internal legal sign-off granted for the creation of all data ‘access rules &lt;Access Control and Capability Grant Language&gt;’</p></li>
+</ul>
+</td>
+<td><p>Legal</p></td>
+</tr>
+<tr class="row-even"><td><p>Skills</p></td>
+<td><ul class="simple">
+<li><p>Technical personnel can use Python programming language, or adapt existing <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> code and tooling to
+alternative language(s) that are used internally</p></li>
+<li><p>Technical personnel understand the basics of the <a class="reference internal" href="../glossary.html#term-Financial-Grade-API"><span class="xref std std-term">FAPI</span></a> authorization process as described in <a class="reference internal" href="technical_common.html#common-security-requirements"><span class="std std-ref">Common Security Requirements</span></a></p></li>
+</ul>
+</td>
+<td><p>Technical</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="considerations-for-data-consumers">
+<h2><span class="section-number">2.3. </span>Considerations for Data Consumers<a class="headerlink" href="#considerations-for-data-consumers" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 60%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Consideration</p></th>
+<th class="head"><p>Includes</p></th>
+<th class="head"><p>Readiness area(s)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Membership contract and fees</p></td>
+<td><ul class="simple">
+<li><p>Contract review by legal counsel</p></li>
+<li><p>Contract signature by person with appropriate authority</p></li>
+<li><p>Membership fees paid</p></li>
+</ul>
+</td>
+<td><p>Legal, commercial</p></td>
+</tr>
+<tr class="row-odd"><td><p>Onboarding to the Directory</p></td>
+<td><ul class="simple">
+<li><p>Generic contact email addresses and organisation details provided to Open Energy for publishing in the Directory</p></li>
+<li><p>Software statement created (<a class="reference external" href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p></li>
+<li><p>Transport certificate created (<a class="reference external" href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p></li>
+</ul>
+</td>
+<td><p>Operational, technical</p></td>
+</tr>
+<tr class="row-even"><td><p>Locate Shared data sets</p></td>
+<td><p>Use of <a class="reference external" href="https://openenergy.org.uk">Open Energy Search</a></p></td>
+<td><p>Operational, technical</p></td>
+</tr>
+<tr class="row-odd"><td><p>Access <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared Data</span></a></p></td>
+<td><p>Methods including one of the following:</p>
+<ol class="arabic simple">
+<li><p>Use a web-based Python integrated development environment of your choice (e.g. Jupyter-Lab, Google
+Collab, or similar) to access and display Shared data (<a class="reference external" href="https://www.youtube.com/watch?v=CMI2UVdIxFw">step-by-step video</a>)</p></li>
+<li><p>Use <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a>’s Python library to access <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared data</span></a> from your own code
+(<a class="reference external" href="https://icebreakerone.github.io/open-energy-python-infrastructure/service_provider.html">example</a>)</p></li>
+<li><p>Use tools or languages of your choice to access a <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared Data</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a>.</p></li>
+</ol>
+</td>
+<td><p>Technical</p></td>
+</tr>
+<tr class="row-even"><td><p>Use <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared data</span></a> in compliance with the appropriate licence model</p></td>
+<td><ul class="simple">
+<li><p>Ensure your organisation - and any individuals handling the data - have a clear understanding of <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a>
+<a class="reference internal" href="../access_control_specification.html#capabilities"><span class="std std-ref">Capabilities</span></a> and <a class="reference internal" href="../access_control_specification.html#obligations"><span class="std std-ref">Obligations</span></a> for the use of datasets</p></li>
+<li><p>Gain internal legal sign-off for data use, if applicable</p></li>
+<li><p>Payment of related fees to the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> if applicable</p></li>
+</ul>
+<p>For <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> which are also <a class="reference internal" href="../glossary.html#term-Service-Provider"><span class="xref std std-term">Service Providers</span></a>:</p>
+<ul class="simple">
+<li><p>Check your understanding of the onward sharing permissions for any data, or derivatives, you are passing
+onto your customers.</p></li>
+<li><p>Before passing on data or derivatives to your customers, ensure your organisation - and any individuals
+handling the data - have a clear understanding of Open Energy capabilities and obligations associated with
+onward sharing of data, and of the data pyramid.</p></li>
+</ul>
+</td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-odd"><td><p>Business planning</p></td>
+<td><p>For <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> who are <a class="reference internal" href="../glossary.html#term-Service-Provider"><span class="xref std std-term">Service Providers</span></a>:</p>
+<ul class="simple">
+<li><p>Establish or review your business model for providing services based on, or linked to, data access via <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a>
+in alignment with the agreed capabilities and access controls for the datasets the service will rely on.</p></li>
+<li><p>Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are
+compatible to the service being provided and that all licences are appropriately credited.</p></li>
+</ul>
+</td>
+<td><p>Commercial</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="common_policies.html" class="btn btn-neutral float-right" title="3. Core Policies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-left" title="1. Introduction to Open Energy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+<p>
+    &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
+    <span class="lastupdated">
+        Last updated on Jul 26, 2021.
+      </span>
+
+</p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    v: 1.0.0
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Tags</dt>
+      <dd><a href="before_starting.html">1.0.0</a></dd>
+    </dl>
+    <dl>
+      <dt>Branches</dt>
+      <dd><a href="../../main/ops_guidelines/before_starting.html">main</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

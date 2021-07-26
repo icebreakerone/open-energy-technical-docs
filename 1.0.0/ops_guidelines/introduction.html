@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Introduction to Open Energy &mdash; Open Energy Technical Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Open Energy Technical Documentation  documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Considerations Before You Start" href="before_starting.html" />
+    <link rel="prev" title="Open Energy Tech Docs" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0C3945" >
+          
+
+
+    <a href="../index.html" class="icon icon-home"> Open Energy Technical Documentation
+        
+
+        
+        
+        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+        
+    </a>
+
+    
+
+    
+    <div class="version">
+        1.0.0
+    </div>
+    
+
+    
+
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+    
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction to Open Energy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-and-purpose-of-the-guidelines">1.1. Overview and purpose of the guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-open-energy-how-was-it-made-and-who-is-it-for">1.2. What is Open Energy, how was it made and who is it for?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-is-open-energy-structured">1.3. How is Open Energy Structured?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dataset-search">1.3.1. Dataset Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#governance-service">1.3.2. Governance Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-governance">1.3.3. Project Governance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-data-can-be-found-and-used-through-open-energy">1.4. What data can be found and used through Open Energy?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#open-data">1.4.1. Open data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-data">1.4.2. Shared data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#closed-data">1.4.3. Closed data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-role-does-your-organisation-play-in-the-open-energy-ecosystem">1.5. What role does your organisation play in the Open Energy ecosystem?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dps">1.5.1. <span class="xref std std-term">Data Providers</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-consumers">1.5.2. Data Consumers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#service-providers">1.5.2.1. Service Providers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dual-roles">1.5.3. Dual Roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-does-dataset-access-and-licensing-operate-under-open-energy">1.6. How does dataset access and licensing operate under Open Energy?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#types-of-access-conditions">1.6.1. Types of Access Conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-access-rules-introduction">1.6.2. Creating Access Rules (Introduction)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-licensing-introduction">1.6.3. Data Licensing (Introduction)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#future-development-of-the-guidelines">1.7. Future development of the guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="before_starting.html">2. Considerations Before You Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common_policies.html">3. Core Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_consumer_ops_guidelines.html">4. Guidance for Data Consumers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_provider_ops_guidelines.html">5. Guidance for Data Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_common.html">6. Common Security Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">7. Open Energy Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metadata.html">8. Data Set Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_control_specification.html">9. Access Control and Capability Grant Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">10. Open Energy Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_material.html">11. Additional Material</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Open Energy Technical Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Introduction to Open Energy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>
+        You're reading the development version of this documentation, at present there is no release version. Please
+        bear in mind that this instance of the site is subject to change and should be considered provisional.
+    </p>
+</div>
+
+
+
+
+  <div class="section" id="introduction-to-open-energy">
+<h1><span class="section-number">1. </span>Introduction to Open Energy<a class="headerlink" href="#introduction-to-open-energy" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview-and-purpose-of-the-guidelines" id="id1">Overview and purpose of the guidelines</a></p></li>
+<li><p><a class="reference internal" href="#what-is-open-energy-how-was-it-made-and-who-is-it-for" id="id2">What is Open Energy, how was it made and who is it for?</a></p></li>
+<li><p><a class="reference internal" href="#how-is-open-energy-structured" id="id3">How is Open Energy Structured?</a></p>
+<ul>
+<li><p><a class="reference internal" href="#dataset-search" id="id4">Dataset Search</a></p></li>
+<li><p><a class="reference internal" href="#governance-service" id="id5">Governance Service</a></p></li>
+<li><p><a class="reference internal" href="#project-governance" id="id6">Project Governance</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#what-data-can-be-found-and-used-through-open-energy" id="id7">What data can be found and used through Open Energy?</a></p>
+<ul>
+<li><p><a class="reference internal" href="#open-data" id="id8">Open data</a></p></li>
+<li><p><a class="reference internal" href="#shared-data" id="id9">Shared data</a></p></li>
+<li><p><a class="reference internal" href="#closed-data" id="id10">Closed data</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#what-role-does-your-organisation-play-in-the-open-energy-ecosystem" id="id11">What role does your organisation play in the Open Energy ecosystem?</a></p>
+<ul>
+<li><p><a class="reference internal" href="#dps" id="id12"><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a></a></p></li>
+<li><p><a class="reference internal" href="#data-consumers" id="id13">Data Consumers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#service-providers" id="id14">Service Providers</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#dual-roles" id="id15">Dual Roles</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#how-does-dataset-access-and-licensing-operate-under-open-energy" id="id16">How does dataset access and licensing operate under Open Energy?</a></p>
+<ul>
+<li><p><a class="reference internal" href="#types-of-access-conditions" id="id17">Types of Access Conditions</a></p></li>
+<li><p><a class="reference internal" href="#creating-access-rules-introduction" id="id18">Creating Access Rules (Introduction)</a></p></li>
+<li><p><a class="reference internal" href="#data-licensing-introduction" id="id19">Data Licensing (Introduction)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#future-development-of-the-guidelines" id="id20">Future development of the guidelines</a></p></li>
+</ul>
+</div>
+<div class="section" id="overview-and-purpose-of-the-guidelines">
+<h2><a class="toc-backref" href="#id1"><span class="section-number">1.1. </span>Overview and purpose of the guidelines</a><a class="headerlink" href="#overview-and-purpose-of-the-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> operational guidelines aim to provide practical advice to all types of actors participating in
+the <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> ecosystem. The guidelines are supplemented by links to more detailed technical and membership
+documentation.</p>
+<p>Overarching aims of these operational guidelines:</p>
+<ul class="simple">
+<li><p>To deliver a safe and effective Open Energy ecosystem that meets the needs of members and supports the broader
+sector transition to Net Zero by enabling better discovery and sharing of data via a robust trust framework.</p></li>
+<li><p>To support the operational requirements of <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> and <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, stimulating an active Open Energy
+ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
+for data shared in the ecosystem.</p></li>
+<li><p>To encourage an active data sharing ecosystem in which transparency and interoperability are incentivised.</p></li>
+<li><p>To ensure positive member experiences that demonstrate the value of <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> and encourage them to continue
+participating in the ecosystem.</p></li>
+<li><p>To minimise potential costs associated with insufficient <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> or other technical system testing, downtime, or
+other common faults.</p></li>
+<li><p>To reduce any reputational risks associated with individual members, incorrect application of core policies, or
+the <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> ecosystem as a whole.</p></li>
+</ul>
+<p>These guidelines are structured in six sections, outlining:</p>
+<p>Introduction (this section): background to the Open Energy project, clarifications of the roles and responsibilities
+of different types of actors operating in the Open Energy ecosystem.</p>
+<p><a class="reference internal" href="../glossary.html#open-energy-glossary"><span class="std std-ref">Open Energy Glossary</span></a>: definitions of common acronyms, terminology, and technical tools used in <a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a>
+documentation.</p>
+<p><a class="reference internal" href="before_starting.html#considerations-before-you-start"><span class="std std-ref">Considerations Before You Start</span></a>: ‘at a glance’ list of items that all types of new members will need
+to consider in order to meet operational requirements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <em>Considerations before you start</em> is still in review and so is not present in this version of the documentation</p>
+</div>
+<p><a class="reference internal" href="common_policies.html#core-policies"><span class="std std-ref">Core Policies</span></a>: operational principles and policies central to Open Energy function. Includes policies
+governing data sensitivity classification, access controls, and licensing.</p>
+<p><a class="reference internal" href="data_consumer_ops_guidelines.html#guidance-for-data-consumers"><span class="std std-ref">Guidance for Data Consumers</span></a> and <a class="reference internal" href="data_provider_ops_guidelines.html#guidance-for-data-providers"><span class="std std-ref">Guidance for Data Providers</span></a>: guidelines outlining how <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> can share data safely and
+securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
+and design safe and effective <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">APIs</span></a> enabling data-sharing. Guidelines outlining how <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can meet the
+requirements for offering data services, access and licensing conditions for different data classes, and best
+practice with regards to testing, security, ethics and dispute management.</p>
+<p><a class="reference internal" href="../additional_material.html#additional-material"><span class="std std-ref">Additional Material</span></a>: links to other relevant documentation (e.g. technical, legal, etc.) sitting
+outside the operational guidelines.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Disclaimer</strong>: The contents of the Operational Guidelines do not constitute legal advice. While they have been
+drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the
+regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent
+with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
+Participants are responsible for their own compliance with all applicable regulations and laws, including but not
+limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes
+(where applicable). The Open Energy operational guidelines will be revised in future in accordance with further
+development of services offered in the ecosystem, or changes to the regulatory and policy environment in which
+it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.</p>
+</div>
+</div>
+<div class="section" id="what-is-open-energy-how-was-it-made-and-who-is-it-for">
+<h2><a class="toc-backref" href="#id2"><span class="section-number">1.2. </span>What is Open Energy, how was it made and who is it for?</a><a class="headerlink" href="#what-is-open-energy-how-was-it-made-and-who-is-it-for" title="Permalink to this headline">¶</a></h2>
+<p>Open Energy is an ambitious, non-profit project working with the energy industry, government and the regulator
+to modernise access to energy data and break down barriers to data sharing. Open Energy makes it easier to
+discover, share, access and use energy and related datasets, supporting the sector’s drive towards decarbonisation
+and its related social and economic benefits.</p>
+<p>Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
+the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
+(<a class="reference internal" href="../glossary.html#term-Department-for-Business-Energy-and-Industrial-Strategy"><span class="xref std std-term">BEIS</span></a>), and <a class="reference external" href="https://www.gov.uk/government/organisations/innovate-uk">Innovate UK</a>. The project has built on
+learning from Open Banking - identifying which elements are
+transferable to the energy sector, and which require adaptation or fresh thinking. Throughout this process, the
+Open Energy team has engaged in extensive consultation with the energy sector, in order to ensure that the project
+meets the widest possible variety of needs. The ethos of Open Energy will remain grounded in sector engagement
+and a collaborative approach as the project moves forward.</p>
+<p>Open Energy aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
+to share data, access data, or both. Membership is open to a wide range of organisations - from large corporations
+through to charities, researchers, or community groups. Both <span class="xref std std-term">Open &lt;Open Data</span>: and <a class="reference internal" href="../glossary.html#term-Shared-data"><span class="xref std std-term">Shared data</span></a> can
+flow within the Open Energy ecosystem.</p>
+</div>
+<div class="section" id="how-is-open-energy-structured">
+<h2><a class="toc-backref" href="#id3"><span class="section-number">1.3. </span>How is Open Energy Structured?</a><a class="headerlink" href="#how-is-open-energy-structured" title="Permalink to this headline">¶</a></h2>
+<p>Open Energy consists of two core functions: dataset search and discovery, and the Open Energy Governance Service.
+These functions are described below.</p>
+<div class="section" id="dataset-search">
+<h3><a class="toc-backref" href="#id4"><span class="section-number">1.3.1. </span>Dataset Search</a><a class="headerlink" href="#dataset-search" title="Permalink to this headline">¶</a></h3>
+<p>Open Energy’s first core function - Open Energy Search - enables dataset search and discovery. Open Energy Search
+empowers users to find out what datasets exist and who owns/controls them. Search results also outline the
+<a class="reference internal" href="common_policies.html#data-sensitivity-classes"><span class="std std-ref">sensitivity class</span></a>, <a class="reference internal" href="common_policies.html#data-access-conditions"><span class="std std-ref">access rules</span></a>, and
+<a class="reference internal" href="common_policies.html#data-licensing"><span class="std std-ref">capability grants</span></a> associated with a certain dataset, meaning that access and
+licensing details are transparent. This works through a search engine designed
+specifically to search for datasets, with options to search by different parameters in order to refine results.
+It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture
+of the energy data landscape in their sphere of interest. Open Energy search is free, available to all, and will
+remain so. Access pathways to Open and Shared data are described in the following section.</p>
+<p>Datasets provided by Open Energy members (<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>) and non-Open Energy members (e.g. web scraped Open Data)
+may both be visible in Open Energy Search. Datasets provided by an Open Energy member will be demarcated with a
+green tick to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation
+format is known, and users have a mechanism to provide feedback on the dataset if issues are detected. (Please
+note that this does not indicate that Open Energy has carried out further, more extensive checks on data quality
+within members’ datasets.)</p>
+</div>
+<div class="section" id="governance-service">
+<h3><a class="toc-backref" href="#id5"><span class="section-number">1.3.2. </span>Governance Service</a><a class="headerlink" href="#governance-service" title="Permalink to this headline">¶</a></h3>
+<p>Open Energy’s second core function - our Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>) - supports members to provide, share and
+access different classes of Shared data (see <a class="reference internal" href="common_policies.html#data-sensitivity-classes"><span class="std std-ref">Data Sensitivity Classes</span></a>) on the basis of preemptive licensing
+(see <a class="reference internal" href="common_policies.html#data-licensing"><span class="std std-ref">Data Licensing</span></a>). Shared Data accessed via the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> will be provided by members only
+(<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
+across the sector by reducing the time and financial costs currently associated with accessing Shared data.
+For providers of Shared data, the Governance Service offers a secure and effective way to list datasets and
+set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
+Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting
+access to multiple datasets from different providers.</p>
+</div>
+<div class="section" id="project-governance">
+<h3><a class="toc-backref" href="#id6"><span class="section-number">1.3.3. </span>Project Governance</a><a class="headerlink" href="#project-governance" title="Permalink to this headline">¶</a></h3>
+<p>During Phase 3, Open Energy was governed by two Advisory Groups (Membership and Delivery) and a Steering Group.
+The groups met once a month and a brief description of each group’s activities is given below.</p>
+<p><strong>Membership Advisory Group</strong>: Consulted on the Membership contract, key policies, including conditions to participate,
+roles, responsibilities and liabilities, draft preemptive licence, funding model, operational guidelines, and
+ongoing governance.</p>
+<p><strong>Delivery Advisory Group</strong>: Consulted on the drafting of operational guidelines and understanding data production
+and usage. Fed into the requirements for technical delivery of the Open Energy Governance Service and the Energy
+Data Search to ensure they meet user needs. Alongside this, examined the day-to-day operational aspects of Open Energy including security and systems.</p>
+<p><strong>Steering Group</strong>: Supported the overarching strategy, ensured the delivery of our objectives, and helped
+disseminate work.</p>
+<p>The membership of these groups was designed to represent a range of different types of organisations in the
+energy sector, and broader digital sector where relevant. Open Energy is guided by our principle of
+‘by the sector, for the sector’ and we will review our governance beyond Phase 3 to ensure we continue to align
+with this principle. Open Energy members can apply to join the Advisory and Steering Groups. However, membership
+of these groups will not be restricted to members only and non-members may be invited to join in order to balance
+representation. If you are interested in participating in future Open Energy governance mechanisms please contact
+<a class="reference external" href="mailto:openenergy&#37;&#52;&#48;icebreakerone&#46;org">openenergy<span>&#64;</span>icebreakerone<span>&#46;</span>org</a>.</p>
+</div>
+</div>
+<div class="section" id="what-data-can-be-found-and-used-through-open-energy">
+<h2><a class="toc-backref" href="#id7"><span class="section-number">1.4. </span>What data can be found and used through Open Energy?</a><a class="headerlink" href="#what-data-can-be-found-and-used-through-open-energy" title="Permalink to this headline">¶</a></h2>
+<p>Open Energy supports both Open and Shared datasets containing energy, and energy-related, data. Different classes
+of data within the Open Energy ecosystem, assessed by their levels of sensitivity, are described in
+<a class="reference internal" href="common_policies.html#data-sensitivity-classes"><span class="std std-ref">Data Sensitivity Classes</span></a>.</p>
+<div class="section" id="open-data">
+<h3><a class="toc-backref" href="#id8"><span class="section-number">1.4.1. </span>Open data</a><a class="headerlink" href="#open-data" title="Permalink to this headline">¶</a></h3>
+<p>Open data is defined in the Open Energy ecosystem as: ‘Data that anyone can use, for any purpose, for free and is
+accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output
+Layer <a class="reference internal" href="../glossary.html#term-Identification"><span class="xref std std-term">ID</span></a> (<a class="reference internal" href="../glossary.html#term-Lower-Layer-Super-Output-Areas"><span class="xref std std-term">LSOA</span></a>) data, Digest of <a class="reference internal" href="../glossary.html#term-United-Kingdom"><span class="xref std std-term">UK</span></a> Energy Statistics, and OpenStreetMap data.</p>
+<p>Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
+Energy members (<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>) and non-Open Energy members will both be visible. There are no barriers to accessing
+Open data once it is discovered - users are directed to an appropriate <a class="reference internal" href="../glossary.html#term-Uniform-Resource-Locator"><span class="xref std std-term">URL</span></a> or <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> to access the data themselves.
+Open data access is not moderated via the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> as no additional access controls are required.</p>
+</div>
+<div class="section" id="shared-data">
+<h3><a class="toc-backref" href="#id9"><span class="section-number">1.4.2. </span>Shared data</a><a class="headerlink" href="#shared-data" title="Permalink to this headline">¶</a></h3>
+<p>Shared data is defined in the Open Energy ecosystem as: ‘Data that is neither open nor closed, but can be shared
+under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include
+(non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency
+data, Electralink daily smart meter installations, certain geolocation information for energy assets and building
+typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a
+range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Open
+Energy consultations have established a set of five data sensitivity classes, in which three classes describe
+separate categories of Shared data.</p>
+<p>Due to the sheer diversity of data types in the energy sector, Open Energy had to limit focus for Phase 3 development.
+At present, the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> can facilitate the sharing of non-personal Shared data classes only. This means that currently,
+sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
+to <a class="reference internal" href="../glossary.html#term-Information-Commissioner-s-Office"><span class="xref std std-term">ICO</span></a> / <a class="reference internal" href="../glossary.html#term-Office-for-National-Statistics"><span class="xref std std-term">ONS</span></a> best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
+(class <a class="reference internal" href="../glossary.html#term-Data-sensitivity-class-personal"><span class="xref std std-term">OE-SP</span></a>), and data that has been anonymised using techniques other than aggregation, may be extensible
+in future subject to further consultation.</p>
+<p>The metadata and sensitivity class of Shared datasets are listed in Open Energy Search and are visible to any user.
+Shared datasets provided by Open Energy members (<a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>) and non-Open Energy members are both visible
+(where the latter are known), as described later in this section. Access to Shared datasets provided by Open Energy
+members is moderated through the Open Energy Governance Service, on the basis of preemptive licensing. Access to
+Shared data listed on the Search that is not provided by an Open Energy member is not supported - users should
+contact the non-member organisation directly to arrange access.</p>
+</div>
+<div class="section" id="closed-data">
+<h3><a class="toc-backref" href="#id10"><span class="section-number">1.4.3. </span>Closed data</a><a class="headerlink" href="#closed-data" title="Permalink to this headline">¶</a></h3>
+<p>Closed data is defined in the Open Energy ecosystem as: ‘Data that either cannot be shared or requires a per-use,
+custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share
+within the Open Energy ecosystem and is not visible through Open Energy Search. While we acknowledge industry
+feedback flagging potential value in using Open Energy infrastructure to privately share Closed data not listed in
+the Search or <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> Directory, this is not a focus of project development in the present phase. Any extensibility of
+this function in future will be subject to consultation.</p>
+</div>
+</div>
+<div class="section" id="what-role-does-your-organisation-play-in-the-open-energy-ecosystem">
+<h2><a class="toc-backref" href="#id11"><span class="section-number">1.5. </span>What role does your organisation play in the Open Energy ecosystem?</a><a class="headerlink" href="#what-role-does-your-organisation-play-in-the-open-energy-ecosystem" title="Permalink to this headline">¶</a></h2>
+<p>Members of the Open Energy ecosystem have different roles: <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a>, <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>, or both. This section
+outlines the meaning of the different roles and outlines their basic responsibilities.</p>
+<div class="section" id="dps">
+<h3><a class="toc-backref" href="#id12"><span class="section-number">1.5.1. </span><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a></a><a class="headerlink" href="#dps" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are organisations that control datasets that they wish to make visible and/or accessible through the
+Open Energy ecosystem. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> can provide Open and/or Shared datasets. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> are responsible for:
+data sensitivity classification, creation of access rules, creation of capability grants, data provision, data
+integrity and correctness, metadata provision, and <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> availability, stability and change management. Full guidance
+regarding <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> responsibilities can be found in <a class="reference internal" href="data_provider_ops_guidelines.html#guidance-for-data-providers"><span class="std std-ref">Guidance for Data Providers</span></a>.</p>
+</div>
+<div class="section" id="data-consumers">
+<h3><a class="toc-backref" href="#id13"><span class="section-number">1.5.2. </span>Data Consumers</a><a class="headerlink" href="#data-consumers" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> are organisations that seek to find and access datasets through the Open Energy Governance Service
+Service. <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> can be established to serve internal organisational needs, to serve external customers,
+or both. <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> is a catch-all term referring to all parties accessing data via the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>. Full guidance can be found
+in <a class="reference internal" href="data_consumer_ops_guidelines.html#guidance-for-data-consumers"><span class="std std-ref">Guidance for Data Consumers</span></a></p>
+<div class="section" id="service-providers">
+<h4><a class="toc-backref" href="#id14"><span class="section-number">1.5.2.1. </span>Service Providers</a><a class="headerlink" href="#service-providers" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> who access data to serve external customers, potentially including customers outside the Open Energy
+ecosystem, are categorised as a specific type of <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> called a <a class="reference internal" href="../glossary.html#term-Service-Provider"><span class="xref std std-term">Service Provider</span></a>. See <a class="reference internal" href="data_consumer_ops_guidelines.html#data-consumer-vs-service-provider"><span class="std std-ref">Data Consumer vs Service Provider</span></a>.</p>
+</div>
+</div>
+<div class="section" id="dual-roles">
+<h3><a class="toc-backref" href="#id15"><span class="section-number">1.5.3. </span>Dual Roles</a><a class="headerlink" href="#dual-roles" title="Permalink to this headline">¶</a></h3>
+<p>Organisations wishing to both provide and access data through the Open Energy ecosystem are able to do so, so long
+as they fulfill the responsibilities of both roles. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> who do not want to register as <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a>,
+but who wish to access Open Energy datasets, are able to do so by using the services of a Service Provider (a
+type of <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> in the Open Energy ecosystem that provides services to customers, potentially including non
+Open Energy members).</p>
+</div>
+</div>
+<div class="section" id="how-does-dataset-access-and-licensing-operate-under-open-energy">
+<h2><a class="toc-backref" href="#id16"><span class="section-number">1.6. </span>How does dataset access and licensing operate under Open Energy?</a><a class="headerlink" href="#how-does-dataset-access-and-licensing-operate-under-open-energy" title="Permalink to this headline">¶</a></h2>
+<p>Open Energy has consulted publicly and with industry on policies pertaining to: the types of conditions on which
+data access controls can be based, the process by which <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> establish access rules for a dataset, and
+the model for associating access rules with the grant of particular capabilities and obligations (licensing model).
+These policies are outlined briefly below, and set out in full detail in Section 3 of the Operational Guidelines.</p>
+<div class="section" id="types-of-access-conditions">
+<h3><a class="toc-backref" href="#id17"><span class="section-number">1.6.1. </span>Types of Access Conditions</a><a class="headerlink" href="#types-of-access-conditions" title="Permalink to this headline">¶</a></h3>
+<p>Open Energy has established a set of conditions which may be specified for <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumers</span></a> to meet in order to gain
+access to datasets in different sensitivity classes. These include, but are not limited to: payment, security
+compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.</p>
+</div>
+<div class="section" id="creating-access-rules-introduction">
+<h3><a class="toc-backref" href="#id18"><span class="section-number">1.6.2. </span>Creating Access Rules (Introduction)</a><a class="headerlink" href="#creating-access-rules-introduction" title="Permalink to this headline">¶</a></h3>
+<p>To operationalise Data Access conditions above, we propose a system whereby access grants are determined, for each
+request to the <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> of a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a>, on the basis of a set of rules defined and published by that <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> in the
+dataset metadata.</p>
+</div>
+<div class="section" id="data-licensing-introduction">
+<h3><a class="toc-backref" href="#id19"><span class="section-number">1.6.3. </span>Data Licensing (Introduction)</a><a class="headerlink" href="#data-licensing-introduction" title="Permalink to this headline">¶</a></h3>
+<p>A data licence is a legal instrument setting out what a <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> can do with a particular artefact (e.g.
+dataset). This grants certain ‘capabilities’ to the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a>, comprising a clear expression of things they
+can do with the artefact. Capability grants are accompanied by any obligations that the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> must abide
+by when exercising a capability. The capabilities and obligations associated with each <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a> call will be converted
+into a licence through the Open Energy Governance Service (<a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>).</p>
+<p><a class="reference internal" href="../glossary.html#term-Open-Energy"><span class="xref std std-term">Open Energy</span></a> operates through a range of standardised capability grants and obligations. Standardisation
+includes legal text, ‘human readable’ text and summary notation. <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must specify which capabilities
+and obligations are associated with each access rule, and publish this transparently in the dataset metadata.</p>
+</div>
+</div>
+<div class="section" id="future-development-of-the-guidelines">
+<h2><a class="toc-backref" href="#id20"><span class="section-number">1.7. </span>Future development of the guidelines</a><a class="headerlink" href="#future-development-of-the-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>This version of the guidelines contains details of operational requirements defined within Phase 3
+(ending 31 July 2021). The guidelines are designed as an iterative document that will develop in
+accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
+guidelines that could benefit from further development, please contact <a class="reference external" href="mailto:openenergy&#37;&#52;&#48;icebreakerone&#46;org">openenergy<span>&#64;</span>icebreakerone<span>&#46;</span>org</a>.</p>
+</div>
+</div>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="before_starting.html" class="btn btn-neutral float-right" title="2. Considerations Before You Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Open Energy Tech Docs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+<p>
+    &#169; Copyright <a href="https://opencorporates.com/companies/gb/12156788">Icebreaker One Limited</a>.
+    <span class="lastupdated">
+        Last updated on Jul 26, 2021.
+      </span>
+
+</p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    v: 1.0.0
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Tags</dt>
+      <dd><a href="introduction.html">1.0.0</a></dd>
+    </dl>
+    <dl>
+      <dt>Branches</dt>
+      <dd><a href="../../main/ops_guidelines/introduction.html">main</a></dd>
+    </dl>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
