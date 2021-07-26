@@ -36,7 +36,7 @@ Policy details
 --------------
 
 Open Energy operates a system of five data sensitivity classes, graded across three dimensions of sensitivity: personal,
-commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the UK |DPA| 2018, and related
+commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the |UK| |DPA| 2018, and related
 privacy and consumer protection implications. Commercial sensitivity considers intellectual property, risk and
 commerciality. Security sensitivity includes critical national infrastructure and cybersecurity.
 
@@ -70,18 +70,18 @@ organisations.
         relating to operational technology supporting critical national infrastructure owned by an Operator of
         Essential Services.
 
-        **Never suitable to share within the OE ecosystem.**
+        **Never suitable to share within the |OE| ecosystem.**
       - Business-critical proprietary information or IP, critical asset locations, classified information.
       - Very High
       - Very High
       - Very High
     * - |OE-SP|
       - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-        processing, as defined by the EU |GDPR| and brought into UK law via the |DPA| 2018.
+        processing, as defined by the |EU| |GDPR| and brought into |UK| law via the |DPA| 2018.
 
-        **Currently not suitable to share within the OE ecosystem, with future extensibility subject to consultation.**
+        **Currently not suitable to share within the |OE| ecosystem, with future extensibility subject to consultation.**
       - Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
-        dependence on power due to health conditions), individual EV charging records, transaction data.
+        dependence on power due to health conditions), individual |EV| charging records, transaction data.
       - Very High
       - Medium / High
       - Medium / High
@@ -94,7 +94,7 @@ organisations.
         **Anonymised data using non-aggregative techniques are currently not suitable to share within this sensitivity
         class due to complex risks related to individual re-identification. Future extensibility to sharing anonymised
         data is subject to consultation.**
-      - Public EV charge-point performance, generation asset performance, aggregated smart meter data, aggregated
+      - Public |EV| charge-point performance, generation asset performance, aggregated smart meter data, aggregated
         microgeneration export profiles, ‘Investment grade’ data (e.g. suitable granularity for financial
         decision-making), sensitive asset data.
       - Medium
@@ -110,7 +110,7 @@ organisations.
       - Low
     * - |OE-O|
       - Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.
-      - Lower Super Output Layer ID (|LSOA|), Digest of UK Energy Statistics, regulatory data (e.g. licensing categories,
+      - Lower Super Output Layer |ID| (|LSOA|), Digest of |UK| Energy Statistics, regulatory data (e.g. licensing categories,
         institutional charters or Terms of Reference, etc.)
       - Very Low
       - Very Low
@@ -204,9 +204,9 @@ as a cause of cost and friction in energy data sharing.
         One-off or subscription payment rates
       - |OE-SB| and |OE-SA|
     * - Security compliance
-      - UK Government Minimum Cybersecurity Standard
+      - |UK| Government Minimum Cybersecurity Standard
 
-        UK Government  ‘Secure by Design’ IoT guidance
+        |UK| Government  ‘Secure by Design’ IoT guidance
 
         Codes of conduct governing Critical National Infrastructure
       - |OE-SB| and |OE-SA|
@@ -244,7 +244,7 @@ as a cause of cost and friction in energy data sharing.
 
         Social housing retrofit
 
-        Public EV charge-point planning
+        Public |EV| charge-point planning
       - |OE-SB|
     * - Other
       - Auditing clauses
@@ -259,7 +259,7 @@ Group based access control
 There are two ways in which group-based access can be defined.
 
 1. The group can be externally defined. In this case, an external source provides documentation group membership and
-   duration. For example, a group could be created that encompasses all UK retail energy suppliers licensed by Ofgem,
+   duration. For example, a group could be created that encompasses all |UK| retail energy suppliers licensed by Ofgem,
    or the members of a research consortium listed on a particular grant. In both cases, group membership is clearly
    defined by an external document (e.g. Ofgem licensee list, grant contract) applicable for a defined time period.
 2. The group can be self-defined. In this case, documentation of group membership and duration is provided by group
@@ -324,7 +324,7 @@ Information provided by |OEGS| to |DPs| can cover two kinds of properties:
 
 * **Inherently true** properties known to Open Energy, such as:
 
-  - The unique ID of the |DC|
+  - The unique |ID| of the |DC|
   - The |DC| represents a Local Authority / |SME| / Enterprise / Community Organisation / Academic group, etc
   - The |DC| has a particular identity such as a registered name
   - Open Energy has performed identity assurance to a particular level
@@ -332,7 +332,7 @@ Information provided by |OEGS| to |DPs| can cover two kinds of properties:
 * **Transient, time-bounded** properties known to Open Energy, such as:
 
   - The |DC| is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
-    project under grant XYZ)
+    project under a particular named grant)
   - The |DC| has signed a particular document on a particular date (e.g. documentation of a research
     partnership)
 
@@ -547,7 +547,7 @@ Example access control and capability grant scenarios
       - Two rules are created
 
         1. ``oe_group:plymouth_lct`` - access to use case participants, here defined as a group ``lct`` managed by
-           ``plymouth`` (the ID of a local council organisation) and administered using the |OEGS| facilities
+           ``plymouth`` (the |ID| of a local council organisation) and administered using the |OEGS| facilities
         2. ``provider:customer`` - access to all other Open Energy members if they have a paid account with the |DP|
     * - **Capability grants**
       - The |DP| chooses to apply two different capability grants (dual licences) for the two access rules,

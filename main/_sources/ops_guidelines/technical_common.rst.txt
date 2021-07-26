@@ -32,7 +32,7 @@ sections.
 * `RFC6749 The OAuth 2.0 Authorization Framework <https://datatracker.ietf.org/doc/html/rfc6749>`_
 * `RFC6750 The OAuth 2.0 Authorization Framework: Bearer Token Usage <https://datatracker.ietf.org/doc/html/rfc6750>`_
 * `OpenID Connect Core 1.0 <https://openid.net/specs/openid-connect-core-1_0.html>`_
-* `RFC8705 OAuth 2.0 Mutual-|TLS| Client Authentication and Certificate-Bound Access Tokens <https://www.rfc-editor.org/rfc/rfc8705.html>`_
+* `RFC8705 OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens <https://www.rfc-editor.org/rfc/rfc8705.html>`_
 
 Discovery of endpoint URLs
 ##########################
@@ -49,7 +49,7 @@ In order to access a shared data |API|, a |DC| must first acquire an access toke
 |HTTP| request to the authorization server (part of the |OEGS|). The |DC| **MUST**:
 
 * Use Mutual |TLS|, presenting a client certificate when requested. This is the ``tls_client_auth`` authentication method
-  described in section `2 of |RFC8705| <https://www.rfc-editor.org/rfc/rfc8705.html#name-mutual-tls-for-oauth-client>`_
+  described in section 2 of |RFC8705|.
 
     * In our implementation, this certificate is acquired by creating a ``transport certificate`` in a
       ``software statement`` within the |OEGS| directory
@@ -86,7 +86,7 @@ To call a shared data |API| within a |DP|, the |DC| MUST:
 
 In addition, the |DC| **SHOULD**:
 
-* Specify an interaction ID for this call in an |HTTP| header::
+* Specify an interaction |ID| for this call in an |HTTP| header::
 
     x-fapi-interaction-id: <UUID>
 
@@ -98,7 +98,7 @@ Request validation
 
 To participate in the Open Energy ecosystem, a |DP| **MUST**:
 
-* Expose an HTTPS |API|
+* Expose an |HTTPS| |API|
 * Perform validation on any requests to this |API|
 
   * Reject any requests which do not present a valid client certificate. Client certificates are validated in the
@@ -119,7 +119,7 @@ obtain additional information. To obtain this introspection response, the |DP| *
 * Make a ``POST`` request to the ``introspection_endpoint`` of the authorization server
 * Use Mutual |TLS|, this means |DPs| must also have a provisioned client within the |OEGS| directory in the form
   of a ``software statement`` and corresponding transport certificate
-* Send the bearer token and client ID of the |DP| as an ``application/x-www-form-urlencoded`` body with the
+* Send the bearer token and client |ID| of the |DP| as an ``application/x-www-form-urlencoded`` body with the
   following values::
 
     token: <BEARER_TOKEN>

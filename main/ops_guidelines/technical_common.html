@@ -262,7 +262,7 @@ sections.</p>
 <li><p><a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc6749">RFC6749 The OAuth 2.0 Authorization Framework</a></p></li>
 <li><p><a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc6750">RFC6750 The OAuth 2.0 Authorization Framework: Bearer Token Usage</a></p></li>
 <li><p><a class="reference external" href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect Core 1.0</a></p></li>
-<li><p><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc8705.html">RFC8705 OAuth 2.0 Mutual-|TLS| Client Authentication and Certificate-Bound Access Tokens</a></p></li>
+<li><p><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc8705.html">RFC8705 OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens</a></p></li>
 </ul>
 <div class="section" id="discovery-of-endpoint-urls">
 <h3><a class="toc-backref" href="#id2"><span class="section-number">6.1.1. </span>Discovery of endpoint URLs</a><a class="headerlink" href="#discovery-of-endpoint-urls" title="Permalink to this headline">¶</a></h3>
@@ -278,7 +278,7 @@ e.g. <code class="docutils literal notranslate"><span class="pre">token_endpoint
 <a class="reference internal" href="../glossary.html#term-HypterText-Transfer-Protocol"><span class="xref std std-term">HTTP</span></a> request to the authorization server (part of the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a>). The <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <strong>MUST</strong>:</p>
 <ul>
 <li><p>Use Mutual <a class="reference internal" href="../glossary.html#term-Transport-Layer-Security"><span class="xref std std-term">TLS</span></a>, presenting a client certificate when requested. This is the <code class="docutils literal notranslate"><span class="pre">tls_client_auth</span></code> authentication method
-described in section <a class="reference external" href="https://www.rfc-editor.org/rfc/rfc8705.html#name-mutual-tls-for-oauth-client">2 of |RFC8705|</a></p>
+described in section 2 of <a class="reference internal" href="../glossary.html#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens"><span class="xref std std-term">RFC8705</span></a>.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>In our implementation, this certificate is acquired by creating a <code class="docutils literal notranslate"><span class="pre">transport</span> <span class="pre">certificate</span></code> in a
@@ -320,7 +320,7 @@ response will contain a <a class="reference internal" href="../glossary.html#ter
 </ul>
 <p>In addition, the <a class="reference internal" href="../glossary.html#term-Data-Consumer"><span class="xref std std-term">Data Consumer</span></a> <strong>SHOULD</strong>:</p>
 <ul>
-<li><p>Specify an interaction ID for this call in an <a class="reference internal" href="../glossary.html#term-HypterText-Transfer-Protocol"><span class="xref std std-term">HTTP</span></a> header:</p>
+<li><p>Specify an interaction <a class="reference internal" href="../glossary.html#term-Identification"><span class="xref std std-term">ID</span></a> for this call in an <a class="reference internal" href="../glossary.html#term-HypterText-Transfer-Protocol"><span class="xref std std-term">HTTP</span></a> header:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">-</span><span class="n">fapi</span><span class="o">-</span><span class="n">interaction</span><span class="o">-</span><span class="nb">id</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">UUID</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -333,7 +333,7 @@ in our reference implementation</p>
 <h2><a class="toc-backref" href="#id5"><span class="section-number">6.4. </span>Request validation</a><a class="headerlink" href="#request-validation" title="Permalink to this headline">¶</a></h2>
 <p>To participate in the Open Energy ecosystem, a <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> <strong>MUST</strong>:</p>
 <ul class="simple">
-<li><p>Expose an HTTPS <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p></li>
+<li><p>Expose an <a class="reference internal" href="../glossary.html#term-Secure-HTTP"><span class="xref std std-term">HTTPS</span></a> <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p></li>
 <li><p>Perform validation on any requests to this <a class="reference internal" href="../glossary.html#term-Application-programming-interface"><span class="xref std std-term">API</span></a></p>
 <ul>
 <li><p>Reject any requests which do not present a valid client certificate. Client certificates are validated in the
@@ -354,7 +354,7 @@ obtain additional information. To obtain this introspection response, the <a cla
 <li><p>Make a <code class="docutils literal notranslate"><span class="pre">POST</span></code> request to the <code class="docutils literal notranslate"><span class="pre">introspection_endpoint</span></code> of the authorization server</p></li>
 <li><p>Use Mutual <a class="reference internal" href="../glossary.html#term-Transport-Layer-Security"><span class="xref std std-term">TLS</span></a>, this means <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Providers</span></a> must also have a provisioned client within the <a class="reference internal" href="../glossary.html#term-Open-Energy-Governance-Service"><span class="xref std std-term">OEGS</span></a> directory in the form
 of a <code class="docutils literal notranslate"><span class="pre">software</span> <span class="pre">statement</span></code> and corresponding transport certificate</p></li>
-<li><p>Send the bearer token and client ID of the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> as an <code class="docutils literal notranslate"><span class="pre">application/x-www-form-urlencoded</span></code> body with the
+<li><p>Send the bearer token and client <a class="reference internal" href="../glossary.html#term-Identification"><span class="xref std std-term">ID</span></a> of the <a class="reference internal" href="../glossary.html#term-Data-Provider"><span class="xref std std-term">Data Provider</span></a> as an <code class="docutils literal notranslate"><span class="pre">application/x-www-form-urlencoded</span></code> body with the
 following values:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">token</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">BEARER_TOKEN</span><span class="o">&gt;</span>
 <span class="n">client_id</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">CLIENT_ID</span><span class="o">&gt;</span>
