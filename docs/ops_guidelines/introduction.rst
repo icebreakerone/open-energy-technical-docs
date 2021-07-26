@@ -85,8 +85,8 @@ and a collaborative approach as the project moves forward.
 
 Open Energy aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
 to share data, access data, or both. Membership is open to a wide range of organisations - from large corporations
-through to charities, researchers, or community groups. Both Open and Shared data can flow within the Open Energy
-ecosystem.
+through to charities, researchers, or community groups. Both :term:`Open <Open Data`: and :term:`Shared data` can
+flow within the Open Energy ecosystem.
 
 How is Open Energy Structured?
 ##############################
@@ -122,9 +122,9 @@ access different classes of Shared data (see `Data Sensitivity Classes`) on the 
 (see `Data Licensing`). Shared Data accessed via the |OEGS| will be provided by members only
 (|DPs|). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
 across the sector by reducing the time and financial costs currently associated with accessing Shared data.
-For providers of Shared data, the Governance Platform offers a secure and effective way to list datasets and
+For providers of Shared data, the Governance Service offers a secure and effective way to list datasets and
 set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
-Platform provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting
+Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting
 access to multiple datasets from different providers.
 
 Project Governance
@@ -138,7 +138,7 @@ roles, responsibilities and liabilities, draft preemptive licence, funding model
 ongoing governance.
 
 **Delivery Advisory Group**: Consulted on the drafting of operational guidelines and understanding data production
-and usage. Fed into the requirements for technical delivery of the Open Energy Governance Platform and the Energy
+and usage. Fed into the requirements for technical delivery of the Open Energy Governance Service and the Energy
 Data Search to ensure they meet user needs. Alongside this, examined the day-to-day operational aspects of Open Energy including security and systems.
 
 **Steering Group**: Supported the overarching strategy, ensured the delivery of our objectives, and helped
@@ -183,18 +183,17 @@ range of different commercial, personal and security sensitivity levels. To prov
 Energy consultations have established a set of five data sensitivity classes, in which three classes describe
 separate categories of Shared data.
 
-Due to the sheer diversity of data types in the energy sector, as opposed to the Open Banking model where the
-data types are more restricted, Open Energy has to limit focus for Phase 3 development. At present, the |OEGS|
-can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of
-non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
-to |ICO|/ONS best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
+Due to the sheer diversity of data types in the energy sector, Open Energy had to limit focus for Phase 3 development.
+At present, the |OEGS| can facilitate the sharing of non-personal Shared data classes only. This means that currently,
+sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
+to |ICO| / |ONS| best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
 (class |OE-SP|), and data that has been anonymised using techniques other than aggregation, may be extensible
 in future subject to further consultation.
 
 The metadata and sensitivity class of Shared datasets are listed in Open Energy Search and are visible to any user.
-Shared datasets provided by Open Energy members (|DPs|) and non-Open Energy members will both be visible
+Shared datasets provided by Open Energy members (|DPs|) and non-Open Energy members are both visible
 (where the latter are known), as described later in this section. Access to Shared datasets provided by Open Energy
-members is moderated through the Open Energy Governance Platform, on the basis of preemptive licensing. Access to
+members is moderated through the Open Energy Governance Service, on the basis of preemptive licensing. Access to
 Shared data listed on the Search that is not provided by an Open Energy member is not supported - users should
 contact the non-member organisation directly to arrange access.
 
@@ -227,7 +226,7 @@ Data Consumers
 --------------
 
 |DCs| are organisations that seek to find and access datasets through the Open Energy Governance Service
-Platform. |DCs| can be established to serve internal organisational needs, to serve external customers,
+Service. |DCs| can be established to serve internal organisational needs, to serve external customers,
 or both. |DCs| is a catch-all term referring to all parties accessing data via the |OEGS|. Full guidance can be found
 in `Guidance for Data Consumers`
 
@@ -277,16 +276,14 @@ can do with the artefact. Capability grants are accompanied by any obligations t
 by when exercising a capability. The capabilities and obligations associated with each |API| call will be converted
 into a licence through the Open Energy Governance Service (|OEGS|).
 
-We propose a system operating through a range of standardised capability grants and obligations. Standardisation
-will include legal text, ‘human readable’ text and summary notation. |DPs| must specify which capabilities
+|OE| operates through a range of standardised capability grants and obligations. Standardisation
+includes legal text, ‘human readable’ text and summary notation. |DPs| must specify which capabilities
 and obligations are associated with each access rule, and publish this transparently in the dataset metadata.
 
 Future development of the guidelines
 ####################################
 
-This version of the guidelines contains details of operational requirements that it was possible to define by the
-end of project Phase 3 (31 July 2021). The guidelines are designed as an iterative document that will develop in
-accordance with future phases of Open Energy. This may include items such as more in-depth guidance and tooling
-supporting the implementation of Open Energy policies, or details pertaining to dispute resolution. If you have
-any suggestions regarding areas of the operational guidelines that could benefit from further development, please
-contact openenergy@icebreakerone.org.
+This version of the guidelines contains details of operational requirements defined within Phase 3
+(ending 31 July 2021). The guidelines are designed as an iterative document that will develop in
+accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
+guidelines that could benefit from further development, please contact openenergy@icebreakerone.org.
