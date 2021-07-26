@@ -85,7 +85,7 @@ and a collaborative approach as the project moves forward.
 
 Open Energy aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
 to share data, access data, or both. Membership is open to a wide range of organisations - from large corporations
-through to charities, researchers, or community groups. Both :term:`Open <Open Data`: and :term:`Shared data` can
+through to charities, researchers, or community groups. Both :term:`Open <Open Data>`: and :term:`Shared Data` can
 flow within the Open Energy ecosystem.
 
 How is Open Energy Structured?
