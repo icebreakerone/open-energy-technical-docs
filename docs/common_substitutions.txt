@@ -2,3 +2,4 @@
 .. |DCs| replace:: :term:`Data Consumers<Data Consumer>`
 .. |SPs| replace:: :term:`Service Providers<Service Provider>`
 .. |APIs| replace:: :term:`APIs<Application programming interface>`
+.. |FAQs| replace:: :term:`Frequently Asked Questions<Frequently Asked Question>`

@@ -61,6 +61,9 @@
     Feed-in tariff
         *FIT* - Tariff previously offered to small-scale and microgeneration for export of electricity to the grid. No longer taking new customers in the UK (new microgeneration is now offered an export tariff through the building's electricity supplier)
 
+    Lower Layer Super Output Areas
+        *LSOA* - A geographic hierarchy designed to improve the reporting of small area statistics in England and Wales
+
     Modernising Energy Data
         *MED* - Consists of Ofgem, BEIS and Innovate UK. OE3 funders.
 

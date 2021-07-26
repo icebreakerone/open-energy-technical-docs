@@ -116,10 +116,6 @@ within members’ datasets.)
 Governance Service
 ------------------
 
-.. todo::
-
-    Fix references
-
 Open Energy's second core function - our Governance Service (|OEGS|) - supports members to provide, share and
 access different classes of Shared data (see `Data Sensitivity Classes`) on the basis of preemptive licensing
 (see `Data Licensing`). Shared Data accessed via the |OEGS| will be provided by members only
@@ -167,11 +163,11 @@ Open data
 
 Open data is defined in the Open Energy ecosystem as: ‘Data that anyone can use, for any purpose, for free and is
 accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output
-Layer ID (LSOA) data, Digest of UK Energy Statistics, and OpenStreetMap data.
+Layer ID (|LSOA|) data, Digest of UK Energy Statistics, and OpenStreetMap data.
 
 Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
 Energy members (|DPs|) and non-Open Energy members will both be visible. There are no barriers to accessing
-Open data once it is discovered - users are directed to an appropriate URL or |API| to access the data themselves.
+Open data once it is discovered - users are directed to an appropriate |URL| or |API| to access the data themselves.
 Open data access is not moderated via the |OEGS| as no additional access controls are required.
 
 Shared data

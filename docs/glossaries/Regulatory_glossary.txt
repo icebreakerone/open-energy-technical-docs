@@ -14,11 +14,19 @@
     Data Governance Act
         *DGA* - European regulatory proposal. 'The proposal is the first of a set of measures announced in the 2020 European strategy for data. The instrument aims to foster the availability of data for use by increasing trust in data intermediaries and by strengthening data-sharing mechanisms across the EU.' `ec.europa.eu: proposal-regulation-european-data-governance-data-governance-act <https://ec.europa.eu/digital-single-market/en/news/proposal-regulation-european-data-governance-data-governance-act>`_
 
+    Energy Performance Certificate
+        *EPC* - An EPC includes the energy performance of a building and the reference values, as well as the recommendations for the cost-optimal or cost-effective improvements of the energy performance of a building or building unit
+        `ec.europa.eu: energy-performance-certificates_en <https://ec.europa.eu/energy/eu-buildings-factsheets-topics-tree/energy-performance-certificates_en>`_
+
     Information Commissioner's Office
         *ICO* - Data protection regulator
 
     Office for Gas and Electricity Markets
         *Ofgem* - Energy sector regulator. OE3 co-funder.
+
+    Office for National Statistics
+        *ONS* - The UK’s largest independent producer of official statistics and its recognised national statistical institute.
+        `www.ons.gov.uk:  <https://www.ons.gov.uk>`_/
 
     Revenues = Incentives + Innovation + Outputs
         *RIIO* - Ofgem's regulatory framework for network companies, negotiated every 5 years.

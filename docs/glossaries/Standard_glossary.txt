@@ -18,9 +18,15 @@
         *EEBUS* - A standard-development project aiming to define a standardised language for the energy Internet of Things
         `www.eebus.org: what-is-eebus <https://www.eebus.org/what-is-eebus>`_/
 
+    Frequently Asked Question
+        *FAQ* - A list of questions and answers relating to a particular subject, especially one giving basic information for users of a website.
+
     International Standards Organisation standard regarding date time data
         *ISO 8601* - ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times is an international standard covering the exchange of date- and time-related data
         `en.wikipedia.org: ISO_8601 <https://en.wikipedia.org/wiki/ISO_8601>`_
+
+    Small / Medium Enterprise
+        *SME* - Small and medium-sized enterprises or small and medium-sized businesses are businesses whose personnel numbers fall below certain limits. The abbreviation "SME" is used by international organizations such as the World Bank, the European Union, the United Nations and the World Trade Organization.
 
     Universal Coordinated Time
         *UTC* - 24 hour time standard at a high level of precision.

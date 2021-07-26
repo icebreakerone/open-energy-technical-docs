@@ -7,6 +7,9 @@
     Preemptive licence
         A pre-determined set of rules governing data sharing and use.
 
+    Rule
+        An articulation of a dataset’s sensitivity class, access conditions, and license that is publishing in the metadata file. A dataset may either have a single, or multiple, rules.
+
     Trust framework
         A set of governance measures ensuring that data is shared in a trustworthy manner (e.g. participant authorisation, access, data tiers etc.)
 

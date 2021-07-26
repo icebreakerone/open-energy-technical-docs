@@ -4,8 +4,24 @@
         Definitions of the roles and responsibilities of each player in a data flow, including who is liable for accident or misuse at each stage in the data flow.
 
     Processor
-        Data processor (DPA 2018): 'in relation to personal data, means any person (other than an employee of the data controller) who processes the data on behalf of the data controller.'
+        Data processor (|DPA| 2018): 'in relation to personal data, means any person (other than an employee of the data controller) who processes the data on behalf of the data controller.'
         `ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf <https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf>`_
+
+    Creative Commons + Attribution
+        *CC-BY* - A license requiring attribution
+        `creativecommons.org: by <https://creativecommons.org/licenses/by>`_/
+
+    Creative Commons + Attribution + Non-commercial
+        *CC-BY-NC* - A license requiring attribution and restricted to non-commercial use
+        `creativecommons.org: by-nc <https://creativecommons.org/licenses/by-nc>`_/
+
+    Creative Commons + Attribution + No derivatives
+        *CC-BY-ND* - A license requiring attribution and prohibiting distribution of derived products
+        `creativecommons.org: by-nd <https://creativecommons.org/licenses/by-nd>`_/
+
+    Data Protection Act
+        *DPA* - The Data Protection Act 2018 is the UK’s implementation of the General Data Protection Regulation (GDPR).
+        `www.gov.uk: data-protection <https://www.gov.uk/data-protection>`_
 
     Data subject
         *DS* - As defined by GDPR

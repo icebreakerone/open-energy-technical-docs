@@ -27,7 +27,7 @@ Data Provider Role and Responsibilities
   * Open data sets are made available through publicly accessible |APIs|
   * Data are made available under an appropriate open license agreement
 
-In this context, Data |APIs| can be anything from a simple link to a CSV or other file (for open data) to a complex
+In this context, Data |APIs| can be anything from a simple link to a |CSV| or other file (for open data) to a complex
 query system returning custom output on demand.
 
 To support this role, |DPs| have certain responsibilities:
@@ -73,7 +73,7 @@ of information in the sector renders this impractical, and the additional overhe
 undesirable.
 
 With this said, we would encourage |DPs| to consider likely automated consumption of data when designing their
-data |APIs| - this implies using machine readable formats such as CSV, |JSON| and similar, with a preference for those
+data |APIs| - this implies using machine readable formats such as |CSV|, |JSON| and similar, with a preference for those
 formats compatible with existing software tools and libraries.
 
 Responsibility - Data integrity and correctness
@@ -135,7 +135,7 @@ Date and time formats
 #####################
 
 Whenever date or time quantities are accepted or returned from a data |API|, these values MUST conform to
-`RFC 3339 <https://tools.ietf.org/html/rfc3339>`_. This is referenced elsewhere in this document as **date/time**
+`|RFC| 3339 <https://tools.ietf.org/html/rfc3339>`_. This is referenced elsewhere in this document as **date/time**
 
 Endpoint security
 #################
@@ -187,7 +187,7 @@ Legal keys, and the semantics of their associated values, are as follows:
        time of the heartbeat request
    * - ``api_call_response_[CODE]_count``
      - integer number of requests to non-heartbeat endpoints within this data |API| which resulted in a response of type
-       CODE. A distinct key:value pair is sent in the response for each distinct HTTP status code returned.
+       CODE. A distinct key:value pair is sent in the response for each distinct |HTTP| status code returned.
 
 API documentation
 #################
@@ -216,11 +216,11 @@ independent support.
 Online support
 ##############
 
-|DPs| **SHOULD** provide FAQs, which address areas that may be specific to |DCs| such as technical advice or test facility
+|DPs| **SHOULD** provide |FAQs|, which address areas that may be specific to |DCs| such as technical advice or test facility
 guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be
-collated into FAQs to support the early resolution of problems.
+collated into |FAQs| to support the early resolution of problems.
 
-Problem resolution documentation, FAQs, contact details, opening times and out of hours support **SHOULD** be published
+Problem resolution documentation, |FAQs|, contact details, opening times and out of hours support **SHOULD** be published
 and easily accessible in one collective area on the |DP|’s website.
 
 Ticket management process

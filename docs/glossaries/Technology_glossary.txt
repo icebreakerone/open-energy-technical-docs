@@ -83,6 +83,14 @@
     Combined Heat and Power
         *CHP* - CHP generates electricity whilst also capturing usable heat that is produced in this process. As a result, CHP operates at much higher efficiency than traditional power generation methods.
 
+    Comma Separated Value
+        *CSV* - A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values.
+        `en.wikipedia.org: Comma-separated_values <https://en.wikipedia.org/wiki/Comma-separated_values>`_
+
+    Data Catalogue Vocabulary
+        *DCAT* - DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web.
+        `www.w3.org: vocab-dcat-2 <https://www.w3.org/TR/vocab-dcat-2>`_/
+
     Distributed energy resources
         *DER* - A term used to describe a combination of distributed generation and flexibility resources in the electricity system (e.g. solar PV, EVs, biogas, heat pumpts, batteries).
 
@@ -114,6 +122,14 @@
     Half hourly meter
         *HH* - Consumer electricity meter capable of reporting usage at a 30 minute resolution
 
+    HypterText Transfer Protocol
+        *HTTP* - Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML
+        `developer.mozilla.org: HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`_
+
+    Secure HTTP
+        *HTTPS* - Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet.
+        `en.wikipedia.org: HTTPS <https://en.wikipedia.org/wiki/HTTPS>`_
+
     Industrial Control System
         *ICS* - Industrial control system (ICS) is a general term that encompasses several types of control systems and associated instrumentation used for industrial process control.
         `en.wikipedia.org: Industrial_control_system <https://en.wikipedia.org/wiki/Industrial_control_system>`_
@@ -127,8 +143,16 @@
     JavaScript Object Notation for Linked Data
         *JSON-LD* - JSON-LD (JavaScript Object Notation for Linked Data) is a method of encoding linked data using JSON
 
+    JSON Web Token
+        *JWT* - A proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims
+        `en.wikipedia.org: JSON_Web_Token <https://en.wikipedia.org/wiki/JSON_Web_Token>`_
+
     Machine to machine
         *M2M* - Machine to machine (M2M) is direct communication between devices using any communications channel, including wired and wireless
+
+    Mutual TLS authentication
+        *MTLS* - By default the TLS protocol only proves the identity of the server to the client using X.509 certificates, and the authentication of the client to the server is left to the application layer. TLS also offers client-to-server authentication using client-side X.509 authentication.[13] As it requires provisioning of the certificates to the clients and involves less user-friendly experience, it's rarely used in end-user applications.
+        `en.wikipedia.org: Mutual_authentication <https://en.wikipedia.org/wiki/Mutual_authentication#mTLS>`_
 
     Open ID Connect
         *OIDC* - An identity layer on top of OAuth2.0 protocol
@@ -143,12 +167,44 @@
     Photovoltaic (cells/panels)
         *PV* - Mechanism of generating renewable electricity - solar power.
 
+    Request for Comments
+        *RFC* - A Request for Comments (RFC) is a publication from the Internet Society (ISOC) and its associated bodies, most prominently the Internet Engineering Task Force (IETF), the principal technical development and standards-setting bodies for the Internet
+        `en.wikipedia.org: Request_for_Comments <https://en.wikipedia.org/wiki/Request_for_Comments>`_
+
+    The OAuth 2.0 Authorization Framework
+        *RFC6749* - The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf
+        `datatracker.ietf.org: rfc6749 <https://datatracker.ietf.org/doc/html/rfc6749>`_
+
+    The OAuth 2.0 Authorization Framework: Bearer Token Usage
+        *RFC6750* - Describes how to use bearer tokens in HTTP requests to access OAuth 2.0 protected resources
+        `datatracker.ietf.org: rfc6750 <https://datatracker.ietf.org/doc/html/rfc6750>`_
+
+    OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens
+        *RFC8705* - Describes OAuth client authentication and certificate-bound access and refresh tokens using mutual Transport Layer Security (|TLS|) authentication with X.509 certificates
+        `datatracker.ietf.org: rfc8705 <https://datatracker.ietf.org/doc/html/rfc8705>`_
+
     Supervisory Control and Data Acquisition
         *SCADA* - A software and hardware system enabling remote monitoring and control, usually of industrial-scale equipment
+
+    Secure Hash Algorithm (256 bit)
+        *SHA256* - SHA-2 (Secure Hash Algorithm 2) is a set of cryptographic hash functions designed by the United States National Security Agency (NSA) and first published in 2001
+        `en.wikipedia.org: SHA-2 <https://en.wikipedia.org/wiki/SHA-2>`_
 
     Smart Metering Equipment Technical Specifications
         *SMETS* - SMETS describe the specifications of UK smart meters. Two generations of smart meters have been released to date - SMETS1 and SMETS2.
         `www.ovoenergy.com: smets-1-and-2-new-smart-meter-generation.html <https://www.ovoenergy.com/guides/energy-guides/smets-1-and-2-new-smart-meter-generation.html>`_
+
+    Transport Layer Security
+        *TLS* - A cryptographic protocol designed to provide communications security over a computer network
+        `en.wikipedia.org: Transport_Layer_Security <https://en.wikipedia.org/wiki/Transport_Layer_Security>`_
+
+    Uniform Resource Locator
+        *URL* - A Uniform Resource Locator (URL), colloquially termed a web address,[1] is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it
+        `en.wikipedia.org: URL <https://en.wikipedia.org/wiki/URL>`_
+
+    Universally unique identififer v4
+        *UUID4* - A version 4 UUID is randomly generated
+        `en.wikipedia.org: Universally_unique_identifier <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_
 
     Vehicle to grid
         *V2G* - Bidirectional power flow between the grid and an EV battery. Enables EV owners to discharge power stored in batteries to the grid at times of need.
