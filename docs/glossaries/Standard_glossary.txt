@@ -18,6 +18,9 @@
         *EEBUS* - A standard-development project aiming to define a standardised language for the energy Internet of Things
         `www.eebus.org: what-is-eebus <https://www.eebus.org/what-is-eebus>`_/
 
+    European Union
+        *EU* - no definition
+
     Frequently Asked Question
         *FAQ* - A list of questions and answers relating to a particular subject, especially one giving basic information for users of a website.
 
@@ -27,6 +30,9 @@
 
     Small / Medium Enterprise
         *SME* - Small and medium-sized enterprises or small and medium-sized businesses are businesses whose personnel numbers fall below certain limits. The abbreviation "SME" is used by international organizations such as the World Bank, the European Union, the United Nations and the World Trade Organization.
+
+    United Kingdom
+        *UK* - no definition
 
     Universal Coordinated Time
         *UTC* - 24 hour time standard at a high level of precision.

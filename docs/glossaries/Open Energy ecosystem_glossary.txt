@@ -25,6 +25,9 @@
     Minimum Viable Product
         *MVP* - An early version of a product for initial release, potentially with limited features or space for future development.
 
+    Open Energy
+        *OE* - The Open Energy project
+
     Data sensitivity class - closed
         *OE-C* - Closed data - datasets which must not be shared within Open Energy
 

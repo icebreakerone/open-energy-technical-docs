@@ -22,7 +22,7 @@ KNOWN_ACRONYMS = list(get_known_substitutions(['common_substitutions.txt',
 
 #: Things that look like, but are not, acronyms. These are excluded from results
 EXCLUSIONS = ['MUST', 'REQUIRED', 'SHALL', 'SHOULD', 'NOT', 'RECOMMENDED', 'MAY', 'OPTIONAL',
-              'POST', 'GET', 'CLIENT', 'CONDITION', 'CAPABILITY', 'OBLIGATION', 'LHS', 'RHS']
+              'POST', 'GET', 'CLIENT', 'CONDITION', 'CAPABILITY', 'OBLIGATION', 'LHS', 'RHS', 'CODE']
 
 
 def files_with_extension(extension='rst'):
@@ -39,14 +39,14 @@ def acronyms(s: str):
     """
     Returns generator over acronyms found within a string along with their positions as (str, int) tuples
     """
-    for match in re.finditer(r'[^a-z0-9_|\W\s]([A-Z][0-9A-Z-]{1,})+', s):
-        start, end = match.span()
+    for match in re.finditer(r'[(\s^.]([A-Z][0-9A-Z-]{1,})+[$.\s)]', s):
+        start, end = match.span(1)
         if start == 0 or s[start - 1] not in ['|', '<', '_', '/', '`']:
-            if match.group() not in EXCLUSIONS:
+            if match.group(1) not in EXCLUSIONS:
                 if (end + 1) < len(s) and s[end] == 's':
-                    yield match.group() + 's', start
+                    yield match.group(1) + 's', start
                 else:
-                    yield match.group(), start
+                    yield match.group(1), start
 
 
 def rewrite_line(s: str, acronyms: List[Tuple[str, int]]):
@@ -64,7 +64,7 @@ def rewrite_line(s: str, acronyms: List[Tuple[str, int]]):
 
 
 #: Change this to True to enable automated file rewrites
-REWRITE_FILES = False
+REWRITE_FILES = True
 
 
 def is_heading(s: str):
@@ -95,6 +95,8 @@ for file in files_with_extension(extension='rst'):
                         if line_number not in auto_replace:
                             auto_replace[line_number] = []
                         auto_replace[line_number].append((acronym, start_position))
+                    elif acronym not in EXCLUSIONS:
+                        print(f'Unknown acronym {acronym} found in {file}, line {line_number + 1}')
             if is_heading(line) and line_number > 0 and line_number - 1 in auto_replace:
                 del auto_replace[line_number - 1]
 
@@ -103,6 +105,7 @@ for file in files_with_extension(extension='rst'):
             for acronym, start_position in auto_replace[line_number]:
                 print(f'{file} - line {line_number + 1}:{start_position} : {acronym} '
                       f'{"" if acronym in KNOWN_ACRONYMS else "[unknown]"}')
+
     if auto_replace and REWRITE_FILES:
         with open(file, 'w') as f:
             for line_number, line in enumerate(lines):

@@ -16,7 +16,7 @@ An access rule contains:
 
 They are applied to properties of a :term:`Data Consumer` while processing a request for data from a
 :term:`Data Provider`. These properties can be modelled as a map of names to values; some values may be inferred by
-joining on the ID of the data consumer, some may be directly provided in the `token introspection` response.
+joining on the |ID| of the data consumer, some may be directly provided in the `token introspection` response.
 
 Syntax
 ######

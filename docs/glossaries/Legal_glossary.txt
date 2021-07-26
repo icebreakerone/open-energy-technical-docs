@@ -1,5 +1,8 @@
 .. glossary::
 
+    Derivative
+        A derivative of a dataset is a product, service, or other word that is either wholly or in part produced from the original dataset.
+
     Liability chain
         Definitions of the roles and responsibilities of each player in a data flow, including who is liable for accident or misuse at each stage in the data flow.
 

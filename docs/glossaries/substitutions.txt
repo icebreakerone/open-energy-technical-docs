@@ -33,6 +33,7 @@
 .. |EPC| replace:: :term:`EPC<Energy Performance Certificate>`
 .. |ESC| replace:: :term:`ESC<Energy Systems Capatult>`
 .. |ESO| replace:: :term:`ESO<Electricity System Operator>`
+.. |EU| replace:: :term:`EU<European Union>`
 .. |EV| replace:: :term:`Electric vehicle<Electric vehicle>`
 .. |EVSE| replace:: :term:`EVSE<Electric vehicle supply equipment>`
 .. |FAPI| replace:: :term:`FAPI<Financial Grade API>`
@@ -51,7 +52,7 @@
 .. |I&C| replace:: :term:`I&C<Industrial and commercial>`
 .. |ICO| replace:: :term:`ICO<Information Commissioner's Office>`
 .. |ICS| replace:: :term:`ICS<Industrial Control System>`
-.. |ID| replace:: :term:`Identification<Identification>`
+.. |ID| replace:: :term:`ID<Identification>`
 .. |iDNO| replace:: :term:`iDNO<Independent Distribution Network Operator>`
 .. |IoT| replace:: :term:`IoT<Internet of Things>`
 .. |ISO| replace:: :term:`ISO<Independent System Operator>`
@@ -76,6 +77,7 @@
 .. |NIC| replace:: :term:`NIC<National Infrastructure Commission>`
 .. |OAuth2| replace:: :term:`OAuth2<Open Authorization 2>`
 .. |ODI| replace:: :term:`ODI<Open Data Institute>`
+.. |OE| replace:: :term:`Open Energy<Open Energy>`
 .. |OE-C| replace:: :term:`OE-C<Data sensitivity class - closed>`
 .. |OE-O| replace:: :term:`OE-O<Data sensitivity class - open>`
 .. |OE-SA| replace:: :term:`OE-SA<Data sensitivity class - shared (A)>`
@@ -113,6 +115,7 @@
 .. |TPI| replace:: :term:`TPI<Third Party Intermediary>`
 .. |TPP| replace:: :term:`TPP<Third party provider>`
 .. |TSO| replace:: :term:`TSO<Transmission System Owner>`
+.. |UK| replace:: :term:`UK<United Kingdom>`
 .. |URL| replace:: :term:`URL<Uniform Resource Locator>`
 .. |UTC| replace:: :term:`UTC<Universal Coordinated Time>`
 .. |UUID4| replace:: :term:`UUID4<Universally unique identififer v4>`

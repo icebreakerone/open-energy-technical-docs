@@ -8,7 +8,7 @@ Introduction to Open Energy
 Overview and purpose of the guidelines
 ######################################
 
-The Open Energy (OE) operational guidelines aim to provide practical advice to all types of actors participating in
+The Open Energy |OE| operational guidelines aim to provide practical advice to all types of actors participating in
 the Open Energy ecosystem. The guidelines are supplemented by links to more detailed technical and membership
 documentation.
 
@@ -76,7 +76,7 @@ and its related social and economic benefits.
 
 Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
 the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
-(|BEIS|), and Innovate UK. The project has built on learning from Open Banking - identifying which elements are
+(|BEIS|), and Innovate |UK|. The project has built on learning from Open Banking - identifying which elements are
 transferable to the energy sector, and which require adaptation or fresh thinking. Throughout this process, the
 Open Energy team has engaged in extensive consultation with the energy sector, in order to ensure that the project
 meets the widest possible variety of needs. The ethos of Open Energy will remain grounded in sector engagement
@@ -163,7 +163,7 @@ Open data
 
 Open data is defined in the Open Energy ecosystem as: ‘Data that anyone can use, for any purpose, for free and is
 accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output
-Layer ID (|LSOA|) data, Digest of UK Energy Statistics, and OpenStreetMap data.
+Layer |ID| (|LSOA|) data, Digest of |UK| Energy Statistics, and OpenStreetMap data.
 
 Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
 Energy members (|DPs|) and non-Open Energy members will both be visible. There are no barriers to accessing

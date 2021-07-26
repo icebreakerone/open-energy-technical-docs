@@ -123,7 +123,7 @@ Data API Requirements
 ---------------------
 
 Unlike open banking, open energy does not mandate particular |APIs| for data provision - it is expected that there will
-be a variety of mechanisms to expose data, with varying inputs (from a single data set ID to a complex query object)
+be a variety of mechanisms to expose data, with varying inputs (from a single data set |ID| to a complex query object)
 and varying kinds of output dependent on the information exposed.
 
 With that said, there are certain properties that all data |APIs| must satisfy to interoperate successfully with other

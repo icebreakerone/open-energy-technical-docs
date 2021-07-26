@@ -97,6 +97,10 @@ def master_glossary(entries: List[GlossaryEntry], prefix='glossaries/') -> str:
     return g
 
 
+#: Allowed two letter acronmys
+SHORT_EXCEPTIONS = ['ID', 'UK', 'EU']
+
+
 def substitutions(entries: List[GlossaryEntry], min_acronym_length=3) -> str:
     """
     Build a string containing acronym substitions. This can then be added to the epilogue of every page to make
@@ -115,7 +119,7 @@ def substitutions(entries: List[GlossaryEntry], min_acronym_length=3) -> str:
     for entry in entries:
         for acronym in entry.acronym.split(','):
             if acronym:
-                if len(acronym) >= min_acronym_length:
+                if len(acronym) >= min_acronym_length or acronym in SHORT_EXCEPTIONS:
                     s += f'.. |{acronym}| replace:: :term:`{acronym}<{entry.expansion}>`\n'
                 else:
                     s += f'.. |{acronym}| replace:: :term:`{entry.expansion}<{entry.expansion}>`\n'
