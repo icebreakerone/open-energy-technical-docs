@@ -26,6 +26,7 @@
 .. |DSO| replace:: :term:`DSO<Distribution System Operator>`
 .. |DSR| replace:: :term:`DSR<Demand-side response>`
 .. |EASM| replace:: :term:`EASM<Enterprise Asset Management System>`
+.. |EC2| replace:: :term:`EC2<Amazon Elastic Cloud Compute>`
 .. |ECS| replace:: :term:`ECS<Electric charging station>`
 .. |EDBP| replace:: :term:`EDBP<Energy Data Best Practice>`
 .. |EDTF| replace:: :term:`EDTF<Energy Data Taskforce>`

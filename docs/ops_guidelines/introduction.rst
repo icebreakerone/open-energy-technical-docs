@@ -76,7 +76,8 @@ and its related social and economic benefits.
 
 Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
 the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
-(|BEIS|), and Innovate |UK|. The project has built on learning from Open Banking - identifying which elements are
+(|BEIS|), and `Innovate UK <https://www.gov.uk/government/organisations/innovate-uk>`_. The project has built on
+learning from Open Banking - identifying which elements are
 transferable to the energy sector, and which require adaptation or fresh thinking. Throughout this process, the
 Open Energy team has engaged in extensive consultation with the energy sector, in order to ensure that the project
 meets the widest possible variety of needs. The ethos of Open Energy will remain grounded in sector engagement

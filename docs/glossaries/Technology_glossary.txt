@@ -103,6 +103,9 @@
     Enterprise Asset Management System
         *EASM* - Technological system used to manage an entity's assets (data, physical, human) and processes.
 
+    Amazon Elastic Cloud Compute
+        *EC2* - A platform provided by Amazon used to deploy arbitrary server code into the cloud
+
     Electric charging station
         *ECS* - Charging station for electric vehicles
 

@@ -26,7 +26,7 @@
         *MVP* - An early version of a product for initial release, potentially with limited features or space for future development.
 
     Open Energy
-        *OE* - The Open Energy project
+        *OE* - Open Energy is a non-profit initiative developed by Icebreaker One to deliver part of our national data infrastructure and accelerate delivery of our Net Zero targets.
 
     Data sensitivity class - closed
         *OE-C* - Closed data - datasets which must not be shared within Open Energy
