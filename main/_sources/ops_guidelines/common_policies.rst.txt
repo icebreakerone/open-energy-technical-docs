@@ -36,7 +36,7 @@ Policy details
 --------------
 
 Open Energy operates a system of five data sensitivity classes, graded across three dimensions of sensitivity: personal,
-commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the UK DPA 2018, and related
+commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the UK |DPA| 2018, and related
 privacy and consumer protection implications. Commercial sensitivity considers intellectual property, risk and
 commerciality. Security sensitivity includes critical national infrastructure and cybersecurity.
 
@@ -77,7 +77,7 @@ organisations.
       - Very High
     * - |OE-SP|
       - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-        processing, as defined by the EU |GDPR| and brought into UK law via the DPA 2018.
+        processing, as defined by the EU |GDPR| and brought into UK law via the |DPA| 2018.
 
         **Currently not suitable to share within the OE ecosystem, with future extensibility subject to consultation.**
       - Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
@@ -102,15 +102,15 @@ organisations.
       - Medium / High
     * - |OE-SA|
       - Shared data - datasets which can/could be shared, but which require the user to agree to ‘light touch’ T&Cs to
-        access and use (e.g. non-commercial clauses such as those under CC-BY-NC).
+        access and use (e.g. non-commercial clauses such as those under |CC-BY-NC|).
       - Network capacity, outage data, weather predictions, European space agency data, daily smart meter installations,
-        geolocation information for non-sensitive assets (e.g. Renewable Assets, EPC certificates).
+        geolocation information for non-sensitive assets (e.g. Renewable Assets, |EPC| certificates).
       - Low
       - Medium
       - Low
     * - |OE-O|
       - Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.
-      - Lower Super Output Layer ID (LSOA), Digest of UK Energy Statistics, regulatory data (e.g. licensing categories,
+      - Lower Super Output Layer ID (|LSOA|), Digest of UK Energy Statistics, regulatory data (e.g. licensing categories,
         institutional charters or Terms of Reference, etc.)
       - Very Low
       - Very Low
@@ -152,7 +152,7 @@ Our approach must serve the goal of reducing friction in sharing energy data, wh
 sets of needs:
 
 1. |DPs|: to retain control over their data.
-2. |DCs| and Service Providers: to access multiple datasets in a clear and manageable way.
+2. |DCs| and |SPs|: to access multiple datasets in a clear and manageable way.
 
 As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
 This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each
@@ -171,7 +171,7 @@ as a cause of cost and friction in energy data sharing.
     * - |OE-C|
       - Determined and governed by the |DP| only.
     * - |OE-SP|
-      - Currently determined by legislation including, but not limited to: |GDPR| / DPA 2018, the Data Access and
+      - Currently determined by legislation including, but not limited to: |GDPR| / |DPA| 2018, the Data Access and
         Privacy Framework, and the Smart Energy Code. |DPs| may also apply additional non-standard access
         conditions, such as payment or purpose-based.
 
@@ -233,7 +233,7 @@ as a cause of cost and friction in energy data sharing.
 
         Charities
 
-        Specific Open Energy membership tiers (e.g. SME)
+        Specific Open Energy membership tiers (e.g. |SME|)
       - |OE-SB|
     * - Group membership
       - Certain use cases (e.g. community energy project development)
@@ -249,7 +249,7 @@ as a cause of cost and friction in energy data sharing.
     * - Other
       - Auditing clauses
 
-        Individuals handling the data within a |DC| must have completed certain training (e.g. ONS Safe
+        Individuals handling the data within a |DC| must have completed certain training (e.g. |ONS| Safe
         Researcher).
       - |OE-SB| and |OE-SA|
 
@@ -325,7 +325,7 @@ Information provided by |OEGS| to |DPs| can cover two kinds of properties:
 * **Inherently true** properties known to Open Energy, such as:
 
   - The unique ID of the |DC|
-  - The |DC| represents a Local Authority / SME / Enterprise / Community Organisation / Academic group, etc
+  - The |DC| represents a Local Authority / |SME| / Enterprise / Community Organisation / Academic group, etc
   - The |DC| has a particular identity such as a registered name
   - Open Energy has performed identity assurance to a particular level
 
@@ -369,9 +369,9 @@ What are licenses and capabilities?
 
 A data licence is a legal instrument setting out what a |DC| can do with a particular artefact (e.g. dataset).
 This grants certain ‘capabilities’ to the |DC|, comprising a clear expression of things they can do with the
-artefact. For example, the CC-BY 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
+artefact. For example, the |CC-BY| 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
 reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact
-- so long as the author is credited with the original. By contrast, the CC-BY-ND 4.0 Creative Commons licence grants
+- so long as the author is credited with the original. By contrast, the |CC-BY-ND| 4.0 Creative Commons licence grants
 the capability to reuse the licensed artefact for any purpose, however it does not grant the capability to redistribute
 derivatives of the artefact.
 
@@ -461,10 +461,6 @@ incentivise |DPs| to align with Open Energy standardisation.
     :name: licensing_model_api_call
 
     Licensing model per |API| call
-
-.. todo::
-
-    Should this diagram be somewhere earlier in the section?
 
 Example access control and capability grant scenarios
 -----------------------------------------------------

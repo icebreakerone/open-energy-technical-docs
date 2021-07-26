@@ -32,7 +32,7 @@ sections.
 * `RFC6749 The OAuth 2.0 Authorization Framework <https://datatracker.ietf.org/doc/html/rfc6749>`_
 * `RFC6750 The OAuth 2.0 Authorization Framework: Bearer Token Usage <https://datatracker.ietf.org/doc/html/rfc6750>`_
 * `OpenID Connect Core 1.0 <https://openid.net/specs/openid-connect-core-1_0.html>`_
-* `RFC8705 OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens <https://www.rfc-editor.org/rfc/rfc8705.html>`_
+* `RFC8705 OAuth 2.0 Mutual-|TLS| Client Authentication and Certificate-Bound Access Tokens <https://www.rfc-editor.org/rfc/rfc8705.html>`_
 
 Discovery of endpoint URLs
 ##########################
@@ -46,10 +46,10 @@ Token acquisition
 -----------------
 
 In order to access a shared data |API|, a |DC| must first acquire an access token. This is done by sending an
-HTTP request to the authorization server (part of the |OEGS|). The |DC| **MUST**:
+|HTTP| request to the authorization server (part of the |OEGS|). The |DC| **MUST**:
 
-* Use Mutual TLS, presenting a client certificate when requested. This is the ``tls_client_auth`` authentication method
-  described in section `2 of RFC8705 <https://www.rfc-editor.org/rfc/rfc8705.html#name-mutual-tls-for-oauth-client>`_
+* Use Mutual |TLS|, presenting a client certificate when requested. This is the ``tls_client_auth`` authentication method
+  described in section `2 of |RFC8705| <https://www.rfc-editor.org/rfc/rfc8705.html#name-mutual-tls-for-oauth-client>`_
 
     * In our implementation, this certificate is acquired by creating a ``transport certificate`` in a
       ``software statement`` within the |OEGS| directory
@@ -79,18 +79,18 @@ Token usage - calling a shared data API
 
 To call a shared data |API| within a |DP|, the |DC| MUST:
 
-* Use Mutual TLS as previously described
-* Pass the previously acquired bearer token in an HTTP header::
+* Use Mutual |TLS| as previously described
+* Pass the previously acquired bearer token in an |HTTP| header::
 
     Authorization: Bearer <TOKEN>
 
 In addition, the |DC| **SHOULD**:
 
-* Specify an interaction ID for this call in an HTTP header::
+* Specify an interaction ID for this call in an |HTTP| header::
 
     x-fapi-interaction-id: <UUID>
 
-  This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a UUID4
+  This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a |UUID4|
   in our reference implementation
 
 Request validation
@@ -107,7 +107,7 @@ To participate in the Open Energy ecosystem, a |DP| **MUST**:
     above
 
 If any of the above checks fail, the |DP| **MUST NOT** continue processing the request, and **SHOULD** respond with
-an error response as defined in `this section <https://datatracker.ietf.org/doc/html/rfc6750#section-6.2>`_ of RFC6750
+an error response as defined in `this section <https://datatracker.ietf.org/doc/html/rfc6750#section-6.2>`_ of |RFC6750|
 
 Token introspection
 ###################
@@ -117,7 +117,7 @@ identifiers (as opposed to JWTs) and must be passed to the ``introspection_endpo
 obtain additional information. To obtain this introspection response, the |DP| **MUST**:
 
 * Make a ``POST`` request to the ``introspection_endpoint`` of the authorization server
-* Use Mutual TLS, this means |DPs| must also have a provisioned client within the |OEGS| directory in the form
+* Use Mutual |TLS|, this means |DPs| must also have a provisioned client within the |OEGS| directory in the form
   of a ``software statement`` and corresponding transport certificate
 * Send the bearer token and client ID of the |DP| as an ``application/x-www-form-urlencoded`` body with the
   following values::
