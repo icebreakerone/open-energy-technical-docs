@@ -1,27 +1,63 @@
-# oe-technical-docs
-Open Energy technical docs
+# Open Energy Technical Docs
+Open Energy technical documentation. This repository contains the sources for a sphinx-based build of our
+technical documentation, including operational guidelines, for the Open Energy project.
 
 ## Viewing the docs
 
-This documentation is rendered at
-https://icebreakerone.github.io/open-energy-technical-docs/
+This documentation is rendered at https://icebreakerone.github.io/open-energy-technical-docs/, which is
+linked to automatically from https://docs.openenergy.org.uk 
 
 ## Sphinx installation
 
-Using whichever version of Python 3 makes you happiest:
+Using whichever version of Python 3 makes you happiest, and install sphinx and the necessary extra plugins for
+themes and other tooling:
 
 ```
-> pip install sphinx sphinx-rtd-theme
+> pip install sphinx sphinx-rtd-theme sphinxcontrib-svg2pdfconverter[CairoSVG] cairosvg
 ```
 
-TODO - we probably want our own in-house sphinx theme here, but that's not something that currently exists so 
-defaulting to the RTD theme for now.
+It is highly likely that this build will only work without changes on a linux machine with the LaTeX tools installed.
 
 ## Building the docs
 
-1. `make html` to build doc website locally
-2. `make singlehtml` to build all docs into a single HTML file
-3. `make pdf` to build all docs to a single PDF file
+Run these commands from within the `docs` folder:
 
-TODO - most of my builds have a `make push` to deploy the site when it's built, we probably want something similar
-here at some point.
+1. `make local` to build doc website locally. This will use the current checked out version, including
+   any local changes, and build the website in `../build/localhtml`. Use this when you have just made a change
+   and want to see whether it did the right thing before pushing to version control.
+2. `make html` to build the doc website locally, but does not incorporate local changes. Instead, this pulls
+   release and head versions from version control and builds the entire site, as it would appear on the final
+   public location, and including all versions.
+3. `make latexpdf` to build all docs to a single PDF file which can then be found in `../build/latex/openenergytechnical.pdf`
+4. `make ghpages` to build in the same way as `make html` but also push a new version to the public site. This
+   requires setup, specifically it expects a parallel checkout of the docs repository with the `ghpages` branch
+   called `open-energy-technical-docs-pages`. This can be created as follows:
+   
+   ```shell
+   cd ../..
+   mkdir open-energy-technical-docs-pages
+   cd open-energy-technical-docs-pages
+   git clone git@github.com:icebreakerone/open-energy-technical-docs --branch gh-pages html 
+   ```
+   
+   Once this is set up, `make ghpages` should work, and will push a new build to the public website
+
+## Releasing a version of the docs
+
+Our public doc website handles multiple versions. There is always a version `main` corresponding to the latest
+state of that same named branch in version control. In addition, release builds are indicated with tags within
+the repository of the form `a.b.c`, where `a` is the major version number, `b` the minor, and `c` the patch. This
+is a scheme known as semantic versioning, and in general we should increment the patch number to indicate minor
+tweaks, spelling and layout corrections, leaving the minor and major numbers to indicate substantive changes
+to the contents. Minor numbers should be incremented for additive changes which won't break anything, and any
+substantial changes of the kind that would require a *read from the start again* approach should be indicated
+with major version number increments. The release build at the end of phase 3 is version `1.0.0`.
+
+To perform a release, create and push a tag with the corresponding release number. Alternatively, use the release
+mechanism within github, naming the release in the same fashion. https://github.com/icebreakerone/open-energy-technical-docs/releases
+shows the current releases, and allows you to create new ones.
+
+Part of the build is to produce a redirect such that e.g. https://docs.openenergy.org.uk redirects to the latest
+release build. Release builds are ones with the `a.b.c` naming convention described above, but it is perfectly
+possible to have non-release builds simply by using any other tag format. These will be listed in the versions
+panel in the generated site but will not automatically be linked from the base address.

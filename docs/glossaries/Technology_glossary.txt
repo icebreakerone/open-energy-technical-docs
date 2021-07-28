@@ -144,7 +144,7 @@
         *IoT* - A catch-all term used to refer to connected devices - e.g. fridges, washing machines, speakers etc.
 
     Javascript Object Notation
-        *JSON* - JSON (JavaScript Object Notation, pronounced /ˈdʒeɪsən/; also /ˈdʒeɪˌsɒn/) is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values)
+        *JSON* - JSON (JavaScript Object Notation) is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values)
 
     JavaScript Object Notation for Linked Data
         *JSON-LD* - JSON-LD (JavaScript Object Notation for Linked Data) is a method of encoding linked data using JSON
