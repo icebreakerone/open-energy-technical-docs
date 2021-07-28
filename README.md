@@ -28,7 +28,7 @@ Run these commands from within the `docs` folder:
 2. `make html` to build the doc website locally, but does not incorporate local changes. Instead, this pulls
    release and head versions from version control and builds the entire site, as it would appear on the final
    public location, and including all versions.
-3. `make latexpdf` to build all docs to a single PDF file which can then be found in `../build/latex/openenergytechnical.pdf`
+3. `make pdf` to build all docs to a single PDF file which can then be found in `../build/openenergytechnical.pdf`
 4. `make ghpages` to build in the same way as `make html` but also push a new version to the public site. This
    requires setup, specifically it expects a parallel checkout of the docs repository with the `ghpages` branch
    called `open-energy-technical-docs-pages`. This can be created as follows:
@@ -61,3 +61,22 @@ Part of the build is to produce a redirect such that e.g. https://docs.openenerg
 release build. Release builds are ones with the `a.b.c` naming convention described above, but it is perfectly
 possible to have non-release builds simply by using any other tag format. These will be listed in the versions
 panel in the generated site but will not automatically be linked from the base address.
+
+## Updating the glossaries
+
+The python script `build_glossary.py` will retrieve the glossary from our gdrive and rebuild it from scratch, this
+will result in changes which will need to be committed to version control before they can be made visible on the
+public site.
+
+This will also create the substitution rules which allow e.g. `|DC|` to expand to `Data Consumer` with links -
+at present any two letter acronyms will be expanded and linked to the full name, whereas acronyms longer than
+this will be linked to the glossary entry but not expanded.
+
+## Finding and re-writing acronyms
+
+The python script `find_unlinked_acronyms` will traverse all `.rst` files and hunt for anything that looks like
+an acronym, excluding those which are part of titles. It will find any that are not already marked as substitutions
+and, optionally (depending on whether the `REWRITE_FILES` property in the script is True or False) rewrite any
+such cases. If there are acronym-like things that do not correspond to substitutions in the glossary it will
+complain about them. Run this periodically to check that you've not introduced acronyms and not referenced them
+out to the glossary, we should aim for having no acronyms that are not properly referenced.

@@ -64,7 +64,7 @@ def rewrite_line(s: str, acronyms: List[Tuple[str, int]]):
 
 
 #: Change this to True to enable automated file rewrites
-REWRITE_FILES = True
+REWRITE_FILES = False
 
 
 def is_heading(s: str):

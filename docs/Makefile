@@ -55,8 +55,10 @@ ghpages:
 	@echo
 	@echo "Pushed docs to https://icebreakerone.github.io/open-energy-technical-docs/index.html"
 
-latexpdf:
+pdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
-	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
+	mv $(BUILDDIR)/latex/openenergytechnical.pdf $(BUILDDIR)/
+	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)."
+
