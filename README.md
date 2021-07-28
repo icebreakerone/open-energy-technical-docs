@@ -13,7 +13,7 @@ Using whichever version of Python 3 makes you happiest, and install sphinx and t
 themes and other tooling:
 
 ```
-> pip install sphinx sphinx-rtd-theme sphinxcontrib-svg2pdfconverter[CairoSVG] cairosvg
+> pip install sphinx sphinx-rtd-theme sphinxcontrib-svg2pdfconverter[CairoSVG] cairosvg semver sphinx-multiversion
 ```
 
 It is highly likely that this build will only work without changes on a linux machine with the LaTeX tools installed.

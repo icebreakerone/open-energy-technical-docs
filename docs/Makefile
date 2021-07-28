@@ -42,7 +42,7 @@ html:
 local:
 	$(SPHINXBUILD) -E -b html $(ALLSPHINXOPTS) -D todo_include_todos=True $(BUILDDIR)/localhtml
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/localhtml."
 
 ghpages:
 	# This requires setup! Don't run it unless you know it'll work.
