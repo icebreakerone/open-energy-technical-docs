@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = ../build
+PYTHON        = python3
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -23,7 +24,9 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  html       to make standalone HTML files"
+	@echo "  local      to make standalone HTML files, including local changes"
+	@echo "  html       to make standalone HTML files, ignoring local changes"
+	@echo "  pdf        to make standalone PDF files, ignoring local changes"
 	@echo "  ghpages    to make HTML files and push to github pages - requires additional setup!"
 	@echo "  clean      to clean the build directory"
 
@@ -35,7 +38,7 @@ html:
 	git fetch --tags
 	sphinx-multiversion . $(BUILDDIR)/html
 	touch $(BUILDDIR)/html/.nojekyll
-	python build_index_redirect.py -b $(BUILDDIR)/html
+	$(PYTHON) build_index_redirect.py -b $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
@@ -46,12 +49,12 @@ local:
 
 ghpages:
 	# This requires setup! Don't run it unless you know it'll work.
-	git tag -l | xargs git tag -d
-	git fetch --tags
+	# git tag -l | xargs git tag -d
+	# git fetch --tags
 	sphinx-multiversion . ../../open-energy-technical-docs-pages/html
 	touch ../../open-energy-technical-docs-pages/html/.nojekyll
-	python build_index_redirect.py -b ../../open-energy-technical-docs-pages/html
-	cd ../../open-energy-technical-docs-pages/html; git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
+	$(PYTHON) build_index_redirect.py -b ../../open-energy-technical-docs-pages/html
+	cd ../../open-energy-technical-docs-pages/html; # git add . ; git commit -m "rebuilt docs"; git push origin gh-pages
 	@echo
 	@echo "Pushed docs to https://icebreakerone.github.io/open-energy-technical-docs/index.html"
 
