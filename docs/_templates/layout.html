@@ -1,11 +1,18 @@
 {% extends "!layout.html"%}
 
 {% block sidebartitle %}
+<div class="return" style="
+    background: yellow;
+    display: block;
+    margin: -14px -14px 20px -14px;
+    padding: 10px;">  
+    <a href="https://openenergy.org.uk/" style="color: #0C3945;">Return to the main site</a>
+</div>
 
 {% if logo and theme_logo_only %}
 <a href="{{ pathto(master_doc) }}">
     {% else %}
-    <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+    <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }} 
         {% endif %}
 
         {% if logo %}
