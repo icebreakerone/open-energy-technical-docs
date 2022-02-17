@@ -105,8 +105,7 @@ templates_path = ['_templates']
 html_static_path = ['_static']
 html_context = {
     'css_files': [
-        '_static/theme_overrides.css',
-        '_static/css/theme.css'
+        '_static/theme_overrides.css'
     ],
     'copyright_link': copyright_link,
     'current_version': ''
