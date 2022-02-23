@@ -21,7 +21,7 @@ Technical
 
 * `Open Energy Beta Testing Round 2 Onboarding Pack <https://docs.google.com/document/u/0/d/11JCbeoKOKJyYojaw6XERudsYhDajJP53brw5NRGX3eY/edit>`_
 * `Open Energy Python module <https://icebreakerone.github.io/open-energy-python-infrastructure/>`_
-* `Open Energy Tech Docs <https://icebreakerone.github.io/open-energy-technical-docs/main/>`_
+* `Open Energy Tech Docs <https://docs.openenergy.org.uk/main/>`_
 * `Beta Round 2 Introduction <https://docs.google.com/document/d/1PId_UWH77I22sOYux4M1j9uQU4V_lVjq59ZK6sLKzoY/edit?usp=sharing>`_
 * `Registering with the Open Energy Directory <https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit>`_
 * `Open Energy Beta testing round 2 slides <https://docs.google.com/presentation/d/1lO56N6y9g-xmrKt11L84eGgwwO4Co-bA1xNW7MuSTs0/edit?usp=sharing>`_
