@@ -8,7 +8,7 @@ author = u'The Icebreaker One Team'
 # If provided, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-html_use_opensearch = 'https://icebreakerone.github.io/open-energy-technical-docs'
+html_use_opensearch = 'https://docs.openenergy.org.uk'
 
 # Configures links into the main Python language docs, if you're using any libraries in your
 # project and need them to link automatically add them here. Doesn't really apply to non-code
