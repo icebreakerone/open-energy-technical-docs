@@ -29,6 +29,12 @@ Technical
 * `Video describing step-by-step process of accessing shared datasets <https://www.youtube.com/watch?v=CMI2UVdIxFw>`_
 * `Considerations before data providers and consumers start using Open Energy <https://docs.google.com/document/u/0/d/1NJPmMHvORjDF2awE7iz8SDFaPpFAqqWN15RXz6VD_vE/edit>`_
 
+* Jupyter Notebooks on Google Colab demonstrating Open and Shared data access
+	* `Searching and accessing Open Data <https://colab.research.google.com/github/icebreakerone/open-energy-python-infrastructure/blob/main/examples/jupyter/open_dataset_retrieval.ipynb>`_
+	* `Setting up a Shared data connection <https://colab.research.google.com/github/icebreakerone/open-energy-python-infrastructure/blob/main/examples/jupyter/setting_up_a_shared_data_connection.ipynb>`_
+	* `Searching and accessing Shared data <https://colab.research.google.com/github/icebreakerone/open-energy-python-infrastructure/blob/main/examples/jupyter/shared_dataset_retrieval.ipynb>`_
+
+
 Policy
 ######
 
