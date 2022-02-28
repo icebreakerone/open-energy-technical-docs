@@ -34,11 +34,13 @@ themes and other tooling:
 > sudo tlmgr update --self
 ```
 5. Install the additional packages required by Sphinx
+
 Current for sphinx-build v4.4.0 and TeX Live 2021 - this may change over time
 ```
 > sudo tlmgr install `cat tlmgr_packages.txt`
 ```
 
+## LaTeX installation on other flavours of Linux
 Users of other Linux systems may use the above as the basis for installation using their relevant package manager.
 
 ## Building the docs
