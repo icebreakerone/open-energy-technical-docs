@@ -7,16 +7,39 @@ technical documentation, including operational guidelines, for the Open Energy p
 This documentation is rendered at https://icebreakerone.github.io/open-energy-technical-docs/, which is
 linked to automatically from https://docs.openenergy.org.uk 
 
+## MacOS Homebrew installation
+```
+> brew install sphinx cairo
+```
+Then continue to Sphinx installation...
+
 ## Sphinx installation
 
 Using whichever version of Python 3 makes you happiest, and install sphinx and the necessary extra plugins for
 themes and other tooling:
 
 ```
-> pip install sphinx sphinx-rtd-theme sphinxcontrib-svg2pdfconverter[CairoSVG] cairosvg semver sphinx-multiversion
+> pip install -r requirements.txt
 ```
 
-It is highly likely that this build will only work without changes on a linux machine with the LaTeX tools installed.
+## MacOS LaTeX installation - required for PDF output
+1. Download and install XCode command line tools from: https://developer.apple.com/download/all/ (requires Apple ID login)
+2. Download and install BasicTeX from MacTeX: https://tug.org/mactex/morepackages.html
+3. Add `/Library/TeX/textbin` to your path
+```
+> export PATH=$PATH:/Library/TeX/texbin
+```
+4. Update the TeX Live Manager
+```
+> sudo tlmgr update --self
+```
+5. Install the additional packages required by Sphinx
+Current for sphinx-build v4.4.0 and TeX Live 2021 - this may change over time
+```
+> sudo tlmgr install `cat tlmgr_packages.txt`
+```
+
+Users of other Linux systems may use the above as the basis for installation using their relevant package manager.
 
 ## Building the docs
 

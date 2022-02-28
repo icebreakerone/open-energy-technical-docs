@@ -1,0 +1,10 @@
+latexmk
+tex-gyre
+fncychap
+wrapfig
+capt-of
+framed
+needspace
+tabulary
+varwidth
+titlesec
