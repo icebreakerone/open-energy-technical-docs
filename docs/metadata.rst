@@ -35,7 +35,7 @@ The overall structure of the metadata file is a list of objects, each of which h
       access:
         # Access control and licensing information
       transport:
-        # |API| information
+        # API information
       representation:
         # Data format information
 
@@ -142,7 +142,7 @@ Transport Block
 
 This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band
 transports with an initial HTTP negotiation process. It contains at least a single ``http`` key, the value of which
-must be valid `Open|API| <https://swagger.io/specification/>`_
+must be valid `OpenAPI <https://swagger.io/specification/>`_
 
 For example:
 
@@ -150,11 +150,11 @@ For example:
 
    transport:
      http:
-       # This block is mandatory, and contains the Open|API| spec for the secured or open
+       # This block is mandatory, and contains the OpenAPI spec for the secured or open
        # HTTP endpoints (depending on data class)
        openapi: 3.0.0
        info:
-         title: Sample |API|
+         title: Sample API
          description: CSV format data
          version: 0.1.0
        servers:
@@ -258,11 +258,11 @@ in the full metadata file this would be contained within a list. |YAML| form:
          appliesTo: 2022-04-22
      transport:
        http:
-         # This block is mandatory, and contains the Open|API| spec for the secured or open
+         # This block is mandatory, and contains the OpenAPI spec for the secured or open
          # HTTP endpoints (depending on data class)
          openapi: 3.0.0
          info:
-           title: Sample |API|
+           title: Sample API
            description: CSV format data
            version: 0.1.0
          servers:
@@ -309,7 +309,7 @@ Or, in |JSON| form:
           "dct:description": "This is a free text description of the data set",
           "dcat:version": "0.1.2",
           "dcat:versionNotes": "This is a note on this particular version of the dataset",
-          "oe:sensitivityClass": "|OE-SA|",
+          "oe:sensitivityClass": "OE-SA",
           "oe:dataSetStableIdentifier": "myData"
         },
         "access": [
@@ -330,7 +330,7 @@ Or, in |JSON| form:
           "http": {
             "openapi": "3.0.0",
             "info": {
-              "title": "Sample |API|",
+              "title": "Sample API",
               "description": "CSV format data",
               "version": "0.1.0"
             },
