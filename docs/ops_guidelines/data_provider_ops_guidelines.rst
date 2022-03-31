@@ -199,7 +199,7 @@ Versioning
 
 All data |APIs| **MUST** include a version number in the path of each data endpoint. This version SHOULD use semantic
 versioning to differentiate between breaking and backwards compatible changes. This **MUST** be documented within the
-Open|API| transport section of the metadata file.
+OpenAPI transport section of the metadata file.
 
 Problem Resolution (Data Providers)
 -----------------------------------
