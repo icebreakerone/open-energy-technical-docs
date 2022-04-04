@@ -111,9 +111,9 @@ We encourage use of the ``dcat:keyword`` list for data sets. These translate to 
 .. code-block:: yaml
 
   dcat:keyword: 
-    solar
-    electricity
-    retrofit
+    - solar
+    - electricity
+    - retrofit
 
 Access Block
 ------------
