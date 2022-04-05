@@ -74,7 +74,7 @@ as in the example above.
    * - `dct:title <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/>`_
      - Short title for this data set
    * - `dct:description <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/>`_
-     - Longer form description of this data set
+     - Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probably search words in the description.
    * - `dcat:version <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version>`_
      - Version number of the data set, this should preferably follow `semantic versioning <https://semver.org/>`_ if
        possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in
@@ -105,6 +105,15 @@ Of particular note, and something we would like to ultimately expose in our sear
 geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been
 handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out
 `here <https://www.w3.org/TR/vocab-dcat-2/#time-and-space>`_.
+
+We encourage use of the ``dcat:keyword`` list for data sets. These translate to "tags" in our web interface and are useful to group data sets around specific topics.
+
+.. code-block:: yaml
+
+  dcat:keyword: 
+    - solar
+    - electricity
+    - retrofit
 
 Access Block
 ------------
